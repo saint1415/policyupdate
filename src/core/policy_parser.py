@@ -148,11 +148,16 @@ class Policy:
         frontmatter_dict = self.to_dict()
 
         # Build markdown content
-        content_lines = []
-        for section in self.sections:
-            content_lines.append(self._section_to_markdown(section))
-
-        content = '\n\n'.join(content_lines)
+        if self.sections:
+            content_lines = []
+            for section in self.sections:
+                content_lines.append(self._section_to_markdown(section))
+            content = '\n\n'.join(content_lines)
+        elif self.raw_content:
+            # No sections detected - use raw content
+            content = self.raw_content
+        else:
+            content = ""
 
         # Combine
         yaml_str = yaml.dump(frontmatter_dict, default_flow_style=False, sort_keys=False)
@@ -457,7 +462,8 @@ class PolicyParser:
 
         # Check paragraph style for heading
         if para.style and 'heading' in para.style.name.lower():
-            level = int(re.search(r'\d', para.style.name) or 2)
+            match = re.search(r'\d', para.style.name)
+            level = int(match.group()) if match else 2
             return (True, level, '', text)
 
         return (False, 0, '', '')
@@ -501,18 +507,40 @@ class PolicyParser:
         """Find cross-references to other policies"""
         references = set()
 
-        # Common reference patterns
+        # Patterns for policy/procedure/plan names
+        # Pattern 1: 2-4 simple capitalized words (no conjunctions) followed by type
+        # Pattern 2: Name with "and/&" conjunction followed by type
         patterns = [
-            r'(?:refer to|see|per|in accordance with|as defined in)\s+(?:the\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+Policy)',
-            r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+Policy)\s+(?:defines|outlines|establishes)',
-            r'(?:the\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+(?:Policy|Procedure|Plan))'
+            r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})\s+(Policy|Procedure|Plan)\b',
+            r'\b([A-Z][a-z]+\s+(?:and|&)\s+[A-Z][a-z]+)\s+(Policy|Procedure|Plan)\b',
         ]
 
         for pattern in patterns:
             matches = re.findall(pattern, content)
-            for match in matches:
-                ref_id = self._generate_id(match)
-                if ref_id and len(ref_id) > 5:  # Filter out very short matches
+            for name, doc_type in matches:
+                # Skip if the name part contains Policy/Procedure/Plan (indicates runaway match)
+                if re.search(r'\b(Policy|Procedure|Plan)\b', name):
+                    continue
+
+                # Build the full reference name
+                full_name = f"{name} {doc_type}"
+                ref_id = self._generate_id(full_name)
+
+                # Filter by length (reasonable policy names)
+                if not ref_id or len(ref_id) < 12 or len(ref_id) > 55:
+                    continue
+
+                # Skip generic phrases that aren't actual policy names
+                skip_phrases = [
+                    'this-policy', 'the-policy', 'a-policy',
+                    'this-procedure', 'the-procedure', 'a-procedure',
+                    'this-plan', 'the-plan', 'a-plan',
+                    'security-policy', 'company-policy',
+                    'following-policy', 'applicable-policy',
+                    'related-policy', 'appropriate-policy',
+                    'organization-policy', 'corporate-policy',
+                ]
+                if ref_id not in skip_phrases:
                     references.add(ref_id)
 
         return sorted(list(references))
