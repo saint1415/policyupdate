@@ -249,6 +249,38 @@
 | 2026-01-30 | 8 | Built automation module: feed_monitor.py (RSS/webpage monitoring), change_detector.py (impact analysis), CLI monitor commands |
 | 2026-01-30 | 9 | Added Flask web interface (REST API + templates), tkinter desktop GUI, test suite, comprehensive project review - Project 98% complete |
 | 2026-01-30 | 10 | Added NIST 800-53 (202 controls), notification system (email/webhook), project 100% complete - 12 frameworks, 821 controls |
+| 2026-01-30 | 11 | Security hardening: config module with env-based secrets, proper logging framework, input validation module, improved test coverage |
+
+---
+
+## Recent Improvements (Session 11)
+
+### Security Enhancements
+- **Config Module** (`src/core/config.py`): Centralized configuration with environment variable support
+- **Secret Key**: Now uses `secrets.token_hex(32)` or `POLICYUPDATE_SECRET_KEY` env variable (no more hardcoded keys)
+- **Input Validation** (`src/core/validation.py`): Sanitization helpers for filenames, client names, URLs, emails
+- **Updated .gitignore**: Added patterns for secrets, credentials, and sensitive files
+
+### Logging Framework
+- Replaced `print()` statements with proper Python logging
+- Configurable log levels via `POLICYUPDATE_LOG_LEVEL` environment variable
+- Support for file-based logging via `POLICYUPDATE_LOG_FILE`
+- Module-specific loggers (e.g., `policyupdate.web`, `policyupdate.automation.notifier`)
+
+### Test Coverage Expansion
+- Added `TestConfig` class for configuration module
+- Added `TestNotifier` class for notification system
+- Updated framework count from 11 to 12 (includes NIST 800-53)
+
+### Environment Variables
+| Variable | Purpose |
+|----------|---------|
+| `POLICYUPDATE_SECRET_KEY` | Flask secret key for sessions |
+| `POLICYUPDATE_LOG_LEVEL` | Logging level (DEBUG, INFO, WARNING, ERROR) |
+| `POLICYUPDATE_LOG_FILE` | Path to log file |
+| `POLICYUPDATE_DEBUG` | Enable Flask debug mode |
+| `POLICYUPDATE_SMTP_HOST` | SMTP server for email notifications |
+| `POLICYUPDATE_WEBHOOK_URL` | Webhook URL for notifications |
 
 ---
 

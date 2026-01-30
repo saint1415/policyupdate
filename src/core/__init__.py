@@ -9,6 +9,14 @@ from .gap_analyzer import GapAnalyzer
 from .reference_validator import ReferenceValidator
 from .incompleteness import IncompletenessDetector
 from .remediation import RemediationReporter
+from .config import (
+    AppConfig,
+    get_config,
+    set_config,
+    setup_logging,
+    get_logger,
+    load_config_from_env
+)
 
 __all__ = [
     'PolicyParser',
@@ -18,5 +26,11 @@ __all__ = [
     'GapAnalyzer',
     'ReferenceValidator',
     'IncompletenessDetector',
-    'RemediationReporter'
+    'RemediationReporter',
+    'AppConfig',
+    'get_config',
+    'set_config',
+    'setup_logging',
+    'get_logger',
+    'load_config_from_env'
 ]

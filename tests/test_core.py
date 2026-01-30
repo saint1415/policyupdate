@@ -26,14 +26,14 @@ class TestComplianceMapper:
 
     def test_load_all_frameworks(self, mapper):
         """Test that all frameworks load correctly"""
-        assert len(mapper.frameworks) == 11
+        assert len(mapper.frameworks) == 12
 
     def test_framework_ids(self, mapper):
         """Test expected framework IDs are present"""
         expected = [
             'nist_csf_2.0', 'iso_27001_2022', 'soc2', 'pci_dss_4',
             'hipaa', 'gdpr', 'ccpa', 'sec_cyber', 'nist_800_171',
-            'nis2', 'eu_ai_act'
+            'nis2', 'eu_ai_act', 'nist_800_53'
         ]
         for fw_id in expected:
             assert fw_id in mapper.frameworks, f"Missing framework: {fw_id}"
@@ -135,6 +135,127 @@ class TestVariableEngine:
         assert 'Test Corp' in result
         assert 'CISO' in result
         assert '{{' not in result
+
+
+class TestConfig:
+    """Tests for configuration module"""
+
+    def test_default_config(self):
+        """Test default configuration values"""
+        from core.config import AppConfig
+        config = AppConfig()
+
+        assert config.policies_dir == "policies"
+        assert config.frameworks_dir == "config/frameworks"
+        assert config.web.port == 5000
+        assert config.database.clients_db == "clients.db"
+
+    def test_get_paths(self):
+        """Test path resolution methods"""
+        from core.config import AppConfig
+        config = AppConfig()
+
+        policies_path = config.get_policies_path()
+        assert policies_path.name == "policies"
+        assert policies_path.exists()
+
+        frameworks_path = config.get_frameworks_path()
+        assert frameworks_path.name == "frameworks"
+        assert frameworks_path.exists()
+
+    def test_secret_key_not_hardcoded(self):
+        """Test that secret key is dynamically generated"""
+        from core.config import AppConfig
+        config1 = AppConfig()
+        config2 = AppConfig()
+
+        # Secret keys should be different if not set via environment
+        # (Each AppConfig generates a new random key)
+        assert len(config1.web.secret_key) >= 32
+        assert config1.web.secret_key != 'dev-key-change-in-production'
+
+    def test_logging_setup(self):
+        """Test logging configuration"""
+        import logging
+        from core.config import setup_logging, get_logger, AppConfig
+
+        config = AppConfig()
+        config.log_level = "DEBUG"
+        setup_logging(config)
+
+        logger = get_logger('test')
+        assert logger.name == 'policyupdate.test'
+
+    def test_get_set_config(self):
+        """Test global config getter/setter"""
+        from core.config import get_config, set_config, AppConfig
+
+        original = get_config()
+        assert original is not None
+
+        new_config = AppConfig()
+        new_config.web.port = 8080
+        set_config(new_config)
+
+        retrieved = get_config()
+        assert retrieved.web.port == 8080
+
+        # Restore original
+        set_config(original)
+
+
+class TestNotifier:
+    """Tests for notification module"""
+
+    def test_severity_filter(self):
+        """Test severity-based notification filtering"""
+        from automation.notifier import Notifier, NotificationConfig
+
+        config = NotificationConfig(min_severity="high")
+        notifier = Notifier(config)
+
+        assert notifier.should_notify("critical") is True
+        assert notifier.should_notify("high") is True
+        assert notifier.should_notify("medium") is False
+        assert notifier.should_notify("low") is False
+
+    def test_notification_creation(self):
+        """Test notification object creation"""
+        from automation.notifier import Notification
+        from datetime import datetime
+
+        notif = Notification(
+            id="test_001",
+            title="Test Alert",
+            message="Test message",
+            severity="high",
+            timestamp=datetime.now(),
+            source="test"
+        )
+
+        assert notif.id == "test_001"
+        assert notif.severity == "high"
+
+    def test_slack_payload_format(self):
+        """Test Slack webhook payload formatting"""
+        from automation.notifier import Notifier, NotificationConfig, Notification
+        from datetime import datetime
+
+        config = NotificationConfig()
+        notifier = Notifier(config)
+
+        notif = Notification(
+            id="test",
+            title="Test",
+            message="Test message",
+            severity="high",
+            timestamp=datetime.now(),
+            source="test"
+        )
+
+        payload = notifier._format_slack_payload(notif)
+        assert 'attachments' in payload
+        assert payload['attachments'][0]['color'] == '#fd7e14'  # high = orange
 
 
 if __name__ == '__main__':

@@ -3,7 +3,6 @@ Flask Web Application
 Web interface for the GRC Policy Management Platform
 """
 
-import json
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -14,10 +13,16 @@ PROJECT_ROOT = WEB_DIR.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 try:
-    from flask import Flask, render_template, request, jsonify, send_file, redirect, url_for
+    from flask import Flask, render_template, request, jsonify, send_file
     FLASK_AVAILABLE = True
 except ImportError:
     FLASK_AVAILABLE = False
+
+from core.config import get_config, setup_logging, get_logger
+
+# Initialize logging
+setup_logging()
+logger = get_logger('web')
 
 
 def create_app(config=None):
@@ -25,15 +30,20 @@ def create_app(config=None):
     if not FLASK_AVAILABLE:
         raise ImportError("Flask not installed. Run: pip install flask")
 
+    app_config = get_config()
+
     app = Flask(__name__,
                 template_folder=str(PROJECT_ROOT / "src" / "web" / "templates"),
                 static_folder=str(PROJECT_ROOT / "src" / "web" / "static"))
 
-    app.config['SECRET_KEY'] = 'dev-key-change-in-production'
+    # Use secure secret key from config (not hardcoded)
+    app.config['SECRET_KEY'] = app_config.web.secret_key
     app.config['PROJECT_ROOT'] = PROJECT_ROOT
 
     if config:
         app.config.update(config)
+
+    logger.info("Flask application initialized")
 
     # Lazy-load modules
     _cache = {}
@@ -439,15 +449,22 @@ def create_app(config=None):
 def main():
     """Run the development server"""
     if not FLASK_AVAILABLE:
-        print("Error: Flask not installed. Run: pip install flask")
+        logger.error("Flask not installed. Run: pip install flask")
         return
 
+    app_config = get_config()
     app = create_app()
-    print("PolicyUpdate Web Interface")
-    print("=" * 40)
-    print("Starting server at http://localhost:5000")
-    print("Press Ctrl+C to stop")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+
+    logger.info("PolicyUpdate Web Interface")
+    logger.info("=" * 40)
+    logger.info(f"Starting server at http://{app_config.web.host}:{app_config.web.port}")
+    logger.info("Press Ctrl+C to stop")
+
+    app.run(
+        debug=app_config.web.debug,
+        host=app_config.web.host,
+        port=app_config.web.port
+    )
 
 
 if __name__ == '__main__':
