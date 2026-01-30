@@ -5,7 +5,66 @@ version: 1.0.0
 category: business-continuity
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.130'
+  - '1798.82'
+  gdpr:
+  - Art.33
+  - Art.34
+  hipaa:
+  - 164.308.a.6.i
+  - 164.308.a.6.ii
+  - 164.530.f
+  iso_27001_2022:
+  - A.5.24
+  - A.5.25
+  - A.5.26
+  - A.5.27
+  - A.5.28
+  - A.5.5
+  - A.6.8
+  nist_800_171:
+  - 03.03.04
+  - 03.06.01
+  - 03.06.02
+  - 03.11.03
+  nist_csf_2.0:
+  - DE.AE-02
+  - DE.AE-04
+  - DE.AE-06
+  - DE.AE-08
+  - GV.SC-08
+  - ID.IM-04
+  - RC.CO-03
+  - RC.RP-02
+  - RC.RP-06
+  - RS.AN-03
+  - RS.AN-06
+  - RS.AN-07
+  - RS.AN-08
+  - RS.CO-02
+  - RS.CO-03
+  - RS.MA-01
+  - RS.MA-02
+  - RS.MA-03
+  - RS.MA-04
+  - RS.MA-05
+  - RS.MI-01
+  - RS.MI-02
+  pci_dss_4:
+  - '10.7'
+  - '12.10'
+  sec_cyber:
+  - 10-K.106.b.3
+  - 8-K.1.05.a
+  - 8-K.1.05.b
+  - 8-K.1.05.c
+  - 8-K.1.05.d
+  soc2:
+  - CC7.3
+  - CC7.4
+  - P8.1
 references:
 - acceptable-use-policy
 - an-incident-response-plan

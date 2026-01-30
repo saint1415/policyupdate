@@ -5,7 +5,13 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.125'
+  hipaa:
+  - 164.530.g
+  soc2:
+  - CC1.1
 references:
 - data-retention-policy
 variables:

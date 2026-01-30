@@ -5,7 +5,26 @@ version: 1.0.0
 category: business-continuity
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.7.i
+  - 164.308.a.7.ii.C
+  - 164.308.a.7.ii.D
+  iso_27001_2022:
+  - A.5.29
+  - A.5.30
+  - A.7.11
+  - A.7.5
+  - A.8.14
+  nist_csf_2.0:
+  - GV.OC-04
+  - PR.IR-03
+  - RC.RP-02
+  - RC.RP-04
+  - RC.RP-05
+  - RS.MA-05
+  soc2:
+  - CC9.1
 references:
 - business-continuity-plan
 - business-continuity-policy

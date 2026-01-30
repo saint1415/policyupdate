@@ -5,7 +5,10 @@ version: 1.0.0
 category: physical-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.7.6
+  - A.7.7
 references:
 - clear-desk-policy
 - mobile-device-policy

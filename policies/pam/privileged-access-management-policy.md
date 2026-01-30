@@ -5,7 +5,14 @@ version: 1.0.0
 category: pam
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.18
+  - A.8.2
+  nist_800_171:
+  - 03.01.06
+  pci_dss_4:
+  - '8.6'
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +20,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

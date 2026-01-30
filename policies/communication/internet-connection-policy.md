@@ -5,7 +5,9 @@ version: 1.0.0
 category: communication
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.23
 references:
 - internet-connection-policy
 - wireless-access-policy

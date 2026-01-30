@@ -5,7 +5,18 @@ version: 1.0.0
 category: physical-security
 type: plan
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.a.2.ii
+  iso_27001_2022:
+  - A.7.1
+  - A.7.3
+  nist_csf_2.0:
+  - PR.IR-02
+  pci_dss_4:
+  - '9.2'
+  soc2:
+  - A1.2
 references:
 - acquisition-and-procurement-policy
 - business-continuity-disaster-recovery-plan

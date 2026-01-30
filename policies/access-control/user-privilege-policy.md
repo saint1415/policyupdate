@@ -5,7 +5,22 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.4.ii.A
+  iso_27001_2022:
+  - A.5.18
+  - A.5.3
+  nist_800_171:
+  - 03.01.04
+  - 03.01.05
+  - 03.01.06
+  nist_csf_2.0:
+  - PR.AA-05
+  pci_dss_4:
+  - '7.2'
+  soc2:
+  - CC6.3
 references:
 - third-party-service-providers-policy
 - user-privilege-policy

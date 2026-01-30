@@ -5,7 +5,18 @@ version: 1.0.0
 category: business-continuity
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.7.ii.A
+  - 164.310.d.2.iv
+  iso_27001_2022:
+  - A.5.30
+  - A.8.13
+  nist_csf_2.0:
+  - PR.DS-11
+  - RC.RP-03
+  soc2:
+  - PI1.5
 references: []
 variables:
 - CSO_TITLE

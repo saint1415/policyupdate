@@ -5,7 +5,29 @@ version: 1.0.0
 category: documentation
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.145'
+  gdpr:
+  - Art.30
+  - Art.5.2
+  hipaa:
+  - 164.530.i
+  - 164.530.j
+  iso_27001_2022:
+  - A.5.37
+  nist_800_171:
+  - 03.12.02
+  nist_csf_2.0:
+  - GV.PO-02
+  pci_dss_4:
+  - '12.5'
+  sec_cyber:
+  - 8-K.1.05.c
+  soc2:
+  - CC2.1
+  - CC5.3
+  - PI1.1
 references: []
 variables:
 - CSO_TITLE

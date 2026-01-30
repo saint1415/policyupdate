@@ -5,7 +5,18 @@ version: 1.0.0
 category: compliance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  pci_dss_4:
+  - '12.1'
+  - '12.4'
+  - '12.5'
+  - '12.9'
+  - '3.1'
+  - '3.3'
+  - '3.4'
+  - '4.1'
+  - '7.1'
+  - '9.5'
 references:
 - data-retention-policy
 - wireless-access-policy

@@ -5,7 +5,15 @@ version: 1.0.0
 category: operations
 type: procedure
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.32
+  nist_800_171:
+  - 03.04.03
+  pci_dss_4:
+  - '6.5'
+  soc2:
+  - CC8.1
 references:
 - change-management-policy
 - change-management-procedure

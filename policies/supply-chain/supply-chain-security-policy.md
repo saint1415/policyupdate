@@ -5,7 +5,17 @@ version: 1.0.0
 category: supply-chain
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.19
+  - A.5.21
+  nist_csf_2.0:
+  - GV.OC-05
+  - GV.SC-01
+  - GV.SC-03
+  - GV.SC-09
+  - ID.RA-09
+  - ID.RA-10
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +23,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

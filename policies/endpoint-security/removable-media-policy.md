@@ -5,7 +5,22 @@ version: 1.0.0
 category: endpoint-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.d.1
+  - 164.310.d.2.ii
+  iso_27001_2022:
+  - A.7.10
+  nist_800_171:
+  - 03.01.18
+  - 03.08.01
+  - 03.08.02
+  - 03.08.03
+  - 03.08.05
+  pci_dss_4:
+  - '9.4'
+  soc2:
+  - CC6.7
 references:
 - data-classification-policy
 - data-marking-policy

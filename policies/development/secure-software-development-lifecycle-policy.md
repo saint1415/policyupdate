@@ -5,7 +5,22 @@ version: 1.0.0
 category: development
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.25
+  iso_27001_2022:
+  - A.5.8
+  - A.8.25
+  - A.8.26
+  - A.8.27
+  - A.8.28
+  - A.8.29
+  nist_csf_2.0:
+  - PR.PS-06
+  pci_dss_4:
+  - '6.1'
+  - '6.2'
+  - '6.4'
 references:
 - secure-software-development-lifecycle-policy
 - see-audit-policy

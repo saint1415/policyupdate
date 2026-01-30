@@ -5,7 +5,19 @@ version: 1.0.0
 category: personnel-training
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.6.1
+  nist_800_171:
+  - 03.09.01
+  nist_csf_2.0:
+  - GV.RR-04
+  pci_dss_4:
+  - '12.7'
+  sec_cyber:
+  - 10-K.106.c.2.ii
+  soc2:
+  - CC1.4
 references:
 - security-training-policy
 variables:

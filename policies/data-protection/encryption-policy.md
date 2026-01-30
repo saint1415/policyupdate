@@ -5,7 +5,41 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.150'
+  gdpr:
+  - Art.32
+  - Art.5.1.f
+  hipaa:
+  - 164.312.a.2.iv
+  - 164.312.e.1
+  - 164.312.e.2.i
+  - 164.312.e.2.ii
+  iso_27001_2022:
+  - A.5.14
+  - A.8.24
+  nist_800_171:
+  - 03.01.13
+  - 03.01.15
+  - 03.05.08
+  - 03.08.05
+  - 03.13.08
+  - 03.13.09
+  - 03.13.10
+  - 03.13.11
+  - 03.13.14
+  nist_csf_2.0:
+  - PR.DS-01
+  - PR.DS-02
+  - PR.DS-10
+  pci_dss_4:
+  - '3.5'
+  - '3.6'
+  - '4.1'
+  - '4.2'
+  soc2:
+  - CC6.7
 references:
 - electronic-data-retention-policy
 - mitigation-and-migration-plan

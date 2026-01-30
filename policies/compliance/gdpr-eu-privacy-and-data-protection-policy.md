@@ -5,7 +5,31 @@ version: 1.0.0
 category: compliance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.12
+  - Art.13
+  - Art.15
+  - Art.18
+  - Art.20
+  - Art.21
+  - Art.24
+  - Art.26
+  - Art.27
+  - Art.31
+  - Art.33
+  - Art.34
+  - Art.35
+  - Art.36
+  - Art.37
+  - Art.38
+  - Art.39
+  - Art.44
+  - Art.46
+  - Art.49
+  - Art.5.2
+  - Art.6
+  - Art.7
 references:
 - access-control-policy
 - awareness-and-training-policy

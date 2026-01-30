@@ -5,7 +5,9 @@ version: 1.0.0
 category: audit-monitoring
 type: procedure
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.15
 references:
 - data-retention-policy
 variables:

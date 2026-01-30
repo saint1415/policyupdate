@@ -5,7 +5,28 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.3.ii.B
+  - 164.308.a.4.ii.B
+  - 164.308.a.4.ii.C
+  - 164.312.a.2.i
+  iso_27001_2022:
+  - A.5.16
+  nist_800_171:
+  - 03.01.01
+  - 03.05.01
+  - 03.05.05
+  - 03.09.02
+  nist_csf_2.0:
+  - PR.AA-01
+  - PR.AA-02
+  pci_dss_4:
+  - '8.1'
+  - '8.2'
+  - '8.6'
+  soc2:
+  - CC6.2
 references:
 - account-management-policy
 variables:

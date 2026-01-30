@@ -5,7 +5,32 @@ version: 1.0.0
 category: personnel-training
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.29
+  hipaa:
+  - 164.308.a.3.i
+  - 164.308.a.3.ii.A
+  - 164.308.a.3.ii.B
+  iso_27001_2022:
+  - A.5.11
+  - A.5.2
+  - A.6.1
+  - A.6.2
+  - A.6.5
+  nist_800_171:
+  - 03.07.03
+  - 03.09.01
+  - 03.09.02
+  nist_csf_2.0:
+  - GV.RR-04
+  pci_dss_4:
+  - '12.7'
+  - '8.2'
+  sec_cyber:
+  - 10-K.106.c.2.ii
+  soc2:
+  - CC1.4
 references:
 - awareness-and-training-policy
 - personnel-security-policy

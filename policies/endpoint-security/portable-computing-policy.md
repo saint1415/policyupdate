@@ -5,7 +5,12 @@ version: 1.0.0
 category: endpoint-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.6.7
+  - A.7.9
+  pci_dss_4:
+  - '1.5'
 references:
 - portable-computing-policy
 - wireless-access-policy

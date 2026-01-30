@@ -5,7 +5,16 @@ version: 1.0.0
 category: business-continuity
 type: procedure
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.7.ii.A
+  iso_27001_2022:
+  - A.8.13
+  nist_csf_2.0:
+  - PR.DS-11
+  - RC.RP-03
+  soc2:
+  - A1.3
 references:
 - overview-the-backup-policy
 - patch-management-policy

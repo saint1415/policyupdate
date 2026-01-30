@@ -5,7 +5,21 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.5.ii.D
+  - 164.312.d
+  iso_27001_2022:
+  - A.5.17
+  - A.8.5
+  nist_800_171:
+  - 03.05.02
+  - 03.05.06
+  - 03.05.07
+  nist_csf_2.0:
+  - PR.AA-03
+  pci_dss_4:
+  - '8.3'
 references: []
 variables:
 - CSO_TITLE

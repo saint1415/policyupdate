@@ -5,7 +5,9 @@ version: 1.0.0
 category: ai-governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.22
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +15,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

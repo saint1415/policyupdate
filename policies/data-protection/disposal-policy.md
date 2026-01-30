@@ -5,7 +5,32 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.105'
+  gdpr:
+  - Art.17
+  - Art.5.1.e
+  hipaa:
+  - 164.310.d.2.i
+  - 164.310.d.2.ii
+  iso_27001_2022:
+  - A.7.10
+  - A.7.14
+  - A.8.10
+  nist_800_171:
+  - 03.08.03
+  nist_csf_2.0:
+  - GV.SC-10
+  - ID.AM-08
+  - PR.PS-03
+  pci_dss_4:
+  - '3.2'
+  - '9.4'
+  soc2:
+  - C1.2
+  - CC6.5
+  - P4.3
 references: []
 variables:
 - CSO_TITLE

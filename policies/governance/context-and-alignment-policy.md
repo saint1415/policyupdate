@@ -5,7 +5,12 @@ version: 1.0.0
 category: governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - GV.OC-01
+  - GV.OC-02
+  soc2:
+  - CC3.1
 references:
 - context-and-alignment-policy
 variables:

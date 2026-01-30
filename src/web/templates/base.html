@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PolicyUpdate{% endblock %} - GRC Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/">PolicyUpdate</a>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="{% if request.endpoint == 'index' %}active{% endif %}">Dashboard</a>
+            <a href="/policies" class="{% if 'policies' in request.endpoint|default('') %}active{% endif %}">Policies</a>
+            <a href="/frameworks" class="{% if 'frameworks' in request.endpoint|default('') %}active{% endif %}">Frameworks</a>
+            <a href="/clients" class="{% if 'clients' in request.endpoint|default('') %}active{% endif %}">Clients</a>
+            <a href="/generate" class="{% if 'generate' in request.endpoint|default('') %}active{% endif %}">Generate</a>
+            <a href="/monitor" class="{% if 'monitor' in request.endpoint|default('') %}active{% endif %}">Monitor</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>PolicyUpdate GRC Platform - 11 Frameworks, 619 Controls</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

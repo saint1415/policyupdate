@@ -5,7 +5,11 @@ version: 1.0.0
 category: documentation
 type: procedure
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.37
+  soc2:
+  - CC5.3
 references:
 - access-control-policy
 - change-management-policy

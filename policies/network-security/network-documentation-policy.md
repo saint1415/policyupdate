@@ -5,7 +5,9 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - ID.AM-03
 references:
 - network-documentation-policy
 variables:

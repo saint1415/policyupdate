@@ -5,7 +5,21 @@ version: 1.0.0
 category: business-continuity
 type: plan
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.7.i
+  - 164.308.a.7.ii.B
+  - 164.308.a.7.ii.C
+  - 164.310.a.2.i
+  - 164.312.a.2.ii
+  iso_27001_2022:
+  - A.5.29
+  - A.5.30
+  nist_csf_2.0:
+  - RC.RP-01
+  soc2:
+  - A1.3
+  - CC7.5
 references:
 - business-continuity-disaster-recovery-plan
 - distribution-list-for-this-plan

@@ -5,7 +5,9 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_800_171:
+  - 03.13.07
 references: []
 variables:
 - IT_STAFF

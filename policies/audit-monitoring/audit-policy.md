@@ -5,7 +5,26 @@ version: 1.0.0
 category: audit-monitoring
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.185.a.16
+  gdpr:
+  - Art.39
+  hipaa:
+  - 164.308.a.8
+  iso_27001_2022:
+  - A.5.35
+  - A.5.36
+  - A.8.34
+  nist_800_171:
+  - 03.03.05
+  - 03.12.01
+  nist_csf_2.0:
+  - GV.OV-03
+  - ID.IM-01
+  soc2:
+  - CC4.1
+  - CC4.2
 references:
 - risk-treatment-plan
 variables:

@@ -5,7 +5,12 @@ version: 1.0.0
 category: governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.1
+  nist_csf_2.0:
+  - GV.PO-01
+  - GV.RR-02
 references:
 - cybersecurity-framework-policy
 - implement-action-plan

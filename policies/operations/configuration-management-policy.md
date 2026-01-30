@@ -5,7 +5,30 @@ version: 1.0.0
 category: operations
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.31
+  - A.8.9
+  nist_800_171:
+  - 03.03.07
+  - 03.04.01
+  - 03.04.02
+  - 03.04.06
+  - 03.04.07
+  - 03.13.03
+  - 03.13.04
+  nist_csf_2.0:
+  - ID.AM-01
+  - ID.AM-02
+  - ID.AM-08
+  - PR.PS-01
+  - RC.RP-05
+  pci_dss_4:
+  - '10.6'
+  - '2.1'
+  - '2.2'
+  soc2:
+  - CC5.2
 references:
 - change-management-policy
 - configuration-management-plan

@@ -5,7 +5,11 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.14
+  nist_csf_2.0:
+  - PR.IR-03
 references:
 - risk-management-policy
 - risk-treatment-plan

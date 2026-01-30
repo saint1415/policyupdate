@@ -5,7 +5,19 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_800_171:
+  - 03.13.01
+  - 03.13.05
+  - 03.13.06
+  nist_csf_2.0:
+  - PR.IR-01
+  pci_dss_4:
+  - '1.1'
+  - '1.2'
+  - '1.4'
+  soc2:
+  - CC6.6
 references: []
 variables:
 - CSO_TITLE

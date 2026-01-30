@@ -5,7 +5,10 @@ version: 1.0.0
 category: data-sovereignty
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.44
+  - Art.46
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +16,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

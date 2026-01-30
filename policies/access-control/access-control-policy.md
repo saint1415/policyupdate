@@ -5,7 +5,57 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.81.5
+  gdpr:
+  - Art.32
+  hipaa:
+  - 164.308.a.3.i
+  - 164.308.a.3.ii.A
+  - 164.308.a.4.i
+  - 164.308.a.4.ii.A
+  - 164.308.a.4.ii.B
+  - 164.308.a.4.ii.C
+  - 164.312.a.1
+  - 164.312.a.2.ii
+  - 164.312.a.2.iii
+  iso_27001_2022:
+  - A.5.15
+  - A.5.18
+  - A.5.3
+  - A.8.3
+  - A.8.4
+  nist_800_171:
+  - 03.01.01
+  - 03.01.02
+  - 03.01.04
+  - 03.01.05
+  - 03.01.07
+  - 03.01.09
+  - 03.01.10
+  - 03.01.11
+  - 03.01.12
+  - 03.01.16
+  - 03.03.08
+  - 03.04.05
+  - 03.08.02
+  nist_csf_2.0:
+  - PR.AA-01
+  - PR.AA-05
+  - PR.IR-01
+  pci_dss_4:
+  - '1.3'
+  - '3.4'
+  - '7.1'
+  - '7.2'
+  - '7.3'
+  - '8.4'
+  soc2:
+  - CC6.1
+  - CC6.2
+  - CC6.3
+  - P5.1
 references:
 - access-control-policy
 - facility-security-plan

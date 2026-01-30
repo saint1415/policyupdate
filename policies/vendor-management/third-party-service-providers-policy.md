@@ -5,7 +5,45 @@ version: 1.0.0
 category: vendor-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.140.ag
+  - 1798.140.j
+  gdpr:
+  - Art.26
+  - Art.28
+  hipaa:
+  - 164.308.b.1
+  iso_27001_2022:
+  - A.5.19
+  - A.5.20
+  - A.5.22
+  - A.8.30
+  nist_800_171:
+  - 03.01.17
+  nist_csf_2.0:
+  - DE.CM-06
+  - GV.OC-05
+  - GV.RM-05
+  - GV.SC-01
+  - GV.SC-02
+  - GV.SC-04
+  - GV.SC-05
+  - GV.SC-06
+  - GV.SC-07
+  - GV.SC-08
+  - GV.SC-10
+  - ID.AM-04
+  - ID.RA-10
+  pci_dss_4:
+  - '12.8'
+  - '12.9'
+  sec_cyber:
+  - 10-K.106.b.2
+  soc2:
+  - CC2.3
+  - CC9.2
+  - P6.1
 references:
 - acceptable-use-policy
 - bring-your-own-device-policy

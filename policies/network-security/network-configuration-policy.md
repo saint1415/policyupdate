@@ -5,7 +5,12 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.20
+  - A.8.22
+  nist_800_171:
+  - 03.13.02
 references:
 - network-configuration-policy
 variables:

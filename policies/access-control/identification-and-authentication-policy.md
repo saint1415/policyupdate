@@ -5,7 +5,29 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.312.a.2.i
+  - 164.312.d
+  iso_27001_2022:
+  - A.5.17
+  - A.8.5
+  nist_800_171:
+  - 03.05.01
+  - 03.05.02
+  - 03.05.03
+  - 03.05.04
+  - 03.05.05
+  - 03.05.06
+  nist_csf_2.0:
+  - PR.AA-02
+  - PR.AA-03
+  - PR.AA-04
+  pci_dss_4:
+  - '8.1'
+  - '8.3'
+  - '8.4'
+  - '8.5'
 references:
 - identification-and-authentication-policy
 - securing-information-systems-policy

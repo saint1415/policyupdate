@@ -5,7 +5,37 @@ version: 1.0.0
 category: risk-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.1.ii.A
+  nist_800_171:
+  - 03.11.01
+  - 03.11.03
+  - 03.12.02
+  nist_csf_2.0:
+  - GV.OV-01
+  - GV.OV-02
+  - GV.RM-01
+  - GV.RM-02
+  - GV.RM-03
+  - GV.RM-04
+  - GV.RM-05
+  - GV.RM-07
+  - GV.SC-03
+  - GV.SC-07
+  - ID.RA-05
+  - ID.RA-06
+  - RC.RP-04
+  pci_dss_4:
+  - '12.3'
+  sec_cyber:
+  - 10-K.106.b.1
+  - 10-K.106.b.3
+  - 10-K.106.b.4
+  soc2:
+  - CC3.1
+  - CC3.2
+  - CC5.1
 references:
 - audit-trails-policy
 - change-management-policy

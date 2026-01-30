@@ -5,7 +5,19 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.312.a.1
+  iso_27001_2022:
+  - A.5.15
+  nist_800_171:
+  - 03.01.02
+  nist_csf_2.0:
+  - PR.AA-05
+  pci_dss_4:
+  - '7.3'
+  soc2:
+  - CC6.1
 references:
 - identification-and-authentication-policy
 - logical-access-controls-policy

@@ -5,7 +5,10 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.18
+  - A.8.2
 references:
 - admin-special-access-policy
 variables:

@@ -5,7 +5,9 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - PR.DS-01
 references:
 - database-security-policy
 variables:

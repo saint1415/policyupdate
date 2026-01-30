@@ -5,7 +5,19 @@ version: 1.0.0
 category: operations
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.8
+  nist_800_171:
+  - 03.11.02
+  - 03.14.01
+  - 03.14.03
+  - 03.14.04
+  nist_csf_2.0:
+  - PR.PS-02
+  pci_dss_4:
+  - '11.3'
+  - '6.3'
 references:
 - patch-management-policy
 variables:

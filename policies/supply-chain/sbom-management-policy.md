@@ -5,7 +5,10 @@ version: 1.0.0
 category: supply-chain
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - GV.SC-09
+  - ID.AM-02
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +16,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

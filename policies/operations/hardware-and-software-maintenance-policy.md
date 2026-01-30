@@ -5,7 +5,17 @@ version: 1.0.0
 category: operations
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.a.2.iv
+  iso_27001_2022:
+  - A.7.13
+  nist_800_171:
+  - 03.07.01
+  - 03.07.02
+  - 03.07.04
+  nist_csf_2.0:
+  - PR.PS-03
 references:
 - software-maintenance-policy
 variables:

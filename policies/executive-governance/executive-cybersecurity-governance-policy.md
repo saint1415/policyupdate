@@ -5,7 +5,15 @@ version: 1.0.0
 category: executive-governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - GV.RR-01
+  sec_cyber:
+  - 10-K.106.c.1
+  - 10-K.106.c.2
+  - 10-K.106.c.2.i
+  soc2:
+  - CC1.2
 references: []
 variables:
 - ORGANIZATION_NAME
@@ -13,8 +21,8 @@ variables:
 - APPROVAL_DATE
 conditions: []
 requires_customization:
-- section: "IV.A"
-  reason: "Requires organization-specific requirements"
+- section: IV.A
+  reason: Requires organization-specific requirements
   frameworks: []
   priority: high
 organization_tiers:

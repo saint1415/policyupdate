@@ -5,7 +5,25 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.5.1.e
+  hipaa:
+  - 164.310.d.2.i
+  - 164.530.j
+  iso_27001_2022:
+  - A.5.33
+  - A.8.10
+  nist_csf_2.0:
+  - ID.AM-07
+  pci_dss_4:
+  - '10.5'
+  - '3.2'
+  soc2:
+  - C1.2
+  - CC6.5
+  - P4.2
+  - PI1.5
 references:
 - data-retention-policy
 variables:

@@ -5,7 +5,12 @@ version: 1.0.0
 category: endpoint-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.7.9
+  - A.8.1
+  nist_800_171:
+  - 03.01.16
 references:
 - mobile-device-policy
 - wireless-access-policy

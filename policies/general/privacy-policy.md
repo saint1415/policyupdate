@@ -5,7 +5,27 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.100'
+  - 1798.100.b
+  - '1798.110'
+  - '1798.115'
+  - '1798.120'
+  gdpr:
+  - Art.12
+  - Art.13
+  - Art.14
+  - Art.5.1.a
+  hipaa:
+  - '164.52'
+  iso_27001_2022:
+  - A.5.34
+  soc2:
+  - CC2.3
+  - P1.1
+  - P2.1
+  - P3.2
 references:
 - web-site-privacy-policy
 variables:
