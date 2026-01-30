@@ -3,13 +3,11 @@ Notification Module
 Sends alerts for compliance framework updates via email and webhooks
 """
 
-import json
 import smtplib
 from dataclasses import dataclass, field
 from datetime import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from pathlib import Path
 from typing import Dict, List, Optional, Any
 
 try:
@@ -17,6 +15,13 @@ try:
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
+
+try:
+    from core.config import get_logger
+    logger = get_logger('automation.notifier')
+except ImportError:
+    import logging
+    logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -178,17 +183,19 @@ class Notifier:
         if self.config.email_to and self.config.smtp_host:
             try:
                 self._send_email(notification)
+                logger.info(f"Email notification sent: {notification.title}")
                 success = True
             except Exception as e:
-                print(f"Email notification failed: {e}")
+                logger.error(f"Email notification failed: {e}")
 
         # Try webhook
         if self.config.webhook_url:
             try:
                 self._send_webhook(notification)
+                logger.info(f"Webhook notification sent: {notification.title}")
                 success = True
             except Exception as e:
-                print(f"Webhook notification failed: {e}")
+                logger.error(f"Webhook notification failed: {e}")
 
         # Always log to console
         self._log_notification(notification)
@@ -417,17 +424,24 @@ class Notifier:
         return '\n'.join(lines)
 
     def _log_notification(self, notification: Notification):
-        """Log notification to console"""
-        print(f"\n[NOTIFICATION] {notification.timestamp.strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"  Severity: {notification.severity.upper()}")
-        print(f"  Title: {notification.title}")
-        print(f"  Source: {notification.source}")
+        """Log notification"""
+        log_method = {
+            'critical': logger.critical,
+            'high': logger.warning,
+            'medium': logger.info,
+            'low': logger.debug
+        }.get(notification.severity, logger.info)
+
+        log_method(
+            f"[{notification.severity.upper()}] {notification.title} "
+            f"(source: {notification.source})"
+        )
 
 
 def main():
     """Test the notifier"""
-    print("Notification System Test")
-    print("=" * 60)
+    logger.info("Notification System Test")
+    logger.info("=" * 60)
 
     # Create test config (console only, no actual sending)
     config = NotificationConfig(
@@ -449,16 +463,15 @@ def main():
         metadata={"test": True}
     )
 
-    print("\nSending test notification...")
+    logger.info("Sending test notification...")
     notifier._log_notification(test_notification)
 
-    print("\n" + "=" * 60)
-    print("Notification system ready!")
-    print("\nTo enable email notifications, configure:")
-    print("  - smtp_host, smtp_port, smtp_user, smtp_password")
-    print("  - email_from, email_to")
-    print("\nTo enable webhook notifications, configure:")
-    print("  - webhook_url (Slack, Teams, Discord, or generic)")
+    logger.info("=" * 60)
+    logger.info("Notification system ready!")
+    logger.info("To enable email notifications, set environment variables:")
+    logger.info("  POLICYUPDATE_SMTP_HOST, POLICYUPDATE_SMTP_USER, etc.")
+    logger.info("To enable webhook notifications, set:")
+    logger.info("  POLICYUPDATE_WEBHOOK_URL")
 
 
 if __name__ == "__main__":
