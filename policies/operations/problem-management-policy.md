@@ -5,7 +5,9 @@ version: 1.0.0
 category: operations
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - ID.IM-03
 references:
 - acceptable-use-policy
 - audit-trails-policy

@@ -5,7 +5,9 @@ version: 1.0.0
 category: development
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.26
 references:
 - application-implementation-policy
 - data-classification-policy

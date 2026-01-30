@@ -5,7 +5,17 @@ version: 1.0.0
 category: development
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.25
+  - A.8.28
+  - A.8.31
+  - A.8.33
+  - A.8.4
+  nist_csf_2.0:
+  - PR.PS-06
+  pci_dss_4:
+  - '6.1'
 references:
 - quality-assurance-policy
 - risk-assessment-policy

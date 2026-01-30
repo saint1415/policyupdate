@@ -5,7 +5,18 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.d.1
+  - 164.310.d.2.iii
+  iso_27001_2022:
+  - A.5.11
+  - A.5.9
+  nist_csf_2.0:
+  - ID.AM-01
+  - ID.AM-02
+  - ID.AM-05
+  - ID.AM-08
 references:
 - asset-management-policy
 - securing-information-systems-policy

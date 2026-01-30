@@ -5,7 +5,14 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.12
+  - A.5.13
+  nist_800_171:
+  - 03.08.04
+  soc2:
+  - C1.1
 references:
 - data-marking-policy
 variables:

@@ -5,7 +5,15 @@ version: 1.0.0
 category: operations
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.6
+  nist_800_171:
+  - 03.03.03
+  nist_csf_2.0:
+  - PR.IR-04
+  soc2:
+  - A1.1
 references:
 - audit-trails-policy
 - capacity-and-utilization-policy

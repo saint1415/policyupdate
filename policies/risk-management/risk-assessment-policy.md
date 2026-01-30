@@ -5,7 +5,38 @@ version: 1.0.0
 category: risk-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.185.a.15
+  gdpr:
+  - Art.35
+  - Art.36
+  hipaa:
+  - 164.308.a.1.i
+  iso_27001_2022:
+  - A.5.7
+  nist_800_171:
+  - 03.04.04
+  - 03.11.01
+  nist_csf_2.0:
+  - DE.AE-04
+  - GV.RM-02
+  - GV.RM-06
+  - GV.SC-06
+  - ID.RA-03
+  - ID.RA-04
+  - ID.RA-05
+  - ID.RA-07
+  pci_dss_4:
+  - '12.3'
+  sec_cyber:
+  - 10-K.106.b.1
+  - 8-K.1.05.a
+  - 8-K.1.05.d
+  soc2:
+  - CC3.2
+  - CC3.3
+  - CC3.4
 references:
 - risk-assessment-policy
 - risk-treatment-plan

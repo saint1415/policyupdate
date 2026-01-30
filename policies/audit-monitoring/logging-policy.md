@@ -5,7 +5,42 @@ version: 1.0.0
 category: audit-monitoring
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.1.ii.C
+  - 164.308.a.5.ii.C
+  - 164.312.b
+  iso_27001_2022:
+  - A.5.28
+  - A.8.15
+  - A.8.17
+  nist_800_171:
+  - 03.01.07
+  - 03.03.01
+  - 03.03.02
+  - 03.03.03
+  - 03.03.04
+  - 03.03.06
+  - 03.03.07
+  - 03.03.08
+  - 03.10.04
+  - 03.14.07
+  nist_csf_2.0:
+  - DE.AE-03
+  - DE.CM-03
+  - PR.PS-04
+  - RS.AN-03
+  - RS.AN-06
+  - RS.AN-07
+  pci_dss_4:
+  - '10.1'
+  - '10.2'
+  - '10.3'
+  - '10.4'
+  - '10.5'
+  soc2:
+  - CC2.1
+  - CC7.1
 references:
 - data-retention-policy
 variables:

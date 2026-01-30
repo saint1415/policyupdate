@@ -5,7 +5,44 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.4.i
+  - 164.312.e.1
+  iso_27001_2022:
+  - A.7.12
+  - A.8.20
+  - A.8.21
+  - A.8.22
+  nist_800_171:
+  - 03.01.03
+  - 03.01.14
+  - 03.01.15
+  - 03.01.17
+  - 03.13.01
+  - 03.13.02
+  - 03.13.03
+  - 03.13.05
+  - 03.13.06
+  - 03.13.08
+  - 03.13.09
+  - 03.13.12
+  - 03.13.13
+  nist_csf_2.0:
+  - ID.AM-03
+  - PR.DS-02
+  - PR.IR-01
+  pci_dss_4:
+  - '1.1'
+  - '1.2'
+  - '1.3'
+  - '1.4'
+  - '11.2'
+  - '2.3'
+  - '4.2'
+  soc2:
+  - CC6.1
+  - CC6.6
 references:
 - configuration-management-policy
 - data-classification-policy

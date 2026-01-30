@@ -5,7 +5,9 @@ version: 1.0.0
 category: vendor-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.30
 references:
 - risk-assessment-policy
 - risk-treatment-plan

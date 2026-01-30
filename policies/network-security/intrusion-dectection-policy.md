@@ -5,7 +5,17 @@ version: 1.0.0
 category: network-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.16
+  nist_800_171:
+  - 03.14.06
+  nist_csf_2.0:
+  - DE.CM-01
+  pci_dss_4:
+  - '11.5'
+  soc2:
+  - CC6.6
 references:
 - incident-response-plan
 - intrusion-detection-policy

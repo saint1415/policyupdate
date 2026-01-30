@@ -5,7 +5,25 @@ version: 1.0.0
 category: personnel-training
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.5.i
+  - 164.308.a.5.ii.A
+  - 164.530.b
+  iso_27001_2022:
+  - A.6.3
+  nist_800_171:
+  - 03.02.01
+  - 03.02.02
+  - 03.02.03
+  nist_csf_2.0:
+  - PR.AT-01
+  - PR.AT-02
+  pci_dss_4:
+  - '12.6'
+  - '5.4'
+  soc2:
+  - CC2.2
 references:
 - awareness-and-training-plan
 - awareness-and-training-policy

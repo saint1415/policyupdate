@@ -5,7 +5,11 @@ version: 1.0.0
 category: business-continuity
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.7.ii.E
+  soc2:
+  - CC9.1
 references:
 - business-continuity-plan
 - operations-department-plan

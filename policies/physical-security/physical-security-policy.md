@@ -5,7 +5,37 @@ version: 1.0.0
 category: physical-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.a.1
+  - 164.310.a.2.ii
+  - 164.310.c
+  iso_27001_2022:
+  - A.7.1
+  - A.7.11
+  - A.7.12
+  - A.7.2
+  - A.7.3
+  - A.7.4
+  - A.7.5
+  - A.7.6
+  - A.7.8
+  nist_800_171:
+  - 03.08.01
+  - 03.10.01
+  - 03.10.02
+  - 03.10.05
+  - 03.10.06
+  nist_csf_2.0:
+  - DE.CM-02
+  - PR.AA-06
+  - PR.IR-02
+  pci_dss_4:
+  - '9.1'
+  - '9.5'
+  soc2:
+  - A1.2
+  - CC6.4
 references:
 - clear-desk-policy
 - data-marking-policy

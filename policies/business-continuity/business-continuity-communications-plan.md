@@ -5,7 +5,11 @@ version: 1.0.0
 category: business-continuity
 type: plan
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - RC.CO-03
+  - RC.CO-04
+  - RS.CO-02
 references:
 - business-continuity-communications-plan
 - objectives-of-the-plan

@@ -5,7 +5,16 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.6.7
+  nist_800_171:
+  - 03.01.12
+  - 03.01.13
+  - 03.01.14
+  - 03.07.04
+  - 03.10.06
+  - 03.13.07
 references:
 - acceptable-use-policy
 - mobile-device-policy

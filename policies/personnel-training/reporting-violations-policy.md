@@ -5,7 +5,18 @@ version: 1.0.0
 category: personnel-training
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.1.ii.B
+  - 164.530.d
+  - 164.530.e
+  - 164.530.g
+  iso_27001_2022:
+  - A.6.4
+  - A.6.8
+  soc2:
+  - CC1.5
+  - CC4.2
 references:
 - reporting-violations-policy
 variables:

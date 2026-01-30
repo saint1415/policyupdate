@@ -5,7 +5,66 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.100'
+  - '1798.105'
+  - '1798.106'
+  - '1798.110'
+  - '1798.115'
+  - '1798.120'
+  - '1798.121'
+  - '1798.125'
+  - '1798.130'
+  - '1798.135'
+  - 1798.140.d
+  - 1798.140.j
+  - '1798.145'
+  - 1798.185.a.15
+  gdpr:
+  - Art.14
+  - Art.15
+  - Art.16
+  - Art.17
+  - Art.18
+  - Art.19
+  - Art.20
+  - Art.21
+  - Art.22
+  - Art.25
+  - Art.49
+  - Art.5.1.a
+  - Art.5.1.b
+  - Art.5.1.c
+  - Art.5.1.d
+  - Art.6
+  - Art.7
+  - Art.9
+  hipaa:
+  - '164.522'
+  - '164.524'
+  - '164.526'
+  - '164.528'
+  - 164.530.h
+  iso_27001_2022:
+  - A.5.34
+  - A.8.11
+  - A.8.12
+  nist_csf_2.0:
+  - GV.OC-03
+  soc2:
+  - P2.1
+  - P3.1
+  - P3.2
+  - P4.1
+  - P4.2
+  - P4.3
+  - P5.1
+  - P5.2
+  - P6.1
+  - P6.2
+  - P7.1
+  - P8.1
 references:
 - data-privacy-policy
 variables:

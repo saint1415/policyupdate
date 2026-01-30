@@ -5,7 +5,9 @@ version: 1.0.0
 category: endpoint-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.1
 references:
 - access-control-policy
 - approved-application-policy

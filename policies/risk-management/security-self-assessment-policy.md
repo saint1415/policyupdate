@@ -5,7 +5,19 @@ version: 1.0.0
 category: risk-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.185.a.16
+  hipaa:
+  - 164.308.a.8
+  iso_27001_2022:
+  - A.5.35
+  nist_800_171:
+  - 03.12.01
+  - 03.12.03
+  nist_csf_2.0:
+  - GV.OV-03
+  - ID.IM-02
 references:
 - risk-management-policy
 - risk-treatment-plan

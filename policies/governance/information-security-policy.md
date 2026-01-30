@@ -5,7 +5,36 @@ version: 1.0.0
 category: governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.150'
+  - 1798.81.5
+  gdpr:
+  - Art.24
+  - Art.32
+  - Art.37
+  - Art.5.1.f
+  hipaa:
+  - 164.308.a.2
+  - 164.530.a
+  - 164.530.c
+  iso_27001_2022:
+  - A.5.1
+  - A.5.2
+  - A.5.4
+  - A.5.6
+  nist_csf_2.0:
+  - GV.PO-01
+  - GV.RR-02
+  pci_dss_4:
+  - '12.1'
+  sec_cyber:
+  - 10-K.106.c.2
+  - 10-K.106.c.2.i
+  soc2:
+  - CC1.3
+  - CC2.2
+  - CC5.1
 references:
 - acceptable-use-policy
 - account-management-policy

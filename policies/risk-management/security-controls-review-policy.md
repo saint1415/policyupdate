@@ -5,7 +5,14 @@ version: 1.0.0
 category: risk-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.27
+  nist_csf_2.0:
+  - GV.OV-01
+  - GV.PO-02
+  - ID.IM-01
+  - ID.IM-03
 references:
 - risk-management-policy
 - risk-treatment-plan

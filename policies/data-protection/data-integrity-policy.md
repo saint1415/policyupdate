@@ -5,7 +5,26 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.106'
+  gdpr:
+  - Art.16
+  - Art.5.1.d
+  hipaa:
+  - 164.312.c.1
+  - 164.312.c.2
+  - 164.312.e.2.i
+  - '164.526'
+  iso_27001_2022:
+  - A.5.33
+  pci_dss_4:
+  - '10.3'
+  soc2:
+  - P7.1
+  - PI1.1
+  - PI1.2
+  - PI1.3
 references:
 - data-integrity-policy
 variables:

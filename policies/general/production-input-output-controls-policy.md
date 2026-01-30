@@ -5,7 +5,10 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  soc2:
+  - PI1.2
+  - PI1.4
 references:
 - production-input-output-controls-policy
 variables:

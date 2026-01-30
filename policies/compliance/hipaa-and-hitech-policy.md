@@ -5,7 +5,23 @@ version: 1.0.0
 category: compliance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.308.a.1.i
+  - 164.308.a.1.ii.A
+  - 164.308.a.2
+  - 164.308.a.5.i
+  - 164.308.b.1
+  - '164.52'
+  - '164.522'
+  - '164.524'
+  - 164.530.a
+  - 164.530.b
+  - 164.530.c
+  - 164.530.d
+  - 164.530.f
+  - 164.530.h
+  - 164.530.i
 references:
 - third-party-service-providers-policy
 variables:

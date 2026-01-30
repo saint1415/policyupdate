@@ -5,7 +5,27 @@ version: 1.0.0
 category: general
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.29
+  hipaa:
+  - 164.308.a.1.ii.B
+  - 164.310.b
+  - 164.530.e
+  iso_27001_2022:
+  - A.5.10
+  - A.5.4
+  - A.6.2
+  - A.6.4
+  - A.8.23
+  nist_800_171:
+  - 03.01.08
+  - 03.04.08
+  pci_dss_4:
+  - '12.2'
+  soc2:
+  - CC1.1
+  - CC1.5
 references:
 - acceptable-use-policy
 - data-classification-policy

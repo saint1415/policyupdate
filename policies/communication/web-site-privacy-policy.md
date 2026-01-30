@@ -5,7 +5,12 @@ version: 1.0.0
 category: communication
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.100.b
+  - '1798.135'
+  soc2:
+  - P1.1
 references:
 - content-web-site-privacy-policy
 - recommended-web-site-privacy-policy

@@ -5,7 +5,28 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.a.1
+  - 164.310.a.2.i
+  - 164.310.a.2.iii
+  iso_27001_2022:
+  - A.5.15
+  - A.7.2
+  nist_800_171:
+  - 03.10.01
+  - 03.10.02
+  - 03.10.03
+  - 03.10.04
+  - 03.10.05
+  nist_csf_2.0:
+  - PR.AA-06
+  pci_dss_4:
+  - '9.1'
+  - '9.2'
+  - '9.3'
+  soc2:
+  - CC6.4
 references:
 - physical-access-policy
 - system-security-plan

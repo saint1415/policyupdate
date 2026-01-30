@@ -5,7 +5,19 @@ version: 1.0.0
 category: compliance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.140.d
+  gdpr:
+  - Art.31
+  iso_27001_2022:
+  - A.5.31
+  - A.5.36
+  - A.5.5
+  nist_csf_2.0:
+  - GV.OC-03
+  pci_dss_4:
+  - '12.4'
 references: []
 variables:
 - CSO_TITLE

@@ -5,7 +5,24 @@ version: 1.0.0
 category: audit-monitoring
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  gdpr:
+  - Art.30
+  hipaa:
+  - 164.308.a.1.ii.C
+  - 164.312.b
+  - '164.528'
+  nist_800_171:
+  - 03.03.01
+  - 03.03.02
+  nist_csf_2.0:
+  - PR.PS-04
+  pci_dss_4:
+  - '10.1'
+  - '10.2'
+  soc2:
+  - CC7.2
+  - P6.2
 references:
 - audit-trails-policy
 - the-risk-assessment-policy

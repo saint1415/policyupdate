@@ -5,7 +5,32 @@ version: 1.0.0
 category: business-continuity
 type: plan
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.82'
+  hipaa:
+  - 164.308.a.6.i
+  - 164.308.a.6.ii
+  iso_27001_2022:
+  - A.5.24
+  - A.5.26
+  nist_800_171:
+  - 03.06.01
+  - 03.06.02
+  - 03.06.03
+  nist_csf_2.0:
+  - DE.AE-08
+  - ID.IM-04
+  - RC.RP-01
+  - RS.MA-01
+  - RS.MI-01
+  pci_dss_4:
+  - '12.10'
+  sec_cyber:
+  - 8-K.1.05.b
+  soc2:
+  - CC7.4
+  - CC7.5
 references:
 - data-security-standard-plan
 - incident-response-plan

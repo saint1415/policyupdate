@@ -5,7 +5,21 @@ version: 1.0.0
 category: endpoint-security
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  hipaa:
+  - 164.310.b
+  - 164.310.c
+  - 164.312.a.2.iii
+  iso_27001_2022:
+  - A.7.7
+  - A.8.1
+  nist_800_171:
+  - 03.01.09
+  - 03.01.10
+  nist_csf_2.0:
+  - PR.PS-05
+  pci_dss_4:
+  - '1.5'
 references:
 - acceptable-use-policy
 - patch-management-policy

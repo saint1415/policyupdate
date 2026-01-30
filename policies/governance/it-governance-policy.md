@@ -5,7 +5,16 @@ version: 1.0.0
 category: governance
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - GV.RM-03
+  - GV.RR-01
+  - GV.RR-03
+  sec_cyber:
+  - 10-K.106.b.4
+  soc2:
+  - CC1.3
+  - CC5.2
 references: []
 variables:
 - EXEC_MGMT

@@ -5,7 +5,21 @@ version: 1.0.0
 category: access-control
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - 1798.140.ag
+  gdpr:
+  - Art.28
+  nist_800_171:
+  - 03.07.03
+  nist_csf_2.0:
+  - GV.SC-02
+  pci_dss_4:
+  - '12.8'
+  sec_cyber:
+  - 10-K.106.b.2
+  soc2:
+  - CC9.2
 references:
 - vendor-access-policy
 variables:

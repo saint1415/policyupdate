@@ -5,7 +5,13 @@ version: 1.0.0
 category: personnel-training
 type: plan
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.6.3
+  nist_800_171:
+  - 03.02.02
+  pci_dss_4:
+  - '12.6'
 references:
 - awareness-and-training-plan
 variables:

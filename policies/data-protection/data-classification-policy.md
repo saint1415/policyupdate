@@ -5,7 +5,38 @@ version: 1.0.0
 category: data-protection
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  ccpa:
+  - '1798.121'
+  gdpr:
+  - Art.5.1.c
+  - Art.9
+  iso_27001_2022:
+  - A.5.12
+  - A.5.13
+  - A.5.14
+  - A.5.32
+  - A.5.9
+  - A.8.11
+  - A.8.12
+  - A.8.3
+  - A.8.33
+  nist_800_171:
+  - 03.01.03
+  - 03.08.04
+  - 03.13.04
+  - 03.13.14
+  nist_csf_2.0:
+  - ID.AM-05
+  - ID.AM-07
+  - PR.DS-01
+  - PR.DS-10
+  pci_dss_4:
+  - '3.1'
+  - '3.3'
+  soc2:
+  - C1.1
+  - CC6.7
 references:
 - data-classification-policy
 variables:

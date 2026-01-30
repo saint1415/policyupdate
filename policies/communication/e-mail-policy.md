@@ -5,7 +5,9 @@ version: 1.0.0
 category: communication
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_800_171:
+  - 03.14.08
 references:
 - data-retention-policy
 variables:

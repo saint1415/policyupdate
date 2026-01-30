@@ -5,7 +5,9 @@ version: 1.0.0
 category: vendor-management
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  nist_csf_2.0:
+  - GV.SC-05
 references:
 - acquisition-and-procurement-policy
 variables:

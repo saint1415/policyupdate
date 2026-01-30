@@ -5,7 +5,10 @@ version: 1.0.0
 category: agreements
 type: agreement
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.5.20
+  - A.6.6
 references: []
 variables:
 - ORGANIZATION_NAME

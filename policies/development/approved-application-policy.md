@@ -5,7 +5,19 @@ version: 1.0.0
 category: development
 type: policy
 status: active
-frameworks: {}
+frameworks:
+  iso_27001_2022:
+  - A.8.19
+  nist_800_171:
+  - 03.04.06
+  - 03.04.07
+  - 03.04.08
+  - 03.07.02
+  - 03.13.12
+  nist_csf_2.0:
+  - PR.PS-05
+  soc2:
+  - CC6.8
 references:
 - approved-application-policy
 - asset-management-policy

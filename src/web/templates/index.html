@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <h1>GRC Policy Management Dashboard</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">{{ framework_count }}</div>
+            <div class="stat-label">Compliance Frameworks</div>
+            <a href="/frameworks" class="stat-link">View All</a>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">{{ control_count }}</div>
+            <div class="stat-label">Total Controls</div>
+            <span class="stat-detail">Mapped to policies</span>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">{{ policy_count }}</div>
+            <div class="stat-label">Security Policies</div>
+            <a href="/policies" class="stat-link">Browse Library</a>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">{{ client_count }}</div>
+            <div class="stat-label">Active Clients</div>
+            <a href="/clients" class="stat-link">Manage Clients</a>
+        </div>
+    </div>
+
+    <div class="dashboard-sections">
+        <section class="dashboard-section">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+                <a href="/generate" class="btn btn-primary">Generate Policy Package</a>
+                <a href="/clients" class="btn btn-secondary">Add New Client</a>
+                <a href="/monitor" class="btn btn-secondary">Check for Updates</a>
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Supported Frameworks</h2>
+            <div class="framework-list">
+                <span class="framework-badge">NIST CSF 2.0</span>
+                <span class="framework-badge">ISO 27001:2022</span>
+                <span class="framework-badge">SOC 2</span>
+                <span class="framework-badge">PCI DSS 4.0</span>
+                <span class="framework-badge">HIPAA</span>
+                <span class="framework-badge">GDPR</span>
+                <span class="framework-badge">CCPA/CPRA</span>
+                <span class="framework-badge">SEC Cyber</span>
+                <span class="framework-badge">NIST 800-171</span>
+                <span class="framework-badge">NIS2</span>
+                <span class="framework-badge">EU AI Act</span>
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Policy Categories</h2>
+            <p>186 policies across 34 categories including Access Control, Network Security,
+               Business Continuity, Data Protection, Incident Response, Risk Management,
+               AI/ML Governance, Zero Trust, and more.</p>
+        </section>
+    </div>
+</div>
+{% endblock %}
