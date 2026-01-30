@@ -1,0 +1,437 @@
+# Policy Categories Configuration
+# Defines all policy categories and their metadata
+
+categories:
+  # ===== EXISTING CATEGORIES (from 146 policies) =====
+
+  access-control:
+    name: Access Control
+    description: Policies governing access to systems, data, and facilities
+    icon: lock
+    policies:
+      - access-control-policy
+      - access-control-procedure
+      - account-management-policy
+      - admin-special-access-policy
+      - identification-and-authentication-policy
+      - logical-access-controls-policy
+      - password-policy
+      - physical-access-policy
+      - remote-access-policy
+      - user-privilege-policy
+      - vendor-access-policy
+      - guest-access-policy
+
+  network-security:
+    name: Network Security
+    description: Policies for network infrastructure security
+    icon: network
+    policies:
+      - network-security-policy
+      - network-configuration-policy
+      - network-documentation-policy
+      - network-address-policy
+      - firewall-policy
+      - firewall-procedure
+      - firewall-hardening-procedure
+      - router-security-policy
+      - wireless-access-policy
+      - vpn-policy
+      - domain-controller-policy
+      - domain-name-system-policy
+      - intrusion-detection-policy
+
+  data-protection:
+    name: Data Protection
+    description: Policies for data classification, privacy, and protection
+    icon: shield
+    policies:
+      - data-classification-policy
+      - data-privacy-policy
+      - data-retention-policy
+      - data-integrity-policy
+      - data-marking-policy
+      - data-analytics-policy
+      - encryption-policy
+      - database-security-policy
+      - disposal-policy
+
+  business-continuity:
+    name: Business Continuity
+    description: Business continuity, disaster recovery, and incident response
+    icon: refresh
+    policies:
+      - business-continuity-policy
+      - business-continuity-plan
+      - business-continuity-business-resumption-plan
+      - business-continuity-communications-plan
+      - business-continuity-disaster-recovery-plan
+      - business-continuity-of-operations-department-plan
+      - business-impact-analysis
+      - incident-response-policy
+      - incident-response-plan
+      - backup-policy
+      - backup-procedure
+      - backup-plan
+
+  compliance:
+    name: Compliance & Regulatory
+    description: Framework-specific compliance policies
+    icon: clipboard-check
+    policies:
+      - compliance-policy
+      - hipaa-and-hitech-policy
+      - hitrust-policy
+      - pci-policy
+      - gdpr-eu-privacy-and-data-protection-policy
+      - eu-privacy-and-data-protection-policy
+      - system-and-organization-controls-soc2-policy
+      - certification-and-accreditation-policy
+
+  operations:
+    name: Operations
+    description: IT operations and maintenance policies
+    icon: cog
+    policies:
+      - change-management-policy
+      - change-management-procedure
+      - configuration-management-policy
+      - configuration-management-procedure
+      - configuration-management-plan
+      - patch-management-policy
+      - patch-management-procedure
+      - hardware-and-software-maintenance-policy
+      - hardware-and-software-maintenance-procedure
+      - problem-management-policy
+      - problem-management-procedure
+      - capacity-and-utilization-policy
+      - system-update-policy
+
+  endpoint-security:
+    name: Endpoint & Mobile Security
+    description: Policies for workstations, mobile devices, and portable computing
+    icon: laptop
+    policies:
+      - workstation-security-policy
+      - workstation-hardening-policy
+      - workstation-hardening-procedure
+      - mobile-device-policy
+      - smartphone-policy
+      - portable-computing-policy
+      - bring-your-own-device-and-technology-policy
+      - removable-media-policy
+      - bluetooth-policy
+      - wearable-computing-device-policy
+
+  vendor-management:
+    name: Vendor & Third Party
+    description: Third-party and vendor relationship policies
+    icon: handshake
+    policies:
+      - third-party-service-providers-policy
+      - outsourcing-policy
+      - cloud-service-provider-policy
+      - acquistion-and-procurement-policy
+      - mergers-and-acquisitions-policy
+
+  risk-management:
+    name: Risk Management
+    description: Risk assessment and management policies
+    icon: chart-bar
+    policies:
+      - risk-management-policy
+      - risk-assessment-policy
+      - vulnerability-and-penetration-testing-policy
+      - security-self-assessment-policy
+      - security-controls-review-policy
+
+  personnel-training:
+    name: Personnel & Training
+    description: HR security and awareness training policies
+    icon: users
+    policies:
+      - personnel-security-policy
+      - staffing-policy
+      - security-awareness-and-training-policy
+      - security-awareness-and-training-plan
+      - identity-theft-protection-policy
+      - reporting-violations-policy
+
+  development:
+    name: Development & Software
+    description: Software development and application security
+    icon: code
+    policies:
+      - software-development-policy
+      - secure-software-development-lifecycle-policy
+      - application-implementation-policy
+      - approved-application-policy
+      - software-licensing-policy
+
+  physical-security:
+    name: Physical Security
+    description: Physical and facility security policies
+    icon: building
+    policies:
+      - physical-security-policy
+      - facility-security-plan
+      - clear-desk-policy
+
+  audit-monitoring:
+    name: Audit & Monitoring
+    description: Audit, logging, and monitoring policies
+    icon: search
+    policies:
+      - audit-policy
+      - audit-trails-policy
+      - logging-policy
+      - logging-procedure
+      - security-monitoring-policy
+
+  governance:
+    name: Governance & Framework
+    description: IT governance and security framework policies
+    icon: sitemap
+    policies:
+      - it-governance-policy
+      - it-management-policy
+      - cybersecurity-policy
+      - cybersecurity-framework-policy
+      - information-security-policy
+      - security-policy
+      - context-and-alignment-policy
+
+  communication:
+    name: Communication & Web
+    description: Communication, web, and social media policies
+    icon: globe
+    policies:
+      - e-mail-policy
+      - internet-connection-policy
+      - web-site-policy
+      - web-site-privacy-policy
+      - social-networking-policy
+      - mass-communication-policy
+      - e-commerce-policy
+
+  malware-threats:
+    name: Anti-Malware & Threats
+    description: Malware protection and threat management
+    icon: bug
+    policies:
+      - anti-malware-policy
+      - anti-malware-procedure
+      - ransomware-policy
+
+  documentation:
+    name: Documentation & Templates
+    description: Documentation standards and templates
+    icon: file-alt
+    policies:
+      - documentation-policy
+      - standard-operating-procedure-policy
+      - terms-and-definitions-policy
+      - procedure-template
+
+  agreements:
+    name: Agreements
+    description: Legal agreements and acknowledgements
+    icon: file-signature
+    policies:
+      - agreement-business-associate-agreement
+      - agreement-non-disclosure-agreement
+      - receipt-and-acknowledgement
+
+  general:
+    name: General
+    description: General organizational policies
+    icon: file
+    policies:
+      - acceptable-use-policy
+      - ethics-policy
+      - privacy-policy
+      - green-computing-policy
+      - health-safety-policy
+      - resilience-policy
+      - production-input-output-controls-policy
+      - quality-assurance-policy
+      - securing-information-systems-policy
+      - securing-sensitive-information-policy
+      - server-certificates-policy
+      - server-hardening-policy
+      - server-hardening-procedure
+      - system-security-plan
+
+  # ===== NEW CATEGORIES (to be created) =====
+
+  ai-governance:
+    name: AI & Machine Learning Governance
+    description: Policies for AI/ML systems, ethics, and compliance
+    icon: brain
+    new: true
+    policies:
+      - ai-ml-governance-policy
+      - ai-ethics-policy
+      - algorithmic-accountability-policy
+
+  supply-chain:
+    name: Supply Chain Security
+    description: Supply chain risk management and SBOM policies
+    icon: truck
+    new: true
+    policies:
+      - supply-chain-security-policy
+      - sbom-management-policy
+      - software-supply-chain-policy
+
+  zero-trust:
+    name: Zero Trust Architecture
+    description: Zero trust security model policies
+    icon: shield-alt
+    new: true
+    policies:
+      - zero-trust-architecture-policy
+      - zero-trust-implementation-procedure
+
+  cryptography:
+    name: Cryptography
+    description: Encryption and cryptographic policies
+    icon: key
+    new: true
+    policies:
+      - quantum-safe-cryptography-policy
+      - key-management-policy
+      - certificate-lifecycle-policy
+
+  api-security:
+    name: API Security
+    description: API and integration security policies
+    icon: plug
+    new: true
+    policies:
+      - api-security-policy
+      - integration-security-policy
+
+  devsecops:
+    name: DevSecOps
+    description: DevSecOps and CI/CD security policies
+    icon: infinity
+    new: true
+    policies:
+      - devsecops-policy
+      - cicd-security-policy
+      - infrastructure-as-code-policy
+
+  secrets-management:
+    name: Secrets Management
+    description: Secrets and credential management policies
+    icon: user-secret
+    new: true
+    policies:
+      - secrets-management-policy
+      - credential-management-policy
+
+  container-security:
+    name: Container & Kubernetes Security
+    description: Container and orchestration security policies
+    icon: cubes
+    new: true
+    policies:
+      - container-security-policy
+      - kubernetes-security-policy
+      - image-security-policy
+
+  pam:
+    name: Privileged Access Management
+    description: Privileged access and identity governance
+    icon: user-shield
+    new: true
+    policies:
+      - privileged-access-management-policy
+      - identity-governance-policy
+      - just-in-time-access-policy
+
+  insider-threat:
+    name: Insider Threat
+    description: Insider threat detection and prevention
+    icon: user-ninja
+    new: true
+    policies:
+      - insider-threat-policy
+      - user-behavior-analytics-policy
+
+  data-sovereignty:
+    name: Data Sovereignty
+    description: Data residency and cross-border transfer policies
+    icon: globe-americas
+    new: true
+    policies:
+      - data-sovereignty-policy
+      - cross-border-data-transfer-policy
+      - data-localization-policy
+
+  vulnerability-disclosure:
+    name: Vulnerability Disclosure
+    description: Bug bounty and vulnerability disclosure programs
+    icon: bug
+    new: true
+    policies:
+      - vulnerability-disclosure-policy
+      - bug-bounty-policy
+      - coordinated-disclosure-procedure
+
+  executive-governance:
+    name: Executive Cybersecurity Governance
+    description: Board-level cybersecurity governance
+    icon: crown
+    new: true
+    policies:
+      - executive-cybersecurity-governance-policy
+      - board-cyber-oversight-policy
+      - ciso-reporting-policy
+
+  shadow-it:
+    name: Shadow IT
+    description: Shadow IT detection and management
+    icon: ghost
+    new: true
+    policies:
+      - shadow-it-policy
+      - saas-governance-policy
+      - unapproved-technology-policy
+
+  iot-ot-security:
+    name: IoT/OT Security
+    description: Internet of Things and Operational Technology security
+    icon: microchip
+    new: true
+    policies:
+      - iot-security-policy
+      - ot-security-policy
+      - industrial-control-systems-policy
+
+# Organization size tiers
+organization_tiers:
+  solopreneur:
+    name: Solopreneur
+    employee_range: "1-5"
+    policy_percentage: 40
+    description: Essential policies for individual practitioners
+
+  small:
+    name: Small Business
+    employee_range: "6-50"
+    policy_percentage: 70
+    description: Core policies for small teams
+
+  medium:
+    name: Medium Business
+    employee_range: "51-500"
+    policy_percentage: 90
+    description: Comprehensive policies for growing organizations
+
+  enterprise:
+    name: Enterprise
+    employee_range: "500+"
+    policy_percentage: 100
+    description: Full policy library for large organizations

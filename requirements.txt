@@ -1,0 +1,47 @@
+# PolicyUpdate - GRC Policy Management Platform
+# Cross-platform policy generation and compliance management
+
+# Document Processing
+python-docx>=0.8.11      # Read/write DOCX files
+PyYAML>=6.0              # YAML parsing for frontmatter
+markdown>=3.5            # Markdown processing
+python-frontmatter>=1.0  # Parse YAML frontmatter in Markdown
+
+# PDF Generation
+weasyprint>=60.0         # HTML to PDF conversion
+reportlab>=4.0           # Alternative PDF generation
+
+# Web Framework
+flask>=3.0               # Web interface
+flask-cors>=4.0          # CORS support
+
+# GUI Framework (built-in tkinter used)
+
+# Database
+sqlalchemy>=2.0          # ORM for database operations
+
+# Network/Monitoring
+feedparser>=6.0          # RSS feed parsing
+requests>=2.31           # HTTP requests
+beautifulsoup4>=4.12     # Web scraping
+lxml>=5.0                # XML/HTML parsing
+
+# Templating
+jinja2>=3.1              # Template engine
+
+# CLI
+click>=8.1               # CLI framework
+rich>=13.0               # Rich terminal output
+tqdm>=4.65               # Progress bars
+
+# Utilities
+python-dateutil>=2.8     # Date parsing
+watchdog>=3.0            # File system monitoring
+
+# Testing
+pytest>=7.4              # Testing framework
+pytest-cov>=4.1          # Coverage
+
+# Development
+black>=23.0              # Code formatting
+flake8>=6.0              # Linting
