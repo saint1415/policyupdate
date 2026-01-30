@@ -17,7 +17,7 @@
 | 5. Automation | ✅ Complete | 100% |
 | 6. Generation & Export | ✅ Complete | 100% |
 | 7. User Interfaces | ✅ Complete | 100% |
-| 8. Testing & Polish | ✅ Complete | 90% |
+| 8. Testing & Polish | ✅ Complete | 95% |
 
 **Overall Progress:** ██████████ 100%
 
@@ -271,6 +271,12 @@
 - Added `TestConfig` class for configuration module
 - Added `TestNotifier` class for notification system
 - Updated framework count from 11 to 12 (includes NIST 800-53)
+
+### CLI Improvements
+- Added `--dry-run` option to generate command (preview without creating files)
+- Added `--verbose` / `-v` option to generate command (detailed policy list)
+- Shows incomplete section markers `[!]` in verbose output
+- Displays warnings that would be generated in dry-run mode
 
 ### Environment Variables
 | Variable | Purpose |
