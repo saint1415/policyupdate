@@ -172,10 +172,10 @@ class TestPdfExporter:
         """Test PDF export creates file"""
         try:
             from generation.pdf_exporter import PdfExporter
+            exporter = PdfExporter()
         except ImportError:
             pytest.skip("weasyprint not installed")
 
-        exporter = PdfExporter()
         output_path = tmp_path / "test_output.pdf"
         exporter.export_package(package_result, str(output_path))
 

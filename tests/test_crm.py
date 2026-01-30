@@ -100,14 +100,16 @@ class TestClientManager:
     def test_record_generation(self, manager):
         """Test recording policy generation"""
         client = manager.create_client("Generation Test")
-        gen_id = manager.record_generation(
+        gen = manager.record_generation(
             client.id,
             policies_count=50,
             frameworks=["soc2", "hipaa"],
-            output_format="docx"
+            output_format="docx",
+            output_path="/tmp/test_output.docx"
         )
 
-        assert gen_id is not None
+        assert gen is not None
+        assert gen.id is not None
 
     def test_update_compliance_status(self, manager):
         """Test updating compliance status"""
@@ -116,8 +118,8 @@ class TestClientManager:
             client.id,
             framework_id="soc2",
             status="partial",
-            coverage=75.5,
-            gaps=["Missing policy A", "Missing policy B"]
+            coverage_percentage=75.5,
+            gaps_count=2
         )
 
         summary = manager.get_client_summary(client.id)
@@ -130,7 +132,7 @@ class TestClientManager:
             industry="finance",
             target_frameworks=["soc2", "pci_dss"]
         )
-        manager.record_generation(client.id, 45, ["soc2"], "docx")
+        manager.record_generation(client.id, 45, ["soc2"], "docx", "/tmp/summary_test.docx")
 
         summary = manager.get_client_summary(client.id)
 

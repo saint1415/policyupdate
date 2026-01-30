@@ -123,14 +123,20 @@ class TestVariableEngine:
     """Tests for variable substitution"""
 
     def test_variable_substitution(self):
-        from core.variable_engine import VariableEngine
+        from core.variable_engine import VariableEngine, Variable, ClientProfile
 
         engine = VariableEngine()
-        engine.set_variable('ORGANIZATION_NAME', 'Test Corp')
-        engine.set_variable('CSO_TITLE', 'CISO')
+        engine.register_variable(Variable('ORGANIZATION_NAME', type='string', required=True))
+        engine.register_variable(Variable('CSO_TITLE', type='string', default='CSO'))
+
+        client = ClientProfile(
+            id='test-corp',
+            name='Test Corp',
+            variables={'ORGANIZATION_NAME': 'Test Corp', 'CSO_TITLE': 'CISO'}
+        )
 
         template = "Welcome to {{ORGANIZATION_NAME}}. Contact the {{CSO_TITLE}}."
-        result = engine.substitute(template)
+        result = engine.render(template, client)
 
         assert 'Test Corp' in result
         assert 'CISO' in result
