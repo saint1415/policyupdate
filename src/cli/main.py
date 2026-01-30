@@ -280,11 +280,16 @@ if CLICK_AVAILABLE:
     @click.option("--org-name", help="Organization name (default: client_name)")
     @click.option("--cso-title", default="Chief Security Officer", help="CSO title")
     @click.option("--all-policies", is_flag=True, help="Include all policies regardless of framework")
-    def generate(client_name, frameworks, output, format, org_name, cso_title, all_policies):
+    @click.option("--dry-run", is_flag=True, help="Preview what would be generated without creating files")
+    @click.option("--verbose", "-v", is_flag=True, help="Show detailed output including policy list")
+    def generate(client_name, frameworks, output, format, org_name, cso_title, all_policies, dry_run, verbose):
         """Generate a policy package for a client
 
         Example:
             policy-grc generate "Acme Corp" --frameworks soc2,hipaa --output ./output
+
+        Use --dry-run to preview without creating files:
+            policy-grc generate "Acme Corp" --frameworks soc2 --dry-run
         """
         from generation.package_builder import PackageBuilder, ClientConfig
 
@@ -312,7 +317,8 @@ if CLICK_AVAILABLE:
             frameworks=fw_list
         )
 
-        click.echo(f"\nGenerating policy package for: {client_name}")
+        mode_str = "[DRY RUN] " if dry_run else ""
+        click.echo(f"\n{mode_str}Generating policy package for: {client_name}")
         click.echo(f"Frameworks: {', '.join(fw_list) if fw_list else 'All'}")
         click.echo("-" * 50)
 
@@ -320,6 +326,32 @@ if CLICK_AVAILABLE:
 
         click.echo(f"Total policies: {result.total_policies}")
         click.echo(f"Incomplete: {result.incomplete_count}")
+
+        if verbose:
+            click.echo(f"\nPolicies to include:")
+            by_category = {}
+            for policy in result.policies:
+                cat = policy.category or "uncategorized"
+                if cat not in by_category:
+                    by_category[cat] = []
+                by_category[cat].append(policy)
+
+            for cat in sorted(by_category.keys()):
+                click.echo(f"\n  {cat.replace('-', ' ').title()} ({len(by_category[cat])})")
+                for p in sorted(by_category[cat], key=lambda x: x.title):
+                    incomplete_marker = " [!]" if p.incomplete_sections else ""
+                    click.echo(f"    - {p.id}{incomplete_marker}")
+
+            if result.incomplete_sections:
+                click.echo(f"\n  [!] = Policy has incomplete sections requiring customization")
+
+        if dry_run:
+            click.echo(f"\n[DRY RUN] No files created. Remove --dry-run to generate actual output.")
+            if result.warnings:
+                click.echo(f"\n[WARN] {len(result.warnings)} warnings would be generated:")
+                for w in result.warnings[:5]:
+                    click.echo(f"  - {w}")
+            return
 
         # Set output directory
         output_dir = Path(output) if output else get_output_dir()
