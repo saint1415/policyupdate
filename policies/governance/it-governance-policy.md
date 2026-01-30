@@ -34,22 +34,22 @@ IT governance is a process designed to manage the application of technology to b
 
 ## III. Scope
 
-This policy applies to ABC Company’s Executive Management and the IT Director.
+This policy applies to {{ORGANIZATION_NAME}}’s {{EXEC_MGMT}} and the IT Director.
 
 ## IV. Policy
 
-The ABC Company’s IT governance and management framework exists to:
+The {{ORGANIZATION_NAME}}’s IT governance and management framework exists to:
 Align the organization’s IT with the organization’s business goals and objectives
 Enable high-quality enterprise IT planning and management
 Define the roles and responsibilities necessary to create and sustain a comprehensive governance, planning and management framework
-Enable new strategic capabilities that allow ABC Company to operate efficiently and effectively
-Identify and manage risk and protect ABC Company’s Information Resources
+Enable new strategic capabilities that allow {{ORGANIZATION_NAME}} to operate efficiently and effectively
+Identify and manage risk and protect {{ORGANIZATION_NAME}}’s Information Resources
 The IT Director provides the central point of accountability, leadership, vision and coordination for the enterprise.  The IT Director is responsible for:
 Design - design and implement processes necessary to govern, plan, manage, oversee, evaluate and implement business planning, technical architecture, standards, information and telecommunications resource management planning, budgeting, funding, quality assurance, IT asset inventory and management, IT procurement, IT security, and IT performance standards and measurements
 Governance - provide governance for enterprise IT coordination, planning, decision-making, and policy development
 Tracking - coordinate, facilitate, track and report to executive management, the status of IT projects
 Communications - develop and implement IT communications and management support infrastructure including enterprise focused information sharing
-Policy - create the policies, standards and practices necessary to carry out the directives of ABC Company management as they pertain to IT
+Policy - create the policies, standards and practices necessary to carry out the directives of {{ORGANIZATION_NAME}} management as they pertain to IT
 Initiatives - act as the sponsor for IT initiatives including research, identification and development of opportunities, proof-of-concept, etc.
 Assessment - establish and maintain a technical assessment capability through which to evaluate information and telecommunications technologies and management practices
 Policies and procedures shall require management authorization for development or acquisition of new applications, systems, databases, infrastructure, services, operations, and facilities.
@@ -60,7 +60,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to Executive Management and the IT Director.
+This policy is to be distributed to {{EXEC_MGMT}} and the IT Director.
 Policy History
 References:
 COBIT EDM01.01, EDM01.03, EDM02.03, EDM03.02, EDM03.07, APO01.03, MEA03.01

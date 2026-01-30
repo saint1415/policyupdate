@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information systems are critical to the continued operations of essential business processes.  Domain Controllers (DC) are an essential component of ABC Company’s network.
+{{ORGANIZATION_NAME}}’s Information systems are critical to the continued operations of essential business processes.  Domain Controllers (DC) are an essential component of {{ORGANIZATION_NAME}}’s network.
 
 ## II. Purpose
 
@@ -34,12 +34,12 @@ Domain controllers, as well as backup domain controllers, are central to the sec
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to Information Resources.
 
 ## IV. Policy
 
 The domain controller function is incompatible with other functions such as web server, mail server, ftp server, or mail client that can increase the risk of compromise to an unacceptable level.  As a result, domain controllers shall be established on a dedicated device.
-Domain controllers shall have restricted Internet access.   In addition, the domain controllers shall have limited communications with specific devices (or an IP range if not practical to individually list the devices) on the ABC Company network.
+Domain controllers shall have restricted Internet access.   In addition, the domain controllers shall have limited communications with specific devices (or an IP range if not practical to individually list the devices) on the {{ORGANIZATION_NAME}} network.
 Domain controllers shall deny access to unknown machines on the Internet and network using either filtering, firewall, or non-routed network addressing.
 
 ## V. Enforcement

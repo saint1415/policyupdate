@@ -11,8 +11,8 @@ references:
 - distribution-list-for-this-plan
 - systems-business-continuity-recovery-plan
 variables:
-- APPROVAL_DATE
 - EFFECTIVE_DATE
+- HR_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -65,7 +65,7 @@ Appendix H – Receipt and Acknowledgement	65
 
 ## I. Purpose of the Business Continuity Disaster Recovery Plan
 
-Information systems are an important resource for ABC Company’s (Company) employees.  This Business Continuity Disaster Recovery Plan (hereinafter referred to as the “Plan”) documents the strategies, personnel, resources, and procedures required to provide immediate response and subsequent recovery from emergencies and disasters including:
+Information systems are an important resource for {{ORGANIZATION_NAME}}’s (Company) employees.  This Business Continuity Disaster Recovery Plan (hereinafter referred to as the “Plan”) documents the strategies, personnel, resources, and procedures required to provide immediate response and subsequent recovery from emergencies and disasters including:
 Unplanned business interruptions
 Loss of critical services (computer processing, telecommunications)
 Loss of building access (contamination, etc.)
@@ -73,7 +73,7 @@ Physical facility catastrophe (fire, sabotage, etc.)
 
 ## II. Business Continuity Philosophy
 
-The primary objective of business continuity is to help ensure the operation of ABC Company’s business by providing the ability to successfully continue operations in the event of a disaster or emergency.
+The primary objective of business continuity is to help ensure the operation of {{ORGANIZATION_NAME}}’s business by providing the ability to successfully continue operations in the event of a disaster or emergency.
 Specific goals of the Plan relative to a disaster or emergency include:
 To detail the correct course of action to follow
 To minimize confusion, errors, and expense to the Company
@@ -85,17 +85,17 @@ To ensure the continued viability of this Plan
 
 ## III. Policy Statement
 
-Company management is responsible for protecting all assets of ABC Company’s organization.  These assets include employees, physical property, information, and records relating to the conduct of the business.
+Company management is responsible for protecting all assets of {{ORGANIZATION_NAME}}’s organization.  These assets include employees, physical property, information, and records relating to the conduct of the business.
 Management personnel are specifically responsible for:
 Identifying and protecting all assets within assigned areas of control
 Ensuring that all employees understand their obligation to protect the organization's assets
 Implementing/observing security practices and procedures that are consistent with generally accepted practice and with the specific guidelines stated in this Plan.
 Noting any variance from established security practices and initiating corrective action
-Assigning responsibilities for establishing, maintaining, and coordinating ABC Company’s Information Systems Business Continuity Recovery Plan
+Assigning responsibilities for establishing, maintaining, and coordinating {{ORGANIZATION_NAME}}’s Information Systems Business Continuity Recovery Plan
 
 ## IV. Overview of the Plan
 
-The Plan is a comprehensive document containing the necessary instruction, policies, organization, and information required to be prepared for an emergency or disaster that would affect ABC Company’s information systems.  The Plan consists of the following major sections:
+The Plan is a comprehensive document containing the necessary instruction, policies, organization, and information required to be prepared for an emergency or disaster that would affect {{ORGANIZATION_NAME}}’s information systems.  The Plan consists of the following major sections:
 The Readiness Team.  This section establishes personnel known as the Readiness Team.  This team is responsible for constructing and maintaining this Plan, managing business continuity information systems activities, and for the continued viability of the Plan.
 Major Services, Users, and Key Considerations.  This section describes the critical applications, identification of users, and key considerations such as equipment configurations, user work schedules, and processing priorities.
 General Procedures for Potential Interruptions.  This section describes the service and general instructions for handling each type of interruption.  Typical interruptions include fire, power outage, and telecommunications failure.
@@ -116,7 +116,7 @@ Although the three phases occur in every recovery situation, the tasks and the p
 Following are three example recovery scenarios for understanding the steps involved in recovering from an emergency or disaster.  The three examples also illustrate some of the differences in recovery steps and elapsed times for minor, moderate, and major severity:
 Telecommunications failure affects several critical departments
 No commercial power available for five days
-Major fire destroys ABC Company’s s and network server room
+Major fire destroys {{ORGANIZATION_NAME}}’s s and network server room
 
 ### B. Example #1 - partial interruption of services (minor severity)
 
@@ -176,7 +176,7 @@ Network Server Operations Restored:
 - Operations transferred back to primary offices		5-6 days
 - Operations normalized						7 days
 TOTAL RECOVERY TIME						7 days D.  Example #3 – central network and offices destroyed (major severity)
-Scenario: Major fire destroys ABC Company’s s and network server room
+Scenario: Major fire destroys {{ORGANIZATION_NAME}}’s s and network server room
 Elapsed Time
 RECOVERY SEQUENCE						After Failure
 INTERRUPTION OF SERVICE					0 hour
@@ -313,7 +313,7 @@ Third party service providers include:
 
 ### D. Information systems equipment considerations
 
-Application software runs on an internal network server computer with numerous PCs and printers directly connected to ABC Company’s network.  In recovery situations, the minimum equipment configuration is identified in Appendix E.
+Application software runs on an internal network server computer with numerous PCs and printers directly connected to {{ORGANIZATION_NAME}}’s network.  In recovery situations, the minimum equipment configuration is identified in Appendix E.
 
 ### E. Special considerations
 
@@ -332,7 +332,7 @@ User department work area requirements include:
 
 This section includes a series of recovery plans that identifies prompt and appropriate actions to take in potential emergencies, disasters, or events causing interruption of information systems.  Training sessions are to be held periodically to familiarize employees with these procedures and to outline responsibilities in the event of such emergencies.  The Emergency Coordinator will arrange these training sessions.
 Copies of this Plan must be kept in key locations for ready reference.  Members of the Readiness Team must be given copies of this Plan.  The Distribution List is contained in Appendix F.
-Assets of the Company are extremely important to its very existence.  The most important asset is ABC Company’s personnel.  Risks must not be taken to save other assets where personnel may be in jeopardy.
+Assets of the Company are extremely important to its very existence.  The most important asset is {{ORGANIZATION_NAME}}’s personnel.  Risks must not be taken to save other assets where personnel may be in jeopardy.
 
 ### B. Recovery plan for fires
 
@@ -343,7 +343,7 @@ Educate the staff, and new employees, about the fire plan.  All employees must h
 Regular site inspections which include general area review, and checks of electrical connections, fire extinguishers, and smoke detectors must be made every  12   months by The Alternate Emergency Coordinator.
 Smoking is only allowed in areas designated by Company management.  Other areas involving quantities of combustible materials must be reviewed and posted for NO SMOKING, if necessary.
 Detecting Fires
-ABC Company’s s have a fire detection and suppression system. Smoke detectors are located in/on the ceiling.  If smoke is detected, horns will sound and emergency evacuation should begin.
+{{ORGANIZATION_NAME}}’s s have a fire detection and suppression system. Smoke detectors are located in/on the ceiling.  If smoke is detected, horns will sound and emergency evacuation should begin.
 Extinguishing Fires
 Company management will arrange employee fire extinguisher training.  The Alternate Emergency Coordinator must arrange to have all extinguishers inspected annually.
 An employee should only attempt to extinguish a fire if it is very small or confined to a particular piece of equipment. Otherwise, the fire department should be called by the receptionist and the building should be evacuated immediately.
@@ -378,7 +378,7 @@ Electricity Company
 
 Failures of the computer telecommunications system fall into two basic categories:
 Hardware Failure - When a piece of telecommunications equipment fails, it must either be repaired or replaced, like any other hardware failure.  Faulty or damaged equipment will be replaced as needed.
-Line Failure - The line is a utility service provided by a communications carrier company.  If a line fails, just as in an electrical outage, ABC Company is dependent on the utility to fix the problem and restore service.  However, if the entire phone system is down in the area, recovery plans must be considered if the outage is predicted to be of long duration.  If the outage is predicted to last so long as to affect business operations seriously, the Emergency Coordinator must consider switching operation to ABC Company’s Contingency Site.
+Line Failure - The line is a utility service provided by a communications carrier company.  If a line fails, just as in an electrical outage, {{ORGANIZATION_NAME}} is dependent on the utility to fix the problem and restore service.  However, if the entire phone system is down in the area, recovery plans must be considered if the outage is predicted to be of long duration.  If the outage is predicted to last so long as to affect business operations seriously, the Emergency Coordinator must consider switching operation to {{ORGANIZATION_NAME}}’s Contingency Site.
 An extreme phone system outage will affect the entire business operation, in which case the Contingency Site is one option for temporarily operating the business or some key portions of the business until repairs are made.  See Section X Contingency Site for specific site information.
 Procedures For Telecommunications Failures
 Obtain replacement equipment if Company experiences a telecommunications hardware failure
@@ -422,7 +422,7 @@ Procedures For Hardware Failures - Appendix C provides a complete list of networ
 Desktop, operating system, and other systems software may encounter errors that result in system downtime.  Equipment vendors and software manufacturers can assist in restoring systems to normal functionality.  Software manufacturers frequently provide bug fixes and software patches for known problems.  Appendix C provides a list of software vendors.
 The Contingency Site Coordinator approves the installing of changes provided by software manufacturers.  Should changes cause a serious failure of network services, the Contingency Site Coordinator will take the appropriate action to correct the problem either by authorizing a manufacturer-provided "fix" or by designating that the system software be returned to the version prior to loading the changes.
 It is very unlikely that system software could cause a major service failure.  However, in such an event, the Contingency Site Coordinator will oversee restoring the software from the appropriate backup.
-Applications Failures - Some of ABC Company’s applications packages were acquired from third-party sources and are maintained by those companies.  These vendors can assist in correcting application problems.  Appendix C provides a list of application software vendors.
+Applications Failures - Some of {{ORGANIZATION_NAME}}’s applications packages were acquired from third-party sources and are maintained by those companies.  These vendors can assist in correcting application problems.  Appendix C provides a list of application software vendors.
 Applications software is very similar to systems software concerning failures of new versions of the programs.  In-house change control procedures must be developed to provide for adequate testing before making changes and for backing out the changes if problems are detected.
 However, a more serious type of application failure is one where, through error of a program, a user, a maintenance programmer or by other means, data is caused to be incorrect to the degree that business consequences are serious.
 In this case, the staff that supports the failed application must determine how the erroneous data will be corrected.  Backups of data files may or may not be useful depending on the amount of time elapsed during which the error proliferated.  In serious cases, special-purpose programming may be required to repair the data.  In the worst case, the original source transactions will be re-input to recreate the data files.
@@ -451,28 +451,28 @@ Special backups, including legal records archives, should be kept offsite for a 
 
 ### D. Protecting network servers
 
-Procedures for protecting ABC Company’s network servers:
+Procedures for protecting {{ORGANIZATION_NAME}}’s network servers:
 Physical security.  The computer room remains locked at all times and only the Emergency Coordinator, Alternate Emergency Coordinator and Company management have keys.
 Electronic component damage.  Damage due to electrical spikes, surges, over-voltages, and under-voltages reduced by an uninterruptible power supply (UPS) system with power surge protection.
-Security.  Strictly adhering to ABC Company’s “Policies and Guidelines On The Use of Information Systems” and “Policies and Guidelines To Secure Information Systems” document procedures protect ABC Company’s information systems.
+Security.  Strictly adhering to {{ORGANIZATION_NAME}}’s “Policies and Guidelines On The Use of Information Systems” and “Policies and Guidelines To Secure Information Systems” document procedures protect {{ORGANIZATION_NAME}}’s information systems.
 
 ### E. Protecting vital records
 
 Many documents and records are vital to the operation of Company.  Company has implemented procedures and plans to protect these vital records.  Vital records (checks, invoices, journal entries, etc.) may be required in order to recreate lost electronic data.
-Company management specifies how long records must be retained for practical and legal requirements.  The schedule is reviewed by the Emergency Coordinator to ensure aspects of the Plan adhere to ABC Company’s retention schedule.
+Company management specifies how long records must be retained for practical and legal requirements.  The schedule is reviewed by the Emergency Coordinator to ensure aspects of the Plan adhere to {{ORGANIZATION_NAME}}’s retention schedule.
 Many vital records are backed up by the network server data backup procedures.  Other records, if destroyed, could be replaced by contacting vendors or other sources.  Appendix C provides a list of vendor contacts.
 
 ### F. Backup of data, hardware, supplies & documentation
 
-All data, spare hardware, supplies, and documents identified as critical for ABC Company’s recovery process, are stored in offsite storage.  The offsite storage location is identified in Appendix B.  Backups stored offsite include:
+All data, spare hardware, supplies, and documents identified as critical for {{ORGANIZATION_NAME}}’s recovery process, are stored in offsite storage.  The offsite storage location is identified in Appendix B.  Backups stored offsite include:
 Computer data and software.  All data resident on the network server(s), including systems software and applications software, are backed up on a routine basis.  The Contingency Site Coordinator is responsible for observing backup procedures at the Contingency Site.
 Critical spare hardware items.  A Contingency Site can be used in the event the primary network server is no longer operational.  See Section X Contingency Sites.  Planning for special peripheral and telecommunications equipment is described in Appendix E.  The Alternate Emergency Coordinator is responsible for reviewing backup procedures.  Additional equipment such as PCs, printers, Fax machines, copiers, etc. are readily available and are not backed-up at an offsite location.
-Critical operating supplies.  Critical supplies, including special forms and items for the , are stored in offsite storage.  If Contingency Site operations are required, enough supplies will be available to continue operations until more supplies can be obtained from ABC Company’s vendors.  The Alternate Emergency Coordinator is responsible for backing up operating supplies offsite.
+Critical operating supplies.  Critical supplies, including special forms and items for the , are stored in offsite storage.  If Contingency Site operations are required, enough supplies will be available to continue operations until more supplies can be obtained from {{ORGANIZATION_NAME}}’s vendors.  The Alternate Emergency Coordinator is responsible for backing up operating supplies offsite.
 All critical documentation.  Critical documentation is backed up offsite to assist recovery.  Documents that should be maintained in offsite storage include this Plan, system startup and shut down procedures, and a copy of the relevant passwords.
 
 ### G. Insurance
 
-All property of the Company, including information systems equipment, is insured under ABC Company’s insurance program.  This policy insures the replacement value of the property against most natural kinds of damage or destruction, but does not cover the cost of lost business or replacing lost records.
+All property of the Company, including information systems equipment, is insured under {{ORGANIZATION_NAME}}’s insurance program.  This policy insures the replacement value of the property against most natural kinds of damage or destruction, but does not cover the cost of lost business or replacing lost records.
 The information systems equipment is not separately scheduled, but the total coverage must be sufficient to cover the equipment even if it were totally destroyed along with the other property of the organization.  The Emergency Coordinator is responsible for informing Company management of the acquisition of new equipment and its value, and to verify annually the accuracy of the information.
 
 ## X. Contingency Site Description
@@ -541,7 +541,7 @@ Once user work has been recovered, coordinate with the users about any changes i
 
 The Emergency Action Hardware Team is responsible for repair or replacement of computer hardware, installing and testing computer hardware, and all hardware planning - whether at the original site, the replacement site, or the Contingency Site.  Unless a separate Emergency Action Team is established, the Emergency Action Hardware Team is also responsible for telecommunications.
 Responsibilities Of The Emergency Action Hardware Team
-Participate in evaluating and selecting ABC Company’s Contingency Site(s), testing at the Contingency Site, and all hardware-related planning.
+Participate in evaluating and selecting {{ORGANIZATION_NAME}}’s Contingency Site(s), testing at the Contingency Site, and all hardware-related planning.
 In an emergency or disaster, assess the extent of damage or the effect of failures on hardware and telecommunications.
 Coordinate with vendors in obtaining necessary repairs or replacement of hardware.  Agreements should be negotiated in advance wherever possible for rush delivery of equipment or telecommunications facilities.
 Coordinate with purchasing, finance, insurance, and other departments in equipment salvage, insurance claims, and financing for replacement equipment.
@@ -717,7 +717,7 @@ Once the recovery process is completed, the Emergency Action Applications Team w
 The following procedures cover hardware salvage or replacement by the Emergency Action Hardware Team.
 Hardware Procedures
 Our computer hardware was acquired from equipment vendors identified in Appendix C.  In an emergency, our first resource for assessment of damage, repairability, and alternatives is with them.  If repair is out of the question, loaner equipment may be immediately available.  To speed delivery of new equipment, letters of intent may be on file with selected vendors (see Appendix D).
-In the event equipment can be repaired, Appendix D contains service agreements with ABC Company’s equipment vendors.
+In the event equipment can be repaired, Appendix D contains service agreements with {{ORGANIZATION_NAME}}’s equipment vendors.
 Refer to the Appendix D for all applicable letters of intent.  These letters have been approved by Company management and speed delivery of equipment to us during an emergency.  Only the final configuration, purchase price, and/or current financing rates will need to be approved at the time of ordering the replacement equipment.
 
 ### O. Facilities salvage or replacing by emergency action facilities team
@@ -738,8 +738,8 @@ Gather and provide the necessary resources.
 ### Q. Specific procedures for user department contingencies
 
 This section contains specific procedures for user interface and operation of their applications.  The concept of the Contingency Site Coordinators necessary if a large number of information systems and user department staff must work at a Contingency Site.
-Procedures For User Department Contingencies - The Contingency Site Coordinator will become familiar with the Contingency Site facility, determine if any aspects are inadequate for the situation at hand, and take necessary action.  For example, if the staff accommodation capacity of the Contingency Site is exceeded, the Contingency Site Coordinator is responsible for arranging supplemental facilities.  This could happen if an unusually large number of personnel are sent to the Contingency Site because of a disaster that prevents use of the planned communications arrangement.  First choice in that particular case would be at the same hotel housing ABC Company’s personnel.
-The Contingency Site Coordinator will represent the interests of the company as a whole rather than that of a specific department.  He or she will review recovery plans and schedules to ensure that they are in line with the ABC Company’s operations priorities.  If there are any doubts, especially if the ABC Company’s operations are affected significantly, the Contingency Site Coordinator will discuss the matter with the Emergency Coordinator who will take the issue to Company management.
+Procedures For User Department Contingencies - The Contingency Site Coordinator will become familiar with the Contingency Site facility, determine if any aspects are inadequate for the situation at hand, and take necessary action.  For example, if the staff accommodation capacity of the Contingency Site is exceeded, the Contingency Site Coordinator is responsible for arranging supplemental facilities.  This could happen if an unusually large number of personnel are sent to the Contingency Site because of a disaster that prevents use of the planned communications arrangement.  First choice in that particular case would be at the same hotel housing {{ORGANIZATION_NAME}}’s personnel.
+The Contingency Site Coordinator will represent the interests of the company as a whole rather than that of a specific department.  He or she will review recovery plans and schedules to ensure that they are in line with the {{ORGANIZATION_NAME}}’s operations priorities.  If there are any doubts, especially if the {{ORGANIZATION_NAME}}’s operations are affected significantly, the Contingency Site Coordinator will discuss the matter with the Emergency Coordinator who will take the issue to Company management.
 During the recovery process and subsequent data processing and administrative operations, the Coordinator will facilitate the teamwork of the multiple departments.  He or she will schedule shift work in the best interest of the company, will give pep talks or counseling to keep spirits up, and will be especially alert for team members becoming over stressed.
 The Contingency Site Coordinator will stay in regular contact with the Emergency Coordinator to keep him or her current on status, progress, decisions made, unusual expenditures, and administrative matters.
 
@@ -791,7 +791,7 @@ Changes to this Plan, which result from the testing process, will be incorporate
 
 The effectiveness of the Plan is impacted by changes in the environment that the Plan was created to protect.  Some major factors that impact the Plan are: new equipment, changing software environment, staff and organizational changes, and new or changing applications.
 The following policies and procedures have been developed to ensure that the Plan is reviewed and updated on a regular and reliable basis.
-Plan Review And Update Policy - Once per year the Plan must be reviewed by the Emergency Coordinator and approved by ABC Company management.
+Plan Review And Update Policy - Once per year the Plan must be reviewed by the Emergency Coordinator and approved by {{ORGANIZATION_NAME}} management.
 Plan Review And Update Procedures
 The Emergency Coordinator will appoint a review team of one or more people each year to review and update the Plan.
 When the review team has completed their review and update process, the Emergency Coordinator will also review and approve the revised Plan.
@@ -861,7 +861,7 @@ City, State Zip
 Finance						xxxxxx			xxx-xxx-xxxx
 Address
 City, State Zip
-Human Resources				xxxxxx			xxx-xxx-xxxx
+{{HR_DEPARTMENT}}				xxxxxx			xxx-xxx-xxxx
 Address
 City, State Zip
 
@@ -1002,7 +1002,7 @@ Emergency Action Administrative Assistance Team
 
 # Appendix H – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Business Continuity Disaster Recovery Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Business Continuity Disaster Recovery Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

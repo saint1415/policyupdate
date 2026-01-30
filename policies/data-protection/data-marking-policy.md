@@ -27,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information Systems contain sensitive information that must be protected from unauthorized access throughout all phases of the information lifecycle.  By properly marking data, ABC Company helps ensure that it can be properly protected.
+{{ORGANIZATION_NAME}}’s Information Systems contain sensitive information that must be protected from unauthorized access throughout all phases of the information lifecycle.  By properly marking data, {{ORGANIZATION_NAME}} helps ensure that it can be properly protected.
 
 ## II. Purpose
 
@@ -35,7 +35,7 @@ Failure to protect sensitive information can lead to fraud, waste, abuse, and ot
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff who use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff who use Information Resources.
 
 ## IV. Policy
 
@@ -70,7 +70,7 @@ Media shall be protected until an appropriate classification review has been con
 
 ### D. Responsibilities
 
-The Chief Security Officer shall be responsible for approving documented processes that:
+The {{CSO_TITLE}} shall be responsible for approving documented processes that:
 Ensure security during reproduction of sensitive data files.
 Ensure security during receipt or sending of media that contains sensitive data.
 Log transmittal and transport records related to media that contains sensitive data.
@@ -84,7 +84,7 @@ Approve, as needed, reproduction of sensitive data files.
 Sign for, or delegate authority to sign for, receipt of registered, certified, or express mail which can contains sensitive data.
 Review transmittal logs and transport records on a weekly basis to account for all removable media that contains sensitive information.
 Investigate and resolve any discrepancies between internal records and transmittal and transport logs.
-Work with the Chief Security Officer to define disposition procedures for media no longer used to process or store sensitive information.
+Work with the {{CSO_TITLE}} to define disposition procedures for media no longer used to process or store sensitive information.
 Establish and communicate requirements for protecting systems and data
 Ensure that sensitive data is not stored on personal computers.
 Track sensitive data from creation through destruction.
@@ -104,7 +104,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.01, EDM03.02, APO01.11, APO13.07, APO14.01-02, APO14.07, APO14.10

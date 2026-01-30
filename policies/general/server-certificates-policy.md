@@ -32,7 +32,7 @@ The need to communicate securely over public lines and the Internet resulted in 
 
 ## II. Purpose
 
-Certificate Authorities (CA) sign and distribute certificates used to assure an identity when establishing encrypted communications.  The purpose of this policy is to ensure proper controls are in place related to the selection of providers of trusted server-side third-party certificates and their implementation within ABC Company Information Resources.
+Certificate Authorities (CA) sign and distribute certificates used to assure an identity when establishing encrypted communications.  The purpose of this policy is to ensure proper controls are in place related to the selection of providers of trusted server-side third-party certificates and their implementation within {{ORGANIZATION_NAME}} Information Resources.
 
 ## III. Scope
 
@@ -42,15 +42,15 @@ This policy applies to IT Department Staff responsible for administering and sec
 
 Certificates are most commonly used for secure (https) Web sites.  Web browsers inspect signed server-side certificates to verify that a Web server is authentic, using a specific Uniform Resource Locator (URL), and that the URL has been publicly verified with the identity of the institution.  Using a server certificate helps assure the integrity and confidentiality of the encrypted communications through the use of cryptographic protocols such as Transport Layer Security (TLS).
 Other types or classes of certificates may be installed on the client side web browser and used for the legal non-repudiation of transactions and multi-factor authentication, such as when the specific identity of individuals needs to be validated when connecting the server.
-ABC Company’s IT Department shall ensure security controls protect sensitive communications by encrypting communication channels between endpoints using Transport Layer Security (TLS), or equivalent cryptographic protocols.  Secure Hypertext Transport Protocol (HTTPS) connection based on server-side certificates shall be signed by a trusted third-party certificate provider.
-To ensure that the security and integrity of the certificate remains intact, solutions must be installed and maintained according to the provider’s instructions and recommended use.  Any deviation from the provider’s instructions or recommended use must be approved by the Director of IT and the Chief Security Officer.
+{{ORGANIZATION_NAME}}’s IT Department shall ensure security controls protect sensitive communications by encrypting communication channels between endpoints using Transport Layer Security (TLS), or equivalent cryptographic protocols.  Secure Hypertext Transport Protocol (HTTPS) connection based on server-side certificates shall be signed by a trusted third-party certificate provider.
+To ensure that the security and integrity of the certificate remains intact, solutions must be installed and maintained according to the provider’s instructions and recommended use.  Any deviation from the provider’s instructions or recommended use must be approved by the Director of IT and the {{CSO_TITLE}}.
 Where possible, newer versions of TLS shall be used to protect authentication and communications against eavesdropping and tampering.
-The use of wildcard certificates for one or more subdomains within the ABC Company domain is permissible under the following conditions:
+The use of wildcard certificates for one or more subdomains within the {{ORGANIZATION_NAME}} domain is permissible under the following conditions:
 The service provided by the system may not be used to store or access sensitive data
 All requests for wildcard certificates are approved by the Director of IT prior to certificate purchase, acquisition or assignment.
 Network administrators shall track certificate expiration dates to ensure that certificates are kept current and an expired certificate does not adversely impact business operations.
-Self-signed certificates are only permitted for development systems that are segregated from the ABC Company production network and are not connected to external resources (e.g. Internet).
-Network administrators shall comply with ABC Company’s Server Hardening Policy to ensure systems are protected from security and performance issues.
+Self-signed certificates are only permitted for development systems that are segregated from the {{ORGANIZATION_NAME}} production network and are not connected to external resources (e.g. Internet).
+Network administrators shall comply with {{ORGANIZATION_NAME}}’s Server Hardening Policy to ensure systems are protected from security and performance issues.
 
 ## V. Enforcement
 

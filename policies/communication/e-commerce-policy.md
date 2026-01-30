@@ -26,19 +26,19 @@ approver: null
 
 ## I. Overview
 
-ABC Company continues to enhance the way we provide products and services to our customers.  As a convenience to our customers and business partners, we now accept electronic payment via credit cards.  following guidelines highlight the most critical issue in providing this service, to ensure that the trusted relationship between ABC Company and its customers is conducted in the most secure, confidential and reliable method possible.
+{{ORGANIZATION_NAME}} continues to enhance the way we provide products and services to our customers.  As a convenience to our customers and business partners, we now accept electronic payment via credit cards.  following guidelines highlight the most critical issue in providing this service, to ensure that the trusted relationship between {{ORGANIZATION_NAME}} and its customers is conducted in the most secure, confidential and reliable method possible.
 
 ## II. Purpose
 
-This policy ensures that the trusted relationship between ABC Company and its customers is conducted in the most secure, confidential, and reliable method possible.
+This policy ensures that the trusted relationship between {{ORGANIZATION_NAME}} and its customers is conducted in the most secure, confidential, and reliable method possible.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to Information Resources.
 
 ## IV. Policy
 
-ABC Company Executive Management must review and approve all proposed electronic commerce (e-commerce) solutions.  All e-commerce platforms must either be hosted by ABC Company’s IT Department or hosted through a contractual relationship with a third party service provider.
+{{ORGANIZATION_NAME}} {{EXEC_MGMT}} must review and approve all proposed electronic commerce (e-commerce) solutions.  All e-commerce platforms must either be hosted by {{ORGANIZATION_NAME}}’s IT Department or hosted through a contractual relationship with a third party service provider.
 E-commerce solutions will be reviewed based upon the business case, financial impact, technical requirements, and security mechanisms. The associated startup and recurring costs can include, but are not limited to fees for credit card transactions, hosting services or equipment costs, website and database application development and maintenance, customer support, implementing and maintaining merchant equipment, and Accounting Department time to process payments.
 All development, maintenance, and support of web applications shall be the responsibility of the IT Department.
 E-commerce related data that traverses public networks shall be appropriately classified and protected from fraudulent activity, unauthorized disclosure or modification in such a manner to prevent contract dispute and compromise of data.
@@ -49,7 +49,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.03, APO05.03, APO10.05, APO12.02, BAI02.05, BAI04.05, MEA03.01

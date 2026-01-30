@@ -27,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-This policy provides guidelines on the monitoring and logging of ABC Company’s Information Resources including ABC Company’s network and communications systems.
+This policy provides guidelines on the monitoring and logging of {{ORGANIZATION_NAME}}’s Information Resources including {{ORGANIZATION_NAME}}’s network and communications systems.
 
 ## II. Purpose
 
@@ -35,20 +35,20 @@ This policy is established to protect the integrity, availability and confidenti
 
 ## III. Scope
 
-This policy applies to all ABC Company IT system administrators, IT security Staff, the IT Director, and the Chief Security Officer.
+This policy applies to all {{ORGANIZATION_NAME}} IT system administrators, IT security Staff, the IT Director, and the {{CSO_TITLE}}.
 
 ## IV. Policy
 
 Without frequent monitoring and logging, it is difficult to assess the effectiveness of access controls.  Unauthorized access can remain undetected, enabling information to be disclosed to persons with possible malicious or fraudulent intent.
-Access to ABC Company’s network and communications shall be logged and monitored to identify potential misuse of systems or information.  System access must be monitored regularly to prevent attempts at unauthorized access and to confirm that access control systems are effective.
-Logs shall be kept secure and are only available to personnel authorized by IT Management.  Such logs shall only be kept as long as necessary as outlined in ABC Company’s Data Retention Policy.
-ABC Company’s information Systems shall be monitored and logged:
+Access to {{ORGANIZATION_NAME}}’s network and communications shall be logged and monitored to identify potential misuse of systems or information.  System access must be monitored regularly to prevent attempts at unauthorized access and to confirm that access control systems are effective.
+Logs shall be kept secure and are only available to personnel authorized by IT Management.  Such logs shall only be kept as long as necessary as outlined in {{ORGANIZATION_NAME}}’s Data Retention Policy.
+{{ORGANIZATION_NAME}}’s information Systems shall be monitored and logged:
 Ensure use is authorized
 Manage and administer of systems
 Protect against unauthorized access
 Verify security procedures
 System and operational security
-Comply with ABC Company’s policies and procedures
+Comply with {{ORGANIZATION_NAME}}’s policies and procedures
 Detect and prevent crime
 Identify, report, and correct information and Information Systems flaws in a timely manner
 
@@ -61,7 +61,7 @@ Systems involved (object)
 When the activity was performed
 Tools used
 The status (such as success vs. failure), outcome, or result of the activity
-The IT Director shall ensure that local logging has been enabled on all systems and networking devices.  The Chief Security Officer (CSO) shall ensure that a centralized logging server has been implemented, configured, and all critical devices log to the server.  The IT Director shall ensure important events and audit trials are logged for analysis and review.  A file integrity monitoring/change detection software shall review logs and issue alerts if the log data is altered.
+The IT Director shall ensure that local logging has been enabled on all systems and networking devices.  The {{CSO_TITLE}} (CSO) shall ensure that a centralized logging server has been implemented, configured, and all critical devices log to the server.  The IT Director shall ensure important events and audit trials are logged for analysis and review.  A file integrity monitoring/change detection software shall review logs and issue alerts if the log data is altered.
 
 ### B. Activities to be logged
 
@@ -84,7 +84,7 @@ Detection of suspicious/malicious activity such as from an Intrusion Detection o
 Access to information shall be logged:
 Read, write, update, or delete Sensitive Information
 User authentication and authorization such as user login and logout
-Read, write, update, or delete information identified by the Chief Security Officer (CSO) as needing to be logged
+Read, write, update, or delete information identified by the {{CSO_TITLE}} (CSO) as needing to be logged
 The CSO shall implement automated audit trails for all Information Systems and components to reconstruct the following events:
 All individual user accesses to sensitive information
 All actions taken by any individual with root or administrative privileges
@@ -151,7 +151,7 @@ The contents of system logs should be protected from unauthorized access, modifi
 Emergency access to systems shall only be used in extreme circumstances and only when authorized by IT Management.  Emergency access may by-pass traditional security controls and access to information resources or Company data shall be logged
 As a log approaches its maximum size, it can either overwrite old events or stop logging new events.  This makes it susceptible to attacks in which an intruder can flood the log by generating a large number of new events. A partial defense against this is to increase the maximum log size so that a greater number of events is required to flood the log
 Administrators can change the auditing policies to stop logging an unauthorized activity.  Log settings should be set to track and record log policy changes (audit policy change setting)
-Given the ability of administrators to manipulate log files to cover unauthorized activity, ABC Company IT Management shall ensure a separation of duties between operations and security monitoring.  Frequent backups of the log to a server accessible only to the security monitoring staff can improve security
+Given the ability of administrators to manipulate log files to cover unauthorized activity, {{ORGANIZATION_NAME}} IT Management shall ensure a separation of duties between operations and security monitoring.  Frequent backups of the log to a server accessible only to the security monitoring staff can improve security
 Keeping the IT department's security systems and practices confidential helps prevent users from formulating ways to cover their tracks.  If users are aware that the log is copied over to the remote log server at :00 of every hour, for instance, they may take measures to defeat that system by attacking at :10 and then deleting the relevant log events before the top of the next hour]
 If an Administrator account has been compromised, the event history, as contained in the log, is unreliable; a WORM drive or remote log server with all services disabled (allowing only console access) might be acceptable solutions
 The CSO shall be responsible for:
@@ -167,7 +167,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all IT system administrators, IT security Staff, the IT Director, and the Chief Security Officer.
+This policy is to be distributed to all IT system administrators, IT security Staff, the IT Director, and the {{CSO_TITLE}}.
 Policy History
 References:
 COBIT EDM02.03, APO11.09, APO12.02, APO13.07, BAI04.05, BAI09.04, DSS01.05, DSS05.02

@@ -31,20 +31,20 @@ approver: null
 
 ## I. Overview
 
-Security self assessments are part of ABC Company’s controls and safeguards designed to identify, mitigate, eliminate, and transfer risks that can impact business operations.
+Security self assessments are part of {{ORGANIZATION_NAME}}’s controls and safeguards designed to identify, mitigate, eliminate, and transfer risks that can impact business operations.
 
 ## II. Purpose
 
-Security self assessments help ensure ABC Company's security controls and safeguards adequately protect Information Resources.  By knowing the current status of information systems and information security programs, ABC Company can determine the appropriate risk treatment option.
+Security self assessments help ensure {{ORGANIZATION_NAME}}'s security controls and safeguards adequately protect Information Resources.  By knowing the current status of information systems and information security programs, {{ORGANIZATION_NAME}} can determine the appropriate risk treatment option.
 
 ## III. Scope
 
-This policy applies to ABC Company Executive Management, Chief Security Officer, Risk Management Officer, and ABC Company Department Heads.
+This policy applies to {{ORGANIZATION_NAME}} {{EXEC_MGMT}}, {{CSO_TITLE}}, {{RMO_TITLE}}, and {{ORGANIZATION_NAME}} Department Heads.
 
 ## IV. Policy
 
 Per the Risk Management Policy, executive management shall be involved in risk management and mitigation decisions including how security processes are communicated throughout the organization.
-Security self assessments help manage and reduce risks to ABC Company’s Information Resources.  The Chief Security Officer (CSO), with assistance from the Risk Management Officer (RMO), shall oversee the security self assessment.  Security self assessments shall be performed on an annual basis or more frequently if major changes occur to Information Resources.
+Security self assessments help manage and reduce risks to {{ORGANIZATION_NAME}}’s Information Resources.  The {{CSO_TITLE}} (CSO), with assistance from the {{RMO_TITLE}} (RMO), shall oversee the security self assessment.  Security self assessments shall be performed on an annual basis or more frequently if major changes occur to Information Resources.
 The CSO shall:
 Resources – identify internal resources to perform the security self assessment.
 Scope – define the scope of the security self assessment.
@@ -60,8 +60,8 @@ Evaluating – identify methods for evaluating vulnerabilities and assigning ris
 Tools – ensure access to security assessment tools is controlled and restricted to prevent possible misuse or compromise of Information Resources and log data.  Security self assessment requirements and activities involving verification of operational systems shall be carefully planned and agreed to minimize disruptions to business processes.
 The security self assessment report shall include the project scope, findings, and recommendations to enhance security.  The CSO shall:
 Review the report to confirm the findings and verify the security recommendations are appropriate and sufficient.
-Convey the findings to the Risk Management Officer and appropriate Department Heads so that a Risk Treatment Plan and Risk Task List can be prepared or updated as necessary.
-The Risk Management Officer shall provide necessary reporting to ABC Company Executive Management.
+Convey the findings to the {{RMO_TITLE}} and appropriate Department Heads so that a Risk Treatment Plan and Risk Task List can be prepared or updated as necessary.
+The {{RMO_TITLE}} shall provide necessary reporting to {{ORGANIZATION_NAME}} {{EXEC_MGMT}}.
 
 ## V. Enforcement
 
@@ -69,7 +69,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to ABC Company Executive Management, Chief Security Officer, Risk Management Officer, and ABC Company Department Heads.
+This policy is to be distributed to {{ORGANIZATION_NAME}} {{EXEC_MGMT}}, {{CSO_TITLE}}, {{RMO_TITLE}}, and {{ORGANIZATION_NAME}} Department Heads.
 Policy History
 References:
 COBIT EDM03.07, APO11.09, APO13.07, BAI04.05, BAI10.07, DSS05.08, MEA02.11

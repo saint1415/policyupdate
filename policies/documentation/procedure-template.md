@@ -26,15 +26,15 @@ approver: null
 
 ## I. Overview
 
-Policies provide management direction and guidance with the intention of influencing courses of action and decision making to ensure they are in line with ABC Company's philosophy, goals and objectives and strategic plans.  Procedures document a detailed description of the steps necessary to perform specific operations that comply with ABC Company’s policies and standards.
+Policies provide management direction and guidance with the intention of influencing courses of action and decision making to ensure they are in line with {{ORGANIZATION_NAME}}'s philosophy, goals and objectives and strategic plans.  Procedures document a detailed description of the steps necessary to perform specific operations that comply with {{ORGANIZATION_NAME}}’s policies and standards.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's [ Policy Name ].
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s [ Policy Name ].
 
 ## III. Scope
 
-This procedure applies to all ABC Company Staff who [ Describe Scope: For example, manage ABC Company’s Information Resources. ].
+This procedure applies to all {{ORGANIZATION_NAME}} Staff who [ Describe Scope: For example, manage {{ORGANIZATION_NAME}}’s Information Resources. ].
 
 ## IV. Procedure
 
@@ -46,7 +46,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to all ABC Company Staff who [ Describe Distribution ].
+This procedure is to be distributed to all {{ORGANIZATION_NAME}} Staff who [ Describe Distribution ].
 Procedure History
 References:  [ List applicable references below ]
 COBIT

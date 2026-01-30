@@ -32,32 +32,32 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information Systems are provided as a central resource for ABC Company Staff.  It is important that the network infrastructure, which includes cabling and associated devices continues to develop with sufficient flexibility to meet ABC Company demands while at the same time remaining capable of exploiting anticipated developments in high speed networking technology to allow the future provision of enhanced user services.
+{{ORGANIZATION_NAME}}’s Information Systems are provided as a central resource for {{ORGANIZATION_NAME}} Staff.  It is important that the network infrastructure, which includes cabling and associated devices continues to develop with sufficient flexibility to meet {{ORGANIZATION_NAME}} demands while at the same time remaining capable of exploiting anticipated developments in high speed networking technology to allow the future provision of enhanced user services.
 
 ## II. Purpose
 
-The purpose of this policy is to establish the rules for the access and use of the network infrastructure.  These rules are necessary to preserve the integrity, availability and confidentiality of ABC Company information.
+The purpose of this policy is to establish the rules for the access and use of the network infrastructure.  These rules are necessary to preserve the integrity, availability and confidentiality of {{ORGANIZATION_NAME}} information.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to ABC Company’s Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-Users are permitted to access and use only approved Information Resources.  Users inside the ABC Company firewall may not connect to the ABC Company network if they are using a wireless connection to connect to an external network.
-Non-IT Staff shall not:
-Extend or re-transmit network services by installing a router, switch, hub, or wireless access point to the ABC Company network
+Users are permitted to access and use only approved Information Resources.  Users inside the {{ORGANIZATION_NAME}} firewall may not connect to the {{ORGANIZATION_NAME}} network if they are using a wireless connection to connect to an external network.
+Non-{{IT_STAFF}} shall not:
+Extend or re-transmit network services by installing a router, switch, hub, or wireless access point to the {{ORGANIZATION_NAME}} network
 Install network hardware or software that provides network services
 Alter network hardware in any way
 Download, install, or run security programs or utilities that reveal weaknesses in the security of a system
 Run password cracking programs, packet sniffers, network mapping tools, or port scanners
-The Chief Security Officer shall ensure:
+The {{CSO_TITLE}} shall ensure:
 The organization has implemented procedures for the authorization and/or supervision of employees who work with Sensitive Information or in locations where it might be accessed.
 Detailed job descriptions determine the appropriate level of access to Sensitive Information.
 Access to Information Systems is limited to authorized users and processes.  Access to Information Systems is limited to the types of transactions and functions that authorized users are permitted to access.  Users, processes, and devices are authenticated before allowing access to Information Systems.  Controls shall be implemented and maintained to ensure Information System users, and processes acting on behalf of users or devices, are properly identified.
 A process exists to establish and maintain access to Sensitive Information.  Similar processes exist to control access to paper records.
 Procedures exist to ensure the access of an employee to Sensitive Information is appropriate and the procedures are used consistently.
-Procedures protect Sensitive Information from parent organizations and subsidiaries.  Technical safeguards exist to separate Sensitive Information used by ABC Company to protect against unauthorized access by other organizations.
+Procedures protect Sensitive Information from parent organizations and subsidiaries.  Technical safeguards exist to separate Sensitive Information used by {{ORGANIZATION_NAME}} to protect against unauthorized access by other organizations.
 Procedures grant access to Sensitive Information through access to a workstation, device, transaction, program, or process.  Procedures specify the proper functions to be performed, the manner in which those functions are to be performed, and the physical attributes of a specific device that can access Sensitive Information.
 Procedures identify devices that access Sensitive Information and those that do not.  Procedures specify where to place and position workstations to only allow viewing by authorized individuals.  Procedures specify the use of additional security measures (e.g. privacy screens, password protected screen savers, auto logoff, etc.) to protect workstations with Sensitive Information.
 Procedures address device use for users that access Sensitive Information from remote locations.
@@ -76,7 +76,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.02, APO01.11, APO14.10, BAI09.03-04, DSS01.05, MEA02.11

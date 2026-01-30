@@ -28,7 +28,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company values its relationships with our customers, service providers, and regulators.  Managing compliance requirements helps us maximize our opportunities in the market, enhances our competitive position, and helps build trust.
+{{ORGANIZATION_NAME}} values its relationships with our customers, service providers, and regulators.  Managing compliance requirements helps us maximize our opportunities in the market, enhances our competitive position, and helps build trust.
 
 ## II. Purpose
 
@@ -36,14 +36,14 @@ The Payment Card Industry Data Security Standard is a proprietary information se
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff who have access to or manage Information Resources that collect, transmit, process, or store customer payment card data.
+This policy applies to all {{ORGANIZATION_NAME}} Staff who have access to or manage Information Resources that collect, transmit, process, or store customer payment card data.
 
 ## IV. Policy
 
 The Payment Card Industry Data Security Standard (PCI DSS) was developed to increase controls around cardholder data.  Its purpose is to reduce credit card fraud that occurs as a result of unauthorized disclosure.  As outlined in the following table, PCI DSS specifies 12 requirements for compliance, organized into six logically related groups (control objectives).
-The IT Department shall document the flow of cardholder information.  Such documentation shall consider the flow of information within ABC Company as well as with external third party service providers.
+The IT Department shall document the flow of cardholder information.  Such documentation shall consider the flow of information within {{ORGANIZATION_NAME}} as well as with external third party service providers.
 The IT Department shall identify all sources and uses of cardholder data and prepare network and data flow diagrams that identify where cardholder data is collected, transmitted, stored, processed, and archived.  The IT Department shall include, but not be limited to, software applications, network infrastructure equipment (e.g. servers, storage), backup/recovery sites, fail-over systems, and other relevant devices.  IT Department documentation shall identify how the cardholder data environment was determined.
-The Chief Security Officer (CSO) shall ensure:
+The {{CSO_TITLE}} (CSO) shall ensure:
 The cardholder data environment identifies and documents the existence of all cardholder data and that no cardholder data exists outside of the defined environment.  If cardholder data is found outside of the defined environment, the cardholder data should be securely deleted, migrated into the defined environment, or the defined environment should be expanded to include the additional cardholder data.
 Network segmentation is considered as a means of protecting the cardholder data environment.  Network segmentation can be achieved through physical or logical controls that isolate and protect the cardholder data environment.
 Third party service providers validate compliance requirements by either having an assessment on their own providing sufficient evidence to customers or by participating in customer reviews of the service provider environment.
@@ -77,7 +77,7 @@ The IT Department shall develop and maintain an inventory of all systems that st
 Name – name of the system or device
 Data – cardholder data stored including field names
 Description – include reason for collecting, storing, use, or transmitting information
-Retention – time period that cardholder data is retained per ABC Company’s Data Retention Policy
+Retention – time period that cardholder data is retained per {{ORGANIZATION_NAME}}’s Data Retention Policy
 Security – protection measures including encrypting, masking, hashing, truncating data
 The IT Department shall implement safeguards and controls to meet PCI Control Objectives and PCI DSS Requirements.  Before wireless technology is implemented, an entity should carefully evaluate the need for the technology against the risk. Consider deploying wireless technology only for non-sensitive data transmission.  If wireless networks collect, store, process, and/or transmit cardholder data, the IT Department shall implement safeguards to protect the information.  Such safeguards shall include:
 Defaults – change default passwords, service set identification (SSID) name
@@ -85,7 +85,7 @@ Encryption – enable strong encryption (WPA or WPA2)
 Physical access – restrict physical access to wireless access points
 Logs – review and archive wireless log files per the Logging Policy and Data Retention Policy
 Usage – ensure use of wireless networks complies with Wireless Access Policy requirements
-ABC Company policies and plans shall implement and maintain specific Safeguards to meet PCI compliance requirements.
+{{ORGANIZATION_NAME}} policies and plans shall implement and maintain specific Safeguards to meet PCI compliance requirements.
 
 ## V. Enforcement
 
@@ -93,7 +93,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff who have access to or manage Information Resources that collect, transmit, process, or store cardholder related data.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff who have access to or manage Information Resources that collect, transmit, process, or store cardholder related data.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.07, MEA02.11, MEA03.01

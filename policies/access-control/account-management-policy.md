@@ -8,7 +8,6 @@ status: active
 frameworks: {}
 references:
 - account-management-policy
-- company-password-policy
 variables:
 - CSO_TITLE
 - ORGANIZATION_NAME
@@ -28,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-Computer accounts are the means used to grant access to ABC Company Information Resources.  These accounts provide a means of providing accountability, a key to any computer security program, for information resources usage.  This means that creating, controlling, and monitoring all computer accounts is extremely important to an overall security program.
+Computer accounts are the means used to grant access to {{ORGANIZATION_NAME}} Information Resources.  These accounts provide a means of providing accountability, a key to any computer security program, for information resources usage.  This means that creating, controlling, and monitoring all computer accounts is extremely important to an overall security program.
 
 ## II. Purpose
 
@@ -36,11 +35,11 @@ This policy establishes the rules for creating, monitoring, controlling, and rem
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to ABC Company’s Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-The Chief Security Officer shall ensure:
+The {{CSO_TITLE}} shall ensure:
 System components and data resources that each role needs to access for their job function including level of privilege required (e.g. user, administrator, etc.) for accessing such resources.
 Security mechanisms restrict access to privileged user IDs to least privileges necessary to perform job responsibilities and such access is based on job classification and function.
 Documented approval by authorized parties specifying required privileges.
@@ -58,21 +57,21 @@ Authentication procedures verify a person or entity seeking access to sensitive 
 Configuration standards are developed for all system components. Such standards shall address all known security vulnerabilities and be consistent with industry accepted system hardening standards such as those recommended by the Center for Internet Security (CIS), International Standards Organization (ISO), SysAdmin Audit Network Security (SANS), and National Institute of Standards Technology (NIST).
 Security policies and operational procedures for managing vendor defaults and other security parameters are documented, in use, and known to all affected parties.
 An analysis of risks to determine when two-factor (multi-factor) authentication shall be implemented on user accounts and systems whether managed onsite or by a third-party provider.  Two-factor authentication shall be required for remote network access originating from outside the network by personnel (including users and administrators) and all third-parties (including vendor access for support or maintenance). Note: Two-factor authentication requires two of the three authentication methods (i.e. something known, have, or biometric) be used to gain access to a system.  Using two separate passwords is not considered two-factor authentication.
-All accounts created must have an associated request and approval that is appropriate for the ABC Company system or service.
-All users must sign the ABC Company non-disclosure agreement before access is given to an account.  All accounts must be uniquely identifiable using the assigned user name.
+All accounts created must have an associated request and approval that is appropriate for the {{ORGANIZATION_NAME}} system or service.
+All users must sign the {{ORGANIZATION_NAME}} non-disclosure agreement before access is given to an account.  All accounts must be uniquely identifiable using the assigned user name.
 IT security Staff shall:
 Always change all vendor supplied defaults and remove or disable unnecessary default or generic accounts before installing a system on the network.  This includes firewalls, routers, servers, storage devices, wireless devices, etc. that are connected to sensitive data or used to transmit sensitive data.
 Ensure all default passwords are changed including, but not limited to, those used by operating systems, software that provides security services, application and system accounts, point-of-sale (POS) terminals, Simple Network Management Protocol (SNMP) community strings, etc.).
 Change wireless vendor defaults for environments containing or transmitting sensitive data.  This includes, but is not limited to, default wireless encryption keys, passwords, and SNMP community strings.
-Ensure all default passwords for accounts must be constructed in accordance with the ABC Company Password Policy.  All accounts must have a password expiration that complies with the ABC Company Password Policy.
+Ensure all default passwords for accounts must be constructed in accordance with the {{ORGANIZATION_NAME}} Password Policy.  All accounts must have a password expiration that complies with the {{ORGANIZATION_NAME}} Password Policy.
 Accounts of individuals on extended leave (more than 30 days) will be disabled.  All new user accounts that have not been accessed within 30 days of creation will be disabled.  Any accounts that cannot be associated with a business process or business owner shall be disabled.
 System Administrators or other designated staff:
-Are responsible for removing the accounts of individuals that change roles within ABC Company or are separated from their relationship with ABC Company.
+Are responsible for removing the accounts of individuals that change roles within {{ORGANIZATION_NAME}} or are separated from their relationship with {{ORGANIZATION_NAME}}.
 Must have a documented process to modify a user account to accommodate situations such as name changes, accounting changes and permission changes.
 Must have a documented process for periodically reviewing existing accounts for validity
 Are subject to independent audit review.
-Must provide a list of accounts for the systems they administer when requested by authorized ABC Company management.
-Must cooperate with authorized ABC Company management investigating security incidents.
+Must provide a list of accounts for the systems they administer when requested by authorized {{ORGANIZATION_NAME}} management.
+Must cooperate with authorized {{ORGANIZATION_NAME}} management investigating security incidents.
 Implement only one primary function per server to prevent functions that require different security levels from co-existing on the same server. For example, web servers, database servers, and DNS should be implemented on separate servers.  Where virtualization technologies are in use, implement only one primary function per virtual system component.
 Enable only necessary services, protocols, daemons, etc., as required for the function of the system.
 Implement additional security features for any required services, protocols, or daemons that are considered to be insecure—for example, use secured technologies such as SSH, S-FTP, SSL, or IPSec VPN to protect insecure services such as NetBIOS, file-sharing, Telnet, FTP, etc.
@@ -94,16 +93,16 @@ Termination of a Staff member may be classified as either friendly or unfriendly
 Removal of access privileges, computer accounts, authentication tokens.
 The control of keys to the office and/or office furniture and equipment.
 The briefing on the continuing responsibilities for confidentiality and privacy.
-Return of ABC Company property.
+Return of {{ORGANIZATION_NAME}} property.
 Replacement staff ability to access data.
 Information security responsibilities and duties that remain valid after termination or change shall be defined, communicated to the appropriate Staff, and enforced.
-ABC Company requires terminating Staff to document procedures or filing schemes (e.g. how and where documents are stored on the hard disk).  Staff must be instructed whether or not to "clean up" their computer before leaving. If cryptography is used to protect data, the availability of cryptographic keys to management personnel must be ensured.
+{{ORGANIZATION_NAME}} requires terminating Staff to document procedures or filing schemes (e.g. how and where documents are stored on the hard disk).  Staff must be instructed whether or not to "clean up" their computer before leaving. If cryptography is used to protect data, the availability of cryptographic keys to management personnel must be ensured.
 Unfriendly Terminations have a potential for adverse consequences.  In addition to the above, Staff shall do the following:
 System access must be terminated as quickly as possible when a Staff member is leaving a position under less than friendly terms. If Staff are to be immediately terminated, system access must be removed at the same time (or just before) Staff is notified of the dismissal.
-When a Staff member notifies ABC Company of a resignation, and it can be reasonably expected that it is on unfriendly terms, system access must be immediately terminated.
+When a Staff member notifies {{ORGANIZATION_NAME}} of a resignation, and it can be reasonably expected that it is on unfriendly terms, system access must be immediately terminated.
 During the "notice of termination" period, it may be necessary to assign the individual to a restricted area and function. This may be particularly true for Staff capable of changing programs or modifying the system or applications.
-In some cases, physical removal of the Staff member from ABC Company’s offices may be necessary.
-Upon termination, Staff returns any items or assets that belong to ABC Company.
+In some cases, physical removal of the Staff member from {{ORGANIZATION_NAME}}’s offices may be necessary.
+Upon termination, Staff returns any items or assets that belong to {{ORGANIZATION_NAME}}.
 Upon change in Staff duties, the Owner of an asset shall determine the appropriate change in Staff access rights to Information Resources.
 
 ## V. Enforcement
@@ -112,7 +111,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff who use Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff who use Information Resources.
 Policy History
 References:
 COBIT APO01.01-03, APO01.11, APO12.02, APO12.07, APO13.01-02, APO13.07, DSS01.05

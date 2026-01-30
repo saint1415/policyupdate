@@ -9,7 +9,6 @@ frameworks: {}
 references:
 - awareness-and-training-plan
 variables:
-- APPROVAL_DATE
 - CSO_TITLE
 - EFFECTIVE_DATE
 - EXEC_MGMT
@@ -49,14 +48,14 @@ Appendix B – Receipt and Acknowledgement	13
 
 ## I. Purpose of the Security Awareness and Training Plan
 
-ABC Company understands that "people", not technology vulnerabilities, can be the biggest threat to our Information Resources.  The purpose of this Security Awareness and Training Plan (Plan) is to ensure security awareness and training controls protect Information Resources and ensure information availability, confidentiality, and integrity.
+{{ORGANIZATION_NAME}} understands that "people", not technology vulnerabilities, can be the biggest threat to our Information Resources.  The purpose of this Security Awareness and Training Plan (Plan) is to ensure security awareness and training controls protect Information Resources and ensure information availability, confidentiality, and integrity.
 
 ## II. Overview of the Security Awareness and Training Plan
 
-A strong security program requires Staff to be trained on security policies, procedures, and technical security controls.  ABC Company Staff who manage Information Resources need to have the necessary skills to carry out their assigned duties.
-The Chief Security Officer (CSO) is responsible for developing, implementing, and maintaining this Plan.  This Plan documents the process for Staff security training, education, and awareness and ensures that ABC Company Staff understands its role in protecting the confidentiality, integrity, and availability of Information Resources.
-This Plan ensures that Staff is provided with regular training, reference materials, and reminders to enable them to appropriately protect ABC Company’s Information Resources.  Training shall include, but is not limited to:
-ABC Company’s responsibilities for protecting Information Resources.
+A strong security program requires Staff to be trained on security policies, procedures, and technical security controls.  {{ORGANIZATION_NAME}} Staff who manage Information Resources need to have the necessary skills to carry out their assigned duties.
+The {{CSO_TITLE}} (CSO) is responsible for developing, implementing, and maintaining this Plan.  This Plan documents the process for Staff security training, education, and awareness and ensures that {{ORGANIZATION_NAME}} Staff understands its role in protecting the confidentiality, integrity, and availability of Information Resources.
+This Plan ensures that Staff is provided with regular training, reference materials, and reminders to enable them to appropriately protect {{ORGANIZATION_NAME}}’s Information Resources.  Training shall include, but is not limited to:
+{{ORGANIZATION_NAME}}’s responsibilities for protecting Information Resources.
 Risks to Information Resources.
 The secure use of Information Resources.
 Information security policies, procedures, and best practices.
@@ -72,15 +71,15 @@ Staff attends annual security awareness training sessions.
 
 ## III. Security Awareness and Training Lifecycle
 
-ABC Company cannot protect the confidentiality, integrity, and availability of information without ensuring that all Staff involved in using and managing Information Resources:
+{{ORGANIZATION_NAME}} cannot protect the confidentiality, integrity, and availability of information without ensuring that all Staff involved in using and managing Information Resources:
 Understand their roles and responsibilities.
-Understand ABC Company’s security policies and procedures.
+Understand {{ORGANIZATION_NAME}}’s security policies and procedures.
 Have at least adequate knowledge of the various administrative, physical, and technical controls to protect the Information Resources for which they are responsible.
-The CSO ensures that ABC Company Staff understands the concepts and strategy of the organization’s security awareness and training program.  Security begins with awareness, builds to training, and evolves into education.
+The CSO ensures that {{ORGANIZATION_NAME}} Staff understands the concepts and strategy of the organization’s security awareness and training program.  Security begins with awareness, builds to training, and evolves into education.
 Awareness.  Security awareness efforts change behavior or reinforce good security practices. Awareness is not training.  The purpose of awareness is to focus attention on security.  Awareness presentations help individuals identify security issues and the proper response to security threats.
-Training.  While security awareness relies on reaching broad audiences with attractive presentations, training tends to be more formal, with a goal of building knowledge and skills that enhance the effectiveness of security controls.  Training strives to produce relevant and needed security skills and competencies by ABC Company Staff.
+Training.  While security awareness relies on reaching broad audiences with attractive presentations, training tends to be more formal, with a goal of building knowledge and skills that enhance the effectiveness of security controls.  Training strives to produce relevant and needed security skills and competencies by {{ORGANIZATION_NAME}} Staff.
 Education.  Education integrates all of the security skills and competencies of the various functional specialties into a common body of knowledge, adding concepts, issues, and principles to produce security specialists and professionals capable of pro-active response to threats.
-ABC Company’s security awareness and training program lifecycle consists of the following elements:
+{{ORGANIZATION_NAME}}’s security awareness and training program lifecycle consists of the following elements:
 Designing the Security Awareness and Training Program – an assessment is conducted and a training strategy is developed and approved.  This strategic planning process identifies implementation tasks to be performed in support of security training goals.
 Developing Material for the Security Awareness and Training Program – available training resources are identified as is the scope and content of the training material.
 Implementing the Security Awareness and Training Program – effective communication and roll out of the awareness and training program including options for delivery of awareness and training material (e.g. web-based, distance learning, video, and on-site).
@@ -88,11 +87,11 @@ Security Awareness and Training Post-Implementation – guidance on keeping the 
 
 ## IV. Designing the Security Awareness and Training Program
 
-The awareness and training program helps to support the business needs of the organization.  The responsibility and budget for ABC Company’s security awareness and training program is developed, managed, and maintained by the CSO.  All directives, strategy development, planning, and scheduling is coordinated through this “security awareness and training” authority.
-The CSO communicates to ABC Company’s departments the policy directives regarding security awareness and training, the strategy for conducting the program, and the material and methods of implementation.  The Department Heads then provide information requested by the CSO.
+The awareness and training program helps to support the business needs of the organization.  The responsibility and budget for {{ORGANIZATION_NAME}}’s security awareness and training program is developed, managed, and maintained by the CSO.  All directives, strategy development, planning, and scheduling is coordinated through this “security awareness and training” authority.
+The CSO communicates to {{ORGANIZATION_NAME}}’s departments the policy directives regarding security awareness and training, the strategy for conducting the program, and the material and methods of implementation.  The Department Heads then provide information requested by the CSO.
 The CSO collects data on the number of attendees at awareness sessions, the number of people trained on a particular topic, and the number of people yet to attend awareness and training sessions.  Department Heads provide feedback on the effectiveness of awareness and training material and on the appropriateness of the methods used to implement the material.  Department Head feedback allows the CSO to fine-tune, add or delete material, or modify the implementation methods.
-On an annual basis, the CSO conducts a needs assessment that reviews and determines ABC Company’s awareness and training needs.  The needs assessment supports management’s decision to allocate adequate resources to meet the identified awareness and training requirements and considers various types of Staff:
-Executive Management – management understands directives and laws that form the basis for the security program. They also understand leadership roles to ensure full compliance by users.
+On an annual basis, the CSO conducts a needs assessment that reviews and determines {{ORGANIZATION_NAME}}’s awareness and training needs.  The needs assessment supports management’s decision to allocate adequate resources to meet the identified awareness and training requirements and considers various types of Staff:
+{{EXEC_MGMT}} – management understands directives and laws that form the basis for the security program. They also understand leadership roles to ensure full compliance by users.
 Security Personnel – security program managers and security officers act as expert consultants and are well educated on security policies and security best practices.
 System Owners – system and data owners have an understanding of security policies and a high degree of understanding security controls and requirements applicable to the systems they manage.
 System Administrators – administrators are critical to a successful information security management system and have a higher degree of security technical knowledge and training.
@@ -106,7 +105,7 @@ Review of application user IDs to identify Staff who have access to Information 
 Review of audit findings and/or recommendations related to the security of Information Resources.
 Analysis of events (e.g. denial of service attacks, virus damage, Ransomware, and website defacements).
 Security trends and metrics.
-Metrics are an important tool used to help determine the effectiveness of ABC Company’s security awareness and training program.  Metrics monitor the program goals and objectives by:
+Metrics are an important tool used to help determine the effectiveness of {{ORGANIZATION_NAME}}’s security awareness and training program.  Metrics monitor the program goals and objectives by:
 Quantifying the level of program implementation.
 Identifying the effectiveness and efficiency of the program.
 Analyzing the adequacy of awareness and training efforts
@@ -179,7 +178,7 @@ Material delivery schedules.
 
 ## VI. Implementing a Security Awareness and Training Program
 
-ABC Company’s security awareness and training program includes a needs assessment and gap analysis, a formal program strategy, a plan to prepare program materials, and a plan to implement the strategy.
+{{ORGANIZATION_NAME}}’s security awareness and training program includes a needs assessment and gap analysis, a formal program strategy, a plan to prepare program materials, and a plan to implement the strategy.
 Communications with management and Staff is an essential part of implementing the program to ensure active support and commitment of necessary resources.  The CSO:
 Documents the expected results of the program, anticipated costs, and benefits to the organization.
 Communicates the program schedule and offerings to the organization’s Department Heads.
@@ -211,8 +210,8 @@ Formal status reports.
 Independent observation and analysis.
 Security program benchmarking (external view).
 Selective Interviews.
-The CSO and Department Heads are the primary advocates for continuous improvement and support of ABC Company’s security awareness, training, and education program.  Listed below are key indicators that gauge the support for, and acceptance of, the program:
-Sufficient funding by ABC Company senior management.
+The CSO and Department Heads are the primary advocates for continuous improvement and support of {{ORGANIZATION_NAME}}’s security awareness, training, and education program.  Listed below are key indicators that gauge the support for, and acceptance of, the program:
+Sufficient funding by {{ORGANIZATION_NAME}} senior management.
 Support for broad distribution and posting of security awareness items.
 Senior management messages to staff regarding security.
 Use of metrics to identify security trends.
@@ -230,7 +229,7 @@ All Department Heads
 
 # Appendix B – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Security Awareness and Training Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Security Awareness and Training Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

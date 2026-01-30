@@ -26,21 +26,21 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information Systems must be protected from communications related threats.  Staff must use secure Bluetooth communications procedures.
+{{ORGANIZATION_NAME}}’s Information Systems must be protected from communications related threats.  Staff must use secure Bluetooth communications procedures.
 
 ## II. Purpose
 
-Bluetooth is a proprietary open wireless technology standard for exchanging data over short distances using short-wavelength radio transmission.  The purpose of this policy is to ensure ABC Company Information Systems are protected from Bluetooth communications threats.
+Bluetooth is a proprietary open wireless technology standard for exchanging data over short distances using short-wavelength radio transmission.  The purpose of this policy is to ensure {{ORGANIZATION_NAME}} Information Systems are protected from Bluetooth communications threats.
 
 ## III. Scope
 
-This policy applies to ABC Company Staff that use Bluetooth technology to connect to Information Resources.
+This policy applies to {{ORGANIZATION_NAME}} Staff that use Bluetooth technology to connect to Information Resources.
 
 ## IV. Policy
 
 ### A. Devices
 
-To be deployed on ABC Company’s Information Systems, Bluetooth devices must meet current Bluetooth specifications.  Any exceptions require written authorization from the Chief Security Officer (CSO).  Any Bluetooth equipment purchased prior to this policy must comply with all parts of this policy except the Bluetooth version specifications.
+To be deployed on {{ORGANIZATION_NAME}}’s Information Systems, Bluetooth devices must meet current Bluetooth specifications.  Any exceptions require written authorization from the {{CSO_TITLE}} (CSO).  Any Bluetooth equipment purchased prior to this policy must comply with all parts of this policy except the Bluetooth version specifications.
 
 ### B. Security
 
@@ -57,8 +57,8 @@ Unauthorized use or modification of Bluetooth devices
 
 ### C. User Responsibilities
 
-All Staff who use Bluetooth technology must comply with this policy.  Staff shall refer to the list of approved Bluetooth technologies for appropriate hardware, software, and connectivity requirements.  Only Bluetooth technologies specifically authorized are permitted to be deployed or connected to ABC Company owned equipment.
-When dealing with Bluetooth technologies and related equipment, Staff shall follow instructions outlined in ABC Company’s security training and awareness programs.  Staff must act appropriately to protect information, network access, passwords, cryptographic keys, and Bluetooth equipment.  Staff shall report any misuse, loss, or theft of Bluetooth devices or systems immediately to IT security Staff.
+All Staff who use Bluetooth technology must comply with this policy.  Staff shall refer to the list of approved Bluetooth technologies for appropriate hardware, software, and connectivity requirements.  Only Bluetooth technologies specifically authorized are permitted to be deployed or connected to {{ORGANIZATION_NAME}} owned equipment.
+When dealing with Bluetooth technologies and related equipment, Staff shall follow instructions outlined in {{ORGANIZATION_NAME}}’s security training and awareness programs.  Staff must act appropriately to protect information, network access, passwords, cryptographic keys, and Bluetooth equipment.  Staff shall report any misuse, loss, or theft of Bluetooth devices or systems immediately to IT security Staff.
 
 ## V. Enforcement
 
@@ -66,7 +66,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO12.02, APO12.07, APO14.02, BAI10.07, DSS01.05

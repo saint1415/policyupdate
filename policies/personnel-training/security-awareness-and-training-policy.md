@@ -32,18 +32,18 @@ People, not technology vulnerabilities, can be the biggest threat to our Informa
 
 ## II. Purpose
 
-A strong security program requires Staff to be trained on security policies, procedures, and technical security controls.  ABC Company Staff who manage Information Resources need to have the necessary skills to carry out their assigned duties.  The purpose of this Security Awareness and Training Policy is to ensure security awareness and training controls protect Information Resources and ensure information availability, confidentiality, and integrity.
+A strong security program requires Staff to be trained on security policies, procedures, and technical security controls.  {{ORGANIZATION_NAME}} Staff who manage Information Resources need to have the necessary skills to carry out their assigned duties.  The purpose of this Security Awareness and Training Policy is to ensure security awareness and training controls protect Information Resources and ensure information availability, confidentiality, and integrity.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff who use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff who use Information Resources.
 
 ## IV. Policy
 
-ABC Company management must ensure that high priority is given to effective security awareness and training.  This includes implementing a viable security program with a strong awareness and training component.   ABC Company management shall designate a Chief Security Officer (CSO) responsible for the security of Information Resources.  The CSO shall ensure that a well-supported (e.g. resources and budget) and effective security program is implemented and maintained.
-ABC Company’s CSO shall be responsible for developing, implementing, and maintaining a Security Awareness and Training Plan (Plan).  This Plan shall document the process for Staff security training, education, and awareness and ensure that ABC Company Staff understand their role and responsibility in protecting the confidentiality, integrity, and availability of Information Resources.  Communications relevant to the information security management system (ISMS) include what to communicate, when to communicate, with whom to communicate, who shall communicate, and the process by which communication shall be affected.  Communications shall be issued in a continuous and engaging manner.
-The Plan shall ensure that Staff is provided with regular training, reference materials, and reminders to enable them to appropriately protect ABC Company’s Information Resources.  Training shall include, but is not limited to:
-ABC Company’s responsibilities for protecting Information Resources
+{{ORGANIZATION_NAME}} management must ensure that high priority is given to effective security awareness and training.  This includes implementing a viable security program with a strong awareness and training component.   {{ORGANIZATION_NAME}} management shall designate a {{CSO_TITLE}} (CSO) responsible for the security of Information Resources.  The CSO shall ensure that a well-supported (e.g. resources and budget) and effective security program is implemented and maintained.
+{{ORGANIZATION_NAME}}’s CSO shall be responsible for developing, implementing, and maintaining a Security Awareness and Training Plan (Plan).  This Plan shall document the process for Staff security training, education, and awareness and ensure that {{ORGANIZATION_NAME}} Staff understand their role and responsibility in protecting the confidentiality, integrity, and availability of Information Resources.  Communications relevant to the information security management system (ISMS) include what to communicate, when to communicate, with whom to communicate, who shall communicate, and the process by which communication shall be affected.  Communications shall be issued in a continuous and engaging manner.
+The Plan shall ensure that Staff is provided with regular training, reference materials, and reminders to enable them to appropriately protect {{ORGANIZATION_NAME}}’s Information Resources.  Training shall include, but is not limited to:
+{{ORGANIZATION_NAME}}’s responsibilities for protecting Information Resources
 Risks to Information Resources
 How to identify different forms of social engineering attacks, such as phishing, phone scams, and impersonation calls
 The secure use of Information Resources
@@ -56,7 +56,7 @@ Staff understand the importance of enabling and utilizing secure authentication.
 Staff identify and properly store, transfer, archive, and destroy sensitive information.
 Security policies, procedures, and manuals are readily available for reference and review by the appropriate Staff.
 Staff attend annual security awareness training.
-Staff sign an acknowledgement stating they have read and understand ABC Company requirements regarding computer and information security policies and procedures.
+Staff sign an acknowledgement stating they have read and understand {{ORGANIZATION_NAME}} requirements regarding computer and information security policies and procedures.
 Staff are provided with sufficient training and supporting reference materials to allow them to properly protect Information Resources.
 The IT Department prepares, maintains, and distributes one or more information security manuals that concisely describe information security policies and procedures.
 Cloud computing security awareness training programs  address multi-tenant, nationality, and cloud delivery models.  Conflicts of interest shall be established for all Staff and Tenants.
@@ -74,7 +74,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.03, APO02.08, APO07.12-13, APO12.02, APO12.07, APO13.07, MEA02.11

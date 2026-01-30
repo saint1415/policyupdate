@@ -51,7 +51,7 @@ To establish individual accountability – an individual's actions are tracked i
 Reconstruct events – audit trails can be used to reconstruct events after an incident has occurred.  The amount of damage that occurred can be assessed by reviewing audit trails of system activity to identify how, when, and why the incident occurred.
 Resource monitoring (problem identification) – audit trails may also be used to detect disk failures, over utilization of system resources, network outages, and similar events.
 Intrusion detection – audit trails can help determine events that allowed unauthorized access to Information Resources.  Intrusions can be detected in real time, by examining audit records as they are created or after the fact, by examining audit records in a batch process.  Deploying, monitoring, and reporting are important intrusion detection considerations.
-Monitoring systems and audit trails shall be used to prevent unauthorized personnel from accessing ABC Company’s Information Resources.  Audit trails can also be used as an incident detection and response mechanism to:
+Monitoring systems and audit trails shall be used to prevent unauthorized personnel from accessing {{ORGANIZATION_NAME}}’s Information Resources.  Audit trails can also be used as an incident detection and response mechanism to:
 Reconstruct a timeline of events that occurred
 Identify individuals involved
 Additional information for research into the extent of the damage
@@ -67,7 +67,7 @@ Activities to be logged
 Elements of the log
 Log formatting and storage
 Log information security issues
-Where possible, audit trails shall include before and after versions of records that were modified.  This allows ABC Company to reconstruct events whether the event was made by a Staff member, a hardware malfunction, software bug, etc.
+Where possible, audit trails shall include before and after versions of records that were modified.  This allows {{ORGANIZATION_NAME}} to reconstruct events whether the event was made by a Staff member, a hardware malfunction, software bug, etc.
 Audit trails created and maintained by the information system shall record changes to user formal access permissions.  Monitoring and logging activities shall include the unique identification of each user and association of that identity with all auditable actions taken by that individual.
 Information Resources clocks shall be synchronized to enable research and investigation activities.
 Sensitive Information shall be sanitized before being written to log files.
@@ -80,7 +80,7 @@ All security events
 Logs of all system components that store, process, or transmit sensitive information or could impact the security of sensitive information.
 Logs of all critical system components.
 Logs of all servers and system components that perform security functions (e.g. firewalls, intrusion detection systems (IDS), intrusion-prevention systems (IPS), authentication servers, e-commerce redirection servers, etc.).
-Review of logs of other system components periodically based on ABC Company’s risk management strategy, as determined by the annual risk assessment.
+Review of logs of other system components periodically based on {{ORGANIZATION_NAME}}’s risk management strategy, as determined by the annual risk assessment.
 Staff shall be assigned to follow-up on all exceptions and anomalies identified during the review process.
 Log files shall be copied to a protected area and retained for at least one year to assist in future investigations and monitoring.  At least three months of history shall be immediately available for analysis (e.g. on-line, archived, or restorable from backup).
 The following must be considered when reviewing audit trails:
@@ -108,7 +108,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all IT Department personnel and other ABC Company Staff members responsible for acquiring, implementing, and maintaining Information Resources.
+This policy is to be distributed to all IT Department personnel and other {{ORGANIZATION_NAME}} Staff members responsible for acquiring, implementing, and maintaining Information Resources.
 Policy History
 References:
 COBIT EDM02.03, EDM03.02, APO01.11, APO12.07, BAI04.05, MEA03.01, MEA04.11

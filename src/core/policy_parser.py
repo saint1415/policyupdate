@@ -406,13 +406,13 @@ class PolicyParser:
             if is_heading:
                 # Save previous section
                 if current_section:
-                    current_section.content = '\n'.join(current_content)
+                    current_section.content = self._convert_placeholders('\n'.join(current_content))
                     sections.append(current_section)
 
-                # Start new section
+                # Start new section (also convert placeholders in title)
                 current_section = PolicySection(
                     number=number,
-                    title=title,
+                    title=self._convert_placeholders(title),
                     content='',
                     level=level
                 )
@@ -422,7 +422,7 @@ class PolicyParser:
 
         # Save last section
         if current_section:
-            current_section.content = '\n'.join(current_content)
+            current_section.content = self._convert_placeholders('\n'.join(current_content))
             sections.append(current_section)
 
         return sections
@@ -471,14 +471,41 @@ class PolicyParser:
     def _extract_raw_content(self, doc: Document) -> str:
         """Extract raw text content from document"""
         paragraphs = [p.text for p in doc.paragraphs if p.text.strip()]
-        return '\n\n'.join(paragraphs)
+        content = '\n\n'.join(paragraphs)
+        # Convert placeholders to template variables
+        return self._convert_placeholders(content)
+
+    def _convert_placeholders(self, content: str) -> str:
+        """Convert placeholder text to template variables"""
+        # Organization name
+        content = content.replace('ABC Company', '{{ORGANIZATION_NAME}}')
+
+        # Roles and titles
+        content = re.sub(r'\bExecutive Management\b', '{{EXEC_MGMT}}', content)
+        content = re.sub(r'\bChief Security Officer\b', '{{CSO_TITLE}}', content)
+        content = re.sub(r'\bIT Staff\b', '{{IT_STAFF}}', content)
+        content = re.sub(r'\bRisk Management Officer\b', '{{RMO_TITLE}}', content)
+        content = re.sub(r'\bHuman Resources\b', '{{HR_DEPARTMENT}}', content)
+        content = re.sub(r'\bLegal Department\b', '{{LEGAL_DEPARTMENT}}', content)
+
+        # Date placeholders (Month DD, 20XX format)
+        content = re.sub(
+            r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20XX',
+            '{{EFFECTIVE_DATE}}',
+            content
+        )
+
+        return content
 
     def _find_variables(self, content: str) -> List[str]:
         """Find template variables used in content"""
         found = set()
 
-        # Look for known variable patterns
-        # Pattern: ABC Company, Executive Management, etc.
+        # Look for template variable syntax {{VARIABLE_NAME}}
+        template_vars = re.findall(r'\{\{([A-Z_]+)\}\}', content)
+        found.update(template_vars)
+
+        # Also check for original placeholder patterns (pre-conversion)
         if 'ABC Company' in content:
             found.add('ORGANIZATION_NAME')
         if 'Executive Management' in content:

@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-Maintenance of Information Resources hardware and software is part of ABC Company’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.
+Maintenance of Information Resources hardware and software is part of {{ORGANIZATION_NAME}}’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.
 
 ## II. Purpose
 
@@ -34,7 +34,7 @@ The formal process of maintaining hardware and software ensures that a clearly d
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that use Information Resources.
 
 ## IV. Policy
 
@@ -47,7 +47,7 @@ Ensure that important servers and network infrastructure are covered by on-site 
 Arrange for faulty items that are under warranty to be repaired.
 Arrange for repairs or replacement of equipment that is not covered by warranty.
 The IT Department will procure and install other types of network and computer hardware including printers, scanners, monitors, keyboards, mice, etc.  This ensures:
-The equipment is compatible with existing ABC Company equipment.
+The equipment is compatible with existing {{ORGANIZATION_NAME}} equipment.
 Centralizes purchasing so the best price is received.
 Equipment is under warranty and maintenance support agreements.
 The equipment is properly configured and has security controls.
@@ -82,7 +82,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.03, APO09.05, APO10.05, APO11.09, APO13.07, BAI02.05, BAI04.05, DSS04.05

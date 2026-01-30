@@ -36,7 +36,7 @@ This policy is designed to protect Information Resources against intrusion by ma
 
 ## III. Scope
 
-This policy applies to all Staff that have access to ABC Company’s Information Resources.
+This policy applies to all Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
@@ -58,7 +58,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all Staff members with access to ABC Company’s Information Resources.
+This policy is to be distributed to all Staff members with access to {{ORGANIZATION_NAME}}’s Information Resources.
 Policy History
 References:
 COBIT APO01.04, APO13.04, BAI09.04, BAI10.10, DSS01.04, MEA01.04

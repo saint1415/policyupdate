@@ -27,15 +27,15 @@ approver: null
 
 ## I. Overview
 
-Managing changes is a critical part of providing a robust and valuable Information Resources infrastructure.  This procedure specifies the steps and actions performed to meet the requirements of ABC Company’s Change Management Policy.
+Managing changes is a critical part of providing a robust and valuable Information Resources infrastructure.  This procedure specifies the steps and actions performed to meet the requirements of {{ORGANIZATION_NAME}}’s Change Management Policy.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Change Management Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Change Management Policy.
 
 ## III. Scope
 
-This procedure applies to all ABC Company Staff who perform and are responsible for managing changes to Information Resources.
+This procedure applies to all {{ORGANIZATION_NAME}} Staff who perform and are responsible for managing changes to Information Resources.
 
 ## IV. Procedure
 
@@ -58,7 +58,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to all ABC Company Department Heads and those responsible for information system security.
+This procedure is to be distributed to all {{ORGANIZATION_NAME}} Department Heads and those responsible for information system security.
 Procedure History
 References:
 COBIT APO05.03, APO05.05, APO11.09-10, BAI06.02, BAI06.05-06, BAI07.06, BAI10.07

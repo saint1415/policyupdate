@@ -26,29 +26,29 @@ approver: null
 
 ## I. Overview
 
-ABC Company Information Systems are provided as a resource for all ABC Company Staff that have access to ABC Company’s network, internal systems, and Internet services.  It is important that the infrastructure, which includes cabling and the associated equipment such as routers and switches, continues to develop with sufficient flexibility to meet user demands while at the same time remaining capable of exploiting anticipated developments in networking technology.
+{{ORGANIZATION_NAME}} Information Systems are provided as a resource for all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s network, internal systems, and Internet services.  It is important that the infrastructure, which includes cabling and the associated equipment such as routers and switches, continues to develop with sufficient flexibility to meet user demands while at the same time remaining capable of exploiting anticipated developments in networking technology.
 
 ## II. Purpose
 
-The purpose of this policy is to establish the rules for the maintenance, expansion and use of the network infrastructure.  These rules are necessary to preserve the integrity, availability, and confidentiality of ABC Company information.
+The purpose of this policy is to establish the rules for the maintenance, expansion and use of the network infrastructure.  These rules are necessary to preserve the integrity, availability, and confidentiality of {{ORGANIZATION_NAME}} information.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to ABC Company’s Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-ABC Company’s IT Department is responsible for managing ABC Company’s network infrastructure and related equipment including firewalls, routers, switches, cabling, servers, etc.  The IT Department will manage maintenance and enhancements to this infrastructure.
-To provide a consistent ABC Company network infrastructure capable of exploiting new networking developments, all cabling must be installed by the ABC Company IT Department or an approved contractor.
-All network connected equipment must be configured to a specification approved by the ABC Company IT Department.  In addition, all hardware connected to the ABC Company network is subject to ABC Company IT Department management and monitoring standards.
-Changes to the configuration of active network management devices must not be made without the approval of ABC Company IT Department.
-The ABC Company network infrastructure supports a well-defined set of approved networking protocols.  Any use of non-sanctioned protocols must be approved by the ABC Company IT Department.  The networking addresses for the supported protocols are allocated, registered and managed centrally by ABC Company’s IT Department.
-All connections of the network infrastructure to external third-party networks is the responsibility of ABC Company’s IT Department.  This includes connections to external telephone networks.
-The IT Department must adhere to ABC Company’s Firewall Policy when installing and configuring software or hardware firewalls.  The use of departmental firewalls is not permitted without the written authorization from ABC Company’s IT Department.
+{{ORGANIZATION_NAME}}’s IT Department is responsible for managing {{ORGANIZATION_NAME}}’s network infrastructure and related equipment including firewalls, routers, switches, cabling, servers, etc.  The IT Department will manage maintenance and enhancements to this infrastructure.
+To provide a consistent {{ORGANIZATION_NAME}} network infrastructure capable of exploiting new networking developments, all cabling must be installed by the {{ORGANIZATION_NAME}} IT Department or an approved contractor.
+All network connected equipment must be configured to a specification approved by the {{ORGANIZATION_NAME}} IT Department.  In addition, all hardware connected to the {{ORGANIZATION_NAME}} network is subject to {{ORGANIZATION_NAME}} IT Department management and monitoring standards.
+Changes to the configuration of active network management devices must not be made without the approval of {{ORGANIZATION_NAME}} IT Department.
+The {{ORGANIZATION_NAME}} network infrastructure supports a well-defined set of approved networking protocols.  Any use of non-sanctioned protocols must be approved by the {{ORGANIZATION_NAME}} IT Department.  The networking addresses for the supported protocols are allocated, registered and managed centrally by {{ORGANIZATION_NAME}}’s IT Department.
+All connections of the network infrastructure to external third-party networks is the responsibility of {{ORGANIZATION_NAME}}’s IT Department.  This includes connections to external telephone networks.
+The IT Department must adhere to {{ORGANIZATION_NAME}}’s Firewall Policy when installing and configuring software or hardware firewalls.  The use of departmental firewalls is not permitted without the written authorization from {{ORGANIZATION_NAME}}’s IT Department.
 Firewalls, routers, and switches shall be securely configured.  Configuration and security standards for network infrastructure devices including firewalls, routers, switches, virtual environment, servers, workstations, and related components shall be developed and maintained.
 Network environments shall be designed and configured to restrict connections between trusted and untrusted networks and reviewed at planned intervals, documenting the business justification for use of all services, protocols, and ports allowed, including rationale or compensating controls implemented for those protocols considered to be insecure.  Sub networks shall be implemented and maintained for publicly accessible components that are physically or logically separated by internal networks.
 Network architecture diagrams must clearly identify high-risk environments and data flows that may have regulatory compliance impacts.  Physical and logical access to diagnostic and configuration ports shall be controlled.
-An external and accurate time source shall be used to synchronize the system clocks of all relevant information processing systems to facilitate the tracing and reconstitution of activity timelines.  Specific legal jurisdictions and orbital storage and relay platforms (US GPS & EU Galileo Satellite Network) may mandate a reference clock that differs in synchronization with the ABC Company’s domicile time reference.  In this case, the jurisdiction or platform is treated as an explicitly defined security domain.
+An external and accurate time source shall be used to synchronize the system clocks of all relevant information processing systems to facilitate the tracing and reconstitution of activity timelines.  Specific legal jurisdictions and orbital storage and relay platforms (US GPS & EU Galileo Satellite Network) may mandate a reference clock that differs in synchronization with the {{ORGANIZATION_NAME}}’s domicile time reference.  In this case, the jurisdiction or platform is treated as an explicitly defined security domain.
 Configuration management ensures that protection features are implemented and maintained in the system.  Configuration management shall be used to apply a level of discipline and control to the processes of system maintenance and modification.
 Configuration Documentation.  Procedures shall be implemented to identify and document the type, model, and brand of system or network component (e.g., a workstation, personal computer, or router), security relevant software product names and version or release numbers, and physical location.
 System Connectivity.  Procedures shall be implemented to identify and document system connectivity, including any software used for wireless communication, and any communications media.
@@ -90,7 +90,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.03, APO03.06, APO12.02, APO12.07, APO13.07, DSS06.08, MEA01.05

@@ -40,11 +40,11 @@ This policy applies to the IT Department and other departments responsible for a
 
 ### A. Responsibilities
 
-The Chief Security Officer shall ensure:
+The {{CSO_TITLE}} shall ensure:
 The organization makes documentation available to those responsible for implementing the procedures to which the documentation pertains.
 The organization reviews documentation periodically, and update as needed, in response to changes affecting the security of sensitive information.
 Operating procedures are documented and made available to all Staff that need them.
-Documentation is a mandatory requirement for all of ABC Company’s Information Resources.  Such documentation shall be kept up-to-date and be available to authorized personnel.  The documentation shall be reviewed annually by a Documentation Analyst to verify it is appropriate, sufficient, and effective at continuing Information Resource availability, confidentiality, and integrity.
+Documentation is a mandatory requirement for all of {{ORGANIZATION_NAME}}’s Information Resources.  Such documentation shall be kept up-to-date and be available to authorized personnel.  The documentation shall be reviewed annually by a Documentation Analyst to verify it is appropriate, sufficient, and effective at continuing Information Resource availability, confidentiality, and integrity.
 The Documentation Analyst shall collect and assemble documentation into an Information Resources Documentation Manual (Manual).  The Documentation Analyst shall ensure that the Manual is updated on an annual basis or more frequently if changes occur.
 
 ### B. Network Documentation
@@ -85,7 +85,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all IT Department personnel and other ABC Company staff members responsible for acquiring, implementing, and maintaining Information Resources.
+This policy is to be distributed to all IT Department personnel and other {{ORGANIZATION_NAME}} staff members responsible for acquiring, implementing, and maintaining Information Resources.
 Policy History
 References:
 COBIT APO01.02-03, APO05.05, APO11.09-10, APO12.02, APO12.07, APO13.07, BAI11.09

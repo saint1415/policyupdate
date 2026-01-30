@@ -35,25 +35,25 @@ approver: null
 
 ## I. Overview
 
-Information Resource configurations must be planned and managed to optimize resources, mitigate risk, and maximize return on investment.  This procedure specifies the steps and actions performed to meet the requirements of ABC Company’s Configuration Management Policy.
+Information Resource configurations must be planned and managed to optimize resources, mitigate risk, and maximize return on investment.  This procedure specifies the steps and actions performed to meet the requirements of {{ORGANIZATION_NAME}}’s Configuration Management Policy.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Configuration Management Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Configuration Management Policy.
 
 ## III. Scope
 
-This procedure applies to ABC Company’s Risk Management Officer, Chief Security Officer, and Director of IT.
+This procedure applies to {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and Director of IT.
 
 ## IV. Procedure
 
 ### A. Risk Management
 
-Executive Management are involved in risk management and mitigation decisions including how security processes are communicated throughout the organization.  ABC Company’s Risk Management Officer (RMO) ensures a formal and documented Risk Management Framework has been established to manage risks related to Information Resources.  For more information see the Risk Management Policy.
+{{EXEC_MGMT}} are involved in risk management and mitigation decisions including how security processes are communicated throughout the organization.  {{ORGANIZATION_NAME}}’s {{RMO_TITLE}} (RMO) ensures a formal and documented Risk Management Framework has been established to manage risks related to Information Resources.  For more information see the Risk Management Policy.
 
 ### B. Configuration Management Processes
 
-The Configuration Management Committee (Committee) consists of ABC Company’s Risk Management Officer, Chief Security Officer, and IT Director.  The Committee develops, implements and maintains configuration management processes.
+The Configuration Management Committee (Committee) consists of {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and IT Director.  The Committee develops, implements and maintains configuration management processes.
 Established configuration management processes include:
 Baselines.  Information Resources configuration baselines  identify specifications that have been formally reviewed and agreed upon.  Baselines are changed through change control procedures.
 Changes.  Changes and updates (including patches) to Information Resources are implemented only with approval of the appropriate Resource Owner.
@@ -82,7 +82,7 @@ The CSO ensures physical and logical access restrictions are implemented to mana
 
 ### D. Security/Privacy Impact Analysis
 
-When there is a material change to an Information Resource, or a security/privacy implication has been identified, the Risk Management Officer (RMO) ensures a security/privacy impact analysis is conducted.  Such impact analysis includes:
+When there is a material change to an Information Resource, or a security/privacy implication has been identified, the {{RMO_TITLE}} (RMO) ensures a security/privacy impact analysis is conducted.  Such impact analysis includes:
 Identification of applicable regulatory or compliance requirements (see the Compliance Policy for more information)
 Data classification (see the Data Classification Policy for more information)
 Risk management and risk mitigation considerations (see the Risk Management Policy for more information)
@@ -106,7 +106,7 @@ Any Staff found to have violated this procedure may be subject to disciplinary a
 
 ## VI. Distribution
 
-This procedure is to be distributed to ABC Company’s Risk Management Officer, Chief Security Officer, and Director of IT.
+This procedure is to be distributed to {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and Director of IT.
 Procedure History
 References:
 COBIT APO12.02, APO13.07, BAI05-03, BAI05-08, BAI06-06, BAI07-06, MEA03-01

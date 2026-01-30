@@ -29,7 +29,7 @@ approver: null
 
 ## I. Overview
 
-Security monitoring confirms that ABC Company’s security mechanisms and controls are in place, are effective, and are not being bypassed.
+Security monitoring confirms that {{ORGANIZATION_NAME}}’s security mechanisms and controls are in place, are effective, and are not being bypassed.
 
 ## II. Purpose
 
@@ -46,7 +46,7 @@ Internet traffic
 Electronic mail traffic
 LAN traffic, protocols, and device inventory
 Operating system security parameters
-The following files shall be checked for signs of wrongdoing and vulnerability exploitation at a frequency determined by the Risk Management Officer:
+The following files shall be checked for signs of wrongdoing and vulnerability exploitation at a frequency determined by the {{RMO_TITLE}}:
 Automated intrusion detection system logs
 Firewall logs
 User account logs
@@ -75,7 +75,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to ABC Company Executive Management, Department Heads, IT Director, Risk Management Officer, and Chief Security Officer.
+This policy is to be distributed to {{ORGANIZATION_NAME}} {{EXEC_MGMT}}, Department Heads, IT Director, {{RMO_TITLE}}, and {{CSO_TITLE}}.
 Policy History
 References:
 COBIT EDM03.07, APO01.11, APO09.05, APO13.07, DSS01.05, DSS05.02, DSS05.07

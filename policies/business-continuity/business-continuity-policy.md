@@ -32,21 +32,21 @@ approver: null
 
 ## I. Overview
 
-Business continuity ensures that ABC Company can continue to provide services during business disruptions.  The emphasis for business continuity is on critical business processes that need to be recovered in the event of a disaster.
-Business continuity plans are no longer a luxury, but an essential element of ABC Company’s risk management program.  The decision to invest in business continuity is required by legislation, third parties (e.g., insurers), and the realistic view that management must minimize the impact of a disaster on business operations.
+Business continuity ensures that {{ORGANIZATION_NAME}} can continue to provide services during business disruptions.  The emphasis for business continuity is on critical business processes that need to be recovered in the event of a disaster.
+Business continuity plans are no longer a luxury, but an essential element of {{ORGANIZATION_NAME}}’s risk management program.  The decision to invest in business continuity is required by legislation, third parties (e.g., insurers), and the realistic view that management must minimize the impact of a disaster on business operations.
 
 ## II. Purpose
 
-The purpose of this policy is to protect ABC Company’s Information Resources and its ability to continue business operations in the event of a disaster or component failure.  Business continuity requires management to identify risks and install the appropriate mitigating technologies.
-An up-to-date business continuity plan creates a competitive advantage out of its ability to respond to rapid changes in its environment.  With an effective plan, ABC Company can move from simple recovery to experiencing the benefits associated with the continuing of business operations that are in line with the corporate strategy of facilitating growth and profitability.
+The purpose of this policy is to protect {{ORGANIZATION_NAME}}’s Information Resources and its ability to continue business operations in the event of a disaster or component failure.  Business continuity requires management to identify risks and install the appropriate mitigating technologies.
+An up-to-date business continuity plan creates a competitive advantage out of its ability to respond to rapid changes in its environment.  With an effective plan, {{ORGANIZATION_NAME}} can move from simple recovery to experiencing the benefits associated with the continuing of business operations that are in line with the corporate strategy of facilitating growth and profitability.
 
 ## III. Scope
 
-This policy applies to all Staff that are responsible for continuing ABC Company’s business operations.
+This policy applies to all Staff that are responsible for continuing {{ORGANIZATION_NAME}}’s business operations.
 
 ## IV. Policy
 
-The Chief Security Officer shall ensure:
+The {{CSO_TITLE}} shall ensure:
 The organization has established, and implemented as needed, procedures to restore any loss of sensitive data stored electronically.
 A disaster recovery plan address issues specific to the operating environment.
 A disaster recovery plan addresses the data that is to be restored.
@@ -62,7 +62,7 @@ The organization assesses the relative criticality of specific applications and 
 A Business Impact Analysis (BIA) formally documents risks and impact to the organization.  The disaster recovery plan adequately mitigates business disruption risks.
 The organization has established, and implemented as needed, procedures that allow facility access in support of restoration of lost data under disaster recovery and emergency mode operations.  Procedures allow facility access while restoring lost data.  Procedures identify personnel that are allowed to re-enter a facility to perform data restoration.  Procedures are also addressed in the organization’s disaster recovery plan.
 Procedures for obtaining necessary sensitive information during an emergency.  Procedures specify the staff members authorized to access sensitive information during an emergency.
-ABC Company shall develop and maintain a comprehensive Business Continuity Plan (Plan). This Plan encompasses both IT contingency planning as well as Company’s corporate office business unit contingency planning.  This is not an IT-only undertaking and must cross all business functions and departments.
+{{ORGANIZATION_NAME}} shall develop and maintain a comprehensive Business Continuity Plan (Plan). This Plan encompasses both IT contingency planning as well as Company’s corporate office business unit contingency planning.  This is not an IT-only undertaking and must cross all business functions and departments.
 Company’s risk assessment and Business Impact Analysis (BIA) provide the foundation for business continuity planning.  The Business Continuity Plan should cover all essential and critical business activities.  The Business Continuity Plan shall consist of:
 Business Resumption Plan – plan to resume business operations including logistics and steps to minimize risks.
 Disaster Recovery Plan - the technical aspect of business continuity planning; the advance planning and preparing necessary to minimize loss and ensure continuity of the critical business functions of an organization in the event of disaster.

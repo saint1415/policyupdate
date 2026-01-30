@@ -26,15 +26,15 @@ approver: null
 
 ## I. Overview
 
-ABC Company is committed to the social, environmental and economic well-being of the global community in which our Staff live and work.
+{{ORGANIZATION_NAME}} is committed to the social, environmental and economic well-being of the global community in which our Staff live and work.
 
 ## II. Purpose
 
-To help reduce ABC Company's carbon footprint, save costs related to energy consumption, and extend the life of computers and other equipment, ABC Company requires Staff to follow energy efficient computing strategies.  We encourage employees to apply the same principles of energy conservation to shared-use devices within our office environments.
+To help reduce {{ORGANIZATION_NAME}}'s carbon footprint, save costs related to energy consumption, and extend the life of computers and other equipment, {{ORGANIZATION_NAME}} requires Staff to follow energy efficient computing strategies.  We encourage employees to apply the same principles of energy conservation to shared-use devices within our office environments.
 
 ## III. Scope
 
-This policy applies to all Staff that use and manage ABC Company’s Information Resources.
+This policy applies to all Staff that use and manage {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
@@ -93,7 +93,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.11, APO10.05, BAI02.05-06, BAI02.09, BAI10.05

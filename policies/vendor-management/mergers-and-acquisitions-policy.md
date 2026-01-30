@@ -22,6 +22,7 @@ references:
 variables:
 - CSO_TITLE
 - EXEC_MGMT
+- LEGAL_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -39,40 +40,40 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s strategic plan includes the ability to grow market share and revenues by merging or acquiring other entities.  When merging or integrating Information Resources it is important that ABC Company Staff understand and agree on the appropriate procedures to protect ABC Company’s assets.
+{{ORGANIZATION_NAME}}’s strategic plan includes the ability to grow market share and revenues by merging or acquiring other entities.  When merging or integrating Information Resources it is important that {{ORGANIZATION_NAME}} Staff understand and agree on the appropriate procedures to protect {{ORGANIZATION_NAME}}’s assets.
 
 ## II. Purpose
 
-The purpose of this policy is to establish responsibilities related to mergers and acquisitions (M&A) of outside entities and their Information Resources.  This policy also defines minimum security requirements related to integrating outside systems with ABC Company’s Information Systems.
+The purpose of this policy is to establish responsibilities related to mergers and acquisitions (M&A) of outside entities and their Information Resources.  This policy also defines minimum security requirements related to integrating outside systems with {{ORGANIZATION_NAME}}’s Information Systems.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff (current as well as merged/acquired) that have access to ABC Company’s Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff (current as well as merged/acquired) that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
 ### A. M&A Assessment Team
 
-Merger and Acquisition (M&A) assessments are performed to ensure that the new entity’s Information Resources do not pose a risk to ABC Company.
-ABC Company will assemble an assessment team consisting of members of the following departments:
-Chief Security Officer
-Legal Department
+Merger and Acquisition (M&A) assessments are performed to ensure that the new entity’s Information Resources do not pose a risk to {{ORGANIZATION_NAME}}.
+{{ORGANIZATION_NAME}} will assemble an assessment team consisting of members of the following departments:
+{{CSO_TITLE}}
+{{LEGAL_DEPARTMENT}}
 IT security
-The purpose of the M&A assessment team is to identify and analyze risks related to Information Resources, develop a risk treatment plan, and implement risk reduction and corrective action prior to integrating the new entity’s systems with ABC Company’s Information Resources.
+The purpose of the M&A assessment team is to identify and analyze risks related to Information Resources, develop a risk treatment plan, and implement risk reduction and corrective action prior to integrating the new entity’s systems with {{ORGANIZATION_NAME}}’s Information Resources.
 
 ### B. Security Requirements
 
-The following minimum requirements must be achieved before the new entity’s systems can be integrated with or connected to ABC Company’s Information Resources:
-Data Center – must comply with ABC Company’s Physical Security Policy
-Facilities – must comply with ABC Company’s Physical Access Policy
-Firewalls – must comply with ABC Company’s Firewall Policy.
-Laptops and other mobile devices – must comply with ABC Company’s Portable Computing Policy
-Routers – must comply with ABC Company’s Router Security Policy
-Security Protection – must comply with ABC Company’s Anti-malware Policy
-Servers – must comply with ABC Company’s Server Hardening Policy.
-Wireless – must company with ABC Company’s Wireless Access Policy.
-Workstations – must comply with ABC Company’s Workstation Security Policy.
-Staff from the new entity must receive appropriate training commensurate with their job duties.  At a minimum, users must comply with ABC Company’s administrative related policies including, but not limited to:
+The following minimum requirements must be achieved before the new entity’s systems can be integrated with or connected to {{ORGANIZATION_NAME}}’s Information Resources:
+Data Center – must comply with {{ORGANIZATION_NAME}}’s Physical Security Policy
+Facilities – must comply with {{ORGANIZATION_NAME}}’s Physical Access Policy
+Firewalls – must comply with {{ORGANIZATION_NAME}}’s Firewall Policy.
+Laptops and other mobile devices – must comply with {{ORGANIZATION_NAME}}’s Portable Computing Policy
+Routers – must comply with {{ORGANIZATION_NAME}}’s Router Security Policy
+Security Protection – must comply with {{ORGANIZATION_NAME}}’s Anti-malware Policy
+Servers – must comply with {{ORGANIZATION_NAME}}’s Server Hardening Policy.
+Wireless – must company with {{ORGANIZATION_NAME}}’s Wireless Access Policy.
+Workstations – must comply with {{ORGANIZATION_NAME}}’s Workstation Security Policy.
+Staff from the new entity must receive appropriate training commensurate with their job duties.  At a minimum, users must comply with {{ORGANIZATION_NAME}}’s administrative related policies including, but not limited to:
 Acceptable Use Policy
 E-mail Policy
 Password Policy
@@ -82,12 +83,12 @@ Reporting Violations Policy
 
 ### C. M&A Assessment Report
 
-Once the risk reduction and risk treatment strategies have been implemented, the assessment team will deliver an M&A Assessment Report to ABC Company Legal Department.  The M&A Assessment Report will document:
+Once the risk reduction and risk treatment strategies have been implemented, the assessment team will deliver an M&A Assessment Report to {{ORGANIZATION_NAME}} {{LEGAL_DEPARTMENT}}.  The M&A Assessment Report will document:
 Initial status of new entity’s systems
 Actions taken to reduce or transfer risks
 Residual risks that remain after risk reduction strategies
 Written recommendation related to the risks
-The Legal Department will review the M&A Assessment Report and make a recommendation to ABC Company Executive Management to either proceed with the integration, accepting any residual risk, or delay the integration until such time as the new entity’s systems can meet the above requirements.
+The {{LEGAL_DEPARTMENT}} will review the M&A Assessment Report and make a recommendation to {{ORGANIZATION_NAME}} {{EXEC_MGMT}} to either proceed with the integration, accepting any residual risk, or delay the integration until such time as the new entity’s systems can meet the above requirements.
 
 ## V. Enforcement
 
@@ -95,7 +96,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01-05, APO02.08, APO08.05-06, APO09.05, APO10.05, APO12.02, APO12.07

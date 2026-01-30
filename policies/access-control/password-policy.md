@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-Computer accounts are used to grant access to ABC Company’s Information Systems.  The process of creating, controlling, and monitoring computer accounts is extremely important to an overall security program.
+Computer accounts are used to grant access to {{ORGANIZATION_NAME}}’s Information Systems.  The process of creating, controlling, and monitoring computer accounts is extremely important to an overall security program.
 
 ## II. Purpose
 
@@ -34,17 +34,17 @@ Identification and authentication access controls play an important role in help
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that utilize Information Systems with IDs and passwords (credentials).  This policy applies whether Staff is using ABC Company Information Systems, Staff owned devices for Company approved work, or Staff use Information Systems of third party service providers for work related activities.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that utilize Information Systems with IDs and passwords (credentials).  This policy applies whether Staff is using {{ORGANIZATION_NAME}} Information Systems, Staff owned devices for Company approved work, or Staff use Information Systems of third party service providers for work related activities.
 
 ## IV. Policy
 
-The Chief Security Officer (CSO) shall ensure:
+The {{CSO_TITLE}} (CSO) shall ensure:
 Policies and procedures manage the process of creating, changing, and safeguarding passwords/phrases
 Policies and procedures prevent staff from sharing passwords/phrases with others.
 Procedures advise staff to commit their passwords/phrases to memory and not allow them to be written down.
 Policies and procedures govern the password/phrase change frequency.
 Policies and procedures dictate when passwords/phrases must be supplemented with additional access controls such as tokens and biometric.
-This Policy applies to all ABC Company related authentication activities including, but not limited to, the following:
+This Policy applies to all {{ORGANIZATION_NAME}} related authentication activities including, but not limited to, the following:
 Administrator accounts.
 User accounts.
 Network infrastructure devices (e.g. firewalls, routers, wireless access points, etc.).
@@ -62,7 +62,7 @@ When the user logs on for the first time, the user will be required to change th
 
 ### B. Selecting Passwords/Phrases
 
-The Chief Security Officer, working with the appropriate Data Owners, will determine the appropriate authentication methods to be used.  In general, there are two options:
+The {{CSO_TITLE}}, working with the appropriate Data Owners, will determine the appropriate authentication methods to be used.  In general, there are two options:
 Passwords change frequently.  In this approach, passwords change every 90 days and users are not allowed to re-use the most recent 5 prior passwords.  The advantage is that if someone becomes aware of a person’s password, they only have a short time (90 days) to use it.  The disadvantage is that users may have a large number of passwords that expire on a frequent basis.
 Phrases are not required to be changed on a regular basis.  Users are educated to choose phrases (memorized secrets) that are long and complex.  Phrases are not the same as passwords.  A phrase is a longer version of a password and is typically composed of multiple words.  The phrase “We're off to see the wizard, The Wonderful Wizard of Oz” can be converted to WotstwTWWoO.  By converting some letters to numbers and special characters the phrase is even more secure.  With this option, systems and applications need to allow phrases up to 64 positions in length.  Due to the possible length of the phrase, the Staff member shall have the option of seeing the phrase as it is entered, not just a series of asterisks or bullets.
 Where possible, a password/phrase strength meter shall be used to help ensure Staff select long, strong, and complex passwords/phrases that meet the following requirements:
@@ -113,7 +113,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all Staff members with access to ABC Company’s Information Resources.
+This policy is to be distributed to all Staff members with access to {{ORGANIZATION_NAME}}’s Information Resources.
 Policy History
 References:
 COBIT APO01.03, APO01.11, APO12.02, APO13.07, DSS05.02, DSS05.07, MEA02.11

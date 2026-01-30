@@ -40,7 +40,7 @@ approver: null
 
 ## I. Overview
 
-This Policy provides direction and guidance on managing problems that can disrupt ABC Company’s operations and/or adversely affect our image and reputation.
+This Policy provides direction and guidance on managing problems that can disrupt {{ORGANIZATION_NAME}}’s operations and/or adversely affect our image and reputation.
 
 ## II. Purpose
 
@@ -48,13 +48,13 @@ This Policy is established to prevent and detect problems and incidents.  Where 
 
 ## III. Scope
 
-This Policy applies to all individuals who manage and are responsible for ABC Company’s Information Resources.
+This Policy applies to all individuals who manage and are responsible for {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-The Chief Security Officer (CSO) shall ensure:
+The {{CSO_TITLE}} (CSO) shall ensure:
 Help desk or other teams are assembled to receive notice of problems and manage the process of investigating, responding to, and reporting of problems.
-Procedures and processes identify and respond to suspected or known problems, mitigate them to the extent practicable, measure harmful effects of known problems, document problems and their outcomes, collect evidence, and provide appropriate reporting to ABC Company management.
+Procedures and processes identify and respond to suspected or known problems, mitigate them to the extent practicable, measure harmful effects of known problems, document problems and their outcomes, collect evidence, and provide appropriate reporting to {{ORGANIZATION_NAME}} management.
 Response procedures list examples of problems and the appropriate responses for each.
 
 ### A. Background
@@ -74,11 +74,11 @@ Problem review – the CSO ensures a periodic review of the Problem History Data
 
 The CSO shall identify preventive controls that help prevent problems and incidents.  When problems occur, preventive controls help contain and minimize the impact on business operations.  Examples of preventive controls are listed below.
 Only users with special training or a need for additional access shall be allowed to change system settings and install programs that are not operating system programs.  For more information see the User Privilege Policy.
-Network documentation helps ABC Company adhere to industry best practices, reduce downtime and makes the troubleshooting process more efficient when problems arise.  For more information see the Network Documentation Policy.
+Network documentation helps {{ORGANIZATION_NAME}} adhere to industry best practices, reduce downtime and makes the troubleshooting process more efficient when problems arise.  For more information see the Network Documentation Policy.
 Before approving updates, System Administrators shall understand the addressed vulnerability, previous patches or system update required, programs affected by the change, and problems that may result as a result of the change.  For more information see the System Update Policy.
 Periodic backup copies of software and data shall be made, tested, and stored securely. The physical security of the removable media must be maintained with plans to allow recovery from unexpected problems.  For more information see the Security Policy.
 Hard drives that are not fully encrypted (e.g., have encrypted partitions, virtual disks, or are unencrypted) that connect to unencrypted (e.g. USB drives) may be vulnerable to information spillage from the encrypted region into the unencrypted region.  The hard drive’s unencrypted auto-recovery folder may retain files that have been saved to the encrypted portion of the disk or USB.  Full disk encryption shall be implemented to avoid this problem.  For more information see the Encryption Policy.
-Vendors play an important role in the support of ABC Company hardware, software, and operations.  Vendors can monitor and fine tune system performance, monitor hardware performance and errors, modify environmental systems, and reset alarm thresholds.  For more information see the Vendor Access Policy.
+Vendors play an important role in the support of {{ORGANIZATION_NAME}} hardware, software, and operations.  Vendors can monitor and fine tune system performance, monitor hardware performance and errors, modify environmental systems, and reset alarm thresholds.  For more information see the Vendor Access Policy.
 Processes shall be in place to install and test all new/replacement software and hardware.  Supervise all problem solving. Problem solving shall be supervised and documented.  For more information see the Business Continuity Disaster Recovery Plan.
 Staff shall follow approved procedures when dealing with copyright, trademark, and trade secrets.  For more information see the Acceptable Use Policy.
 
@@ -87,7 +87,7 @@ Staff shall follow approved procedures when dealing with copyright, trademark, a
 The CSO shall identify detective controls that detect problems and incidents.  When problems occur, early detection can help contain and minimize the impact on business operations.  Examples of detective controls are listed below.
 Compliance tracking shall be used to map programs and activities to standards established by the CSO.  Reports shall be generated and used to identify gaps or problems so that the appropriate corrective action can be taken.  For more information see the Security Awareness and Training Plan.
 Application logs help identify security incidents, establish baselines, provide information about problems and unusual conditions, assist with incident investigation, and help detect attacks.  The CSO shall identify application events and activities to monitored and logged.   For more information see the Logging Policy.
-The IT Department shall be responsible for establishing, communicating and enforcing department level practices and procedures that promote security.   Account auditing shall identify accounts that no longer have authorized access to ABC Company's Information Resources.  The IT Department shall identify and correct problems caused on any network or system under their control.  For more information see the IT Management Policy.
+The IT Department shall be responsible for establishing, communicating and enforcing department level practices and procedures that promote security.   Account auditing shall identify accounts that no longer have authorized access to {{ORGANIZATION_NAME}}'s Information Resources.  The IT Department shall identify and correct problems caused on any network or system under their control.  For more information see the IT Management Policy.
 Resource monitoring and problem identification processes shall use audit trails to detect disk failures, over utilization of system resources, network outages, and similar events.  Auditing systems shall consist of logging (collecting and recording events) and reporting (data analysis and reporting).  For more information see the Audit Trails Policy.
 Testing provides assurance that backups are complete and error free.  Backups shall be tested to  identify problems and issues related to the inability to restore from media.  Such problems may include older media, poor quality, not properly stored, current backup software cannot read old backups, applications or data were not stored on original backups, encryption or key management issues (can’t read encrypted backups), etc.  For more information see the Backup Plan.
 The Emergency Action Applications Team shall participate in preparing and conducting tests at the Contingency Site.  If a problem exists on how an application will operate at the Contingency Site, the Emergency Action Applications Team must prepare and document solutions for the problem.  For more information see the Business Continuity Disaster Recovery Plan.
@@ -97,7 +97,7 @@ Effective privacy protection shall include robust mechanisms for assuring compli
 
 The CSO shall identify corrective controls that mitigate problems and restore operations.  When problems occur, early correction can help contain minimize the impact on business operations.  Examples of corrective controls are listed below.
 The appropriate system-level or application-level administrator should review the audit trails following a known system or application software problem, a known violation of existing requirements by a user, or some unexplained system or user problem.  For more information see the Audit Trails Policy.
-Software manufacturers frequently provide bug fixes and software patches for known problems.  In-house change control procedures shall developed to provide for adequate testing before making changes and for backing out the changes if problems are detected.  Should bug fixes or software patches cause a failure of software or network services, the Contingency Site Coordinator shall take the appropriate action to correct the problem either by authorizing a manufacturer-provided "fix" or by designating that the software be returned to the version prior to loading the changes.  Some of ABC Company’s applications packages were acquired from third-party sources and are maintained by those companies.  These vendors can assist in correcting application problems.  For more information see the Business Continuity Disaster Recovery Plan.
+Software manufacturers frequently provide bug fixes and software patches for known problems.  In-house change control procedures shall developed to provide for adequate testing before making changes and for backing out the changes if problems are detected.  Should bug fixes or software patches cause a failure of software or network services, the Contingency Site Coordinator shall take the appropriate action to correct the problem either by authorizing a manufacturer-provided "fix" or by designating that the software be returned to the version prior to loading the changes.  Some of {{ORGANIZATION_NAME}}’s applications packages were acquired from third-party sources and are maintained by those companies.  These vendors can assist in correcting application problems.  For more information see the Business Continuity Disaster Recovery Plan.
 If a severe incident occurs, the Emergency Coordinator shall determine the severity of the problem and decide on the appropriate action.  All recovery teams will be asked if they are aware of other information or circumstances that need to be considered.  The teams should collectively discuss all of the basic aspects of the situation, and considerations of problems due to the processing schedule or anything else, before proceeding to carry out their individual team functions.  This is important to ensure that all teams understand the key issues which will result in better coordination.  The final activity of the recovery process will be a meeting and debriefing of the Readiness Team, all Coordinators, and Emergency Action Team Leaders concerning the activities of the recovery.  The Emergency Coordinator is responsible to ensure that events, problems, solutions, etc., are documented.  For more information see the Business Continuity Disaster Recovery Plan and Business Continuity Business Resumption Plan.
 
 ### E. Training
@@ -110,7 +110,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to the Chief Security Officer, Company Management, Director of IT, Help Desk, and Security Staff.
+This policy is to be distributed to the {{CSO_TITLE}}, Company Management, Director of IT, Help Desk, and Security Staff.
 Policy History
 References:
 COBIT EDM01.03, EDM02.03, EDM03.07, EDM05.10, BAI09.04, DSS01.05, DSS03.05

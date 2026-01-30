@@ -12,9 +12,10 @@ references:
 - overview-this-plan
 - this-incident-response-plan
 variables:
-- APPROVAL_DATE
 - CSO_TITLE
 - EFFECTIVE_DATE
+- HR_DEPARTMENT
+- LEGAL_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -121,7 +122,7 @@ Appendix E - Incident Response Team Procedures	26
 
 ### A. IT Operations Team	26
 
-### B. Chief Security Officer (CSO)	26
+### B. {{CSO_TITLE}} (CSO)	26
 
 ### C. Information Privacy Team	28
 
@@ -141,7 +142,7 @@ Appendix E - Incident Response Team Procedures	26
 
 ### K. Legal Team	31
 
-### L. Human Resources Team	32
+### L. {{HR_DEPARTMENT}} Team	32
 
 ### M. Public Relations Team	32
 
@@ -164,7 +165,7 @@ This Plan provides a well-defined, organized approach for handling any potential
 ## II. Incident Response Team
 
 An Incident Response Team is established to provide a quick, effective and orderly response to computer related Incidents such as virus infections, hacker attempts and break-ins, improper disclosure of confidential information to others, system service interruptions, breach of personal information, and other events with serious implications.  The Incident Response Team’s mission is to prevent damage to our Information Resource assets that can result in loss of revenue, negative impact on our image or reputation, or loss of goodwill.  This Plan documents the process by which the Incident Response Team provides an immediate, effective, and skillful response to any unexpected event involving Information Resources.
-The Incident Response Team is authorized to take appropriate steps deemed necessary to contain, mitigate, or resolve Information Resource Incidents. The Team is responsible for investigating suspected intrusion attempts or other Incidents in a timely, cost-effective manner and reporting findings to management and the appropriate authorities as necessary. The Chief Security Officer (CSO) will coordinate these investigations.
+The Incident Response Team is authorized to take appropriate steps deemed necessary to contain, mitigate, or resolve Information Resource Incidents. The Team is responsible for investigating suspected intrusion attempts or other Incidents in a timely, cost-effective manner and reporting findings to management and the appropriate authorities as necessary. The {{CSO_TITLE}} (CSO) will coordinate these investigations.
 The Incident Response Team will implement various monitoring systems and subscribe to security alert services to keep abreast of relevant threats, vulnerabilities, or alerts from actual Incidents.
 
 ### A. Incident Response Team Members
@@ -173,7 +174,7 @@ Each of the following will assign a primary and alternate member to the appropri
 Business Applications Team
 Credit Payment Systems Team
 Customer Database Team
-Human Resources Team
+{{HR_DEPARTMENT}} Team
 Information Privacy Team
 Information Security Team
 Internal Audit Team
@@ -303,7 +304,7 @@ For the purposes of this Plan, and as defined by the Federal Trade Commission (F
 ### B. Security Breach
 
 A security breach is defined as unauthorized acquisition of data that compromises the security, confidentiality, or integrity of personal information maintained by us.  Good faith acquisition of personal information by an employee or agent of our company for business purposes is not a breach, provided that the personal information is not used or subject to further unauthorized disclosure.
-ABC Company must identify and document all systems and processes that store or utilize personal information on individuals.  Documentation must contain system name, device name, file name, location, database administrator and system administrator (primary and secondary contacts for each).  The business area and the IT development group must maintain the contact list of database and system administrators.
+{{ORGANIZATION_NAME}} must identify and document all systems and processes that store or utilize personal information on individuals.  Documentation must contain system name, device name, file name, location, database administrator and system administrator (primary and secondary contacts for each).  The business area and the IT development group must maintain the contact list of database and system administrators.
 Likewise, all authorized users who access or utilize personal information on individuals should be identified and documented.  Documentation must contain user name, department, device name (i.e., workstation or server), file name, location, and system administrator (primary and secondary contacts).
 
 ### C. Data Owner Responsibilities
@@ -338,7 +339,7 @@ A laptop computer is lost or stolen, but the data is encrypted and may only be a
 
 #### 1. First Level
 
-Chief Security Officer (CSO)
+{{CSO_TITLE}} (CSO)
 Director of IT
 IT Audit Director
 Network Architecture Manager
@@ -374,7 +375,7 @@ Secret Service
 ### D. Notification Order
 
 IT Operations Center (central point of contact)
-Chief Security Officer (CSO)
+{{CSO_TITLE}} (CSO)
 Information Security Team
 Information Privacy Team
 Appropriate Client Systems Manager
@@ -393,7 +394,7 @@ Loss Prevention (where appropriate)
 Executive VP and Director of IT (When nature and impact of Incident has been determined)
 Chief Audit Executive
 Business Partners (if connection/data has been compromised; avoid downstream liability)
-Human Resources
+{{HR_DEPARTMENT}}
 
 # Appendix B - Incident Response Team Members
 
@@ -476,7 +477,7 @@ If the controller has not already communicated the personal data breach to the d
 
 The PCI Data Security Standard was the result of a joint initiative by VISA, MasterCard, American Express, Discover, Diners Club, and JCB to create a single security standard for storing and transmitting sensitive customer information.
 The PCI Data Security Standard applies to all members, merchants, and service providers that store, process or transmit cardholder data. Failure to comply with the standards could result in a merchant being subjected to a fine or the loss of access to the credit card networks.
-Refer to ABC Company’s PCI Policy for more information on PCI requirements.
+Refer to {{ORGANIZATION_NAME}}’s PCI Policy for more information on PCI requirements.
 
 ### B. On-site reviews
 
@@ -636,23 +637,23 @@ The IT Operations Team will serve as a central point of contact for reporting an
 After documenting the facts presented by the caller and verifying that a privacy breach or suspected privacy breach occurred, the IT Operations Team will open a Priority Incident Request.  This will begin an automated paging process to immediately notify the CSO.
 The IT Operations Team will page the primary and secondary contacts in the Information Security Team.  The IT Operations Team advises that a breach or suspected breach of personal information on an individual has occurred.  After the Information Security Team analyzes the facts and confirms that the Incident warrants Incident response team activation, the Incident Request will be updated to indicate “Incident Response Team Activation – Critical Incident”.
 
-### B. Chief Security Officer (CSO)
+### B. {{CSO_TITLE}} (CSO)
 
 When notified by the IT Operations Team, the CSO performs a preliminary analysis of the facts and assess the situation to determine the nature and scope of the Incident.
-Informs the Legal Department and the Chief Privacy Officer that a possible privacy breach has been reported and provides them an overview of the situation.
+Informs the {{LEGAL_DEPARTMENT}} and the Chief Privacy Officer that a possible privacy breach has been reported and provides them an overview of the situation.
 Contacts the individual who reported the problem.
 Identifies the systems and type(s) of information affected and determines whether the Incident could be a breach, or suspected breach of personal information about an individual.  Every breach may not require participation of all Incident Response Team members (e.g., if the breach was a result of hard copy disposal or theft, the investigation may not require the involvement of system administrators, the firewall administrator, and other technical support staff).
-Reviews the preliminary details with the Legal Department and the Chief Privacy Office.
+Reviews the preliminary details with the {{LEGAL_DEPARTMENT}} and the Chief Privacy Office.
 If a privacy breach affecting personal information is confirmed, Incident Response Team activation is warranted.  Contact the IT Operations Team and advise them to update the Incident Request with “Incident Response Team Activation – Critical Security Problem”.
 Notify the Public Relations Department of the details of the investigation and breach. Keep them updated on key findings as the investigation proceeds.
 The Information Security Team is responsible for documenting all details of an Incident and facilitating communication to executive management and other auxiliary members as needed.
 Contact all appropriate database and system administrators to assist in the investigation effort.  Direct and coordinate all activities involved with Incident Response Team members in determining the details of the breach.
 Contact appropriate Incident Response Team members and First-Level Escalation members.
-Identify and contact the appropriate Data Owner affected by the breach. In coordination with the Legal Department, Information Privacy Team and Data Owner, determine additional notification requirements (e.g., Human Resources, external parties).
-If the breach occurred at a third party location, determine if a legal contract exists.  Work with the Legal Department, Information Privacy Team and Data Owner to review contract terms and determine next course of action.
+Identify and contact the appropriate Data Owner affected by the breach. In coordination with the {{LEGAL_DEPARTMENT}}, Information Privacy Team and Data Owner, determine additional notification requirements (e.g., {{HR_DEPARTMENT}}, external parties).
+If the breach occurred at a third party location, determine if a legal contract exists.  Work with the {{LEGAL_DEPARTMENT}}, Information Privacy Team and Data Owner to review contract terms and determine next course of action.
 Work with the appropriate parties to determine the extent of the potential breach. Identify data stored and compromised on all test, development and production systems and the number of individuals at risk.
 Determine the type of personal information that is at risk, including but not limited to: Name, Address, Social Security Number/Social Insurance Number, Account number, Cardholder name, Cardholder address, Medical and Health Information
-If personal information is involved, have the Data Owner determine who might be affected.  Coordinate next steps with the Legal Department, Information Privacy Team and Public Relations (e.g., individual notification procedures).
+If personal information is involved, have the Data Owner determine who might be affected.  Coordinate next steps with the {{LEGAL_DEPARTMENT}}, Information Privacy Team and Public Relations (e.g., individual notification procedures).
 Determine if an intruder has exported, or deleted any personal information data.
 Determine where and how the breach occurred.
 Identify the source of compromise, and the timeframe involved.
@@ -665,7 +666,7 @@ Change the wireless network Service Set Identifier (SSID) on the access point (A
 Monitor systems and the network for signs of continued intruder access.
 Preserve all system and audit logs and evidence for law enforcement and potential criminal investigations.  Ensure that the format and platform used is suitable for review and analysis by a court of law if needed.  Document all actions taken, by whom, and the exact time and date.  Each employee involved in the investigation must record his or her own actions. Record all forensic tools used in the investigation.
 Note: Visa has specific procedures that must be followed for evidence preservation.
-Notify the CPO in coordination with the Legal Department as appropriate. Provide a summary of confirmed findings, and of the steps taken to mitigate the situation.
+Notify the CPO in coordination with the {{LEGAL_DEPARTMENT}} as appropriate. Provide a summary of confirmed findings, and of the steps taken to mitigate the situation.
 If Protected Health Information (PHI) is involved, follow the additional steps outlined under Appendix C – U.S. Privacy Legislation, Health Information Technology for Economic and Clinical Health (HITECH) Act.
 If credit cardholder data is involved, follow additional steps outlined under Appendix D – Payment Card Standards.  Bankcard companies, specifically Visa and MasterCard, have detailed requirements for reporting security Incidents and the suspected or confirmed compromise of cardholder data. Reporting is typically required within 24 hours of compromise.
 If an internal user (authorized or unauthorized employee, contractor, consultant, etc.) was responsible for the breach, contact the appropriate Human Resource Manager for disciplinary action and possible termination.  In the case of contractors, temporaries, or other third-party personnel, ensure discontinuance of the user's service agreement with the company.
@@ -756,7 +757,7 @@ Be cognizant of major contracts which the organization enters that may have an i
 Be aware of other companies’ privacy policies that may affect our organization and affiliates.
 When a Privacy Breach Occurs:
 After confirmation that a breach of personal information on individuals has occurred, notify the Chief Legal Counsel
-Coordinate activities between business area and other departments (e.g., Human Resources, if necessary).
+Coordinate activities between business area and other departments (e.g., {{HR_DEPARTMENT}}, if necessary).
 If necessary, notify the appropriate authorities (e.g., Federal Trade Commission (FTC)/RCMP, the relevant privacy office, etc.)
 Coordinate with Public Relations on the timing and content of notification to individuals.
 If the Information Security Office determines that the breach warrants law enforcement involvement, any notification to individuals may be delayed if law enforcement determines the notification will impede a criminal investigation. Notification will take place after law enforcement determines that it will not compromise the investigation.
@@ -769,14 +770,14 @@ Remind individuals of the need to remain vigilant over the next 12 to 24 months 
 Inform each individual about the availability of the Federal Trade Commission’s (FTC’s) online guidance regarding measures to protect against identity theft, and encourage the individual to report any suspected Incidents of identity theft to the FTC.  Provide the FTC’s website address and telephone number for the purposes of obtaining the guidance and reporting suspected Incidents of identity theft.
 Inform each individual about the availability of online guidance regarding measures to protect against identity theft.  Encourage the individual to report any suspected Incidents of identity theft to the local law enforcement agency.
 
-### L. Human Resources Team
+### L. {{HR_DEPARTMENT}} Team
 
 If notified of a privacy breach affecting employee personal information, open an Incident request with the IT Operations Team to activate the Plan for suspected privacy breach.
 When notified by the Information Security Team that the Incident Response Team has been activated for a breach of information on an individual, perform a preliminary analysis of the facts and assess the situation to determine the nature of the Incident.
 Work with the IT Operations Team, CSO, CPO and business area to identify the extent of the breach.
 If appropriate, notify the business area that a breach has been reported and is under investigation.
 Work with the business area to ensure there is no further exposure to privacy breaches.
-Work with the CSO, CPO and Legal Department to determine if the Incident warrants further action.
+Work with the CSO, CPO and {{LEGAL_DEPARTMENT}} to determine if the Incident warrants further action.
 
 ### M. Public Relations Team
 
@@ -798,7 +799,7 @@ Prepare statement and, if necessary, potential Q & A.
 Coach spokesperson on statement and potential Q & A.
 Invite select media to attend and cover organization’s proactive message.
 Use conference as a platform for communicating who the breach involves, what the organization is doing to correct breach, how it happened and the organization’s apology but reassurance of its privacy policies
-Prepare appropriate response to media, customer, and/or employee; and have the CPO and Legal Department approve prior to distribution.
+Prepare appropriate response to media, customer, and/or employee; and have the CPO and {{LEGAL_DEPARTMENT}} approve prior to distribution.
 Proactively respond to media inquiries, if necessary.
 Monitor media coverage and circulate accordingly.
 
@@ -823,11 +824,11 @@ Kroll Data Breach Response, forensics, call center (877) 300-6816
 
 ### B. Credit/Monitoring Services
 
-ABC Company has chosen Experian’s ProtectMyID service that offers free credit monitoring and identity theft protection.  Experian is a leading global information services company that helps individuals understand and keep track of their credit report, as well as monitor for and resolve identify theft.  For more information visit https://www.experian.com/consumer-products/protect-my-id.html.
+{{ORGANIZATION_NAME}} has chosen Experian’s ProtectMyID service that offers free credit monitoring and identity theft protection.  Experian is a leading global information services company that helps individuals understand and keep track of their credit report, as well as monitor for and resolve identify theft.  For more information visit https://www.experian.com/consumer-products/protect-my-id.html.
 
 # Appendix G – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Incident Response Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Incident Response Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

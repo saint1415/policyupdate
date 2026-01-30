@@ -26,11 +26,11 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information Resources are continuously becoming more complex with a dependency between resources.  From time to time each Information Resource requires an outage for planned upgrades, maintenance, or fine-tuning.  In addition, unplanned outages may occur that require upgrades, maintenance, or fine-tuning.  Managing these changes is a critical part of providing a robust and valuable Information Resources infrastructure.
+{{ORGANIZATION_NAME}}’s Information Resources are continuously becoming more complex with a dependency between resources.  From time to time each Information Resource requires an outage for planned upgrades, maintenance, or fine-tuning.  In addition, unplanned outages may occur that require upgrades, maintenance, or fine-tuning.  Managing these changes is a critical part of providing a robust and valuable Information Resources infrastructure.
 
 ## II. Purpose
 
-The purpose of this policy is to manage changes in a planned and predictable manner so that Staff can plan accordingly.  Changes require planning, monitoring, and follow-up evaluation to reduce negative impact to the user community and to increase the value of ABC Company’s Information Resources.
+The purpose of this policy is to manage changes in a planned and predictable manner so that Staff can plan accordingly.  Changes require planning, monitoring, and follow-up evaluation to reduce negative impact to the user community and to increase the value of {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## III. Scope
 
@@ -58,7 +58,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Department Heads and those responsible for information system security.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Department Heads and those responsible for information system security.
 Policy History
 References:
 COBIT APO05.03, APO05.05, APO11.09-10, BAI06.02, BAI06.05-06, BAI07.06, BAI10.07

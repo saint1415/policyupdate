@@ -28,15 +28,15 @@ approver: null
 
 ## I. Overview
 
-Maintenance of Information Resources hardware and software is part of ABC Company’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.  This procedure specifies the steps and actions performed to meet the requirements of ABC Company’s  Hardware and Software Maintenance Policy.
+Maintenance of Information Resources hardware and software is part of {{ORGANIZATION_NAME}}’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.  This procedure specifies the steps and actions performed to meet the requirements of {{ORGANIZATION_NAME}}’s  Hardware and Software Maintenance Policy.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in of ABC Company’s  Hardware and Software Maintenance Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in of {{ORGANIZATION_NAME}}’s  Hardware and Software Maintenance Policy.
 
 ## III. Scope
 
-This procedure applies to all ABC Company Staff responsible for maintaining Information Systems hardware and software.
+This procedure applies to all {{ORGANIZATION_NAME}} Staff responsible for maintaining Information Systems hardware and software.
 
 ## IV. Procedure
 
@@ -72,7 +72,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to all ABC Company Staff who manage and maintain Information System hardware and software.
+This procedure is to be distributed to all {{ORGANIZATION_NAME}} Staff who manage and maintain Information System hardware and software.
 Procedure History
 References:
 COBIT APO01.03, APO09.05, APO10.05, APO11.09, APO13.07, BAI02.05, BAI04.05, DSS04.05

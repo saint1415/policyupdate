@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-Policies and procedures help ABC Company meet compliance requirements by addressing identify theft issues in a uniform and consistent manner.  For example, they dictate the steps to be followed when we receive a notice of address discrepancy from a consumer reporting agency.
+Policies and procedures help {{ORGANIZATION_NAME}} meet compliance requirements by addressing identify theft issues in a uniform and consistent manner.  For example, they dictate the steps to be followed when we receive a notice of address discrepancy from a consumer reporting agency.
 
 ## II. Purpose
 
@@ -34,23 +34,23 @@ The purpose of the Identity Theft Protection Policy is to establish the rules fo
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to ABC Company’s customer information.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s customer information.
 
 ## IV. Policy
 
 ### A. Program Coordinator
 
-ABC Company has appointed a Program Coordinator of our Identity Theft Red Flags Program.  The Program Coordinator shall prepare an identity theft Risk Assessment Report to determine whether ABC Company offers or maintains covered accounts as defined in the Fair and Accurate Credit Transaction Act of 2003 (“FACTA”).  At a minimum, the Risk Assessment Report shall review the accounts and services offered, assess past incidents, document suspicious information, evaluate identity theft detection methods, and assess response procedures.
+{{ORGANIZATION_NAME}} has appointed a Program Coordinator of our Identity Theft Red Flags Program.  The Program Coordinator shall prepare an identity theft Risk Assessment Report to determine whether {{ORGANIZATION_NAME}} offers or maintains covered accounts as defined in the Fair and Accurate Credit Transaction Act of 2003 (“FACTA”).  At a minimum, the Risk Assessment Report shall review the accounts and services offered, assess past incidents, document suspicious information, evaluate identity theft detection methods, and assess response procedures.
 The Program Coordinator shall design, implement, and maintain policies and procedures implementing identity theft detection procedures, response procedures, and an Identify Theft Protection Program to address identity theft and satisfy the requirements of FACTA legislation.  The Identity Theft Protection Program shall include, but not be limited to, services offered, policies and procedures related to identity theft, relevant red flags, detection, prevention, and mitigation actions, as well as updates to the Identity Theft Protection Program.
 Specific responsibilities that have been delegated to the Program Coordinator include:
 Identifying and assessing the risks of identity theft and discovery of address discrepancies in each relevant area of the Company’s operation, and evaluating the effectiveness of current safeguards that have been implemented to control these risks and to respond to situations in an appropriate fashion.
 Designing and implementing policies and procedures that are appropriate for the size and complexity of our Company and its operations considering the nature and scope of our activities and the sensitivity of the customer information we collect, store, and share with others.
 Regularly monitoring and testing the policies and procedures for compliance with all applicable law and to determine the effectiveness of our procedure in preventing identity theft.
 Assisting with the selection of appropriate service providers that are capable of maintaining safeguards to protect against identity theft and reviewing service provider contracts to ensure that each maintains appropriate procedures for identifying and responding to situations involving identity theft.
-Evaluating and adjusting this procedure in light of relevant circumstances, including changes to ABC Company’s operations, business relationships, technological developments and/or other matters that may impact the security or integrity of customer information and response to identity theft.
+Evaluating and adjusting this procedure in light of relevant circumstances, including changes to {{ORGANIZATION_NAME}}’s operations, business relationships, technological developments and/or other matters that may impact the security or integrity of customer information and response to identity theft.
 The Program Coordinator is the contact person for law enforcement agencies to communicate possible situations of identity theft.  Upon receiving a request for information from any law enforcement agency, the Program Coordinator will:
 Provide the law enforcement agency with his/her name, title, and appropriate contact information, such as a mailing address, e-mail address, telephone number and facsimile number, and notify the law enforcement agency promptly of any modifications with respect to contact information.
-If ABC Company has identified possible identity theft or becomes aware of an address discrepancy, the Program Coordinator will send a Report to the customer, as necessary, and to the appropriate law enforcement agency that contains:
+If {{ORGANIZATION_NAME}} has identified possible identity theft or becomes aware of an address discrepancy, the Program Coordinator will send a Report to the customer, as necessary, and to the appropriate law enforcement agency that contains:
 The name of the individual, entity or organization
 The account numbers or, in the case of transactions, the date and type of each transaction
 The Social Security Number, taxpayer identification number, passport number, date of birth, address, or other personal identifying information provided by the individual or entity at the time of the transaction.
@@ -62,7 +62,7 @@ Providing recommendations for substantive/material changes to the Policies and P
 
 ### B. Employee Management and Training
 
-All current employees and new hires, as well as independent contractors who provide services to or that perform services on behalf of ABC Company, will:
+All current employees and new hires, as well as independent contractors who provide services to or that perform services on behalf of {{ORGANIZATION_NAME}}, will:
 Be subject to satisfactory reference and consumer/criminal report investigations, where appropriate.
 Only have access to customer information if they have a business reason for seeing it.
 Participate in the Company’s privacy policies and information security standards and identity theft and notice of address discrepancy training program and attend education and training seminars on a regular basis, if not otherwise provided for by any independent contractor for its own employees.
@@ -156,7 +156,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff who use Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff who use Information Resources.
 Policy History
 References:
 COBIT EDM01.01, APO12.02, APO12.07, APO13.07, DSS03.02, DSS05.02, MEA03.01

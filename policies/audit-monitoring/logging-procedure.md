@@ -27,20 +27,20 @@ approver: null
 
 ## I. Overview
 
-This procedure provides guidelines on the monitoring and logging of ABC Company’s Information Resources including ABC Company’s network and communications systems.
+This procedure provides guidelines on the monitoring and logging of {{ORGANIZATION_NAME}}’s Information Resources including {{ORGANIZATION_NAME}}’s network and communications systems.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Logging Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Logging Policy.
 
 ## III. Scope
 
-This procedure applies to all ABC Company IT system administrators, IT security Staff, the IT Director, and the Chief Security Officer.
+This procedure applies to all {{ORGANIZATION_NAME}} IT system administrators, IT security Staff, the IT Director, and the {{CSO_TITLE}}.
 
 ## IV. Procedure
 
-Access to ABC Company’s network and communications are logged and monitored to identify potential misuse of systems or information.  System access is monitored regularly to prevent attempts at unauthorized access and to confirm that access control systems are effective.
-Logs are secured and are only available to personnel authorized by IT Management.  Logs are retained per ABC Company’s Data Retention Policy.
+Access to {{ORGANIZATION_NAME}}’s network and communications are logged and monitored to identify potential misuse of systems or information.  System access is monitored regularly to prevent attempts at unauthorized access and to confirm that access control systems are effective.
+Logs are secured and are only available to personnel authorized by IT Management.  Logs are retained per {{ORGANIZATION_NAME}}’s Data Retention Policy.
 
 ### A. Underlying requirements
 
@@ -79,7 +79,7 @@ Detection of suspicious/malicious activity such as from an Intrusion Detection o
 Access to information is logged and includes:
 Read, write, update, or delete Sensitive Information
 User authentication and authorization such as user login and logout
-Read, write, update, or delete information identified by the Chief Security Officer (CSO) as needing to be logged
+Read, write, update, or delete information identified by the {{CSO_TITLE}} (CSO) as needing to be logged
 The CSO ensures automated audit trails for all Information Systems and components can reconstruct the following events:
 All individual user accesses to sensitive information
 All actions taken by any individual with root or administrative privileges
@@ -139,7 +139,7 @@ Logs are stored in a SQL database that itself generates audit logs in compliance
 
 ### E. Logging Security Controls
 
-Logs are reviewed by Administrators to troubleshoot problems and detect and investigate attempted and successful unauthorized activity.  Given the ability of Administrators to manipulate log files to cover unauthorized activity, ABC Company IT Management ensures a separation of duties between operations and security monitoring.
+Logs are reviewed by Administrators to troubleshoot problems and detect and investigate attempted and successful unauthorized activity.  Given the ability of Administrators to manipulate log files to cover unauthorized activity, {{ORGANIZATION_NAME}} IT Management ensures a separation of duties between operations and security monitoring.
 The CSO ensures:
 Log settings track and record log configuration changes
 Emergency access to systems is only used in extreme circumstances when authorized by IT Management
@@ -162,7 +162,7 @@ Any Staff found to have violated this procedure may be subject to disciplinary a
 
 ## VI. Distribution
 
-This procedure is to be distributed to all IT system administrators, IT security Staff, the IT Director, and the Chief Security Officer.
+This procedure is to be distributed to all IT system administrators, IT security Staff, the IT Director, and the {{CSO_TITLE}}.
 Procedure History
 References:
 COBIT EDM02.03, APO11.09, APO12.02, APO13.07, BAI04.05, BAI09.04, DSS01.05, DSS05.02

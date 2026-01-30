@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-The IT Department is responsible for planning, developing, implementing and maintaining ABC Company's network.  The use of Internet Protocol (IP) and network addresses is included in this responsibility.
+The IT Department is responsible for planning, developing, implementing and maintaining {{ORGANIZATION_NAME}}'s network.  The use of Internet Protocol (IP) and network addresses is included in this responsibility.
 
 ## II. Purpose
 
@@ -34,11 +34,11 @@ Internet Protocol and network addresses are numeric labels assigned to each netw
 
 ## III. Scope
 
-This policy applies to IT Department Staff responsible for managing ABC Company networks.
+This policy applies to IT Department Staff responsible for managing {{ORGANIZATION_NAME}} networks.
 
 ## IV. Policy
 
-The IT Department Network Administrators are assigned the responsibility of managing ABC Company’s IP and network addresses.
+The IT Department Network Administrators are assigned the responsibility of managing {{ORGANIZATION_NAME}}’s IP and network addresses.
 Addresses may be assigned to a device either at the time of startup (dynamic), or permanently assigned (static) by a fixed configuration of its hardware or software.   The IT Department shall maintain procedures for implementing, maintaining, and terminating IP and network addresses.
 Where possible, Network Administrators shall centrally manage the addresses without having to specifically configure each device on the network as a manual procedure.  Dynamic IP addresses can be configured on LANs and broadband networks by Dynamic Host Configuration Protocol (DHCP) servers.  This avoids the administrative burden of assigning specific static addresses to each device on a network.  It also allows many devices to share limited address space on a network if only some devices are connected at a particular time.  Dynamic IP configuration shall be enabled by default so that a user does not need to manually enter settings to connect to a network with a DHCP server.
 Systems requiring access to the Internet shall be configured with public (global) IPv4 or IPv6 addresses.

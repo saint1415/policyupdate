@@ -31,15 +31,15 @@ Routers and switches are networking devices that send and receive data packets b
 
 ## II. Purpose
 
-This policy describes router security configurations to help minimize and control risks related to the connectivity and availability of ABC Company’s Information Resources.
+This policy describes router security configurations to help minimize and control risks related to the connectivity and availability of {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## III. Scope
 
-This policy applies to all Staff that manage ABC Company’s network and communications systems.
+This policy applies to all Staff that manage {{ORGANIZATION_NAME}}’s network and communications systems.
 
 ## IV. Policy
 
-Every router and switch deployed in the ABC Company network must be appropriately configured and meet configuration and security requirements.
+Every router and switch deployed in the {{ORGANIZATION_NAME}} network must be appropriately configured and meet configuration and security requirements.
 Access controls shall be used to provide separate authentication, authorization, and accounting services.
 Configurations shall prohibit direct public access between public networks (e.g. Internet) and any Information Resource containing sensitive information.  Configurations, access control lists, and other network filtering technology must be used to limit network access to devices that store sensitive data.  Configurations shall restrict all traffic, inbound and outbound, from untrusted networks (including wireless) and hosts and specifically deny all other traffic except for necessary protocols.
 Local user accounts shall not be configured on the router.   To prevent unauthorized changes, the device shall be protected using a password available from the IT Director.  Access rules shall be implemented and maintained per business needs and as approved by the IT Director.
@@ -65,7 +65,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to IT Staff that manage ABC Company’s routers and switches.
+This policy is to be distributed to {{IT_STAFF}} that manage {{ORGANIZATION_NAME}}’s routers and switches.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

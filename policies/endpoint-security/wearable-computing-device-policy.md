@@ -31,21 +31,21 @@ Today's Wearable Computing Devices include advanced features such as the ability
 
 ## II. Purpose
 
-The purpose of this policy is to help manage Wearable Computing Device related risks Staff members and ABC Company.
+The purpose of this policy is to help manage Wearable Computing Device related risks Staff members and {{ORGANIZATION_NAME}}.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that use Information Resources.
 
 ## IV. Policy
 
-Only IT Department approved Wearable Computing Devices may be used to access ABC Company networks and Information Resources.
-ABC Company uses a multi-layered approach to protecting Wearable Computing Devices and related "information assets".  Securing Wearable Computing Devices is the responsibility of both the device user as well as ABC Company’s IT Department.
-User activities can download malware to a Wearable Computing Device. Once installed, the malware can launch attacks against ABC Company’s internal network.  Staff security education and awareness training should be provided on a regular basis.  Staff should only download and install applications from trusted sources.  In addition, Staff should not click on message links from unknown senders or visit unknown web sites.
-If possible, Wearable Computing Device protection software should be installed on all devices that access the Internet and especially Wearable Computing Devices that access ABC Company’s Information Systems.
-ABC Company’s IT Department shall establish standards for Wearable Computing Devices, phone protection software, etc.  This reduces IT administration costs and offers better protection for the enterprise.
-Wearable Computing Devices shall have security mechanisms that protect against unauthorized access to ABC Company’s Information Systems.  Examples include passwords and devices equipped with sensors that read the electrocardiogram (ECG) of the person wearing the device to validate the person's own unique heartbeat signature prior to granting access to Information Resources.
-The ABC Company IT Department shall perform periodic risk assessments to identify, manage, and reduce Wearable Computing Device related risks and access to Information Resources.  Refer to the Risk Assessment Policy for more information.
+Only IT Department approved Wearable Computing Devices may be used to access {{ORGANIZATION_NAME}} networks and Information Resources.
+{{ORGANIZATION_NAME}} uses a multi-layered approach to protecting Wearable Computing Devices and related "information assets".  Securing Wearable Computing Devices is the responsibility of both the device user as well as {{ORGANIZATION_NAME}}’s IT Department.
+User activities can download malware to a Wearable Computing Device. Once installed, the malware can launch attacks against {{ORGANIZATION_NAME}}’s internal network.  Staff security education and awareness training should be provided on a regular basis.  Staff should only download and install applications from trusted sources.  In addition, Staff should not click on message links from unknown senders or visit unknown web sites.
+If possible, Wearable Computing Device protection software should be installed on all devices that access the Internet and especially Wearable Computing Devices that access {{ORGANIZATION_NAME}}’s Information Systems.
+{{ORGANIZATION_NAME}}’s IT Department shall establish standards for Wearable Computing Devices, phone protection software, etc.  This reduces IT administration costs and offers better protection for the enterprise.
+Wearable Computing Devices shall have security mechanisms that protect against unauthorized access to {{ORGANIZATION_NAME}}’s Information Systems.  Examples include passwords and devices equipped with sensors that read the electrocardiogram (ECG) of the person wearing the device to validate the person's own unique heartbeat signature prior to granting access to Information Resources.
+The {{ORGANIZATION_NAME}} IT Department shall perform periodic risk assessments to identify, manage, and reduce Wearable Computing Device related risks and access to Information Resources.  Refer to the Risk Assessment Policy for more information.
 The IT Department shall implement procedures and measures to strictly limit access to sensitive data from Wearable Computing Devices which are generally higher-risk than non-portable devices (e.g., desktop computers).
 
 ## V. Enforcement
@@ -54,7 +54,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO10.05, APO12.02, APO13.07, BAI02.05, BAI03.05, DSS01.05, DSS05.02

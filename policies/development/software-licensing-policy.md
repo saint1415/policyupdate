@@ -31,24 +31,24 @@ End-user license agreements are used by software and other information technolog
 
 ## II. Purpose
 
-This policy establishes the rules for licensed software use on ABC Company’s Information Systems.
+This policy establishes the rules for licensed software use on {{ORGANIZATION_NAME}}’s Information Systems.
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
-ABC Company provides a sufficient number of licensed copies of software so that Staff can perform the duties in an expedient and effective manner.  Management must make appropriate arrangements with the involved vendor(s) for additional licensed copies if and when additional copies are needed for business activities.
-Third party copyrighted information or software, that ABC Company does not have specific approval to store and/or use, must not be stored on ABC Company Information Systems.  Systems Administrators will remove such information and software unless the involved users can provide proof of authorization from the rightful owner(s).
-Third party software in the possession of ABC Company must not be copied unless such copying is consistent with relevant license agreements and prior management approval of such copying has been obtained, or copies are being made for contingency planning purposes.
+{{ORGANIZATION_NAME}} provides a sufficient number of licensed copies of software so that Staff can perform the duties in an expedient and effective manner.  Management must make appropriate arrangements with the involved vendor(s) for additional licensed copies if and when additional copies are needed for business activities.
+Third party copyrighted information or software, that {{ORGANIZATION_NAME}} does not have specific approval to store and/or use, must not be stored on {{ORGANIZATION_NAME}} Information Systems.  Systems Administrators will remove such information and software unless the involved users can provide proof of authorization from the rightful owner(s).
+Third party software in the possession of {{ORGANIZATION_NAME}} must not be copied unless such copying is consistent with relevant license agreements and prior management approval of such copying has been obtained, or copies are being made for contingency planning purposes.
 If permitted in the license agreement, Staff may copy an image of the software onto a computer file server for the purpose of downloading and installing the software onto computers within the same network.
-If the license agreement permits a copy for a secondary or home computer, Staff may copy an image of the software for such purpose providing that Staff remove such copy on the secondary or home computer when employment with ABC Company is terminated.
+If the license agreement permits a copy for a secondary or home computer, Staff may copy an image of the software for such purpose providing that Staff remove such copy on the secondary or home computer when employment with {{ORGANIZATION_NAME}} is terminated.
 If the software license agreement permits copying without restrictions on a number of devices, Staff may copy an image of the software for such purpose as long as Staff remains within the number of permitted devices/copies.
 Software may be designated as trial or evaluation versions.  Staff may install and use this type of software only during the trial or evaluation period and only for specified purposes.
 All installations of software on company equipment must be performed by IT Department Staff.  Per the Acceptable Use Policy:
 Only the IT Department is authorized to install software on servers, storage, and other related Information Resources.
-Installation of software without approval from ABC Company management is unauthorized.
+Installation of software without approval from {{ORGANIZATION_NAME}} management is unauthorized.
 
 ## V. Enforcement
 
@@ -56,7 +56,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all Staff that use ABC Company Information Resources.
+This policy is to be distributed to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 Policy History
 References:
 COBIT APO01.03, APO05.05, APO10.05, APO12.02, APO12.07, BAI04.05, DSS04.05

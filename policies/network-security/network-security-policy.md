@@ -42,38 +42,38 @@ approver: null
 
 ## I. Overview
 
-Networks are a growing and important asset for ABC Company (Company).  They provide a critical competitive advantage in the form of information gathering, improved external communications, and increased customer responsiveness.  As more and more of our Staff use networks to connect with our customers, service providers, and other key organizations, it is important that Staff understand and agree on the appropriate procedures to protect ABC Company’s assets.
+Networks are a growing and important asset for {{ORGANIZATION_NAME}} (Company).  They provide a critical competitive advantage in the form of information gathering, improved external communications, and increased customer responsiveness.  As more and more of our Staff use networks to connect with our customers, service providers, and other key organizations, it is important that Staff understand and agree on the appropriate procedures to protect {{ORGANIZATION_NAME}}’s assets.
 
 ## II. Purpose
 
-This policy outlines the principles, procedures, and guidelines to identify, manage, and maintain security on ABC Company's computer network.  It is designed to ensure that our computer network and data is protected from security breaches.
+This policy outlines the principles, procedures, and guidelines to identify, manage, and maintain security on {{ORGANIZATION_NAME}}'s computer network.  It is designed to ensure that our computer network and data is protected from security breaches.
 
 ## III. Scope
 
-This policy applies to the Chief Security Officer, department heads, and all Staff that implement and maintain Information Systems.
+This policy applies to the {{CSO_TITLE}}, department heads, and all Staff that implement and maintain Information Systems.
 
 ## IV. Policy
 
 ### A. Classification
 
-All ABC Company network equipment (e.g. routers, servers, workstations) shall be classified and placed in a network segment appropriate to its level of classification.  Access to these segments must be controlled in an appropriate manner. Whenever data travels over a network segmentation of a lower security classification, the data shall be protected in a manner appropriate to its classification level.
+All {{ORGANIZATION_NAME}} network equipment (e.g. routers, servers, workstations) shall be classified and placed in a network segment appropriate to its level of classification.  Access to these segments must be controlled in an appropriate manner. Whenever data travels over a network segmentation of a lower security classification, the data shall be protected in a manner appropriate to its classification level.
 All users, hosts, and data shall be classified as security level 1 Public (information intended or required for public release), security level 2 Sensitive (sensitive data that requires additional levels of protection), or security level 3 Confidential (sensitive data that must be protected from unauthorized disclosure or public release). See the Data Classification Policy for more information.  All physical network segments, IP subnets and other IP traffic carriers must be classified in the same way.  All data travelling on a network must be classified, and all users using network equipment or requesting data over the network must be assigned a level of clearance according to the same system.
-It is the function of the person designated as the Resource Owner to have all equipment under his or her control classified.  Classification shall be performed in consultation between the Resource Owner, or an assigned representative, and the Chief Security Officer (CSO), but the final decision shall lie with the CSO.
+It is the function of the person designated as the Resource Owner to have all equipment under his or her control classified.  Classification shall be performed in consultation between the Resource Owner, or an assigned representative, and the {{CSO_TITLE}} (CSO), but the final decision shall lie with the CSO.
 Classification of Users
-Every user shall be designated as unclassified until the user’s classification is explicitly changed with the written approval of the CSO.  When new Staff join ABC Company, a request may be made by the appropriate manager to the CSO for a new level of clearance.  It is the responsibility of the manager to justify the requested level of clearance.
-Unless there is strong justification, all new Staff shall be cleared for the level ABC Company Only, but only after they have signed acceptance ABC Company policies and non-disclosure forms.
+Every user shall be designated as unclassified until the user’s classification is explicitly changed with the written approval of the CSO.  When new Staff join {{ORGANIZATION_NAME}}, a request may be made by the appropriate manager to the CSO for a new level of clearance.  It is the responsibility of the manager to justify the requested level of clearance.
+Unless there is strong justification, all new Staff shall be cleared for the level {{ORGANIZATION_NAME}} Only, but only after they have signed acceptance {{ORGANIZATION_NAME}} policies and non-disclosure forms.
 The CSO is responsible for managing and controlling the record of clearance levels for all personnel.  It is the responsibility of all Resource Owners and system administrators to determine the security level of a given user before granting that user access to any system.
 It is the responsibility of the user to know his or her clearance level and to understand the rights and limitations associated with that clearance.
 Classification of Networks
-The CSO shall classify network segments that constitute part of the ABC Company infrastructure.  A complete list of the classifications of all network segments in the ABC Company network and in the ABC Company backbone shall be maintained by the CSO.  Classifications for existing ABC Company network segments are as follows:
-Public – ABC Company’s backbone, remote sites, server local area network, portal segment.
+The CSO shall classify network segments that constitute part of the {{ORGANIZATION_NAME}} infrastructure.  A complete list of the classifications of all network segments in the {{ORGANIZATION_NAME}} network and in the {{ORGANIZATION_NAME}} backbone shall be maintained by the CSO.  Classifications for existing {{ORGANIZATION_NAME}} network segments are as follows:
+Public – {{ORGANIZATION_NAME}}’s backbone, remote sites, server local area network, portal segment.
 Sensitive – user local area networks.
 Confidential – Server local area network, backup server local area network.
 Classification of Equipment
-The CSO shall assign a classification to all equipment.  The CSO shall be responsible for maintaining a complete list of the classifications of all Information Systems in the ABC Company network. Classifications for ABC Company equipment are as follows:
+The CSO shall assign a classification to all equipment.  The CSO shall be responsible for maintaining a complete list of the classifications of all Information Systems in the {{ORGANIZATION_NAME}} network. Classifications for {{ORGANIZATION_NAME}} equipment are as follows:
 Public – backbone equipment (e.g. switches, remote access servers) that is not located on premises.  Equipment used in the transfer of data to and from the Internet.
 Sensitive – user workstations, print servers, etc.
-Confidential – servers and other hosts used in the management of the ABC Company’s backbone infrastructure and network infrastructure.
+Confidential – servers and other hosts used in the management of the {{ORGANIZATION_NAME}}’s backbone infrastructure and network infrastructure.
 Classification of Data
 For more information see the Data Classification Policy.
 
@@ -106,13 +106,13 @@ Strong user level controls – token-based user authentication systems, certific
 
 ### D. Security Controls
 
-The CSO shall ensure sufficient and effective security controls are implemented and maintained to protect ABC Company’s internal network.  For more information see the Information Security Policy.
+The CSO shall ensure sufficient and effective security controls are implemented and maintained to protect {{ORGANIZATION_NAME}}’s internal network.  For more information see the Information Security Policy.
 Access – Information Resources shall  be protected against unauthorized access by establishing requirements for the authorization and management of user accounts, providing user authentication, and implementing access controls on Information Resources.  Inactivity timeouts and screen savers shall be used to protect against unauthorized access to systems.  Accounts shall be locked after a number of failed logon attempts.  For more information see the Identification and Authentication Policy and Securing Information Systems Policy.
 Anti-virus – desktop and laptop computers must have anti-virus software or filters installed and updated. In addition, workstations and servers must have anti-virus software installed and updated daily.  For more information see the Anti-Malware Policy.
 Authentication – access to Sensitive Information shall be authenticated (e.g. by using a strong and complex password) with file access privileges differentiated by user.  Administrator level passwords shall be exceptionally strong.  Wherever possible, user accounts with fewer privileges shall be used instead of administrator accounts.  Periodic review of access shall be performed.  Password management systems shall be interactive and shall ensure quality passwords.  For more information see the Password Policy.
 Backups – periodic backup copies of software, data, and system configurations shall be made, tested, and stored in a secure manner. The physical security of the removable media shall be maintained and plans made to allow recovery from unexpected problems.  For more information see the Backup Policy.
 Communications – processes deny network communications traffic by default (i.e. deny all) and only allow network communications traffic by exception. Communications over unauthorized TCP or UDP ports or application traffic shall be denied to ensure that only authorized protocols are allowed to cross the network boundary in or out of the network at each of the organization’s network boundaries.  Security mechanisms prevent remote devices from simultaneously establishing non-remote connections with the Information System while also communicating via some other connection to external networks.  Communications with known malicious or unused Internet IP addresses shall be denied and access limited only to trusted and necessary IP address ranges at each of the organization's network boundaries.
-Configuration – Information Systems shall be configured in accordance with applicable ABC Company security guidelines and standards.  When received from a vendor, computers and other devices may not be configured for security and may require initial as well as ongoing review of the configuration and security of the operating system and software.  For more information see the Configuration Management Policy and Network Security Policy.
+Configuration – Information Systems shall be configured in accordance with applicable {{ORGANIZATION_NAME}} security guidelines and standards.  When received from a vendor, computers and other devices may not be configured for security and may require initial as well as ongoing review of the configuration and security of the operating system and software.  For more information see the Configuration Management Policy and Network Security Policy.
 Design – Information System design and software development principles shall promote effective information security.  Processes shall be implemented to monitor, control, and protect Information Systems from information transmitted or received at the external boundaries and key internal boundaries of the Information Systems.  An inventory of all of the organization’s network boundaries shall be implemented and maintained.
 Disposal – a secure deletion program shall be used to erase data from hard disks and media prior to transfer or disposal of hardware.  Permanent media (e.g., CD's, etc.) must be physically destroyed.  For more information see the Disposal Policy.
 Documentation – network documentation shall be kept up-to-date and be available to authorized personnel.  The documentation shall be reviewed annually by a Documentation Analyst to verify it is appropriate, sufficient, and effective at continuing Information Resource availability, confidentiality, and integrity.  For more information see the Documentation Policy.
@@ -154,7 +154,7 @@ For more information see the Encryption Policy.
 
 The CSO shall:
 Approve and maintain a list of all classifications
-Approve ABC Company’s network design and topography
+Approve {{ORGANIZATION_NAME}}’s network design and topography
 Control and manage all trusted points
 Ensure security controls are implemented and maintained
 Resource Owners and system administrators shall:
@@ -172,7 +172,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to the Chief Security Officer, department heads, and all Staff that implement and maintain Information Systems.
+This policy is to be distributed to the {{CSO_TITLE}}, department heads, and all Staff that implement and maintain Information Systems.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

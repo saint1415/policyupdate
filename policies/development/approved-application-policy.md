@@ -27,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-To protect the security of ABC Company Information Resources, all Staff must ensure that only approved applications are used.
+To protect the security of {{ORGANIZATION_NAME}} Information Resources, all Staff must ensure that only approved applications are used.
 
 ## II. Purpose
 
@@ -35,13 +35,13 @@ This policy is designed to protect Information Systems by requiring all Staff to
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
-The IT Department shall prepare and maintain a list of software applications that are approved for general use by ABC Company Staff.  The list of programs that appears on the approved list of software applications shall include general office products such as word processing, spreadsheet, and presentations as well as programs specific to a department or function (e.g. anti-malware).
+The IT Department shall prepare and maintain a list of software applications that are approved for general use by {{ORGANIZATION_NAME}} Staff.  The list of programs that appears on the approved list of software applications shall include general office products such as word processing, spreadsheet, and presentations as well as programs specific to a department or function (e.g. anti-malware).
 Staff may use and operate programs that appear on the approved list of software applications.  If a Staff member wants to use an application that does not appear on the approved list, the Staff member must submit a request to the IT department to evaluate the application.  This process applies to licensed applications, shareware, freeware, trial programs, and other software.  The IT Department will evaluate requests and update the approved list of software applications on an as needed basis.
-Only approved software applications are allowed to access ABC Company networks and Information Resources.  Under no circumstances shall Staff use programs that are not on the approved list of Software applications.  Staff members who introduce a security issue by installing and running an unapproved program risk disciplinary action.
+Only approved software applications are allowed to access {{ORGANIZATION_NAME}} networks and Information Resources.  Under no circumstances shall Staff use programs that are not on the approved list of Software applications.  Staff members who introduce a security issue by installing and running an unapproved program risk disciplinary action.
 Special exceptions may be made to this policy for specific employees depending on the required job function and the skills of the employee.  Some reasons for exception include:
 A Staff member who tests new applications on a test network and then on the main network
 A programmer that must run applications in order to test the software
@@ -57,7 +57,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all Staff that use ABC Company Information Resources.
+This policy is to be distributed to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 Policy History
 References:
 COBIT APO01.02, APO01.06, BAI02.04, BAI06.01

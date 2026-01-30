@@ -30,16 +30,16 @@ Firewalls are hardware devices or software programs that control the flow of tra
 
 ## II. Purpose
 
-This policy helps protect ABC Company’s Information Resources and related information asset availability, confidentiality, and integrity.
+This policy helps protect {{ORGANIZATION_NAME}}’s Information Resources and related information asset availability, confidentiality, and integrity.
 
 ## III. Scope
 
-This policy applies to all Staff responsible for security and protecting ABC Company’s Information Resources.
+This policy applies to all Staff responsible for security and protecting {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-ABC Company uses a multi-layered approach to protect Information Resources and related "information assets".  At one time, most firewalls were deployed at network perimeters.  This provided some measure of protection for internal hosts, but did not recognize all instances and forms of attack when attacks were sent from one internal host to another and did not pass through network firewalls.  Network security design shall include firewall functionality at places other than the network perimeter to provide an additional layer of security, as well as to protect devices that are placed directly onto external networks.
-The Chief Security Officer (CSO) shall ensure the following controls are in place:
+{{ORGANIZATION_NAME}} uses a multi-layered approach to protect Information Resources and related "information assets".  At one time, most firewalls were deployed at network perimeters.  This provided some measure of protection for internal hosts, but did not recognize all instances and forms of attack when attacks were sent from one internal host to another and did not pass through network firewalls.  Network security design shall include firewall functionality at places other than the network perimeter to provide an additional layer of security, as well as to protect devices that are placed directly onto external networks.
+The {{CSO_TITLE}} (CSO) shall ensure the following controls are in place:
 A formal process for approving and testing all network connections and changes to the firewall and configurations.
 A current network diagram identifies all connections between environments containing sensitive data and other networks, including any wireless networks.
 A diagram documents sensitive data flows across systems and networks.
@@ -55,10 +55,10 @@ IT security Staff shall define how an organization’s firewalls should handle i
 Restrict inbound and outbound traffic to that which is necessary for sensitive data and specifically deny all other traffic.
 Install perimeter firewalls between any all wireless networks and sensitive data and configure these firewalls to deny or, control (if such traffic is necessary for business purposes), permit only authorized traffic between the wireless environment and environments containing sensitive data.
 The IT Director shall conduct a risk analysis to develop a list of the types of traffic needed by the organization and how they must be secured.  The risk analysis shall include which types of traffic can traverse a firewall under what circumstances.  Generally, all inbound and outbound traffic not expressly required should be blocked.  This practice reduces the risk of attack and can also decrease the volume of traffic carried on the organization’s networks.
-IT security Staff shall identify the requirements that should be considered when determining the types of firewall to be implemented.  IT security Staff should consider network related assets as well as the firewall technologies most effective at blocking network related threats.  IT security Staff shall consider performance considerations as well as concerns regarding the integration of the firewall into existing network and security infrastructures. The firewall solution design should involve requirements related to ABC Company’s physical environment and personnel as well as consideration of possible future needs, virtual private networks (VPN), etc.
+IT security Staff shall identify the requirements that should be considered when determining the types of firewall to be implemented.  IT security Staff should consider network related assets as well as the firewall technologies most effective at blocking network related threats.  IT security Staff shall consider performance considerations as well as concerns regarding the integration of the firewall into existing network and security infrastructures. The firewall solution design should involve requirements related to {{ORGANIZATION_NAME}}’s physical environment and personnel as well as consideration of possible future needs, virtual private networks (VPN), etc.
 IT security Staff shall create network traffic rules that are as specific as possible.  IT security Staff shall consider the types of traffic required and protocols the firewall may need to use for management purposes.
-IT security Staff is responsible for managing the firewall architectures, policies, software, and other components throughout the life of the firewall solutions.  There are many aspects to firewall management. For example, choosing the type or types of firewalls to deploy and their positions within the network can significantly affect the security policies that the firewalls can enforce.  Policy rules may need to be updated as ABC Company’s requirements change, when new applications or servers are implemented within the network, etc.
-Firewall performance should be monitored to ensure availability of ABC Company’s Information Resources.  If possible, monitoring tools shall be used to monitor issues and take action before components become overwhelmed.  Logs and alerts should also be continuously monitored to identify threats, both successful and unsuccessful.
+IT security Staff is responsible for managing the firewall architectures, policies, software, and other components throughout the life of the firewall solutions.  There are many aspects to firewall management. For example, choosing the type or types of firewalls to deploy and their positions within the network can significantly affect the security policies that the firewalls can enforce.  Policy rules may need to be updated as {{ORGANIZATION_NAME}}’s requirements change, when new applications or servers are implemented within the network, etc.
+Firewall performance should be monitored to ensure availability of {{ORGANIZATION_NAME}}’s Information Resources.  If possible, monitoring tools shall be used to monitor issues and take action before components become overwhelmed.  Logs and alerts should also be continuously monitored to identify threats, both successful and unsuccessful.
 Firewall rules and policies should be managed by a formal change management control process because of their potential to impact security and business operations, with rules, reviews, or tests performed periodically to ensure continued compliance with the organization’s policies.  Firewall software should be patched as vendors provide updates to address vulnerabilities.
 Configurations shall prohibit direct public access between public networks (e.g. Internet) and any Information Resource containing sensitive information.  A software firewall, hardware firewall, or other network filtering (e.g. port or IP address filtering) technology must be used to limit network access to devices that store sensitive data.  Configurations shall restrict all traffic, inbound and outbound, from untrusted networks (including wireless) and hosts and specifically deny all other traffic except for necessary protocols.
 IT security Staff shall:
@@ -86,7 +86,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company security Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} security Staff.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

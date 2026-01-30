@@ -26,15 +26,15 @@ approver: null
 
 ## I. Overview
 
-Firewall policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with ABC Company’s firewall related policies.
+Firewall policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with {{ORGANIZATION_NAME}}’s firewall related policies.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Firewall Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Firewall Policy.
 
 ## III. Scope
 
-This procedure applies to all ABC Company Staff who administer firewalls.
+This procedure applies to all {{ORGANIZATION_NAME}} Staff who administer firewalls.
 
 ## IV. Procedure
 
@@ -50,7 +50,7 @@ CPU notification.  If available as a feature, activate the feature that allows a
 Management sessions.  Administrators should not connect to the device using unsecure services such as http or telnet as communications are not encrypted.
 Accountability.  Each firewall administrator should use their own unique administrator account when managing the firewall.  This provides an audit trail with accountability.
 Console ports.  Console ports may provide special administrator privileges such as the recovery of passwords.  The firewall administrator should ensure only secure local and remote access to the console port is permitted.
-Warning banners/notices.  Some implementations may require the use of warming banners or notices.  Firewall administrators should consult with ABC Company legal staff regarding the posting of notices such as:
+Warning banners/notices.  Some implementations may require the use of warming banners or notices.  Firewall administrators should consult with {{ORGANIZATION_NAME}} legal staff regarding the posting of notices such as:
 Access is only permitted by authorized personnel
 Activities are logged and monitored and can be used as evidence
 Unauthorized access or use can result in civil and criminal penalties
@@ -63,7 +63,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to all ABC Company Staff who administer firewalls.
+This procedure is to be distributed to all {{ORGANIZATION_NAME}} Staff who administer firewalls.
 Procedure History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

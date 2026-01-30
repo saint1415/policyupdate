@@ -29,11 +29,11 @@ approver: null
 
 ## I. Overview
 
-Policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with ABC Company’s policies.
+Policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with {{ORGANIZATION_NAME}}’s policies.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Workstation Hardening Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Workstation Hardening Policy.
 
 ## III. Scope
 
@@ -51,7 +51,7 @@ Firewall.  As a general rule, each workstation should have a software firewall a
 Anti-Malware.  Ensure the device is protected from malicious software such as viruses, worms, Trojan Horse programs, etc.  Ensure the Malware software and definitions are updated in a timely manner.  Refer to the Anti-Malware Policy for more information.
 Sharing.  Where possible, disable file and printer sharing services.
 Monitors.  Configure workstations to have a password protected screen saver activated within a short timeout period.  This ensures that workstations that were left unsecured are protected.  Position monitors so that only authorized personnel can read the information on the screen.
-Data.  Where possible, configure the Workstation so all Sensitive Information is stored on network servers.  Sensitive Information shall be encrypted and comply with ABC Company’s Encryption Policy.  Laptops containing Sensitive Information shall have the hard drives encrypted.
+Data.  Where possible, configure the Workstation so all Sensitive Information is stored on network servers.  Sensitive Information shall be encrypted and comply with {{ORGANIZATION_NAME}}’s Encryption Policy.  Laptops containing Sensitive Information shall have the hard drives encrypted.
 Testing.  Where possible, the device should be tested prior to installing the device in a production environment.
 Management sessions.  Administrators should not connect to the device using unsecure services where communications are not encrypted.  Ensure only authorized personnel are allowed to access and administer the device.
 Manufacturer resources.  Refer to manufacturer resources for additional guidance on hardening workstations and specific security functionality.
@@ -62,7 +62,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to IT Department Staff who administer workstations and the Chief Security Officer.
+This procedure is to be distributed to IT Department Staff who administer workstations and the {{CSO_TITLE}}.
 Procedure History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

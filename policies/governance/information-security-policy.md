@@ -40,7 +40,7 @@ approver: null
 
 ## I. Overview
 
-Information Systems provide ABC Company with the resources needed to operate in an efficient and effective manner.  Information systems must be protected from security-related threats.
+Information Systems provide {{ORGANIZATION_NAME}} with the resources needed to operate in an efficient and effective manner.  Information systems must be protected from security-related threats.
 
 ## II. Purpose
 
@@ -48,7 +48,7 @@ This policy specifies security protocols and procedures to be followed by Staff 
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company’s Information Systems.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}}’s Information Systems.
 
 ## IV. Policy
 
@@ -61,13 +61,13 @@ Physical safeguards
 
 ### B. Security Controls
 
-Executive Management shall ensure job descriptions exist for all employees.  Each job description shall identify the position title, purpose of the position, specific security duties and responsibilities, reporting relationships, position requirements, and related information.
+{{EXEC_MGMT}} shall ensure job descriptions exist for all employees.  Each job description shall identify the position title, purpose of the position, specific security duties and responsibilities, reporting relationships, position requirements, and related information.
 All departments shall have appropriately supervised Staff sufficient to maintain information security.  The staffing level should be appropriate to the environment, i.e. the amount and type of information for which they are responsible and the level of risk.
-The Chief Security Officer (CSO) shall be responsible for implementing and maintaining security policies, procedures, plans, forms, and related documents.  Policies and procedures shall manage the process of creating, monitoring, controlling, and removing of accounts.  Refer to the Account Management Policy for more information.
+The {{CSO_TITLE}} (CSO) shall be responsible for implementing and maintaining security policies, procedures, plans, forms, and related documents.  Policies and procedures shall manage the process of creating, monitoring, controlling, and removing of accounts.  Refer to the Account Management Policy for more information.
 All users, hosts, and data shall be classified per the Data Classification Policy.
 Staff are a first line of defense and shall follow safe computing practices as outlined in the Acceptable Use Policy.  Access to specific functions shall be restricted, never allowing Staff to request information, functions, or other resources for which they do not have access.
 Staff shall ensure Sensitive Information remains secure by clearing their desks when they will be away from their office, positioning monitors to prohibit unauthorized viewing, etc.  See the Clear Desk Policy for more information.
-The CSO shall ensure that information is protected during its entire lifecycle.  Information shall only be retained for the duration of its useful life.  The disposal of hardware, software, and information requires special consideration.  Refer to the Data Retention Policy, Disposal Policy, Encryption Policy, and Removable Media Policy for more information.  ABC Company’s IT Department shall be responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  Please refer to the Software Development Policy for more information.
+The CSO shall ensure that information is protected during its entire lifecycle.  Information shall only be retained for the duration of its useful life.  The disposal of hardware, software, and information requires special consideration.  Refer to the Data Retention Policy, Disposal Policy, Encryption Policy, and Removable Media Policy for more information.  {{ORGANIZATION_NAME}}’s IT Department shall be responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  Please refer to the Software Development Policy for more information.
 Prior to granting individuals physical or logical access to Information Resources, agreements with Staff, third-party users, and customers shall be in place and include responsibility for information security.  Refer to the Third Party Service Providers Policy for more information.
 For additional controls and safeguards please refer to the Security Policy.
 
@@ -78,7 +78,7 @@ Facility Security Plan
 Physical Access Policy
 Physical Security Policy
 Physical security protection
-Only hardware or software acquired through ABC Company’s approved policies and procedures may be installed.  Refer to the Acquisition and Procurement Policy.
+Only hardware or software acquired through {{ORGANIZATION_NAME}}’s approved policies and procedures may be installed.  Refer to the Acquisition and Procurement Policy.
 Media shall be handled according to the Removable Media Policy.
 Access to Information Resources shall be controlled and restricted as much as possible.  Devices not in use for extended periods shall be turned off.  Workstations and servers shall have appropriate and secure physical controls.  Refer to the Physical Security Policy for more information.
 Staff shall be made be aware of the visibility of data on their computer or handheld device display screens. Staff shall position equipment or furniture to eliminate over-the-shoulder viewing.
@@ -90,7 +90,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff that use ABC Company’s Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff that use {{ORGANIZATION_NAME}}’s Information Resources.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

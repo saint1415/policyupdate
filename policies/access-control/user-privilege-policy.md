@@ -36,7 +36,7 @@ This policy is designed to minimize risk to organizational resources and data by
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
@@ -62,7 +62,7 @@ Domain administrator – has full privileges on all computers in the domain incl
 
 ### C. Security Considerations
 
-The Chief Security Officer shall ensure:
+The {{CSO_TITLE}} shall ensure:
 The organization shall implement administrative, physical, and technical safeguards to protect sensitive information confidentiality, integrity, and availability.  The organization shall ensure that any agent, including a subcontractor, agrees to implement reasonable and appropriate safeguards.
 Electronic mechanisms corroborate that sensitive information has not been altered or destroyed in an unauthorized manner.  Information Systems that contain sensitive information shall automatically check for data integrity (e.g. check sums verification, digital signature).
 Third party service providers and business associates (e.g. billing services, hardware and software vendors, external consultants, lawyers) have been identified.  The organization has established written contracts or other arrangements with business contacts and third party service providers that meet security requirements.  Contracts are in place with third party service providers to ensure security requirements are addressed.  Before sensitive information is disclosed, the organization shall receive assurances from third party service providers and each associate that they appropriately safeguard information.  Refer to the Third Party Service Providers Policy for more information.
@@ -74,7 +74,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.02, APO01.11, APO14.10, BAI09.03-04, DSS01.05, MEA02.11

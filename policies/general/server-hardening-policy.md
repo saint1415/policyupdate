@@ -11,6 +11,7 @@ references:
 - server-hardening-procedure
 variables:
 - CSO_TITLE
+- HR_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -28,7 +29,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company must protect servers from both security and performance issues.  Servers are depended upon security to deliver data in a secure, reliable fashion.  There must be assurance that data integrity, confidentiality and availability are maintained.  One of the required steps to attain this assurance is to ensure that the servers are installed and maintained in a manner that prevents unauthorized access, unauthorized use, and disruptions in service.
+{{ORGANIZATION_NAME}} must protect servers from both security and performance issues.  Servers are depended upon security to deliver data in a secure, reliable fashion.  There must be assurance that data integrity, confidentiality and availability are maintained.  One of the required steps to attain this assurance is to ensure that the servers are installed and maintained in a manner that prevents unauthorized access, unauthorized use, and disruptions in service.
 
 ## II. Purpose
 
@@ -40,18 +41,18 @@ This policy applies to all individuals responsible for the installation of new I
 
 ## IV. Policy
 
-A server must not be connected to the ABC Company network until it is in an ABC Company accredited secure state and the network connection is approved by ABC Company IT security Staff.
-A Server Hardening Procedure shall provide the detailed information required to harden a server and must be implemented for ABC Company IT accreditation.  At a minimum, the Server Hardening Procedure shall include:
+A server must not be connected to the {{ORGANIZATION_NAME}} network until it is in an {{ORGANIZATION_NAME}} accredited secure state and the network connection is approved by {{ORGANIZATION_NAME}} IT security Staff.
+A Server Hardening Procedure shall provide the detailed information required to harden a server and must be implemented for {{ORGANIZATION_NAME}} IT accreditation.  At a minimum, the Server Hardening Procedure shall include:
 Installing the operating system from an IT approved source
 Applying vendor supplied patches
 Removing unnecessary software, system services, and drivers
 Setting security parameters, file protections and enabling audit logging
 Disabling or changing the password of default accounts
-ABC Company IT security Staff will monitor security issues, both internal to ABC Company and externally, and will manage the release of security patches on behalf of ABC Company.
-Where practical, ABC Company’s IT Department will test security patches against IT core resources before installing in production environments.
-In the case of special applications, ABC Company’s IT Department may make hardware resources available for testing security patches.
-Critical security patches must be implemented within the specified timeframe (typically 30 days) of notification from ABC Company’s IT Department.
-To minimize risks, each server shall have only one primary function (e.g. E-mail, database, Human Resources).
+{{ORGANIZATION_NAME}} IT security Staff will monitor security issues, both internal to {{ORGANIZATION_NAME}} and externally, and will manage the release of security patches on behalf of {{ORGANIZATION_NAME}}.
+Where practical, {{ORGANIZATION_NAME}}’s IT Department will test security patches against IT core resources before installing in production environments.
+In the case of special applications, {{ORGANIZATION_NAME}}’s IT Department may make hardware resources available for testing security patches.
+Critical security patches must be implemented within the specified timeframe (typically 30 days) of notification from {{ORGANIZATION_NAME}}’s IT Department.
+To minimize risks, each server shall have only one primary function (e.g. E-mail, database, {{HR_DEPARTMENT}}).
 
 ## V. Enforcement
 
@@ -59,7 +60,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to IT Department Staff and the Chief Security Officer.
+This policy is to be distributed to IT Department Staff and the {{CSO_TITLE}}.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

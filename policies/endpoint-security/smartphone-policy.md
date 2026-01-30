@@ -30,18 +30,18 @@ Today's Smartphones include advanced features such as the ability to connect to 
 
 ## II. Purpose
 
-The purpose of this policy is to help manage Smartphone related risks Staff members and ABC Company.
+The purpose of this policy is to help manage Smartphone related risks Staff members and {{ORGANIZATION_NAME}}.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that use Information Resources.
 
 ## IV. Policy
 
-Only IT Department approved Smartphones may be used to access ABC Company networks and Information Resources.
-ABC Company uses a multi-layered approach to protecting Smartphones and related "information assets".  Securing Smartphones is the responsibility of both the phone user as well as ABC Company’s IT Department.
-User activities can download malware to a Smartphone. Once installed, the malware can launch attacks against ABC Company’s internal network.  Staff security education and awareness training should be provided on a regular basis.  Staff should only download and install applications from trusted sources.  In addition, Staff should not click on message links from unknown senders or visit unknown web sites.
-To reduce IT administration costs and offer better protection for the enterprise, ABC Company’s IT Department shall establish standards for Smartphones and security protection software.  Smartphone protection software should be installed on all devices that access the Internet and especially Smartphones that access ABC Company’s Information Systems.  If possible, the IT Department shall use a single console to protect and manage Smartphone devices.  Smartphone security protection software shall include the following features:
+Only IT Department approved Smartphones may be used to access {{ORGANIZATION_NAME}} networks and Information Resources.
+{{ORGANIZATION_NAME}} uses a multi-layered approach to protecting Smartphones and related "information assets".  Securing Smartphones is the responsibility of both the phone user as well as {{ORGANIZATION_NAME}}’s IT Department.
+User activities can download malware to a Smartphone. Once installed, the malware can launch attacks against {{ORGANIZATION_NAME}}’s internal network.  Staff security education and awareness training should be provided on a regular basis.  Staff should only download and install applications from trusted sources.  In addition, Staff should not click on message links from unknown senders or visit unknown web sites.
+To reduce IT administration costs and offer better protection for the enterprise, {{ORGANIZATION_NAME}}’s IT Department shall establish standards for Smartphones and security protection software.  Smartphone protection software should be installed on all devices that access the Internet and especially Smartphones that access {{ORGANIZATION_NAME}}’s Information Systems.  If possible, the IT Department shall use a single console to protect and manage Smartphone devices.  Smartphone security protection software shall include the following features:
 Protection against Malware
 Periodic scan of installed applications to ensure they are safe
 Block malicious websites that can compromise the device
@@ -49,7 +49,7 @@ Identify applications that allow access to user private information
 Remotely wipe Smartphone data in the event the device is lost or stolen
 Block web-based Malware and phishing attacks by scanning e-mails and text messages
 Smartphones shall have a very strong password and a short screen timeout.  This helps prevent an unauthorized person from downloading and installing unwanted applications.
-The ABC Company IT Department shall perform periodic risk assessments to identify, manage, and reduce Smartphone related risks and access to Information Resources.  Refer to the Risk Assessment Policy for more information.
+The {{ORGANIZATION_NAME}} IT Department shall perform periodic risk assessments to identify, manage, and reduce Smartphone related risks and access to Information Resources.  Refer to the Risk Assessment Policy for more information.
 The IT Department shall implement procedures and measures to strictly limit access to sensitive data from Smartphones which are generally higher-risk than non-portable devices (e.g., desktop computers).
 
 ## V. Enforcement
@@ -58,7 +58,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO10.05, APO12.02, APO13.07, BAI02.05, BAI03.05, DSS01.05, DSS05.02

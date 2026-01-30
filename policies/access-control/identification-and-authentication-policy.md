@@ -29,7 +29,7 @@ approver: null
 
 ## I. Overview
 
-By establishing user accountability and rules for access, ABC Company mitigates the risks related to unauthorized access to electronically stored information.
+By establishing user accountability and rules for access, {{ORGANIZATION_NAME}} mitigates the risks related to unauthorized access to electronically stored information.
 
 ## II. Purpose
 
@@ -41,7 +41,7 @@ This policy applies to Information Resources data owners and security Staff that
 
 ## IV. Policy
 
-The Chief Security Officer (CSO) shall ensure that Information Resources are protected from unauthorized access by establishing requirements for the authorization and management of user accounts, providing user authentication, and implementing access controls on Information Resources.
+The {{CSO_TITLE}} (CSO) shall ensure that Information Resources are protected from unauthorized access by establishing requirements for the authorization and management of user accounts, providing user authentication, and implementing access controls on Information Resources.
 Data Owners for each information system shall be responsible for ensuring that authorization and account management processes exist for their specific application and that the appropriate people have been assigned the responsibility of creating and maintaining the authorization records.  The design and development of the authorization and account management processes shall comply with CSO security standards.
 Department Heads shall submit user access requests to the appropriate Data Owners.  As appropriate, Data Owners shall approve or deny such requests for user access privileges.
 System Administrators have the responsibility of periodically reviewing user access privileges and notifying the appropriate Data Owners of any access concerns.
@@ -58,8 +58,8 @@ A Staff member requires additional access rights.
 Requests for a change in access rights (e.g., to grant or disallow access) shall be accomplished by submitting a new request
 When a Staff member is transferred or terminated, the Staff member’s access to Information Resources must be terminated.  The Staff member’s records and data, stored locally or in network directories, must be preserved.  It is the responsibility of the direct supervisor or manager to contact the Data Owner and the System Administrator when a Staff member is transferred or terminated.
 The Data Owner for each information system shall ensure that all user accounts are reviewed and access rights evaluated at least once per year.
-User identification and authentication is an access control methodology.  At a minimum, ABC Company uses two-factor authentication with an ID and password to determine a user’s identity, ensure it is correct, and establish accountability.  User login IDs shall be unique and shall not be shared by Staff members unless special permission is authorized by Executive Management.  User selected passwords are required to authenticate the user and grant access to ABC Company Information Resources.
-The Chief Security Officer (CSO) shall ensure:
+User identification and authentication is an access control methodology.  At a minimum, {{ORGANIZATION_NAME}} uses two-factor authentication with an ID and password to determine a user’s identity, ensure it is correct, and establish accountability.  User login IDs shall be unique and shall not be shared by Staff members unless special permission is authorized by {{EXEC_MGMT}}.  User selected passwords are required to authenticate the user and grant access to {{ORGANIZATION_NAME}} Information Resources.
+The {{CSO_TITLE}} (CSO) shall ensure:
 Sensitive authentication data shall not be stored after authorization even if it is encrypted.
 If sensitive authentication data is received, processes shall render all data irretrievable upon completion of the authorization process.
 Processes permit storing of sensitive authentication data if there is a business justification and the data is stored securely.

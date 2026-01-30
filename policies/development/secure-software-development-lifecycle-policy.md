@@ -30,7 +30,7 @@ approver: null
 
 ## I. Overview
 
-Implementing sound software development techniques with proven security strategies helps ABC Company manage its risks throughout the entire software lifecycle from initial inception through final disposition of an application.
+Implementing sound software development techniques with proven security strategies helps {{ORGANIZATION_NAME}} manage its risks throughout the entire software lifecycle from initial inception through final disposition of an application.
 
 ## II. Purpose
 
@@ -44,7 +44,7 @@ This policy applies to all Staff that provide and manage software development se
 
 ### A. Software Development Lifecycle
 
-ABC Company’s IT Department management is responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  All software developed in-house which runs on production systems must be developed according to the SDLC. At a minimum, SDLC should address the following ten areas:
+{{ORGANIZATION_NAME}}’s IT Department management is responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  All software developed in-house which runs on production systems must be developed according to the SDLC. At a minimum, SDLC should address the following ten areas:
 Feasibility study
 Risk assessment
 User requirements
@@ -59,7 +59,7 @@ Information security must be integrated into new application and systems develop
 
 ### B. Roles and Responsibilities
 
-The Chief Security Officer (CSO) are responsible for:
+The {{CSO_TITLE}} (CSO) are responsible for:
 Ensuring that security controls are developed to manage and reduce software related risks throughout its lifecycle.
 Ensuring software development projects include security in all stages of the lifecycle phases.
 Assist application developers and data owners in identifying security requirements for each lifecycle phase.
@@ -77,11 +77,11 @@ Specific security requirements shall be followed at each phase of the software d
 
 #### 1. Feasibility
 
-The Chief Security Officer shall review requests that deal with sensitive information to ensure that proper security controls are considered during the feasibility study.
+The {{CSO_TITLE}} shall review requests that deal with sensitive information to ensure that proper security controls are considered during the feasibility study.
 
 #### 2. Risk assessment
 
-The Risk Management Officer shall perform a preliminary risk assessment to ensure all material risks have been identified.  The risk assessment shall include a sensitivity assessment that evaluates the sensitivity and criticality of the information to be collected, stored, and processed.  The risk assessment shall consider privacy issues, compliance requirements, and system continuity.
+The {{RMO_TITLE}} shall perform a preliminary risk assessment to ensure all material risks have been identified.  The risk assessment shall include a sensitivity assessment that evaluates the sensitivity and criticality of the information to be collected, stored, and processed.  The risk assessment shall consider privacy issues, compliance requirements, and system continuity.
 
 #### 3. User requirements
 
@@ -95,7 +95,7 @@ Systems Analysts will design the proposed system, incorporating security control
 
 Applications shall be designed in accordance with industry accepted security standards (i.e., OWASP for web applications) and comply with applicable regulatory and business requirements.  Programmers and software developers shall code applications using secure coding techniques that validate input fields, encrypt sensitive data, restrict access by need to know, etc.  Data input and output integrity routines (i.e., reconciliation and edit checks) shall be implemented for application interfaces and databases to prevent manual or systematic processing errors or corruption of data.  If the software was acquired, the IT Department shall ensure the application meets security requirements and, as much as possible, adheres to internal security development standards.
 Developers shall be trained in secure coding techniques, including how to avoid common coding vulnerabilities, and understanding how sensitive data is handled in memory.  Applications shall be based on secure coding guidelines (see Open Web Application Security Project) that protect against attacks (e.g. injection, access controls, information disclosure, buffer overflow, input validation, cross site scripting, etc.), error handling, and other related secure coding techniques.
-For public-facing web applications, ABC Company shall address new threats and vulnerabilities on an on-going basis and ensure these applications are protected against known attacks by:
+For public-facing web applications, {{ORGANIZATION_NAME}} shall address new threats and vulnerabilities on an on-going basis and ensure these applications are protected against known attacks by:
 Reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods, at least annually and after any changes.
 Installing an automated technical solution that detects and prevents web-based attacks (for example, a web-application firewall) in front of public-facing web applications, to continually check all traffic.
 Periodic independent audits performed annually or after a major software upgrade/release.  See Audit Policy for more information.
@@ -142,7 +142,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to IT Staff that provide and manage software development and programming services.
+This policy is to be distributed to {{IT_STAFF}} that provide and manage software development and programming services.
 Policy History
 References:
 COBIT APO01.03, APO01.11, APO05.05, APO12.07, APO13.07, BAI03.05, MEA02.11
