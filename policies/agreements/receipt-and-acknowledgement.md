@@ -25,7 +25,7 @@ approver: null
 
 Receipt and Acknowledgement
 
-I have read and been informed about the content, requirements, and expectations listed in ABC Company’s (Company’s) Policies and Plans.  I understand that I am responsible for complying with the requirements stated in the Policies and Plans and I agree to abide by them as consideration for my continued employment by Company.  I understand that:
+I have read and been informed about the content, requirements, and expectations listed in {{ORGANIZATION_NAME}}’s (Company’s) Policies and Plans.  I understand that I am responsible for complying with the requirements stated in the Policies and Plans and I agree to abide by them as consideration for my continued employment by Company.  I understand that:
 
 Violation of the Policies and Plans may result in disciplinary action including, but not limited to, termination.
 

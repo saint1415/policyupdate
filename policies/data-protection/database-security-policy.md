@@ -31,17 +31,17 @@ Databases and the data that they contain must have proper security controls that
 
 ## II. Purpose
 
-The purpose of this policy is to establish the rules for the access and protection of databases.  These rules are necessary to preserve the integrity, availability and confidentiality of ABC Company’s databases and data.
+The purpose of this policy is to establish the rules for the access and protection of databases.  These rules are necessary to preserve the integrity, availability and confidentiality of {{ORGANIZATION_NAME}}’s databases and data.
 
 ## III. Scope
 
-This policy applies to ABC Company Staff who perform network administration, database administration (DBA), or web development duties.
+This policy applies to {{ORGANIZATION_NAME}} Staff who perform network administration, database administration (DBA), or web development duties.
 
 ## IV. Policy
 
 ### A. Access
 
-The Chief Security Officer (CSO) shall ensure Staff must receive prior written authorization before they are permitted to access databases and data.
+The {{CSO_TITLE}} (CSO) shall ensure Staff must receive prior written authorization before they are permitted to access databases and data.
 
 ### B. Security Protection
 
@@ -51,9 +51,9 @@ Information Systems Access Request Form
 Network segmentation
 Network firewalls and web application firewalls
 Router Access Control Lists (ACL)
-Software applications that access ABC Company databases must use proper coding and security techniques:
+Software applications that access {{ORGANIZATION_NAME}} databases must use proper coding and security techniques:
 Database user names and passwords (credentials) shall only be accessible by authorized persons, programs, and processes.
-Credentials must adhere to specifications listed in ABC Company’s Password Policy.
+Credentials must adhere to specifications listed in {{ORGANIZATION_NAME}}’s Password Policy.
 Access to databases shall be granted only after authentication of proper credentials.
 Database access credentials must not be stored in readable clear text format.
 To reduce the likelihood of unauthorized access, source code credentials must be stored in a separate source file.  The credentials file may contain user names, passwords, and any code needed to access the credentials.

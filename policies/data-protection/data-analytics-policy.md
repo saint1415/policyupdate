@@ -35,7 +35,7 @@ approver: null
 
 ## I. Overview
 
-Data analytics helps ABC Company increase revenues, improve operational efficiencies, optimize marketing campaigns, enhance customer service, respond more quickly to trends, gain a competitive edge in our marketplace, and enhance business performance.
+Data analytics helps {{ORGANIZATION_NAME}} increase revenues, improve operational efficiencies, optimize marketing campaigns, enhance customer service, respond more quickly to trends, gain a competitive edge in our marketplace, and enhance business performance.
 
 ## II. Purpose
 
@@ -66,11 +66,11 @@ Veracity – data quality and value
 
 ### B. Security Controls
 
-The Risk Management Officer (RMO) shall ensure risks are properly identified and managed through a three-step process (for more information see the Risk Management Policy):
+The {{RMO_TITLE}} (RMO) shall ensure risks are properly identified and managed through a three-step process (for more information see the Risk Management Policy):
 Risk Assessment – Identify assets, threats to the assets, and vulnerabilities that exist as a result of the threats.
 Risk Analysis – For each risk, identify the likelihood and impact on our organization.
 Risk Treatment Plan – Develop controls and other safeguards designed to mitigate, eliminate, or transfer risks.  It is important to treat risks in a cost effective and efficient manner.
-The Chief Security Officer (CSO) shall ensure adequate safeguards are in place to ensure the security of Sensitive Information and Information Systems.  Safeguards shall protect against electronic threats as well as unauthorized access, disclosure, copying, use or modification of systems and data.  Data collected and processed shall be limited to the amount and type of information specifically required for an identified purpose.  For more information on applicable security controls and requirements see:
+The {{CSO_TITLE}} (CSO) shall ensure adequate safeguards are in place to ensure the security of Sensitive Information and Information Systems.  Safeguards shall protect against electronic threats as well as unauthorized access, disclosure, copying, use or modification of systems and data.  Data collected and processed shall be limited to the amount and type of information specifically required for an identified purpose.  For more information on applicable security controls and requirements see:
 Access Control Policy
 Anti-malware Policy
 Application Implementation Policy
@@ -100,7 +100,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Department Heads, the Risk Management Officer, and the Chief Security Officer.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Department Heads, the {{RMO_TITLE}}, and the {{CSO_TITLE}}.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO10.05, APO12.02, APO13.07, APO14.10, BAI01.03, BAI04.05

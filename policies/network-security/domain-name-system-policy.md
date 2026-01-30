@@ -26,15 +26,15 @@ approver: null
 
 ## I. Overview
 
-ABC Company is committed to protecting its employees, customers, partners and its operations.  This policy enables ABC Company to effectively deliver equipment and services that support company business processes.
+{{ORGANIZATION_NAME}} is committed to protecting its employees, customers, partners and its operations.  This policy enables {{ORGANIZATION_NAME}} to effectively deliver equipment and services that support company business processes.
 
 ## II. Purpose
 
-This policy protects ABC Company’s assets and helps ensure our ability to continue business operations.
+This policy protects {{ORGANIZATION_NAME}}’s assets and helps ensure our ability to continue business operations.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to Information Resources.
 
 ## IV. Policy
 

@@ -34,15 +34,15 @@ The purpose of this policy is to establish the rules for creating, using, monito
 
 ## III. Scope
 
-This policy applies to all Staff that have, or may require, special access privilege to any ABC Company Information Resources.
+This policy applies to all Staff that have, or may require, special access privilege to any {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
-ABC Company departments must submit to the IT Department a list of administrative contacts for their systems that are connected to the ABC Company network.
-All users must sign the ABC Company non-disclosure agreement before access is given to an account.
+{{ORGANIZATION_NAME}} departments must submit to the IT Department a list of administrative contacts for their systems that are connected to the {{ORGANIZATION_NAME}} network.
+All users must sign the {{ORGANIZATION_NAME}} non-disclosure agreement before access is given to an account.
 All users of Administrative/Special access accounts must have account management instructions, documentation, training, and authorization.  Each individual that uses Administrative/Special access accounts must refrain from abuse of privilege and must only do investigations under the direction of the IT Director.
 Each individual that uses Administrative/Special access accounts must use the account privilege most appropriate with work being performed (e.g. user account vs. administrator account).  Users with administrative account access shall use a dedicated or secondary account for elevated activities. This account shall only be used for administrative activities and not Internet browsing, e-mail, or similar activities.
-Each account used for administrative/special access must comply with ABC Company’s Password Policy.  The password for a shared administrator/special access account must change when an individual with the password leaves the department or ABC Company, or upon a change in the vendor personnel assigned to the ABC Company contract.
+Each account used for administrative/special access must comply with {{ORGANIZATION_NAME}}’s Password Policy.  The password for a shared administrator/special access account must change when an individual with the password leaves the department or {{ORGANIZATION_NAME}}, or upon a change in the vendor personnel assigned to the {{ORGANIZATION_NAME}} contract.
 In the case where a system has only one administrator, there must be a password escrow procedure in place so that someone other than the administrator can gain access to the administrator account in an emergency situation.
 When Special Access accounts are needed for Internal or External Audit, software development, software installation, or other defined need, they:
 Must be authorized

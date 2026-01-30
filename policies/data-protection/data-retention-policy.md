@@ -10,6 +10,7 @@ references:
 - data-retention-policy
 variables:
 - CSO_TITLE
+- LEGAL_DEPARTMENT
 - ORGANIZATION_NAME
 - VERSION
 conditions: []
@@ -28,7 +29,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company must balance our legal obligations and need to retain information for business purposes against the cost of storing and securing such information.
+{{ORGANIZATION_NAME}} must balance our legal obligations and need to retain information for business purposes against the cost of storing and securing such information.
 
 ## II. Purpose
 
@@ -36,24 +37,24 @@ This policy helps manage risks related to legal and compliance requirements and 
 
 ## III. Scope
 
-This policy applies to all Staff that have access or and data retention responsibilities for ABC Company’s Information Resources.
+This policy applies to all Staff that have access or and data retention responsibilities for {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
 ### A. Responsibilities
 
-ABC Company’s Legal Department shall establish enterprise-wide retention procedures for the organization.  In establishing ABC Company’s retention procedures, the Legal Department shall consider legal and compliance requirements, litigation needs, business processes, privacy concerns, and the cost of retaining information.
-The Legal Department is responsible for preparing and maintaining a comprehensive data retention, archiving, and destruction schedule (Retention Schedule).  The Retention Schedule will consider active and inactive electronic information including data held in servers, databases, storage arrays, backup media, important workstations, e-mail, log files, video cameras, and other types of electronic storage devices.
-When establishing retention periods, the Legal Department will perform the following steps:
+{{ORGANIZATION_NAME}}’s {{LEGAL_DEPARTMENT}} shall establish enterprise-wide retention procedures for the organization.  In establishing {{ORGANIZATION_NAME}}’s retention procedures, the {{LEGAL_DEPARTMENT}} shall consider legal and compliance requirements, litigation needs, business processes, privacy concerns, and the cost of retaining information.
+The {{LEGAL_DEPARTMENT}} is responsible for preparing and maintaining a comprehensive data retention, archiving, and destruction schedule (Retention Schedule).  The Retention Schedule will consider active and inactive electronic information including data held in servers, databases, storage arrays, backup media, important workstations, e-mail, log files, video cameras, and other types of electronic storage devices.
+When establishing retention periods, the {{LEGAL_DEPARTMENT}} will perform the following steps:
 Determine applicable legal or compliance requirements.
-Determine, with the help of ABC Company Departments, the collection, storage, archiving, and use of electronically stored data.
+Determine, with the help of {{ORGANIZATION_NAME}} Departments, the collection, storage, archiving, and use of electronically stored data.
 Identify other internal or external Departments or business entities that collect, store, archive, or use electronically stored information.
 Establish retention periods for electronically stored information based on information obtained in the prior steps.
-Each ABC Company department will develop procedures and documentation that implement and maintain the retention requirements as outlined in the Retention Schedule.  The specific procedures implemented by each Department will specify the retention time, archival rules, data formats, and the permissible means of storage, access, and encryption (if any).
+Each {{ORGANIZATION_NAME}} department will develop procedures and documentation that implement and maintain the retention requirements as outlined in the Retention Schedule.  The specific procedures implemented by each Department will specify the retention time, archival rules, data formats, and the permissible means of storage, access, and encryption (if any).
 
 ### B. Retention Requirements
 
-The Chief Security Officer (CSO) shall:
+The {{CSO_TITLE}} (CSO) shall:
 Implement data retention and disposal guidelines that limiting data storage amount and retention time to that which is required for legal, regulatory, and business requirements.
 Ensure quarterly automatic or manual processes exist for the secure deletion of data when no longer needed.
 Establish specific retention requirements for sensitive data.
@@ -61,8 +62,8 @@ Different types of data require different retention periods.  In addition to des
 Steps used to archive the information.
 The appropriate destruction of electronically stored information after the identified retention period.  Such steps shall adhere to the requirements outlined in the Disposal Policy.
 Procedures for handling electronically stored information when under litigation.
-Each department may have unique data retention requirements that must be communicated to the Legal Department.  Such requirements may include contractual obligations with customers or business contacts or data retention requirements to maintain business operations.  In some instances, departments may need to retain electronically stored information for a historical archive.
-To meet regulatory and organizational requirements, the Legal Department:
+Each department may have unique data retention requirements that must be communicated to the {{LEGAL_DEPARTMENT}}.  Such requirements may include contractual obligations with customers or business contacts or data retention requirements to maintain business operations.  In some instances, departments may need to retain electronically stored information for a historical archive.
+To meet regulatory and organizational requirements, the {{LEGAL_DEPARTMENT}}:
 Will identify retention periods for log files and audit trails.
 May choose to alter e-mail retention requirements specified in the E-mail Policy.
 During the appropriate retention period, archived data must be retrievable.
@@ -71,7 +72,7 @@ Data that is encrypted must be retrievable.  The IT Department shall implement k
 
 ### C. Retention Resources
 
-When establishing retention periods, the Legal Department may rely on one or more of the following legislative requirements.
+When establishing retention periods, the {{LEGAL_DEPARTMENT}} may rely on one or more of the following legislative requirements.
 Code of Federal Regulations - organizations must retain compliance evidence for not less than 2 years in a form that is capable of accurately retaining and reproducing information. If the organization is being investigated, it must retain the records pertaining to the action until final disposition, unless disposal is allowed by court order.  [ 229.21(g), 12 CFR Part 229 Availability of Funds and Collection (Check Clearing for the 21st Century)]
 Energy - retain all records and the supporting technical documentation required to satisfy this section's requirements until the license for which the records were developed has been terminated by the Nuclear Regulatory Commission. Superseded portions of records must be retained for at least 3 years after being superseded, unless the Commission has specified otherwise. [ 73.54(h), 10 CFR Part 73.54, Protection of digital computer and communication systems and networks]
 Healthcare
@@ -104,7 +105,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.01, EDM03.02, APO01.11, APO12.07, APO14.01-02, APO14.07, APO14.10

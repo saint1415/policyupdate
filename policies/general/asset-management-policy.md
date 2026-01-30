@@ -28,15 +28,15 @@ approver: null
 
 ## I. Overview
 
-ABC Company is committed to protecting its Staff, customers, partners and its operations.  This policy enables ABC Company to effectively deliver equipment and services that support company business processes.
+{{ORGANIZATION_NAME}} is committed to protecting its Staff, customers, partners and its operations.  This policy enables {{ORGANIZATION_NAME}} to effectively deliver equipment and services that support company business processes.
 
 ## II. Purpose
 
-This policy protects ABC Company’s assets and helps ensure our ability to continue business operations.
+This policy protects {{ORGANIZATION_NAME}}’s assets and helps ensure our ability to continue business operations.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff that have access to ABC Company’s Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
@@ -113,7 +113,7 @@ Asset disposal is a special case since the asset must have any sensitive data re
 Below is listed the action for the device based on data sensitivity according to the data classification process:
 Public - No requirement to erase data but in the interest of prudence normally erase the data using any means such as reformatting or degaussing
 Sensitive - Erase the data using any means such as reformatting or degaussing
-Confidential - The data must be erased using an approved technology to make sure it is not readable using special technology techniques approved by the Chief Security Officer.
+Confidential - The data must be erased using an approved technology to make sure it is not readable using special technology techniques approved by the {{CSO_TITLE}}.
 
 ### H. Media Use
 
@@ -157,7 +157,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO01.06, APO09.03, BAI09.01, BAI09.02-03, DSS04.07, DSS05.04-05, DSS06.06

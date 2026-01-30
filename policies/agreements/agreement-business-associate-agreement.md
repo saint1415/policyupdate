@@ -88,7 +88,7 @@ approver: null
 
 IN WITNESS WHEREOF, the Parties hereby execute this Agreement to be effective as of the date written above.
 COVERED ENTITY:
-ABC Company
+{{ORGANIZATION_NAME}}
 By:	____________________________________
 Title: 	____________________________________
 Date: 	____________________________________

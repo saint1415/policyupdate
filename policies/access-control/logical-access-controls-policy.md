@@ -33,7 +33,7 @@ This policy controls logical, electronic access to information systems and appli
 
 ## II. Purpose
 
-The purpose of this policy is to define logical access controls as they relate to ABC Company Information Resources.  Logical access controls are tools used for identification, authentication, authorization, and accountability in Information Resources. Logical access controls can be embedded within operating systems, applications, add-on security packages, or database and telecommunication management systems.
+The purpose of this policy is to define logical access controls as they relate to {{ORGANIZATION_NAME}} Information Resources.  Logical access controls are tools used for identification, authentication, authorization, and accountability in Information Resources. Logical access controls can be embedded within operating systems, applications, add-on security packages, or database and telecommunication management systems.
 
 ## III. Scope
 
@@ -41,20 +41,20 @@ This policy applies to the Information Resources data owners and security staff 
 
 ## IV. Policy
 
-Without Logical access controls shall be established and documented for all ABC Company Information Resources.  The access controls shall be implemented based upon the principle of least privilege.
+Without Logical access controls shall be established and documented for all {{ORGANIZATION_NAME}} Information Resources.  The access controls shall be implemented based upon the principle of least privilege.
 A Risk Assessment shall be performed for the purpose of identifying Information Resources and sensitive data.  A Risk Treatment Plan shall be prepared and updated annually that defines safeguards and controls to protect such Information Resources.
-All access to Information Resources shall use an approved method of identification and authentication per the Identification and Authentication Policy.  All third party service provider access to the ABC Company network and information systems must adhere to the same access restrictions as internal users.
+All access to Information Resources shall use an approved method of identification and authentication per the Identification and Authentication Policy.  All third party service provider access to the {{ORGANIZATION_NAME}} network and information systems must adhere to the same access restrictions as internal users.
 Access rights shall be established, documented, and periodically reviewed based on business needs and external requirements.  Access controls should consider:
 Security requirements given business needs, anticipated threats, and vulnerabilities.
 Relevant legislative and regulatory requirements.
 Contractual obligations and service level agreements.
-Consistency across ABC Company’s systems and networks.
+Consistency across {{ORGANIZATION_NAME}}’s systems and networks.
 Access control considerations include:
 The use of clearly stated rules and rights based on user profiles.
 Consistent management of access rights across Information Resources using an appropriate mix of logical (technical) and physical access controls.
 Segregation of access control roles including access request by the appropriate department, access authorization by the Data Owner, and access administration by the Network Administrator.
 Requirements for the formal authorization and timely removal of access rights.
-All critical Information Resources must limit and enforce access to only the times identified as necessary for completion of ABC Company business processes.  All access to these systems and applications at all other times shall be disabled or suspended.
+All critical Information Resources must limit and enforce access to only the times identified as necessary for completion of {{ORGANIZATION_NAME}} business processes.  All access to these systems and applications at all other times shall be disabled or suspended.
 All access to any database containing Sensitive Information (including access by applications, administrators, and all other users) shall be restricted as follows:
 All user access to, user queries of, and user actions on databases are through programmatic methods.
 Only database administrators have the ability to directly access or query databases.
@@ -73,7 +73,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to Information Resource security Staff, System Administrators, Data Owners, and the Chief Security Officer.
+This policy is to be distributed to Information Resource security Staff, System Administrators, Data Owners, and the {{CSO_TITLE}}.
 Policy History
 References:
 COBIT APO01.02, APO01.11, APO14.10, BAI09.03-04, DSS01.05

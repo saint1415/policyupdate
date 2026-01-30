@@ -27,19 +27,19 @@ approver: null
 
 ## I. Overview
 
-ABC Company must have appropriately supervised professional Staff sufficient to maintain business processes.  The staffing level should be appropriate to the environment considering the amount and type of information for which they are responsible as well as the level of risk.
+{{ORGANIZATION_NAME}} must have appropriately supervised professional Staff sufficient to maintain business processes.  The staffing level should be appropriate to the environment considering the amount and type of information for which they are responsible as well as the level of risk.
 
 ## II. Purpose
 
-This policy ensures sufficient Staffing resources are allocated to supporting and managing ABC Company business processes.
+This policy ensures sufficient Staffing resources are allocated to supporting and managing {{ORGANIZATION_NAME}} business processes.
 
 ## III. Scope
 
-This policy applies to all ABC Company Department Heads.
+This policy applies to all {{ORGANIZATION_NAME}} Department Heads.
 
 ## IV. Policy
 
-ABC Company departments are responsible for having appropriately supervised professional staffing sufficient to maintain business processes.  The staffing level should be appropriate to the environment considering the amount and type of information for which they are responsible as well as the level of risk.
+{{ORGANIZATION_NAME}} departments are responsible for having appropriately supervised professional staffing sufficient to maintain business processes.  The staffing level should be appropriate to the environment considering the amount and type of information for which they are responsible as well as the level of risk.
 Staffing processes generally involve the following four steps which apply equally to general users as well as to managers, System Administrators, and security personnel.
 
 #### 1. Position definition - early in the process of defining a position, security issues must be identified and addressed. Once a position has been broadly defined, the responsible Department Head must determine the type of computer access needed for the position. Security duties shall be distributed to preclude any one individual from adversely affecting operations or the integrity of the system.  Protection levels for a particular information system shall be determined by the clearance level, formal access approvals, and need-to-know held by users of the information system, and the classification level of data processed or stored.  There are two general security rules to apply when granting access:
@@ -50,7 +50,7 @@ Competency.  Management shall determine the necessary competency of Staff that a
 
 #### 2. Position sensitivity – the responsible Department Head shall determine the position sensitivity, based on the duties and access levels, so that appropriate cost effective screening can be completed.
 
-#### 3. Screening – management shall take actions to acquire and maintain Staff with the necessary competence.  Background screening helps determine whether a particular individual is suitable for a given position. Generally, it is more effective to use separation of duties and least privilege to limit the sensitivity of the position, rather than relying on screening alone to reduce the risk to ABC Company.  Pursuant to local laws, regulations, ethics, and contractual constraints all employment candidates, contractors and third parties shall be subject to background verification proportional to the data classification to be accessed, the business requirements and acceptable risk.  Contractual agreements shall state Staff and ABC Company’s responsibilities for information security.
+#### 3. Screening – management shall take actions to acquire and maintain Staff with the necessary competence.  Background screening helps determine whether a particular individual is suitable for a given position. Generally, it is more effective to use separation of duties and least privilege to limit the sensitivity of the position, rather than relying on screening alone to reduce the risk to {{ORGANIZATION_NAME}}.  Pursuant to local laws, regulations, ethics, and contractual constraints all employment candidates, contractors and third parties shall be subject to background verification proportional to the data classification to be accessed, the business requirements and acceptable risk.  Contractual agreements shall state Staff and {{ORGANIZATION_NAME}}’s responsibilities for information security.
 
 #### 4. Training and awareness – Staff shall be trained in the computer security responsibilities and duties associated with their jobs.  Refer to the Security Training Policy for more information.
 
@@ -60,7 +60,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to Executive Management and Department Heads.
+This policy is to be distributed to {{EXEC_MGMT}} and Department Heads.
 Policy History
 References:
 COBIT APO07.12-13, APO08.12-13, APO10.05, APO11.09-10, APO12.07, BAI08.11-12

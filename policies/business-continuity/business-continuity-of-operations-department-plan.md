@@ -10,7 +10,6 @@ references:
 - business-continuity-policy
 - operations-department-plan
 variables:
-- APPROVAL_DATE
 - EFFECTIVE_DATE
 - ORGANIZATION_NAME
 conditions: []
@@ -45,13 +44,13 @@ Appendix B – Receipt and Acknowledgement	10
 ## I. Purpose of the Business Continuity of Operations Department Plan
 
 Business continuity ensures that critical processes will continue to perform service throughout an emergency or disruption.  The purpose of this Business Continuity of Operations Department Plan (Plan) is to address the restoration of this department’s business processes after a business disruption either internal, within the department, or external, outside of the department.
-This Plan, along with the other Business Continuity documents, supports ABC Company’s Business Continuity Policy that provides overall guidance and direction for business continuity planning and related activities.
+This Plan, along with the other Business Continuity documents, supports {{ORGANIZATION_NAME}}’s Business Continuity Policy that provides overall guidance and direction for business continuity planning and related activities.
 
 ## II. Overview of the Business Continuity of Operations Department Plan
 
-ABC Company has a large variety of processes whose continuous operations are critical to the organization’s continuing viability.  Business resumption planning involves arranging for emergency operations of these critical business functions and for resource recovery planning of these functions following a natural or man-made disruption.
-This Business Continuity of Operations Department Plan is only one component of ABC Company’s business continuity planning process.
-Each department provides important services to ABC Company.  Business continuity of operations plans are needed for all organizational units and include the logistics of workarounds should essential services (Internet, phones, software applications, etc.) not be available, getting personnel to work locations, temporary s, recovery facilities, and housing.
+{{ORGANIZATION_NAME}} has a large variety of processes whose continuous operations are critical to the organization’s continuing viability.  Business resumption planning involves arranging for emergency operations of these critical business functions and for resource recovery planning of these functions following a natural or man-made disruption.
+This Business Continuity of Operations Department Plan is only one component of {{ORGANIZATION_NAME}}’s business continuity planning process.
+Each department provides important services to {{ORGANIZATION_NAME}}.  Business continuity of operations plans are needed for all organizational units and include the logistics of workarounds should essential services (Internet, phones, software applications, etc.) not be available, getting personnel to work locations, temporary s, recovery facilities, and housing.
 This Plan contains:
 Workaround activities
 Backup resource arrangements
@@ -156,7 +155,7 @@ Department Manger
 
 # Appendix B – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Business Continuity of Operations Department Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Business Continuity of Operations Department Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

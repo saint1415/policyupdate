@@ -50,25 +50,25 @@ approver: null
 
 ## I. Overview
 
-ABC Company has a responsibility to maintain high standards of security for private/non-public electronic information.  ABC Company data that is stored on or accessed by computers and other electronic devices must be secured against intentional or unintentional loss of confidentiality, integrity, or availability regardless of location.
+{{ORGANIZATION_NAME}} has a responsibility to maintain high standards of security for private/non-public electronic information.  {{ORGANIZATION_NAME}} data that is stored on or accessed by computers and other electronic devices must be secured against intentional or unintentional loss of confidentiality, integrity, or availability regardless of location.
 
 ## II. Purpose
 
-This policy protects ABC Company’s assets and helps ensure our ability to continue business operations.
+This policy protects {{ORGANIZATION_NAME}}’s assets and helps ensure our ability to continue business operations.
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
 Computers and other devices must have an identified local Data Owner who is responsible for the data and can act as a point of contact.
 Computers and other devices must be either continuously managed or reviewed on an ongoing basis for appropriate security measures by a full-time information technology professional, such as competent local IT support staff. These reviews must include adherence to baseline security requirements as well as additional strategies for protecting the information.
 Units are responsible to have appropriately supervised professional technical support staffing sufficient to maintain information security. The staffing level should be appropriate to the environment considering the amount and type of private information for which they are responsible and the level of risk.  Refer to the Staffing Policy for more information.
-Computers and other devices must be set up in accordance with applicable ABC Company security guidelines and standards.  As received from the vendor, computers and other devices are not configured for security and require initial as well as ongoing review of the configuration and security of the operating system and software.
+Computers and other devices must be set up in accordance with applicable {{ORGANIZATION_NAME}} security guidelines and standards.  As received from the vendor, computers and other devices are not configured for security and require initial as well as ongoing review of the configuration and security of the operating system and software.
 Security vulnerabilities are regularly found and publicized for software.  Regular patching, installation of newer versions, and other maintenance must be performed to protect private data (Patch Management Policy).  Automatic settings or centralized updating of security patches is recommended for most desktop computers.
 Access to private data must be authenticated (e.g. by using a strong and complex password) with file access privileges differentiated by user.  Administrator or root level passwords should be exceptionally strong, since these accounts allow complete control of the system.  User accounts with fewer privileges should be used instead of root accounts whenever possible.  Periodic review of access is required.
-If sent across the Internet (external to the ABC Company's network) or other open networks such as wireless connections, both the authentication data (e.g. user ID and password) and the data itself must be encrypted with strong encryption.  Encryption of private data stored on laptop computers or other portable devices is required.  An off-site plain-text backup version in a secure location is recommended to protect against lost encryption keys.  The ABC Company's wired network is not considered an open network.
+If sent across the Internet (external to the {{ORGANIZATION_NAME}}'s network) or other open networks such as wireless connections, both the authentication data (e.g. user ID and password) and the data itself must be encrypted with strong encryption.  Encryption of private data stored on laptop computers or other portable devices is required.  An off-site plain-text backup version in a secure location is recommended to protect against lost encryption keys.  The {{ORGANIZATION_NAME}}'s wired network is not considered an open network.
 Desktop and laptop computers must have anti-virus software or filters installed and updated daily (automatic updates recommended).  In addition, other Windows computers, including servers, must have anti-virus software installed and updated daily. (See the Anti-Malware Policy).
 Physical access to computers must be restricted as much as possible.  Devices not in use for extended periods (e.g. at night and on weekends) must be turned off.  Laptops must be physically restrained (e.g. via an anchoring device) at work stations and servers must be in an appropriate and secure physical facility.
 Password protected screen saver programs should be used in open locations.  Password protected screen savers are required and should be set per the Securing Information Systems Policy.
@@ -78,17 +78,17 @@ Sensitive Information in databases, logs, data files, backup media, etc. shall b
 Periodic backup copies of software and data must be made, tested, and stored securely. The physical security of the removable media must be maintained and plans made to allow recovery from unexpected problems.  Refer to the Backup Policy for more information.
 A "secure deletion" program must be used to erase data from hard disks and media prior to transfer or disposal of hardware.  Permanent media (e.g., CD's, DVD’s, etc.) must be physically destroyed.  Refer to the Disposal Policy for more information.
 Services available on computers or other devices must be as limited as much as possible. Web server, ftp server, mail server, peer to peer, and anonymous file sharing software can significantly raise the security risk to private data.  Unless a high level of expertise is available and these services are closely monitored at all times, this higher risk software should not be installed.
-Training provided by ABC Company on data security practices must be completed for both new and existing employees.  Employees that deal with sensitive data may require additional training.  Refer to the Security Training Policy for more information.
+Training provided by {{ORGANIZATION_NAME}} on data security practices must be completed for both new and existing employees.  Employees that deal with sensitive data may require additional training.  Refer to the Security Training Policy for more information.
 One or more of the following additional actions should be used to further protect Sensitive Information, depending upon the situation and requirements:
 Limit storage of private data to a hardened file server at the department level.
 Severely restrict the volume and duration of the information stored.
 Move the data to a dedicated computer holding no other applications or data.
 Limit network access to a list of specific machines or devices (access control list).
-Use an internal ABC Company, non-routed IP address or network which prevents any access either to or from the Internet
+Use an internal {{ORGANIZATION_NAME}}, non-routed IP address or network which prevents any access either to or from the Internet
 Encrypt stored data (with a clear-text version on a removable medium stored in a safe location).
 Sign up for notification of security patch availability from vendors
 Separate any sensitive data from other data and store independently (e.g. on a non-networked device).
-ABC Company departments must conduct periodic reviews of information systems in their control that contain private or confidential data.
+{{ORGANIZATION_NAME}} departments must conduct periodic reviews of information systems in their control that contain private or confidential data.
 Each department is required to document the activities they will conduct to review information systems activity.  These activities must include:
 Regular review of list of users who have been granted access to systems that contain protected or private information to ensure that only those who need access have access to the systems.
 Periodic review of departmental or unit data security incident trends.
@@ -112,7 +112,7 @@ Services and ports allowed (inbound and outbound)
 Business need for each service and port
 Information security features to be implemented
 Date of last change
-The Chief Security Officer (CSO) shall ensure policies and procedures govern the collection, use, processing, storing, transmitting, and disclosing of Sensitive Information.
+The {{CSO_TITLE}} (CSO) shall ensure policies and procedures govern the collection, use, processing, storing, transmitting, and disclosing of Sensitive Information.
 Policies and procedures are clear, reasonable, and protect Sensitive Information.
 Consent is obtained before collecting, using, and disclosing Sensitive Information.
 Sensitive Information is collected in reasonable, appropriate, and lawful ways.
@@ -147,7 +147,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all Staff that use ABC Company Information Resources.
+This policy is to be distributed to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 Policy History
 References:
 COBIT EDM03.02, APO01.11, APO13.07, APO14.01-02, APO14.07, APO14.10, MEA03.01

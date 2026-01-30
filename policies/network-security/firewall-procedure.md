@@ -27,19 +27,19 @@ approver: null
 
 ## I. Overview
 
-Firewalls are hardware devices or software programs that control the flow of traffic between networks, servers, and computer systems. This procedure specifies the steps and actions performed to meet the requirements of ABC Company’s Firewall Policy.
+Firewalls are hardware devices or software programs that control the flow of traffic between networks, servers, and computer systems. This procedure specifies the steps and actions performed to meet the requirements of {{ORGANIZATION_NAME}}’s Firewall Policy.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Firewall Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Firewall Policy.
 
 ## III. Scope
 
-This procedure applies to all Staff responsible for staff that implement and manage ABC Company’s firewalls.
+This procedure applies to all Staff responsible for staff that implement and manage {{ORGANIZATION_NAME}}’s firewalls.
 
 ## IV. Procedure
 
-The Chief Security Officer (CSO) ensures the following controls are in place:
+The {{CSO_TITLE}} (CSO) ensures the following controls are in place:
 A formal process for approving and testing all network connections and changes to the firewall and configurations.
 A current network diagram identifies all connections between environments containing sensitive data and other networks, including any wireless networks.
 A diagram documents sensitive data flows across systems and networks.
@@ -57,13 +57,13 @@ The IT Director has developed a list of the types of traffic needed by the organ
 IT security Staff review requirements when determining the types of firewall to be implemented.  IT security Staff consider:
 Network related assets as well as the firewall technologies most effective at blocking network related threats.
 Performance considerations
-Concerns regarding the integration of the firewall into existing network and security infrastructures. Requirements related to ABC Company’s physical environment and personnel as well as possible future needs, virtual private networks (VPN), etc.
+Concerns regarding the integration of the firewall into existing network and security infrastructures. Requirements related to {{ORGANIZATION_NAME}}’s physical environment and personnel as well as possible future needs, virtual private networks (VPN), etc.
 IT security Staff create network traffic rules that are as specific as possible.  IT security Staff consider the types of traffic required and protocols the firewall may need to use for management purposes.
 IT security Staff manage firewall architectures, policies, software, and other components throughout the life of the firewall solutions.  Examples include:
 Choosing the type or types of firewalls to be deployed
 Firewall positions within the network
-Changes to firewall rules as ABC Company’s requirements change, when new applications or servers are implemented within the network, etc.
-Firewall performance is monitored to ensure availability of ABC Company’s Information Resources.  Monitoring tools are used to issues and take action before components become overwhelmed.  Logs and alerts are continuously monitored to identify threats, both successful and unsuccessful.
+Changes to firewall rules as {{ORGANIZATION_NAME}}’s requirements change, when new applications or servers are implemented within the network, etc.
+Firewall performance is monitored to ensure availability of {{ORGANIZATION_NAME}}’s Information Resources.  Monitoring tools are used to issues and take action before components become overwhelmed.  Logs and alerts are continuously monitored to identify threats, both successful and unsuccessful.
 Firewall rules and policies are managed by a formal change management control process.  Such process considers the potential impact to security and business operations.  Firewall rules are reviewed and tested on a periodic basis to ensure continued compliance with the organization’s policies.  Firewall software is patched per the Patch Management Policy.
 Firewall configurations prohibit direct public access between public networks (e.g. Internet) and any Information Resource containing sensitive information.  A software firewall, hardware firewall, or other network filtering (e.g. port or IP address filtering) technology is used to limit network access to devices that store sensitive data.  Configurations restrict all traffic, inbound and outbound, from untrusted networks (including wireless) and hosts and specifically deny all other traffic except for necessary protocols.
 IT security Staff:
@@ -91,7 +91,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to all ABC Company security Staff.
+This procedure is to be distributed to all {{ORGANIZATION_NAME}} security Staff.
 Procedure History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

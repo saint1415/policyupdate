@@ -30,11 +30,11 @@ approver: null
 
 ## I. Overview
 
-Server policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with ABC Company’s server related policies.
+Server policies provide management direction and guidance to ensure systems and data are properly protected. Procedures document a detailed description of the steps necessary to perform specific operations that comply with {{ORGANIZATION_NAME}}’s server related policies.
 
 ## II. Purpose
 
-The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in ABC Company's Server Hardening Policy.
+The purpose of this procedure is to formally document the series of steps taken to meet the requirements specified in {{ORGANIZATION_NAME}}'s Server Hardening Policy.
 
 ## III. Scope
 
@@ -56,7 +56,7 @@ Time.  An accurate time and date is important for system and event logs.  Config
 Anti-Malware.  Ensure the device is protected from malicious software such as viruses, worms, Trojan Horse programs, etc.  Ensure the Malware software and definitions are updated in a timely manner.  Refer to the Anti-Malware Policy for more information.
 Testing.  Where possible, the server should be tested prior to installing the device in a production environment.
 Management sessions.  Administrators should not connect to the device using unsecure services where communications are not encrypted.  Ensure only authorized personnel are allowed to access and administer the device.
-Warning banners/notices.  Some implementations may require the use of warming banners or notices.  Network administrators should consult with ABC Company legal staff regarding the posting of notices such as:
+Warning banners/notices.  Some implementations may require the use of warming banners or notices.  Network administrators should consult with {{ORGANIZATION_NAME}} legal staff regarding the posting of notices such as:
 Access is only permitted by authorized personnel
 Activities are logged and monitored and can be used as evidence
 Unauthorized access or use can result in civil and criminal penalties
@@ -69,7 +69,7 @@ Any Staff member found to have violated this procedure may be subject to discipl
 
 ## VI. Distribution
 
-This procedure is to be distributed to IT Department Staff who administer servers and the Chief Security Officer.
+This procedure is to be distributed to IT Department Staff who administer servers and the {{CSO_TITLE}}.
 Procedure History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

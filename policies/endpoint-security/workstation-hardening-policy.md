@@ -29,7 +29,7 @@ approver: null
 
 ## I. Overview
 
-Workstations are used by ABC Company Staff to accomplish their day-to-day duties.  Workstations must be protected from both security and performance related risks.  One of the required steps to attain this assurance is to ensure that the workstations are installed and maintained in a manner that prevents unauthorized access, unauthorized use, and disruptions in service.
+Workstations are used by {{ORGANIZATION_NAME}} Staff to accomplish their day-to-day duties.  Workstations must be protected from both security and performance related risks.  One of the required steps to attain this assurance is to ensure that the workstations are installed and maintained in a manner that prevents unauthorized access, unauthorized use, and disruptions in service.
 
 ## II. Purpose
 
@@ -37,12 +37,12 @@ The purpose of this policy is to provide guidance and define the requirements fo
 
 ## III. Scope
 
-This policy applies to all Staff that use and manage ABC Company workstations.
+This policy applies to all Staff that use and manage {{ORGANIZATION_NAME}} workstations.
 
 ## IV. Policy
 
 Appropriate measures must be taken when using workstations to ensure the confidentiality, integrity and availability of information.  This Policy helps ensure that access to sensitive information is restricted to authorized users.
-A Workstation Hardening Procedure shall provide the detailed information required to harden ABC Company workstations.  At a minimum, the Server Hardening Procedure shall include:
+A Workstation Hardening Procedure shall provide the detailed information required to harden {{ORGANIZATION_NAME}} workstations.  At a minimum, the Server Hardening Procedure shall include:
 Installing the operating system from an IT approved source
 Applying vendor supplied patches
 Removing unnecessary software, system services, and drivers
@@ -50,9 +50,9 @@ Setting security parameters including workstation firewall and password at start
 Systems shall have a password protected screen saver activated within a short timeout period to ensure that workstations that were left unsecured are protected
 Workstations shall be protected by current and up-to-date anti-malware software and definitions
 Workstations shall have vendor-issued critical security updates and patches installed in a timely manner (typically within 30 days).  Refer to the Patch Management Policy for more information.
-Where practical, ABC Company’s IT Department will test security patches against IT core resources before installing in production environments and rolling out to user workstations.
-In the case of special applications, ABC Company’s IT Department may make hardware resources available for testing security patches.
-All sensitive information must be stored on network servers.  Sensitive information shall be encrypted and comply with ABC Company’s Encryption Policy.  Laptops containing sensitive information shall have the hard drives encrypted and laptops shall be secured through the use of cable locks or locking laptops up in drawers or cabinets.
+Where practical, {{ORGANIZATION_NAME}}’s IT Department will test security patches against IT core resources before installing in production environments and rolling out to user workstations.
+In the case of special applications, {{ORGANIZATION_NAME}}’s IT Department may make hardware resources available for testing security patches.
+All sensitive information must be stored on network servers.  Sensitive information shall be encrypted and comply with {{ORGANIZATION_NAME}}’s Encryption Policy.  Laptops containing sensitive information shall have the hard drives encrypted and laptops shall be secured through the use of cable locks or locking laptops up in drawers or cabinets.
 
 ## V. Enforcement
 
@@ -60,7 +60,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff that use Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff that use Information Resources.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

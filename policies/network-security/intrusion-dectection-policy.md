@@ -32,11 +32,11 @@ Intrusion detection plays an important role in implementing and enforcing an org
 
 ## II. Purpose
 
-This policy establishes intrusion detection and security monitoring to protect resources and data on ABC Company’s network.  It provides intrusion detection implementation guidelines along with associated roles and responsibilities.
+This policy establishes intrusion detection and security monitoring to protect resources and data on {{ORGANIZATION_NAME}}’s network.  It provides intrusion detection implementation guidelines along with associated roles and responsibilities.
 
 ## III. Scope
 
-This policy applies to all Staff that have access to ABC Company’s Information Resources.
+This policy applies to all Staff that have access to {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
@@ -54,7 +54,7 @@ All systems accessible from the Internet or by the public must operate IT approv
 All systems in the DMZ must operate IT approved active intrusion detection software.
 All host based and network based intrusion detection systems shall have their log files reviewed on a daily basis.
 All intrusion detection logs must be kept for a minimum or 30 days.  This provides an audit trail of past events.  Operating system, user accounting, and application software audit logging processes are to be enabled on all host and server systems.
-Alarm and alert functions of any firewalls and other network perimeter access control systems are to be enabled.  Audit logging of any firewalls and other network perimeter access control system are to be enabled and audit logs from the perimeter access control systems will be monitored/reviewed daily by the Chief Security Officer (CSO).
+Alarm and alert functions of any firewalls and other network perimeter access control systems are to be enabled.  Audit logging of any firewalls and other network perimeter access control system are to be enabled and audit logs from the perimeter access control systems will be monitored/reviewed daily by the {{CSO_TITLE}} (CSO).
 System integrity checks of the firewalls and other network perimeter access control systems will be performed on a routine basis.  Audit logs for servers and hosts on the internal, protected, network will be reviewed on a weekly basis.  The system administrator will furnish any audit logs as requested by the CSO.
 Host based intrusion tools will be checked on a routine and all trouble reports should be reviewed for symptoms that might indicate intrusive activity.
 Incident Response security controls must not be bypassed or disabled.  All personnel are responsible for managing their use of incident response and are accountable for their actions relating to incident response security.  Personnel are also equally responsible for reporting any suspected or confirmed violations of this policy to the appropriate management.

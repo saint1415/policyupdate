@@ -13,7 +13,6 @@ references:
 - business-continuity-policy
 - business-resumption-plan
 variables:
-- APPROVAL_DATE
 - EFFECTIVE_DATE
 - ORGANIZATION_NAME
 conditions: []
@@ -49,13 +48,13 @@ Appendix B – Receipt and Acknowledgement	11
 
 ## I. Purpose of the Business Resumption Plan
 
-The purpose of the Business Continuity Business Resumption Plan (Plan) is to address the restoration of business processes after an emergency.  This Plan, along with the Business Continuity Communications Plan, supports the Business Continuity Disaster Recovery Plan to ensure the continuity of critical processes throughout an emergency or disruption.  ABC Company’s Business Continuity Policy provides overall guidance and direction for business continuity planning and related activities.
+The purpose of the Business Continuity Business Resumption Plan (Plan) is to address the restoration of business processes after an emergency.  This Plan, along with the Business Continuity Communications Plan, supports the Business Continuity Disaster Recovery Plan to ensure the continuity of critical processes throughout an emergency or disruption.  {{ORGANIZATION_NAME}}’s Business Continuity Policy provides overall guidance and direction for business continuity planning and related activities.
 
 ## II. Overview of the Business Resumption Plan
 
-ABC Company has a large variety of processes whose continuous operations are critical to the organization’s continuing viability.  Business resumption planning involves arranging for emergency operations of these critical business functions and for resource recovery planning of these functions following a natural or man-made disruption.
-This Business Continuity Business Resumption Plan is only one component of ABC Company’s business continuity planning process.  Business resumption plans are needed for all organizational units and include the logistics of getting personnel to work locations, temporary s, recovery facilities, and housing.  Employee safety orientation and insurance programs must also be included in business resumption planning.
-ABC Company’s business resumption plan contains:
+{{ORGANIZATION_NAME}} has a large variety of processes whose continuous operations are critical to the organization’s continuing viability.  Business resumption planning involves arranging for emergency operations of these critical business functions and for resource recovery planning of these functions following a natural or man-made disruption.
+This Business Continuity Business Resumption Plan is only one component of {{ORGANIZATION_NAME}}’s business continuity planning process.  Business resumption plans are needed for all organizational units and include the logistics of getting personnel to work locations, temporary s, recovery facilities, and housing.  Employee safety orientation and insurance programs must also be included in business resumption planning.
+{{ORGANIZATION_NAME}}’s business resumption plan contains:
 Backup resource arrangements
 Procedures for notification, activation, mobilization, and emergency operations
 Resources at all facilities (permanent and temporary)
@@ -67,10 +66,10 @@ Resources at all facilities (permanent and temporary)
 A formal Plan is needed for orientation of employees that will be involved in activating the plan and performing emergency operations. Orientation material is also needed for all employees in both the life safety and Plan areas.  Detailed emergency operations plans are needed:
 Before a disaster for use during testing
 After a disaster for use during emergency operations
-ABC Company’s departments shall prepare the following:
-Off-site contingency site.  ABC Company’s Emergency Action Facilities Team shall arrange an off-site contingency site with work areas, conference rooms, and s.  The off-site contingency site can be utilized by ABC Company employees until existing facilities are restored to normal operations or new facilities are available for occupancy.
+{{ORGANIZATION_NAME}}’s departments shall prepare the following:
+Off-site contingency site.  {{ORGANIZATION_NAME}}’s Emergency Action Facilities Team shall arrange an off-site contingency site with work areas, conference rooms, and s.  The off-site contingency site can be utilized by {{ORGANIZATION_NAME}} employees until existing facilities are restored to normal operations or new facilities are available for occupancy.
 Activation.  Departments should create documented activation and mobilization procedures.
-Recovery documents.  While the IT Department is responsible for off-site storage of electronic data, all ABC Company departments should evaluate manual recovery documents such as paper based data, forms, and procedures that must be stored off-site.  ABC Company departments will make the appropriate arrangements to ensure manual recovery documents, special forms, checks, etc. are stored off-site.  These documents assist the individuals departments and minimize a business disruption.
+Recovery documents.  While the IT Department is responsible for off-site storage of electronic data, all {{ORGANIZATION_NAME}} departments should evaluate manual recovery documents such as paper based data, forms, and procedures that must be stored off-site.  {{ORGANIZATION_NAME}} departments will make the appropriate arrangements to ensure manual recovery documents, special forms, checks, etc. are stored off-site.  These documents assist the individuals departments and minimize a business disruption.
 Contact lists.  Departments should maintain emergency contact notification lists of all staff in their respective areas.
 Supporting information.  In addition to the above, each department should maintain information, as appropriate, to assist in recovery operations.  Backup resources such as locations and functions should be identified.
 Testing  Testing and training procedures should be developed.
@@ -105,7 +104,7 @@ Gather and provide the necessary resources.
 
 ### C. User department responsibilities
 
-ABC Company management will direct staff to implement emergency procedures.  In most disaster situations, data will be lost.  Departments must re-create lost data in addition to continuing existing business operations.
+{{ORGANIZATION_NAME}} management will direct staff to implement emergency procedures.  In most disaster situations, data will be lost.  Departments must re-create lost data in addition to continuing existing business operations.
 The Emergency Action Applications Team will coordinate with users and assist in identifying data that needs to be re-created.  The Emergency Action Applications Team will also monitor recovery progress to ensure systems are operating correctly.
 After the department personnel have been deployed, the department managers should track the location of their employees and continue to update the information throughout each day of the recovery operation.
 User departments will create a log of daily events and tasks performed.  This log will aid in recovery efforts as well as assist in a post disaster review of events.
@@ -131,7 +130,7 @@ Resume operations at the repaired facility or new facility as appropriate.  User
 
 ## VI. After a Disaster
 
-Following the disaster, each department will document the events that transpired including any recommended changes to their procedures.  The disaster results will then be reviewed by ABC Company management.
+Following the disaster, each department will document the events that transpired including any recommended changes to their procedures.  The disaster results will then be reviewed by {{ORGANIZATION_NAME}} management.
 
 # Appendix A – Distribution List
 
@@ -142,7 +141,7 @@ All Department Heads
 
 # Appendix B – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Business Continuity Business Resumption Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Business Continuity Business Resumption Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

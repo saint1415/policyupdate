@@ -10,7 +10,6 @@ references:
 - configuration-management-plan
 - this-configuration-management-plan
 variables:
-- APPROVAL_DATE
 - CSO_TITLE
 - EFFECTIVE_DATE
 - EXEC_MGMT
@@ -63,20 +62,20 @@ Controlling modifications and releases
 Reporting and recording status of requested changes
 Ensuring completeness, consistency, and correctness
 Controlling storage, handling, and delivery
-The intended audience of this Plan is ABC Executive Management, Chief Risk Officer, and Chief Security Officer.
+The intended audience of this Plan is ABC {{EXEC_MGMT}}, Chief Risk Officer, and {{CSO_TITLE}}.
 
 ## III. Roles and Responsibilities
 
 ### A. Introduction
 
-ABC Company cannot protect the confidentiality, integrity, and availability of information without ensuring that all Staff involved in changes to Information Resources:
+{{ORGANIZATION_NAME}} cannot protect the confidentiality, integrity, and availability of information without ensuring that all Staff involved in changes to Information Resources:
 Understand risks related to changes to Information Resources
 Understand Staff roles and responsibilities
-Understand ABC Company’s security policies and procedures designed to manage and mitigate risks to Information Resources
+Understand {{ORGANIZATION_NAME}}’s security policies and procedures designed to manage and mitigate risks to Information Resources
 
 ### B. Configuration Management Committee
 
-A Configuration Management Committee (Committee) consists of ABC Company’s Risk Management Officer, Chief Security Officer, and IT Director.  The Committee:
+A Configuration Management Committee (Committee) consists of {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and IT Director.  The Committee:
 Receives change requests
 Seeks clarification on any change request (if needed)
 Reviews and approves/rejects configuration change requests
@@ -116,7 +115,7 @@ Once notified that the change is in place, the Resource Owner arranges for appro
 Testing of the change to ensure the Information Resource operates as desired
 Changes to documentation (if needed)
 Training of Staff (if needed)
-It is important that the Risk Management Officer, Chief Security Officer, Director of IT, and Resource Owners have the ability to review configuration status at any given time.  The Configuration Management Database ensures that Staff are working off of the same information and have access to the latest updates.  Access to the Configuration Management Database is controlled:
+It is important that the {{RMO_TITLE}}, {{CSO_TITLE}}, Director of IT, and Resource Owners have the ability to review configuration status at any given time.  The Configuration Management Database ensures that Staff are working off of the same information and have access to the latest updates.  Access to the Configuration Management Database is controlled:
 The Committee determines who has read and write access to the Configuration Management Database
 The Resource Owner determines Staff that have read access to the Configuration Management Database
 
@@ -182,14 +181,14 @@ The Committee will identify the corrective actions necessary to resolve the devi
 
 # Appendix A – Distribution List
 
-Risk Management Officer
-Chief Security Officer
+{{RMO_TITLE}}
+{{CSO_TITLE}}
 IT Director
 All Resource Owners
 
 # Appendix B – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Configuration Management Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Configuration Management Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s computer systems and related devices collect and record activity for business purposes.  This information should not be disclosed to unauthorized individuals.
+{{ORGANIZATION_NAME}}’s computer systems and related devices collect and record activity for business purposes.  This information should not be disclosed to unauthorized individuals.
 
 ## II. Purpose
 
@@ -34,14 +34,14 @@ This policy establishes general privacy requirements for information automatical
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff who use Information Resources.
+This policy applies to all {{ORGANIZATION_NAME}} Staff who use Information Resources.
 
 ## IV. Policy
 
 ### A. Network Data
 
 In the course of normal network operations, computer systems, voice systems, access control systems, and network devices may automatically generate and track logging data, source and destination internet protocol (IP) addresses, session times, port numbers, file sizes, etc. (Network Data).
-It is the general policy of ABC Company to treat Network Data as private.  This information may be obtained, stored, and reported for legitimate business purposes but shall not be exposed to unauthorized individuals except as specifically listed below.
+It is the general policy of {{ORGANIZATION_NAME}} to treat Network Data as private.  This information may be obtained, stored, and reported for legitimate business purposes but shall not be exposed to unauthorized individuals except as specifically listed below.
 
 ### B. Exceptions
 
@@ -51,7 +51,7 @@ Network performance monitoring or troubleshooting.
 Moving data through the network via automated store-and-forward systems.
 Copying, archiving, or otherwise preserving portions of messages transmitted over the network in the course of routine network maintenance activities.
 In the event that messages or data files within the network indicate the presence of activities that violate internal policies or law.
-In the event of recognized network security threats.  ABC Company reserves the right to investigate and remediate possible network security threats, including by means of capture, logging, and examination of files, communications, and other traffic and transmissions over or on the network.
+In the event of recognized network security threats.  {{ORGANIZATION_NAME}} reserves the right to investigate and remediate possible network security threats, including by means of capture, logging, and examination of files, communications, and other traffic and transmissions over or on the network.
 In response to a court order.
 In the event of a legitimate health or safety emergency.
 In pursuit of reasonable business interests, such as fulfillment of partnership agreements.
@@ -70,7 +70,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.01, EDM03.02, APO01.11, APO13.07, APO14.01-02, APO14.07, APO14.10

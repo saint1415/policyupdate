@@ -27,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-Networks are critical to the business operations of ABC Company.  Network documentation helps ABC Company adhere to industry best practices, reduces downtime and makes the troubleshooting process more efficient when problems arise.
+Networks are critical to the business operations of {{ORGANIZATION_NAME}}.  Network documentation helps {{ORGANIZATION_NAME}} adhere to industry best practices, reduces downtime and makes the troubleshooting process more efficient when problems arise.
 
 ## II. Purpose
 
@@ -35,7 +35,7 @@ This policy details the aspects of the network that need to be documented, espec
 
 ## III. Scope
 
-This policy applies to system administrators at ABC Company.  This policy applies whether the equipment is owned or leased by ABC Company.
+This policy applies to system administrators at {{ORGANIZATION_NAME}}.  This policy applies whether the equipment is owned or leased by {{ORGANIZATION_NAME}}.
 
 ## IV. Policy
 
@@ -68,7 +68,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company IT Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} {{IT_STAFF}}.
 Policy History
 References:
 COBIT APO01.02-03, APO05.05, APO11.09-10, APO12.02, APO12.07, APO13.07, BAI11.09

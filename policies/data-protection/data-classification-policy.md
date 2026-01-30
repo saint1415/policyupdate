@@ -26,7 +26,7 @@ approver: null
 
 ## I. Overview
 
-Data Classification provides a framework for managing data assets based on value and associated risks and for applying the appropriate levels of protection as required by state and federal law as well as proprietary, ethical, operational, and privacy considerations. All ABC Company data, whether electronic or printed, should be classified. The data owner, who is responsible for Data Classification, should consult with legal counsel on the classification of data as Public, Sensitive, or Confidential. Consistent use of data classification reinforces with users the expected level of protection of ABC Company data assets in accordance with ABC Company security policies.
+Data Classification provides a framework for managing data assets based on value and associated risks and for applying the appropriate levels of protection as required by state and federal law as well as proprietary, ethical, operational, and privacy considerations. All {{ORGANIZATION_NAME}} data, whether electronic or printed, should be classified. The data owner, who is responsible for Data Classification, should consult with legal counsel on the classification of data as Public, Sensitive, or Confidential. Consistent use of data classification reinforces with users the expected level of protection of {{ORGANIZATION_NAME}} data assets in accordance with {{ORGANIZATION_NAME}} security policies.
 
 ## II. Purpose
 
@@ -34,12 +34,12 @@ The purpose of this policy is to provide a foundation for the development and im
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
 Data shall be classified as listed below.
-Public. Information intended or required for public release.  Disclosure of such information does not adversely impact ABC Company’s business operations, financial well-being, or our image and reputation.
+Public. Information intended or required for public release.  Disclosure of such information does not adversely impact {{ORGANIZATION_NAME}}’s business operations, financial well-being, or our image and reputation.
 Sensitive. Sensitive data that requires additional levels of protection.  Examples of sensitive data include but are not limited to:
 Operational information
 Personnel records
@@ -61,7 +61,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.01, EDM03.02, APO01.11, APO14.01-02, APO14.07, APO14.10, BAI02.05

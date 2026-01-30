@@ -27,7 +27,7 @@ approver: null
 
 ## I. Overview
 
-Executive Management is responsible for the design of ABC Company’s corporate strategies.  Operational managers and Information Technology (IT) must be properly aligned with corporate strategies and the needs of the organization.
+{{EXEC_MGMT}} is responsible for the design of {{ORGANIZATION_NAME}}’s corporate strategies.  Operational managers and Information Technology (IT) must be properly aligned with corporate strategies and the needs of the organization.
 
 ## II. Purpose
 
@@ -35,20 +35,20 @@ IT alignment helps ensure that the organization properly manages its IT projects
 
 ## III. Scope
 
-This policy applies to ABC Company’s Executive Management and department heads.
+This policy applies to {{ORGANIZATION_NAME}}’s {{EXEC_MGMT}} and department heads.
 
 ## IV. Policy
 
-ABC Company strategies and culture is enabled as a strategic asset when there is an understanding and consistent implementation of organization values, policies, and procedures.
+{{ORGANIZATION_NAME}} strategies and culture is enabled as a strategic asset when there is an understanding and consistent implementation of organization values, policies, and procedures.
 Each department shall:
 Create goals that contribute to achieving organization objectives.
 Document how the goals are aligned with the organization.
 Prepare action plans including people, processes, procedures and products that outline steps to implement department goals.
-Assign staff to track and monitor implementation of the action plan.  Prepare quarterly status reports for Executive Management.
-Executive Management shall:
+Assign staff to track and monitor implementation of the action plan.  Prepare quarterly status reports for {{EXEC_MGMT}}.
+{{EXEC_MGMT}} shall:
 Review and approve department action plans.
 Review quarterly action plan status reports and provide feedback as necessary.
-The Information Security Management System (ISMS), action plans and status reports shall include internal and external issues that are relevant to ABC Company.  The IT Director shall determine the effect of the issues on the organization’s ability to achieve the intended outcomes of the ISMS.
+The Information Security Management System (ISMS), action plans and status reports shall include internal and external issues that are relevant to {{ORGANIZATION_NAME}}.  The IT Director shall determine the effect of the issues on the organization’s ability to achieve the intended outcomes of the ISMS.
 The IT Director shall determine interested parties and Data Owners that are relevant to the ISMS.  In addition, the IT Director shall determine the requirements of the interested parties and Data Owners relevant to the ISMS.  The requirements of the interested parties and Data Owners should include contractual obligations as well as legal and regulatory requirements.
 The IT Director shall determine and document the scope of the ISMS by reviewing the boundaries and applicability of the ISMS.  When determining the scope, the IT Department shall consider:
 Internal and external issues that affect the intended outcomes of the ISMS.
@@ -62,7 +62,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to Executive Management and the IT Director.
+This policy is to be distributed to {{EXEC_MGMT}} and the IT Director.
 Policy History
 References:
 COBIT EDM01.01, EDM02.03, APO01.03, APO01.11, APO02.08, BAI01.03, DSS01.05

@@ -36,11 +36,11 @@ Standard Operating Procedures provide a uniform and consistent approach to manag
 
 ## II. Purpose
 
-The purpose of this policy is to ensure standard operating procedures are implemented and maintained and provide ABC Company with enhanced service, better quality, and accountability.
+The purpose of this policy is to ensure standard operating procedures are implemented and maintained and provide {{ORGANIZATION_NAME}} with enhanced service, better quality, and accountability.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff.
+This policy applies to all {{ORGANIZATION_NAME}} Staff.
 
 ## IV. Policy
 
@@ -50,7 +50,7 @@ Various regulations, governance frameworks, and security best practices require 
 
 ### B. Department Head Responsibility
 
-This policy specifies actions to be performed to ensure Procedures are implemented and maintained.  Each ABC Company Department Head shall:
+This policy specifies actions to be performed to ensure Procedures are implemented and maintained.  Each {{ORGANIZATION_NAME}} Department Head shall:
 Identify processes and procedures that require a Procedure.
 Ensure Procedures are implemented and maintained.
 Procedures use the format listed below.
@@ -94,7 +94,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Executive Management and Department Heads.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} {{EXEC_MGMT}} and Department Heads.
 Policy History
 References:
 COBIT EDM01.11, EDM02.05, APO01.11, MEA02.11

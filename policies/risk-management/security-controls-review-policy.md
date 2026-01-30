@@ -31,22 +31,22 @@ approver: null
 
 ## I. Overview
 
-Security controls and safeguards are part of ABC Company’s Risk Treatment Plan to mitigate, eliminate, and transfer risks that can impact business operations.
+Security controls and safeguards are part of {{ORGANIZATION_NAME}}’s Risk Treatment Plan to mitigate, eliminate, and transfer risks that can impact business operations.
 
 ## II. Purpose
 
-Risk is the potential that a threat will exploit one or more asset vulnerabilities and result in a loss or failure to achieve an objective.  At ABC Company, risk management is the process of identifying, analyzing, and the use of safeguards and controls to treat risks.  This policy establishes a formal and periodic review of security control and safeguards.
+Risk is the potential that a threat will exploit one or more asset vulnerabilities and result in a loss or failure to achieve an objective.  At {{ORGANIZATION_NAME}}, risk management is the process of identifying, analyzing, and the use of safeguards and controls to treat risks.  This policy establishes a formal and periodic review of security control and safeguards.
 
 ## III. Scope
 
-This policy applies to the Risk Management Officer and ABC Company Department Heads.
+This policy applies to the {{RMO_TITLE}} and {{ORGANIZATION_NAME}} Department Heads.
 
 ## IV. Policy
 
-ABC Company’s Risk Management Officer shall be responsible for reviewing safeguards and controls on an annual basis.  The purpose of the review will be to ensure the controls are sufficient, appropriate, and effective at managing and reducing risks to acceptable levels.
-Per the Risk Management Policy, on an annual basis each ABC Company Department Head will prepare and provide to the Risk Management Officer, a Risk Assessment, Risk Analysis, and a Risk Treatment Plan.  Collectively, these documents specify specific security controls and safeguards.
-The Risk Management Officer will review the security controls to ensure they are aligned with the needs of the organization.  The Risk Management Officer may choose to have security controls independently reviewed by a Certified Information Systems Auditor (certified by the Information Systems Audit and Control Association) to ensure they are sufficient, appropriate, and effective at managing and reducing risks.
-As necessary, the Risk Management Officer will recommend to the appropriate Department Heads changes or enhancements to security controls and safeguards.  This process helps ensure each department’s approach to managing risk is properly aligned with the needs of the organization.
+{{ORGANIZATION_NAME}}’s {{RMO_TITLE}} shall be responsible for reviewing safeguards and controls on an annual basis.  The purpose of the review will be to ensure the controls are sufficient, appropriate, and effective at managing and reducing risks to acceptable levels.
+Per the Risk Management Policy, on an annual basis each {{ORGANIZATION_NAME}} Department Head will prepare and provide to the {{RMO_TITLE}}, a Risk Assessment, Risk Analysis, and a Risk Treatment Plan.  Collectively, these documents specify specific security controls and safeguards.
+The {{RMO_TITLE}} will review the security controls to ensure they are aligned with the needs of the organization.  The {{RMO_TITLE}} may choose to have security controls independently reviewed by a Certified Information Systems Auditor (certified by the Information Systems Audit and Control Association) to ensure they are sufficient, appropriate, and effective at managing and reducing risks.
+As necessary, the {{RMO_TITLE}} will recommend to the appropriate Department Heads changes or enhancements to security controls and safeguards.  This process helps ensure each department’s approach to managing risk is properly aligned with the needs of the organization.
 Security controls can be classified according to their approach to security incidents:
 Preventive controls – These safeguards prevent security incidents.  Examples include passwords, encrypting laptop hard drives, cards that permit physical access to data centers, etc.
 Detective controls – During an event, detective controls identify and characterize an incident in progress.  Examples include anti-virus software, alarms and notifications, etc.
@@ -62,7 +62,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to ABC Company Executive Management, Department Heads, IT Director, Risk Management Officer, and Chief Security Officer.
+This policy is to be distributed to {{ORGANIZATION_NAME}} {{EXEC_MGMT}}, Department Heads, IT Director, {{RMO_TITLE}}, and {{CSO_TITLE}}.
 Policy History
 References:
 COBIT APO01.11, APO03.06, APO11.09, APO12.02, APO12.07, DSS05.07, MEA04.11

@@ -10,6 +10,7 @@ references:
 - reporting-violations-policy
 variables:
 - EXEC_MGMT
+- HR_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -27,23 +28,23 @@ approver: null
 
 ## I. Overview
 
-ABC Company Staff are responsible for notifying IT Help Desk or their supervisor if they suspect there has been a violation of an ABC Company policy or if they suspect there may have been a security incident.
+{{ORGANIZATION_NAME}} Staff are responsible for notifying IT Help Desk or their supervisor if they suspect there has been a violation of an {{ORGANIZATION_NAME}} policy or if they suspect there may have been a security incident.
 
 ## II. Purpose
 
-Staff are a first line of defense and this policy helps ensure protection of ABC Company Information Resources and their availability, integrity, and confidentiality.
+Staff are a first line of defense and this policy helps ensure protection of {{ORGANIZATION_NAME}} Information Resources and their availability, integrity, and confidentiality.
 
 ## III. Scope
 
-This policy applies to all Staff that access ABC Company’s Information Resources.
+This policy applies to all Staff that access {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-Every Staff member is responsible for ensuring that ABC Company maintains the highest professional standards while protecting information confidentiality, integrity, and availability.  Staff members are obliged to report any suspected violation of company policies.  Reports can be made to any of the following departments as appropriate:
+Every Staff member is responsible for ensuring that {{ORGANIZATION_NAME}} maintains the highest professional standards while protecting information confidentiality, integrity, and availability.  Staff members are obliged to report any suspected violation of company policies.  Reports can be made to any of the following departments as appropriate:
 Information Technology (IT)
-Human Resources (HR)
+{{HR_DEPARTMENT}} (HR)
 Legal
-Executive Management
+{{EXEC_MGMT}}
 Staff shall not be disciplined or penalized for reporting honestly and in good faith.  All reports shall be kept confidential except as necessary to conduct investigations.
 
 ## V. Enforcement
@@ -52,7 +53,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM02.03, APO01.03, APO12.02, APO12.07, DSS01.05, MEA03.01, MEA04.11

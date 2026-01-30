@@ -30,7 +30,7 @@ approver: null
 
 ## I. Overview
 
-Implementing solid security policies, blocking unnecessary access to source code, implementing testing procedures, and managing the transfer of software from development to production helps mitigate ABC Company’s software development risks.
+Implementing solid security policies, blocking unnecessary access to source code, implementing testing procedures, and managing the transfer of software from development to production helps mitigate {{ORGANIZATION_NAME}}’s software development risks.
 
 ## II. Purpose
 
@@ -71,7 +71,7 @@ Software debugging code must be removed.
 Test user IDs and passwords must be removed.
 Custom code shall be reviewed prior to release to identify any potential coding vulnerability.  Secure coding practices shall be appropriate to the programming language and development environment. Code changes shall be reviewed by individuals other than the originating code author and by individuals knowledgeable about code-review techniques and secure coding practices.  Such review to ensure code is developed according to secure coding guidelines and appropriate corrections are implemented prior to release.  Code review results are reviewed and approved by IT management prior to release.  The requirement for code reviews applies to all custom code (both internal and public-facing), as part of the system development life cycle.  Code reviews shall be conducted by knowledgeable internal personnel or third parties. Public-facing web applications are also subject to additional controls, to address on-going threats and vulnerabilities after implementation.
 The IT Department’s operations Staff will move programs from development into production.  Software developers shall not be permitted to move programs into the production environment.
-ABC Company’s IT Department must perform periodic risk assessments of production systems to determine whether the controls employed are adequate.  Procedures shall be developed controlling the risks related to systems development access during emergencies (program aborts, etc.).  Refer to the Risk Assessment Policy for more information.
+{{ORGANIZATION_NAME}}’s IT Department must perform periodic risk assessments of production systems to determine whether the controls employed are adequate.  Procedures shall be developed controlling the risks related to systems development access during emergencies (program aborts, etc.).  Refer to the Risk Assessment Policy for more information.
 
 ### C. Data Owners
 
@@ -83,7 +83,7 @@ Data owners shall review test results and provide approval prior to moving new s
 The development of all software shall be supervised and monitored by the organization and must include security requirements, independent security review of the environment by a Certified Information Systems Auditor, certified security training for software developers, and code reviews.
 Applications shall be securely designed, coded, and maintained per the Secure Software Development Lifecycle Policy.  Applications shall be designed in accordance with industry accepted security standards (i.e., OWASP for web applications) and comply with applicable regulatory and business requirements.
 Data input and output integrity routines (i.e., reconciliation and edit checks) shall be implemented for application interfaces and databases to prevent manual or systematic processing errors or corruption of data.
-Quality assurance procedures shall include systematic monitoring and evaluation of software developed, outsourced, or acquired by ABC Company.  Quality evaluation and acceptance criteria for information systems, upgrades, and new versions shall be established, documented and tests of the system(s) shall be carried out both during development and prior to acceptance to maintain security.  Refer to the Quality Assurance Policy for more information.
+Quality assurance procedures shall include systematic monitoring and evaluation of software developed, outsourced, or acquired by {{ORGANIZATION_NAME}}.  Quality evaluation and acceptance criteria for information systems, upgrades, and new versions shall be established, documented and tests of the system(s) shall be carried out both during development and prior to acceptance to maintain security.  Refer to the Quality Assurance Policy for more information.
 Test data shall be carefully selected, protected, and controlled.  Management shall have a clear oversight capacity in the quality testing process with the final product being certified as:
 Fit for purpose - the product should be suitable for the intended purpose, and
 Right first time - mistakes should be eliminated prior to release.
@@ -99,7 +99,7 @@ Change control procedures for the implementation of security patches and softwar
 
 ### E. Software Security
 
-The Chief Security Officer (CSO) shall ensure secure software requirements:
+The {{CSO_TITLE}} (CSO) shall ensure secure software requirements:
 Staff implement secure software lifecycle management practices.
 Processes exist to identify, assess, and manage threats and vulnerabilities to the software.
 Secure software releases and updates are provided in a timely manner.
@@ -116,7 +116,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to the Chief Security Officer and all Staff that develop, implement, acquire, or manage software development.
+This policy is to be distributed to the {{CSO_TITLE}} and all Staff that develop, implement, acquire, or manage software development.
 Policy History
 References:
 COBIT APO01.03, APO01.11, APO05.05, APO12.07, APO13.07, BAI03.05, MEA02.11

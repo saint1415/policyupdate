@@ -32,20 +32,20 @@ approver: null
 
 ## I. Overview
 
-Capacity and utilization safeguards are part of ABC Company’s risk management process to mitigate and reduce risks that can impact business operations and Information Resource availability.
+Capacity and utilization safeguards are part of {{ORGANIZATION_NAME}}’s risk management process to mitigate and reduce risks that can impact business operations and Information Resource availability.
 
 ## II. Purpose
 
-Capacity planning and utilization helps ABC Company obtain maximum value from its Information Resources.  In addition, planning ensures Information Resources meet current and projected needs.
+Capacity planning and utilization helps {{ORGANIZATION_NAME}} obtain maximum value from its Information Resources.  In addition, planning ensures Information Resources meet current and projected needs.
 
 ## III. Scope
 
-This Policy applies to the Chief Security Officer, IT Director, and IT Operations Manager.
+This Policy applies to the {{CSO_TITLE}}, IT Director, and IT Operations Manager.
 
 ## IV. Policy
 
-For the purposes of this Policy, capacity and resource utilization is the extent to which ABC Company uses its Information Resources. It is the relationship between output actually produced and the potential output that could be produced if Information Systems were fully used.
-ABC Company’s Chief Security Officer (CSO) is responsible for ensuring that security controls and safeguards are appropriate, sufficient, and effective at treating risks.  The use of resources shall be monitored, tuned, and projections made of future capacity requirements to ensure the required system performance.  The CSO shall:
+For the purposes of this Policy, capacity and resource utilization is the extent to which {{ORGANIZATION_NAME}} uses its Information Resources. It is the relationship between output actually produced and the potential output that could be produced if Information Systems were fully used.
+{{ORGANIZATION_NAME}}’s {{CSO_TITLE}} (CSO) is responsible for ensuring that security controls and safeguards are appropriate, sufficient, and effective at treating risks.  The use of resources shall be monitored, tuned, and projections made of future capacity requirements to ensure the required system performance.  The CSO shall:
 Resources – identify important resources that should be monitored and measured.
 Requirements – prepare a list of capacity constraints that are relevant to important resources.
 Monitoring – describe the required resource monitoring, alerts to be issued, and actions to be taken.
@@ -59,7 +59,7 @@ The IT Department shall measure current capacity and performance on important re
 Resource monitoring and problem identification may use audit trails to detect disk failures, over utilization of system resources, network outages, and similar events.  See the Audit Trails Policy for more information.
 The IT Operations Department is responsible for developing and maintaining backup procedures.  Such procedures include notifying the System Administrator of any issues that require attention (e.g. failed backups, capacity issues, time to backup files, etc.).  Since backups run unattended without operators present, sufficient storage capacity needs to be allocated for backups/media.  See the Backup Plan for more information.
 The IT Department shall establish monitoring systems that can detect new security vulnerabilities.  This early identification can help to block the wrongdoing or vulnerability before harm can be done, or at least to minimize the potential impact.  Other benefits include audit compliance, service level monitoring, performance measuring, and capacity planning.  See the Security Monitoring Policy for more information.
-The CSO shall provide necessary capacity and utilization reporting to ABC Company Executive Management on an as needed basis.
+The CSO shall provide necessary capacity and utilization reporting to {{ORGANIZATION_NAME}} {{EXEC_MGMT}} on an as needed basis.
 
 ## V. Enforcement
 

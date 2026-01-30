@@ -25,21 +25,21 @@ approver: null
 
 ## I. Overview
 
-ABC Company has strong relationships with our health care customers, service providers, and regulators.  Managing compliance requirements helps us maximize our opportunities in the market, enhances our competitive position, and helps build trust.
+{{ORGANIZATION_NAME}} has strong relationships with our health care customers, service providers, and regulators.  Managing compliance requirements helps us maximize our opportunities in the market, enhances our competitive position, and helps build trust.
 
 ## II. Purpose
 
-Security controls and safeguards are part of ABC Company’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.  A strong health care compliance program provides our organization with a competitive advantage, helps protect our image and reputation, and reduces our costs.
+Security controls and safeguards are part of {{ORGANIZATION_NAME}}’s risk management process to mitigate, eliminate, and transfer risks that can impact business operations.  A strong health care compliance program provides our organization with a competitive advantage, helps protect our image and reputation, and reduces our costs.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff who have access to or manage Information Resources that collect, transmit, process, or store health care related data.
+This policy applies to all {{ORGANIZATION_NAME}} Staff who have access to or manage Information Resources that collect, transmit, process, or store health care related data.
 
 ## IV. Policy
 
 HITRUST’s Common Security Framework (CSF) helps organizations create, access, store, and exchange Protected Health Information (PHI) in a safe and secure manner.  The CSF is based on health care security regulations, standards, and frameworks such as the Health Insurance Portability and Accountability Act (HIPAA), Health Information Technology for Economic and Clinical Health Act (HITECH), and International Standards Organization (ISO) 27799:2008 Health informatics, information security management in health using ISO/IEC 27002.
 CSF consolidates relevant globally recognized standards, regulations, and business requirements into a risk-based approach to security, privacy, and regulatory challenges.  CSF includes Control Categories which contain Control Objectives and Control Specifications.
-The table below summarizes ABC Company policies and plans that implement and maintain specific Safeguards to help meet HITRUST compliance requirements.
+The table below summarizes {{ORGANIZATION_NAME}} policies and plans that implement and maintain specific Safeguards to help meet HITRUST compliance requirements.
 Note: Policy/Plan names listed above may provide guidance and direction over more than one control category.
 
 ## V. Enforcement
@@ -48,7 +48,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff who have access to or manage Information Resources that collect, transmit, process, or store health care related data.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff who have access to or manage Information Resources that collect, transmit, process, or store health care related data.
 Policy History
 References:
 COBIT APO01.03, APO09.05, APO12.02, APO13.07, DSS04.05, MEA03.01, MEA04.11

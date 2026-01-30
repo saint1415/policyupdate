@@ -29,20 +29,20 @@ approver: null
 
 ## I. Overview
 
-This document describes a required minimal security configuration for all workstations connected to a production network or used in a production capacity at or on behalf of ABC Company.
+This document describes a required minimal security configuration for all workstations connected to a production network or used in a production capacity at or on behalf of {{ORGANIZATION_NAME}}.
 
 ## II. Purpose
 
-The purpose of this policy is to ensure the security of ABC Company Information Systems, workstations, and data.
+The purpose of this policy is to ensure the security of {{ORGANIZATION_NAME}} Information Systems, workstations, and data.
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Systems.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Systems.
 
 ## IV. Policy
 
 This Policy helps ensure that access to sensitive information is restricted to authorized users. By following appropriate security measures, Staff can help ensure information integrity, confidentiality, and availability.
-Staff shall follow appropriate guidelines and procedures when using workstations and systems. ABC Company has implemented certain technical, physical, and administrative controls and safeguards to ensure that workstations restrict access to authorized users
+Staff shall follow appropriate guidelines and procedures when using workstations and systems. {{ORGANIZATION_NAME}} has implemented certain technical, physical, and administrative controls and safeguards to ensure that workstations restrict access to authorized users
 Physical access to workstations shall be restricted to only authorized personnel.  Staff shall prevent unauthorized viewing of information on a screen:
 Staff shall ensure that monitors are positioned away from public view.  If necessary, install privacy screen filters or other physical barriers to prevent public viewing.
 Staff shall manually activate a password protected screen saver when they leave their desk.
@@ -58,7 +58,7 @@ Password Policy
 Remote Access Policy
 Wireless Access Policy
 Staff shall use workstations for authorized business purposes only and only approved personnel may install pre-approved software on workstations.
-All sensitive information must be stored on network servers.  Sensitive information shall be encrypted and comply with ABC Company’s Encryption Policy.  Laptops containing sensitive information shall have the hard drives encrypted and laptops shall be secured through the use of cable locks or locking laptops up in drawers or cabinets.
+All sensitive information must be stored on network servers.  Sensitive information shall be encrypted and comply with {{ORGANIZATION_NAME}}’s Encryption Policy.  Laptops containing sensitive information shall have the hard drives encrypted and laptops shall be secured through the use of cable locks or locking laptops up in drawers or cabinets.
 The IT Department shall ensure that all workstations use a surge protector (not just a power strip) or a UPS battery backup.  Staff shall keep food and drink away from workstations in order to avoid accidental spills.
 Workstations shall have vendor-issued critical security updates and patches installed in a timely manner.  Refer to the Patch Management Policy for more information.
 Workstations shall have active and updated anti-malware protection software.  Staff shall not disable anti-malware protection software.  See Anti-Malware Policy for more information.
@@ -70,7 +70,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff that use Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff that use Information Resources.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

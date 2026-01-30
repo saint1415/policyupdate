@@ -26,23 +26,23 @@ approver: null
 
 ## I. Overview
 
-ABC Company's quality assurance and quality control programs are designed to monitor, evaluate, and improve the quality of our products and services.
+{{ORGANIZATION_NAME}}'s quality assurance and quality control programs are designed to monitor, evaluate, and improve the quality of our products and services.
 
 ## II. Purpose
 
-The purpose of this policy is to specify ABC Company’s commitment to maintain high quality work, the services we provide, our relationships with Staff, and ensure continuous improvement.
+The purpose of this policy is to specify {{ORGANIZATION_NAME}}’s commitment to maintain high quality work, the services we provide, our relationships with Staff, and ensure continuous improvement.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff.
+This policy applies to all {{ORGANIZATION_NAME}} Staff.
 
 ## IV. Policy
 
-The overall aim of a quality assurance program is to deliver the best service and products possible at a good value while ensuring continuous improvement.  ABC Company’s quality assurance program improves business processes in a proactive manner to minimize variations or defects.  Our quality control program includes reactive measures such as product or service quality testing.
-ABC Company shall maintain an effective and efficient quality assurance and quality control process planned and developed in conjunction with Department Heads.  Outlined in a series of procedures, the quality assurance program is designed to eliminate deficiencies and inaccuracies and to ensure high quality standards.
-ABC Company Staff shall:
-Ensure that policies, procedures, and plans are developed and reviewed at least annually to ensure they reflect ABC Company’s values and support our mission
-Maintain a consistent work method without significant deviation and in accordance with ABC Company policies, procedures, and plans
+The overall aim of a quality assurance program is to deliver the best service and products possible at a good value while ensuring continuous improvement.  {{ORGANIZATION_NAME}}’s quality assurance program improves business processes in a proactive manner to minimize variations or defects.  Our quality control program includes reactive measures such as product or service quality testing.
+{{ORGANIZATION_NAME}} shall maintain an effective and efficient quality assurance and quality control process planned and developed in conjunction with Department Heads.  Outlined in a series of procedures, the quality assurance program is designed to eliminate deficiencies and inaccuracies and to ensure high quality standards.
+{{ORGANIZATION_NAME}} Staff shall:
+Ensure that policies, procedures, and plans are developed and reviewed at least annually to ensure they reflect {{ORGANIZATION_NAME}}’s values and support our mission
+Maintain a consistent work method without significant deviation and in accordance with {{ORGANIZATION_NAME}} policies, procedures, and plans
 Understand and identify customer (internal or external) needs and future requirements
 Establish work method Service Level Agreements (SLA) or metrics that can be measured and monitored
 Regularly monitor and measure the quality of work methods, outputs and outcomes with a view to ensuring high quality, best value, and continuous improvement
@@ -51,9 +51,9 @@ Identify measures that can prevent a possible decrease in quality in addition to
 Procedures shall be developed to ensure that a product or service measures up to standards.  Where appropriate, training and testing shall be used to ensure Staff have the appropriate knowledge and skill sets needed.
 Procedures shall track the quantity and types of defects produced by a specific process. The reported number of defects shall serve as a measure of the performance of quality assurance.  The ultimate goal is to consistently reduce defects to minimum levels.
 Total Quality Management (TQM) places emphasis on every department rather than singling out individual processes.  TQM efforts begin and end with customer satisfaction. Customer feedback shall be considered along every step of a product or service lifecycle from initial conception through delivery to ensure that products and services meet customer requirements before delivery rather than adapting at a later stage.
-A strategy for implementing ABC Company’s quality assurance and quality control programs using a Plan-Do-Check-Act (PDCA) lifecycle for quality management:
+A strategy for implementing {{ORGANIZATION_NAME}}’s quality assurance and quality control programs using a Plan-Do-Check-Act (PDCA) lifecycle for quality management:
 Plan – ensure that quality assurance policies and procedures are in line with company initiatives and quality standards.
-Do – gain support from all levels of ABC Company management and implement the quality assurance and quality control programs
+Do – gain support from all levels of {{ORGANIZATION_NAME}} management and implement the quality assurance and quality control programs
 Check – regularly monitor and measure work products and service delivery, compare with requirements and identify variances
 Act – adjust business processes, refine policies and procedures as needed
 
@@ -63,7 +63,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM05.10, APO06.04, APO11.10, APO14.10, BAI09.04, DSS01.05, MEA01.10

@@ -31,15 +31,15 @@ The production, input/output controls are the security procedures in place that 
 
 ## II. Purpose
 
-Strong, disciplined, and a clearly defined approach to production, and input and output controls helps ensure the confidentiality, availability and integrity of ABC Company’s Information Systems.
+Strong, disciplined, and a clearly defined approach to production, and input and output controls helps ensure the confidentiality, availability and integrity of {{ORGANIZATION_NAME}}’s Information Systems.
 
 ## III. Scope
 
-This policy applies to the IT Department and other individuals responsible for the security of ABC Company’s Information Resources.
+This policy applies to the IT Department and other individuals responsible for the security of {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
-ABC Company’s IT Director is responsible for the security, accuracy and the reliability of Information Systems.  IT application controls shall be used to ensure information confidentiality, availability, and integrity.
+{{ORGANIZATION_NAME}}’s IT Director is responsible for the security, accuracy and the reliability of Information Systems.  IT application controls shall be used to ensure information confidentiality, availability, and integrity.
 IT application controls refer to production and transaction processing controls, also known as input, processing, and output controls.  IT application controls shall be automated (i.e., performed automatically by the systems) to ensure the complete and accurate processing of data from input through output.
 The controls will vary based on the business purpose of the specific application.  These controls may also help ensure the privacy and security of data transmitted between applications.  The IT Director will identify application controls to be used and can include:
 Authentication - controls that provide an authentication mechanism in the application system.
@@ -55,7 +55,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to ABC Company’s IT Department and the Chief Security Officer.
+This policy is to be distributed to {{ORGANIZATION_NAME}}’s IT Department and the {{CSO_TITLE}}.
 Policy History
 References:
 COBIT EDM04.09, APO01.03, APO01.11, APO12.02, APO12.07, DSS01.05, DSS03.05

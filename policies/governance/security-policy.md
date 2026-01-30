@@ -61,15 +61,15 @@ approver: null
 
 ## I. Overview
 
-Security systems and processes help protect ABC Company's Information Resources and ensure system confidentiality, availability, and integrity.
+Security systems and processes help protect {{ORGANIZATION_NAME}}'s Information Resources and ensure system confidentiality, availability, and integrity.
 
 ## II. Purpose
 
-This policy identifies security safeguards and controls that help ABC Company manage risks, meet business requirements, and comply with regulations.
+This policy identifies security safeguards and controls that help {{ORGANIZATION_NAME}} manage risks, meet business requirements, and comply with regulations.
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company’s Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## IV. Policy
 
@@ -79,7 +79,7 @@ The CSO shall ensure security safeguards and controls are implemented and mainta
 Availability.  Information Resources are available and operational when and where they are needed.
 Confidentiality.  Only authorized individuals have access to information.
 Integrity.  The value and state of information is protected from unauthorized modification.
-The Chief Security Officer (CSO) is responsible for implementing and maintaining:
+The {{CSO_TITLE}} (CSO) is responsible for implementing and maintaining:
 Administrative safeguards
 Technical safeguards
 Physical safeguards
@@ -87,21 +87,21 @@ Physical safeguards
 ### B. Administrative Safeguards
 
 Administrative safeguards provide top down security direction and guidance.  Administrative safeguards are written documents grouped into major categories.
-Confidentiality.  The requirements for non-disclosure (e.g. confidentiality agreements) reflect ABC Company’s need for to protect data and operational details.  Such requirements shall be identified, documented, and reviewed at planned intervals.
+Confidentiality.  The requirements for non-disclosure (e.g. confidentiality agreements) reflect {{ORGANIZATION_NAME}}’s need for to protect data and operational details.  Such requirements shall be identified, documented, and reviewed at planned intervals.
 Data Owners.  The roles and responsibilities of the Data Owners and department head custodians shall be formally defined. Equipment and data shall not be taken off-premise without prior approval from the Data Owner.
-Independent Reviews (Audits).  Where possible, the CSO shall use Certified Information Systems Auditors, or equivalent, to audit the security controls of ABC Company’s Information Systems.  Security audits shall be performed on an annual basis or more frequently if major changes occur to Information Resources.  Refer to ABC Company’s Audit Policy for more information.
-Insurance.  Property and cyber insurance can be used to transfer risk.  The CSO shall work with the Risk Management Officer (RMO) to determine required coverages.
-Job descriptions.  Executive Management shall ensure job descriptions exist for all employees.  Each job description shall identify the position title, purpose of the position, specific duties and responsibilities, reporting relationships, position requirements, and related information.
+Independent Reviews (Audits).  Where possible, the CSO shall use Certified Information Systems Auditors, or equivalent, to audit the security controls of {{ORGANIZATION_NAME}}’s Information Systems.  Security audits shall be performed on an annual basis or more frequently if major changes occur to Information Resources.  Refer to {{ORGANIZATION_NAME}}’s Audit Policy for more information.
+Insurance.  Property and cyber insurance can be used to transfer risk.  The CSO shall work with the {{RMO_TITLE}} (RMO) to determine required coverages.
+Job descriptions.  {{EXEC_MGMT}} shall ensure job descriptions exist for all employees.  Each job description shall identify the position title, purpose of the position, specific duties and responsibilities, reporting relationships, position requirements, and related information.
 Plans.  Written plans shall be developed and maintained to ensure safeguards controls business risks.  Important plans include:
 Business Continuity Plan.  The purpose of this plan is to protect Information Resources and our ability to continue business operations in the event of a disaster or component failure.  For more information see the Business Continuity Plan.
 Incident Response Plan.  The Incident Response Plan helps protect the integrity, availability and confidentiality of information, prevent loss of service, and comply with legal requirements.  Staff shall act in a timely and coordinated manner prevent and to respond to breaches of security to help prevent damage. However, if action is taken, it should not jeopardize the security of systems.  Refer to the Incident Response Policy and Incident Response Plan for more information.
 Security Awareness and Training Plan.    The Security Awareness and Training Plan help ensure security awareness and training controls protect Information Resources and ensure information availability, confidentiality, and integrity.
 System Security Plan.  The System Security Plan (Plan) shall provide an overview of the security requirements of Information Resources.  This Plan also describes the controls necessary to ensure information availability, confidentiality, and integrity.
-Policies.  The Chief Security Officer (CSO) shall be responsible for implementing and maintaining security policies, procedures, plans, forms, and related documents.
+Policies.  The {{CSO_TITLE}} (CSO) shall be responsible for implementing and maintaining security policies, procedures, plans, forms, and related documents.
 Account management.  Policies and procedures shall manage the process of creating, monitoring, controlling, and removing of accounts.  Refer to the Account Management Policy for more information.
 Classification.  All users, hosts, and data shall be classified per the Data Classification Policy.
 Logging.  Host security log files shall be configured and reviewed for anomalies.  Logs must be of sufficient size to provide useful information in case of a security event (at least 90 days of logs).  Refer to the Logging Policy for more information.
-Updates.  On an annual basis, or more frequently if needed, policies, procedures, plans, forms, etc. shall be reviewed and updated by the CSO to address organizational changes and ensure continual improvements in the information security management system.  Any new documents, or updates to existing documents, shall be approved by Executive Management prior to being distributed to ABC Company Staff.
+Updates.  On an annual basis, or more frequently if needed, policies, procedures, plans, forms, etc. shall be reviewed and updated by the CSO to address organizational changes and ensure continual improvements in the information security management system.  Any new documents, or updates to existing documents, shall be approved by {{EXEC_MGMT}} prior to being distributed to {{ORGANIZATION_NAME}} Staff.
 Use.  Users are a first line of defense and shall follow safe computing practices as outlined in the Acceptable Use Policy.
 Risk Assessment.  Risk assessments help identify business processes that are of high priority and importance to the organization.  They also ensure the proper controls are implemented to reduce risks to acceptable levels.  The risk assessment and risk analysis shall identify threats including the likelihood of the event and impact on the organization.  Preventive, detective, and corrective controls shall be identified and implemented as needed.  For more information see the Risk Assessment Policy.
 Staffing.  All departments shall have appropriately supervised staff sufficient to maintain information security.  The staffing level should be appropriate to the environment, i.e. the amount and type of information for which they are responsible and the level of risk.
@@ -123,13 +123,13 @@ Border routers.  Border routers may be used to filter traffic and protect agains
 Firewalls.  Firewalls shall protect the network and limit traffic to only approved activities.  For more information see the Firewall Policy.
 Transaction.  Transaction based access criteria can be used. For example, access to a particular account could be granted only for the duration of a transaction. When completed, the access authorization is terminated.
 Data handling.  Controls and safeguards shall be implemented to protect the integrity of electronic data that is stored, accessed, or transmitted.  Refer to the Data Integrity Policy.
-Lifecycle.  The CSO shall ensure that information is protected during its entire lifecycle.  Information shall only be retained for the duration of its useful life.  The disposal of hardware, software, and information requires special consideration.  Refer to the Data Retention Policy, Disposal Policy, Encryption Policy, and Removable Media Policy for more information.  ABC Company’s IT Department shall be responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  Please refer to the Software Development Policy for more information.
-Monitoring.  Monitoring systems and audit trails shall be used to prevent unauthorized personnel from accessing ABC Company’s Information Resources.  Audit trails can also be used as an incident detection and response mechanism.  Refer to the Audit Trails Policy and Logging Policy for more information.
+Lifecycle.  The CSO shall ensure that information is protected during its entire lifecycle.  Information shall only be retained for the duration of its useful life.  The disposal of hardware, software, and information requires special consideration.  Refer to the Data Retention Policy, Disposal Policy, Encryption Policy, and Removable Media Policy for more information.  {{ORGANIZATION_NAME}}’s IT Department shall be responsible for developing, maintaining, and managing a Software Development Life Cycle (SDLC).  Please refer to the Software Development Policy for more information.
+Monitoring.  Monitoring systems and audit trails shall be used to prevent unauthorized personnel from accessing {{ORGANIZATION_NAME}}’s Information Resources.  Audit trails can also be used as an incident detection and response mechanism.  Refer to the Audit Trails Policy and Logging Policy for more information.
 Network management
 Backups.  Backups shall be protected against accidental or deliberate destruction of data.  Refer to the Backup Policy for more information.
 Configurations.  Information Systems shall be configured according to applicable security guidelines and standards.  As received from the vendor, computers and other devices may not be configured for security and may require initial as well as ongoing review of the configuration and security of the operating system and software.  Staff must protect data by implementing and maintaining authorized hardware and software configurations.  Network administrators shall implement and maintain documented security configuration standards for all authorized operating systems and software.  Network administrators shall use a Security Content Automation Protocol (SCAP) compliant configuration monitoring system to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.  For more information see the Network Configuration Policy, Server Hardening Policy, Workstation Security Policy, and Standard Operating Procedure Policy.
 Management.  Networks shall be managed and controlled to protect information in systems and applications.  The network and security architecture, including data flow diagrams, shall be documented and aligned with industry best practice standards.  For more information see the Configuration Management Policy and Network Security Policy.
-Service levels.  Service levels and management requirements of all network and security services shall be identified, documented, and agreed upon by Data Owners and IT Staff.  Service levels and requirements shall be included in appropriate third-party service level agreements (SLA).  Metric based performance shall be reported according to agreed upon schedules.
+Service levels.  Service levels and management requirements of all network and security services shall be identified, documented, and agreed upon by Data Owners and {{IT_STAFF}}.  Service levels and requirements shall be included in appropriate third-party service level agreements (SLA).  Metric based performance shall be reported according to agreed upon schedules.
 Segments.  Network equipment (e.g. routers, servers, workstations) shall be classified and placed in a network segment appropriate to its level of classification.  Access to these segments must be controlled in an appropriate manner.  Whenever data travels over a network segmentation of a lower security classification then the data shall be protected in a manner appropriate to its classification level.  Groups of information services, users, and Information Systems shall be segregated on networks.  IT security Staff shall consider the use of ACLs and Virtual Local Area Networks (VLANs) to segment systems and enhance security.  ACLs are a register of users (e.g. groups, machines, processes) permitted to use a particular system resource and the types of access they have been permitted.
 Security protection
 Change.  Every change to an Information Resource (e.g. operating system, computing hardware, networks, applications, data centers) is subject to the Change Management Policy and must follow appropriate change management procedures.  Where appropriate, change detection systems (e.g. file-integrity monitoring tools) shall alert personnel to unauthorized modification of critical system files, configuration files, or content files.  Such systems shall be configured to perform critical file comparisons at least weekly.  Note: For change detection purposes, critical files are usually those that do not regularly change, but the modification of which could indicate a system compromise or risk of compromise.  Change detection mechanisms such as file-integrity monitoring products usually come preconfigured with critical files for the related operating system. Other critical files, such as those for custom applications, must be evaluated and defined by IT security Staff.  IT security Staff shall implement a process to respond to any alerts generated by the change detection solution.
@@ -151,7 +151,7 @@ Physical Access Policy
 Physical Security Policy
 Media.  Media shall be handled according to the Removable Media Policy.
 Operations.
-Acquisitions.  Only hardware or software acquired through ABC Company’s approved policies and procedures may be installed.  Refer to the Acquisition and Procurement Policy.
+Acquisitions.  Only hardware or software acquired through {{ORGANIZATION_NAME}}’s approved policies and procedures may be installed.  Refer to the Acquisition and Procurement Policy.
 Diagnostic ports.  Physical and logical access to diagnostic and configuration ports shall be controlled.  Refer to the Network Configuration Policy and Physical Access Policy.
 Location.  Access to Information Resources may be based upon physical or logical location. Similarly, users can be restricted based upon network addresses (e.g., internal users may be permitted greater access than those from outside the organization).
 Time.  Time and day restrictions may be used to limit access to data (e.g. access to personnel files may only be allowed during normal working hours).
@@ -166,7 +166,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff that use ABC Company’s Information Resources.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff that use {{ORGANIZATION_NAME}}’s Information Resources.
 Policy History
 References:
 COBIT EDM03.02, EDM03.07, APO13.07, APO14.10, DSS05.02, DSS05.07, MEA02.11

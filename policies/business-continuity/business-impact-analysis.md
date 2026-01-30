@@ -10,8 +10,8 @@ references:
 - business-continuity-plan
 - operations-department-plan
 variables:
-- APPROVAL_DATE
 - EFFECTIVE_DATE
+- HR_DEPARTMENT
 - ORGANIZATION_NAME
 conditions: []
 requires_customization: []
@@ -53,7 +53,7 @@ approver: null
 
 ### A. Purpose
 
-This Business Impact Analysis (BIA) helps ABC Company (Company) identify the business processes and applications that are essential to the survival of the business.  The Business Impact Analysis identifies the amount of acceptable data loss (recovery point objective) as well as the speed at which systems must be restored (recovery time objective).
+This Business Impact Analysis (BIA) helps {{ORGANIZATION_NAME}} (Company) identify the business processes and applications that are essential to the survival of the business.  The Business Impact Analysis identifies the amount of acceptable data loss (recovery point objective) as well as the speed at which systems must be restored (recovery time objective).
 Business impacts are identified based on a worst-case scenario assuming that the infrastructure supporting each department has been destroyed and all records, equipment, etc. are not immediately accessible.  This Business Impact Analysis does not address recovery as these issues are addressed in the Business Continuity Plan and supporting documents.
 This Business Impact Analysis (BIA) identifies mission critical business functions and associated critical resources.  Determining critical business functions and the impact on the organization is the first step in business continuity.  This Business Impact Analysis:
 Identifies important business processes
@@ -82,7 +82,7 @@ Interfaces with external business partners
 Interviews with the following departments provided supporting information for this Business Impact Analysis:
 Accounting and Finance
 Customer Service
-Human Resources
+{{HR_DEPARTMENT}}
 Legal
 Marketing
 Production and Operations

@@ -32,17 +32,17 @@ Technical support staff, system administrators, and security personnel are respo
 
 ## II. Purpose
 
-The purpose of this policy is to establish the rules for the granting, control, monitoring, and removal of physical access to ABC Company facilities.
+The purpose of this policy is to establish the rules for the granting, control, monitoring, and removal of physical access to {{ORGANIZATION_NAME}} facilities.
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
 Physical access to all restricted facilities must be documented and managed.  All facilities must be physically protected in proportion to the criticality or importance of their function.
 Requests for access must come from the applicable data/system owner.  Access to facilities must be granted only to support personnel, and contractors, whose job responsibilities require access to that facility.  The process for granting card and/or key access to facilities must include the approval of the person responsible for the facility.  The person responsible for the facility must review card and/or key access rights for the facility on a periodic basis and remove access for individuals that no longer require access.  Access rights to facilities shall be based on the individual’s (i.e. Staff, visitor, contractor, etc.) role or function including control of access to software programs for testing and revision.
-The Chief Security Officer (CSO) shall ensure:
+The {{CSO_TITLE}} (CSO) shall ensure:
 Secure areas are protected by appropriate entry controls that ensure only authorized personnel are allowed access.
 Procedures control and validate a staff member’s access to facilities with the use of guards, ID badges, key cards, etc.
 Procedures identify visitor controls such as visitor sign-in, wearing of visitor badges, escorting by authorized personnel, etc.
@@ -50,7 +50,7 @@ Procedures for working in secure areas are designed and applied.
 Policies specify management’s review of the list of individuals with physical access to facilities containing sensitive information.
 A complete inventory of critical assets shall be maintained with ownership defined and documented.
 Card access records and visitor logs for facilities are kept for routine review based upon the criticality of the information being protected.
-Access cards and/or keys must not be shared or loaned to others.  Cards/keys must not be loaned or given to another individual.  Cards/keys must not have identifying information other than a return mail address.  Cards/keys that are no longer required must be returned to the person responsible for the facility.  Lost or stolen cards/or keys must be reported to the person responsible for the facility.  A service charge may be assessed for access cards and/or keys that are lost, stolen or are not returned.  The person responsible for the facility must remove the card and/or key access rights of individuals that change roles or are separated from their relationship with ABC Company.
+Access cards and/or keys must not be shared or loaned to others.  Cards/keys must not be loaned or given to another individual.  Cards/keys must not have identifying information other than a return mail address.  Cards/keys that are no longer required must be returned to the person responsible for the facility.  Lost or stolen cards/or keys must be reported to the person responsible for the facility.  A service charge may be assessed for access cards and/or keys that are lost, stolen or are not returned.  The person responsible for the facility must remove the card and/or key access rights of individuals that change roles or are separated from their relationship with {{ORGANIZATION_NAME}}.
 The person responsible for the facility must review access records and visitor logs for the facility on a periodic basis and investigate any unusual access.
 Procedures shall be developed to identify and authorize visitors:
 All facilities that allow access to visitors will track visitor access with a sign in/out log.
@@ -90,7 +90,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT APO10.05, APO11.09-10, APO12.02, APO13.07, DSS01.05, MEA01.05, MEA02.11

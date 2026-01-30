@@ -31,11 +31,11 @@ Controls and safeguards are needed to protect the integrity of electronic data t
 
 ## II. Purpose
 
-This policy ensures the integrity of ABC Company’s data.  Data should be protected from unauthorized alteration or destruction.
+This policy ensures the integrity of {{ORGANIZATION_NAME}}’s data.  Data should be protected from unauthorized alteration or destruction.
 
 ## III. Scope
 
-Data integrity is an enterprise-wide activity that applies to all ABC Company Departments.  This policy applies to all ABC Company Staff that store, access, or transmit electronic data.
+Data integrity is an enterprise-wide activity that applies to all {{ORGANIZATION_NAME}} Departments.  This policy applies to all {{ORGANIZATION_NAME}} Staff that store, access, or transmit electronic data.
 
 ## IV. Policy
 
@@ -45,7 +45,7 @@ Monitor access to data to ensure that it has not been altered or destroyed due t
 Issue alerts if the data has been altered or destroyed in an unauthorized manner.  Upon such alerts, implement corrective action procedures to ensure data is restored and implement controls to ensure data is protected and cannot be altered in an unauthorized manner in the future.
 The processes and technologies instituted by a department must achieve a level of protection sufficient to ensure data integrity.  Each Department shall provide additional protections as needed when stricter requirements apply.
 When designing or implementing security controls, the departments should ensure that they are in compliance with this policy.
-On an annual basis, each Department shall submit a list of administrative, physical, and technical data integrity controls to the Chief Security Officer (CSO).  The CSO will review the controls to ensure they are appropriate, sufficient, and effective at ensuring data integrity.
+On an annual basis, each Department shall submit a list of administrative, physical, and technical data integrity controls to the {{CSO_TITLE}} (CSO).  The CSO will review the controls to ensure they are appropriate, sufficient, and effective at ensuring data integrity.
 
 ## V. Enforcement
 
@@ -53,7 +53,7 @@ Any Staff member found to have violated this policy may be subject to disciplina
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Department Heads and those responsible for Information System security.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Department Heads and those responsible for Information System security.
 Policy History
 References:
 COBIT EDM01.01, EDM03.02, APO01.11, APO13.07, APO14.01-02, APO14.07, APO14.10

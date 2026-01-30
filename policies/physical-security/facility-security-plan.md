@@ -20,7 +20,6 @@ references:
 - software-maintenance-policy
 - supporting-documents-this-plan
 variables:
-- APPROVAL_DATE
 - EFFECTIVE_DATE
 - ORGANIZATION_NAME
 conditions: []
@@ -144,7 +143,7 @@ This Plan should be reviewed and updated on an annual basis.  This Plan is revie
 
 ### A. Facility Information
 
-ABC Company is located at the address on the cover page of this Plan.  The building is a mixed-use, multi-tenant facility.  Current floor plans are on file with the Facilities Department.
+{{ORGANIZATION_NAME}} is located at the address on the cover page of this Plan.  The building is a mixed-use, multi-tenant facility.  Current floor plans are on file with the Facilities Department.
 
 ### B. Business Operations
 
@@ -160,7 +159,7 @@ Procedures and related documentation should identify when special circumstances 
 
 ### A. Overview
 
-ABC Company is located at the address on the cover page of this Plan.  The building is a mixed-use, multi-tenant facility.  Current floor plans are on file with the Facilities Department.
+{{ORGANIZATION_NAME}} is located at the address on the cover page of this Plan.  The building is a mixed-use, multi-tenant facility.  Current floor plans are on file with the Facilities Department.
 
 ### B. Personnel Controls
 
@@ -314,7 +313,7 @@ Appropriate controls should be taken when sending equipment off-site for mainten
 
 ### A. Overview
 
-Management must pre-authorize the use of equipment that will be used or hosted off-site of ABC Company’s premises.  Where possible, the security provided should be equivalent to that for equipment used or hosted on-site at our location.
+Management must pre-authorize the use of equipment that will be used or hosted off-site of {{ORGANIZATION_NAME}}’s premises.  Where possible, the security provided should be equivalent to that for equipment used or hosted on-site at our location.
 When making the decision to allow equipment to be used or hosted off-site, management should consider the risks of Staff working off-site.
 
 ### B. Off-site Controls
@@ -359,7 +358,7 @@ Physical Security Policy
 
 # Appendix B – Receipt and Acknowledgement
 
-I have read ABC Company’s (Company’s) Facility Security Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
+I have read {{ORGANIZATION_NAME}}’s (Company’s) Facility Security Plan and agree to abide by it as consideration for my continued employment by Company.  I understand that violation of the enclosed policies and guidelines may result in disciplinary action including, but not limited to, termination.
 This document supersedes all prior electronic equipment policies, guidelines, understandings and representations.  I understand that if any of the provisions of this manual are found null, void, or inoperative for any reason, the remaining policies and guidelines will remain in full force and effect.
 If I am uncertain about any policy or procedure, I will check with my immediate supervisor or Company management.
 ___________________________ ___________

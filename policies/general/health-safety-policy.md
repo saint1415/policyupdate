@@ -27,22 +27,22 @@ approver: null
 
 ## I. Overview
 
-ABC Company Staff are an important asset to our organization.  The health and safety of ABC Company Staff must be protected to ensure the continuity of ABC Company operations.
+{{ORGANIZATION_NAME}} Staff are an important asset to our organization.  The health and safety of {{ORGANIZATION_NAME}} Staff must be protected to ensure the continuity of {{ORGANIZATION_NAME}} operations.
 
 ## II. Purpose
 
-The purpose of this policy is to ensure proper controls are implemented and maintained to protect the health and safety of our Staff.  In furtherance of this purpose, ABC Company has established a Health Safety Committee.
+The purpose of this policy is to ensure proper controls are implemented and maintained to protect the health and safety of our Staff.  In furtherance of this purpose, {{ORGANIZATION_NAME}} has established a Health Safety Committee.
 
 ## III. Scope
 
-This policy applies to all ABC Company Staff.
+This policy applies to all {{ORGANIZATION_NAME}} Staff.
 
 ## IV. Policy
 
 ### A. Health Safety Overview
 
 This policy specifies actions to be performed to ensure the health and safety of our Staff, clients, service providers, visitors, and other persons.  Staff must acknowledge in writing that they have read and understood this policy.
-Each ABC Company Department Head shall prepare customized procedures that support this policy.  Such procedures shall be submitted to the Health Safety Committee for review and approval.  At a minimum, the Health Safety Committee shall consist of the Risk Management Officer (RMO) and HR Director.
+Each {{ORGANIZATION_NAME}} Department Head shall prepare customized procedures that support this policy.  Such procedures shall be submitted to the Health Safety Committee for review and approval.  At a minimum, the Health Safety Committee shall consist of the {{RMO_TITLE}} (RMO) and HR Director.
 Staff shall be trained on health safety requirements and processes associated with their job duties.  Such training shall include interactions with others, use of facilities, and related safeguards.
 The Health Safety Committee shall ensure mechanisms exist to monitor and measure compliance with this policy.  Within their area of responsibility, each Department Head shall be responsible for enforcing compliance with this policy.
 The Health Safety Committee shall implement a system for health safety incident reporting, response, tracking, and resolution.
@@ -51,14 +51,14 @@ All Staff are responsible for reporting to the Health Safety Committee any viola
 ### B. Entry Areas
 
 The Health Safety Committee shall determine if attendants must monitor and restrict flow and overcrowding in elevators.  Stickers shall be placed on the floor indicating standing positions that enforce physical distancing.
-Access to ABC Company facilities shall be controlled.  Security personnel at entry points shall conduct non-invasive temperature checks on Staff, clients, service providers, visitors, and other persons.  Anyone found to have a temperature over 100 degrees shall be turned away and not permitted access to facilities.
+Access to {{ORGANIZATION_NAME}} facilities shall be controlled.  Security personnel at entry points shall conduct non-invasive temperature checks on Staff, clients, service providers, visitors, and other persons.  Anyone found to have a temperature over 100 degrees shall be turned away and not permitted access to facilities.
 The Health Safety Committee shall consider an on-site registration system for Staff and visitors.  Such registration system shall permit touchless registration using a mobile or other device.
 The Health Safety Committee shall consider an on-line Staff reservation system that limits the number of individuals in the office.  The Health Safety Committed shall determine if sensors are needed to track and monitor traffic and provide head counts of persons in the office.
 Unless approved by the Health Safety Committee, entry and waiting areas shall not offer magazines, periodicals, and other material as they are difficult to clean and disinfect.  Seating in waiting areas shall be limited and ensure physical distancing.
 
 ### C. Protective Equipment
 
-The Health Safety Committee shall determine the type of personal protective equipment (i.e. masks, gloves, etc.) to be used when Staff, clients, service providers, visitors, and other persons are on-site at ABC Company facilities.  The Health Safety Committee shall also determine if ABC Company will provide such personal protective equipment at no cost to persons that do not have the required equipment.
+The Health Safety Committee shall determine the type of personal protective equipment (i.e. masks, gloves, etc.) to be used when Staff, clients, service providers, visitors, and other persons are on-site at {{ORGANIZATION_NAME}} facilities.  The Health Safety Committee shall also determine if {{ORGANIZATION_NAME}} will provide such personal protective equipment at no cost to persons that do not have the required equipment.
 The Health Safety Committee shall ensure Staff are trained on how to properly use and dispose of such equipment.
 
 ### D. Health Safety Reminders
@@ -85,7 +85,7 @@ Loss of taste or smell
 
 ### F. Physical Distancing
 
-When on-site at ABC Company facilities, Staff, clients, service providers, visitors, and other persons shall practice physical distancing and stay at least six feet away from others.
+When on-site at {{ORGANIZATION_NAME}} facilities, Staff, clients, service providers, visitors, and other persons shall practice physical distancing and stay at least six feet away from others.
 The Health Safety Committee shall establish guidelines to reduce traffic flow, the number of people in lines, at reception areas, etc.  Where appropriate, the Health Safety Committee shall ensure signs indicate foot traffic direction.
 
 ### G. Sanitizing Procedures
@@ -110,7 +110,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to all ABC Company Staff.
+This policy is to be distributed to all {{ORGANIZATION_NAME}} Staff.
 Policy History
 References:
 COBIT EDM01.01, EDM02.03, EDM04.09, APO07.03, APO07.08, APO09.05, APO12.02

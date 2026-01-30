@@ -34,25 +34,25 @@ approver: null
 
 ## I. Overview
 
-ABC Company’s Information Resources provide our organization with the tools needed to accomplish our objectives and meet our obligations.  Information Resource configurations must be planned and managed to optimize resources, mitigate risk, and maximize return on investment.
+{{ORGANIZATION_NAME}}’s Information Resources provide our organization with the tools needed to accomplish our objectives and meet our obligations.  Information Resource configurations must be planned and managed to optimize resources, mitigate risk, and maximize return on investment.
 
 ## II. Purpose
 
-The purpose of this policy is to establish a configuration management program that identifies responsibilities and requirements for a configuration management process designed to safeguard ABC Company’s Information Resources.
+The purpose of this policy is to establish a configuration management program that identifies responsibilities and requirements for a configuration management process designed to safeguard {{ORGANIZATION_NAME}}’s Information Resources.
 
 ## III. Scope
 
-This policy applies to ABC Company’s Risk Management Officer, Chief Security Officer, and Director of IT.
+This policy applies to {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and Director of IT.
 
 ## IV. Policy
 
 ### A. Risk Management
 
-Executive Management shall be involved in risk management and mitigation decisions including how security processes are communicated throughout the organization.  ABC Company’s Risk Management Officer (RMO) shall ensure a formal and documented Risk Management Framework has been established to manage risks related to Information Resources.  For more information see the Risk Management Policy.
+{{EXEC_MGMT}} shall be involved in risk management and mitigation decisions including how security processes are communicated throughout the organization.  {{ORGANIZATION_NAME}}’s {{RMO_TITLE}} (RMO) shall ensure a formal and documented Risk Management Framework has been established to manage risks related to Information Resources.  For more information see the Risk Management Policy.
 
 ### B. Configuration Management Processes
 
-A Configuration Management Committee (Committee) shall consist of ABC Company’s Risk Management Officer, Chief Security Officer, and IT Director.  The Committee shall develop, implement and maintain configuration management processes.
+A Configuration Management Committee (Committee) shall consist of {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and IT Director.  The Committee shall develop, implement and maintain configuration management processes.
 Configuration management processes shall ensure:
 Baselines.  Information Resources configuration baselines shall identify specifications that have been formally reviewed and agreed upon.  Baselines shall only be changed through change control procedures.  Examples of baseline configurations include logical placement within the organization, network topography, model, version, connectivity and interactions, etc.
 Changes.  Changes and updates (including patches) to Information Resources shall be implemented only with approval of the appropriate Resource Owner.
@@ -81,7 +81,7 @@ The CSO shall ensure physical and logical access restrictions are implemented to
 
 ### D. Security/Privacy Impact Analysis
 
-When there is a material change to an Information Resource, or a security/privacy implication has been identified, the Risk Management Officer (RMO) shall ensure a security/privacy impact analysis is conducted.  Such impact analysis to include:
+When there is a material change to an Information Resource, or a security/privacy implication has been identified, the {{RMO_TITLE}} (RMO) shall ensure a security/privacy impact analysis is conducted.  Such impact analysis to include:
 Identification of applicable regulatory or compliance requirements (see the Compliance Policy for more information)
 Data classification (see the Data Classification Policy for more information)
 Risk management and risk mitigation considerations (see the Risk Management Policy for more information)
@@ -105,7 +105,7 @@ Any Staff found to have violated this policy may be subject to disciplinary acti
 
 ## VI. Distribution
 
-This policy is to be distributed to ABC Company’s Risk Management Officer, Chief Security Officer, and Director of IT.
+This policy is to be distributed to {{ORGANIZATION_NAME}}’s {{RMO_TITLE}}, {{CSO_TITLE}}, and Director of IT.
 Policy History
 References:
 COBIT APO12.02, APO13.07, BAI05-03, BAI05-08, BAI06-06, BAI07-06, MEA03-01

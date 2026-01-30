@@ -36,7 +36,7 @@ This policy establishes a minimum process for protecting Staff from security vul
 
 ## III. Scope
 
-This policy applies to all Staff that use ABC Company Information Resources.
+This policy applies to all Staff that use {{ORGANIZATION_NAME}} Information Resources.
 
 ## IV. Policy
 
@@ -54,7 +54,7 @@ Review of posted security flaws and patches for each type of update applicable t
 An automatic scanning of the system to determine available updates not yet applied to the system or application.
 The review of posted security flaws and patches should always be used for the computer operating system, BIOS, and applications. The manufacturer website should be used and there may also be other appropriate sites posting relevant bulletins. If automatic update ability is available, it should be compared to the listing of posted updates to be sure it is accurate.
 Procedures shall be developed to:
-Determine how to identify appropriate patch or configuration changes for ABC Company’s servers and workstations. Updates for servers shall be checked no less than monthly to determine whether any new updates are required.
+Determine how to identify appropriate patch or configuration changes for {{ORGANIZATION_NAME}}’s servers and workstations. Updates for servers shall be checked no less than monthly to determine whether any new updates are required.
 Ensure that appropriate patch or configuration change works as desired without causing other disruptions. Where possible, a test environment should be used to determine whether updates may break production functionality.
 Prioritize updates and patches if several patches need to be applied.
 
@@ -67,7 +67,7 @@ Programs affected by the change.
 Problems that may result as a result of the change.
 Procedures to back out or undo the change.
 All patches approved for client computers shall be documented prior to release.  When possible, new patches shall be tested in a controlled environment that mimics the infrastructure of the production environment before patches are applied.
-IT Staff shall ensure that backups exist of applications and data prior to installing a patch or update.  Each server shall have documentation that identifies the list of applications running on the device as well as a patch history.
+{{IT_STAFF}} shall ensure that backups exist of applications and data prior to installing a patch or update.  Each server shall have documentation that identifies the list of applications running on the device as well as a patch history.
 
 ### C. Applying Updates
 
