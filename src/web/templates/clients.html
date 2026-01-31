@@ -1,0 +1,744 @@
+{% extends "base.html" %}
+
+{% block title %}Clients{% endblock %}
+
+{% block head %}
+<style>
+    .clients-page {
+        padding: 1rem 0;
+    }
+
+    .clients-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .clients-header h1 {
+        margin: 0;
+    }
+
+    .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .client-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .client-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .client-card-header {
+        padding: 1.25rem;
+        background: linear-gradient(135deg, #6c757d, #495057);
+        color: white;
+    }
+
+    .client-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0 0 0.25rem;
+    }
+
+    .client-industry {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    .client-card-body {
+        padding: 1.25rem;
+    }
+
+    .client-meta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .client-meta-item {
+        font-size: 0.9rem;
+    }
+
+    .client-meta-label {
+        color: #666;
+        font-size: 0.8rem;
+    }
+
+    .client-meta-value {
+        font-weight: 500;
+    }
+
+    .client-frameworks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .framework-badge {
+        background: #e9ecef;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .client-card-actions {
+        padding: 1rem 1.25rem;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-success {
+        background: #28a745;
+        color: white;
+    }
+
+    .btn-outline {
+        background: transparent;
+        border: 1px solid #ddd;
+        color: #333;
+    }
+
+    .btn-danger {
+        background: #dc3545;
+        color: white;
+    }
+
+    .btn-sm {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Add Client Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 2rem;
+    }
+
+    .modal.active {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background: white;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+
+    .modal-header {
+        padding: 1.25rem;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-header h2 {
+        margin: 0;
+    }
+
+    .close-modal {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #666;
+    }
+
+    .modal-body {
+        padding: 1.25rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .checkbox-item input {
+        width: auto;
+    }
+
+    .modal-footer {
+        padding: 1rem 1.25rem;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .empty-state h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .empty-state p {
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    /* Client Detail */
+    .client-detail {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+        .client-detail {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .detail-section {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .detail-section h3 {
+        margin-top: 0;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #eee;
+    }
+
+    .variables-list {
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .variable-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr auto;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.5rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .variable-name {
+        font-family: monospace;
+        font-weight: 500;
+    }
+
+    .variable-value {
+        color: #495057;
+    }
+
+    .generations-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .generation-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .generation-item:last-child {
+        border-bottom: none;
+    }
+
+    .generation-date {
+        font-weight: 500;
+    }
+
+    .generation-meta {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0.25rem;
+    }
+
+    .compliance-status {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .compliance-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .status-badge {
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .status-compliant {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .status-partial {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .status-non-compliant {
+        background: #f8d7da;
+        color: #721c24;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="clients-page">
+    <div class="clients-header">
+        <h1>Client Management</h1>
+        <button class="btn btn-primary" onclick="showAddModal()">+ Add Client</button>
+    </div>
+
+    {% if clients %}
+    <div class="clients-grid" id="clients-grid">
+        {% for client in clients %}
+        <div class="client-card">
+            <div class="client-card-header">
+                <h3 class="client-name">{{ client.name }}</h3>
+                <div class="client-industry">{{ client.industry|title if client.industry else 'Not specified' }}</div>
+            </div>
+            <div class="client-card-body">
+                <div class="client-meta">
+                    <div class="client-meta-item">
+                        <div class="client-meta-label">Size Tier</div>
+                        <div class="client-meta-value">{{ client.size_tier|title if client.size_tier else 'Medium' }}</div>
+                    </div>
+                    <div class="client-meta-item">
+                        <div class="client-meta-label">Created</div>
+                        <div class="client-meta-value">{{ client.created_at[:10] if client.created_at else 'N/A' }}</div>
+                    </div>
+                </div>
+                {% if client.frameworks %}
+                <div class="client-frameworks">
+                    {% for fw in client.frameworks %}
+                    <span class="framework-badge">{{ fw }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="client-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="viewClient('{{ client.id }}')">View Details</button>
+                <a href="/generate?client={{ client.id }}" class="btn btn-success btn-sm">Generate</a>
+                <button class="btn btn-outline btn-sm" onclick="editClient('{{ client.id }}')">Edit</button>
+                <button class="btn btn-danger btn-sm" onclick="deleteClient('{{ client.id }}', '{{ client.name }}')">Delete</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <h3>No Clients Yet</h3>
+        <p>Add your first client to start generating policy packages.</p>
+        <button class="btn btn-primary" onclick="showAddModal()">+ Add Client</button>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Add/Edit Client Modal -->
+<div class="modal" id="client-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modal-title">Add New Client</h2>
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="client-form" onsubmit="saveClient(event)">
+                <input type="hidden" id="client-id" value="">
+
+                <div class="form-group">
+                    <label for="client-name">Client Name *</label>
+                    <input type="text" id="client-name" required placeholder="Enter client name">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="client-industry">Industry</label>
+                        <select id="client-industry">
+                            <option value="">Select industry</option>
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="finance">Finance</option>
+                            <option value="retail">Retail</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="government">Government</option>
+                            <option value="education">Education</option>
+                            <option value="nonprofit">Nonprofit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-size">Size Tier</label>
+                        <select id="client-size">
+                            <option value="solopreneur">Solopreneur (1-9)</option>
+                            <option value="small">Small (10-49)</option>
+                            <option value="medium" selected>Medium (50-499)</option>
+                            <option value="enterprise">Enterprise (500+)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Target Frameworks</label>
+                    <div class="checkbox-group">
+                        {% for fw in frameworks %}
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="frameworks" value="{{ fw.id }}">
+                            {{ fw.name }}
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+            <button class="btn btn-primary" onclick="document.getElementById('client-form').requestSubmit()">Save Client</button>
+        </div>
+    </div>
+</div>
+
+<!-- Client Detail Modal -->
+<div class="modal" id="detail-modal">
+    <div class="modal-content" style="max-width: 900px;">
+        <div class="modal-header">
+            <h2 id="detail-title">Client Details</h2>
+            <button class="close-modal" onclick="closeDetailModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="client-detail">
+                <div>
+                    <div class="detail-section">
+                        <h3>Variables</h3>
+                        <div class="variables-list" id="detail-variables">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <button class="btn btn-outline btn-sm" style="margin-top: 1rem;" onclick="addVariable()">+ Add Variable</button>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Generation History</h3>
+                        <ul class="generations-list" id="detail-generations">
+                            <!-- Populated dynamically -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="detail-section">
+                        <h3>Compliance Status</h3>
+                        <div class="compliance-status" id="detail-compliance">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>Quick Actions</h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="#" id="generate-link" class="btn btn-primary">Generate Package</a>
+                            <button class="btn btn-outline" onclick="exportClientReport()">Export Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let currentClientId = null;
+
+    function showAddModal() {
+        document.getElementById('modal-title').textContent = 'Add New Client';
+        document.getElementById('client-id').value = '';
+        document.getElementById('client-form').reset();
+        document.getElementById('client-modal').classList.add('active');
+    }
+
+    function editClient(clientId) {
+        fetch('/api/clients/' + clientId)
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('modal-title').textContent = 'Edit Client';
+                document.getElementById('client-id').value = clientId;
+                document.getElementById('client-name').value = data.client.name;
+                document.getElementById('client-industry').value = data.client.industry || '';
+                document.getElementById('client-size').value = data.client.size_tier || 'medium';
+
+                // Check framework checkboxes
+                document.querySelectorAll('input[name="frameworks"]').forEach(cb => {
+                    cb.checked = (data.client.target_frameworks || []).includes(cb.value);
+                });
+
+                document.getElementById('client-modal').classList.add('active');
+            });
+    }
+
+    function saveClient(event) {
+        event.preventDefault();
+
+        const clientId = document.getElementById('client-id').value;
+        const frameworks = Array.from(document.querySelectorAll('input[name="frameworks"]:checked'))
+            .map(cb => cb.value);
+
+        const data = {
+            name: document.getElementById('client-name').value,
+            industry: document.getElementById('client-industry').value,
+            size_tier: document.getElementById('client-size').value,
+            frameworks: frameworks
+        };
+
+        const url = clientId ? '/api/clients/' + clientId : '/api/clients';
+        const method = clientId ? 'PUT' : 'POST';
+
+        fetch(url, {
+            method: method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(r => r.json())
+            .then(result => {
+                if (result.error) {
+                    alert('Error: ' + result.error);
+                } else {
+                    location.reload();
+                }
+            });
+    }
+
+    function deleteClient(clientId, clientName) {
+        if (confirm(`Are you sure you want to delete "${clientName}"? This cannot be undone.`)) {
+            fetch('/api/clients/' + clientId, { method: 'DELETE' })
+                .then(r => r.json())
+                .then(result => {
+                    location.reload();
+                });
+        }
+    }
+
+    function viewClient(clientId) {
+        currentClientId = clientId;
+
+        fetch('/api/clients/' + clientId)
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('detail-title').textContent = data.client.name;
+                document.getElementById('generate-link').href = '/generate?client=' + clientId;
+
+                // Variables
+                const vars = data.client.variables || {};
+                const varsHtml = Object.entries(vars).map(([key, value]) => `
+                    <div class="variable-item">
+                        <span class="variable-name">{{${key}}}</span>
+                        <span class="variable-value">${value}</span>
+                        <button class="btn btn-sm" onclick="editVariable('${key}', '${value}')">Edit</button>
+                    </div>
+                `).join('') || '<p style="color: #666;">No variables configured</p>';
+                document.getElementById('detail-variables').innerHTML = varsHtml;
+
+                // Generations
+                const gens = data.generations || {};
+                let gensHtml = '';
+                if (gens.total > 0) {
+                    gensHtml = `
+                        <li class="generation-item">
+                            <div class="generation-date">Latest: ${gens.latest || 'N/A'}</div>
+                            <div class="generation-meta">${gens.total} total generations, ${gens.total_policies_generated} policies</div>
+                        </li>
+                    `;
+                } else {
+                    gensHtml = '<li style="color: #666; padding: 1rem 0;">No generations yet</li>';
+                }
+                document.getElementById('detail-generations').innerHTML = gensHtml;
+
+                // Compliance
+                const comp = data.compliance || {};
+                let compHtml = '';
+                if (comp.frameworks_tracked > 0) {
+                    compHtml = `
+                        <div class="compliance-item">
+                            <span>Compliant</span>
+                            <span class="status-badge status-compliant">${comp.compliant || 0}</span>
+                        </div>
+                        <div class="compliance-item">
+                            <span>Partial</span>
+                            <span class="status-badge status-partial">${comp.partial || 0}</span>
+                        </div>
+                        <div class="compliance-item">
+                            <span>Non-Compliant</span>
+                            <span class="status-badge status-non-compliant">${comp.non_compliant || 0}</span>
+                        </div>
+                    `;
+                } else {
+                    compHtml = '<p style="color: #666;">No compliance data</p>';
+                }
+                document.getElementById('detail-compliance').innerHTML = compHtml;
+
+                document.getElementById('detail-modal').classList.add('active');
+            });
+    }
+
+    function addVariable() {
+        const name = prompt('Variable name (e.g., ORGANIZATION_NAME):');
+        if (!name) return;
+
+        const value = prompt('Variable value:');
+        if (value === null) return;
+
+        fetch('/api/clients/' + currentClientId + '/variables', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, value: value })
+        })
+            .then(r => r.json())
+            .then(result => {
+                viewClient(currentClientId); // Refresh
+            });
+    }
+
+    function editVariable(name, currentValue) {
+        const value = prompt(`Edit value for ${name}:`, currentValue);
+        if (value === null) return;
+
+        fetch('/api/clients/' + currentClientId + '/variables', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, value: value })
+        })
+            .then(r => r.json())
+            .then(result => {
+                viewClient(currentClientId); // Refresh
+            });
+    }
+
+    function exportClientReport() {
+        window.location.href = '/api/clients/' + currentClientId + '/report';
+    }
+
+    function closeModal() {
+        document.getElementById('client-modal').classList.remove('active');
+    }
+
+    function closeDetailModal() {
+        document.getElementById('detail-modal').classList.remove('active');
+    }
+
+    // Close modals on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+            closeDetailModal();
+        }
+    });
+
+    // Close modals on background click
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        });
+    });
+</script>
+{% endblock %}

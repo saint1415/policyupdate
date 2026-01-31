@@ -1,0 +1,598 @@
+{% extends "base.html" %}
+
+{% block title %}Monitoring Dashboard{% endblock %}
+
+{% block head %}
+<style>
+    .monitor-dashboard {
+        padding: 1rem 0;
+    }
+
+    .monitor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .monitor-header h1 {
+        margin: 0;
+    }
+
+    .monitor-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .monitor-stat-card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .monitor-stat-card.alert {
+        border-left: 4px solid #dc3545;
+    }
+
+    .monitor-stat-card.warning {
+        border-left: 4px solid #ffc107;
+    }
+
+    .monitor-stat-card.success {
+        border-left: 4px solid #28a745;
+    }
+
+    .monitor-stat-card.info {
+        border-left: 4px solid #17a2b8;
+    }
+
+    .stat-value {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 0.5rem;
+    }
+
+    .monitor-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+        .monitor-sections {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .monitor-section {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .monitor-section h2 {
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #eee;
+    }
+
+    .feed-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feed-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .feed-item:last-child {
+        border-bottom: none;
+    }
+
+    .feed-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+    }
+
+    .feed-title {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .feed-title a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .feed-title a:hover {
+        color: #0066cc;
+    }
+
+    .feed-meta {
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .feed-source {
+        background: #e9ecef;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+    }
+
+    .feed-frameworks {
+        margin-top: 0.5rem;
+    }
+
+    .framework-tag {
+        display: inline-block;
+        background: #007bff;
+        color: white;
+        padding: 0.15rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        margin-right: 0.25rem;
+    }
+
+    .relevance-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+
+    .relevance-high {
+        background: #dc3545;
+        color: white;
+    }
+
+    .relevance-medium {
+        background: #ffc107;
+        color: #333;
+    }
+
+    .relevance-low {
+        background: #28a745;
+        color: white;
+    }
+
+    .alert-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .alert-item {
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        border-radius: 6px;
+        background: #fff;
+        border-left: 4px solid #dc3545;
+    }
+
+    .alert-item.severity-high {
+        border-left-color: #dc3545;
+        background: #fff5f5;
+    }
+
+    .alert-item.severity-medium {
+        border-left-color: #ffc107;
+        background: #fffcf0;
+    }
+
+    .alert-item.severity-low {
+        border-left-color: #28a745;
+        background: #f5fff5;
+    }
+
+    .alert-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .alert-message {
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .alert-time {
+        font-size: 0.8rem;
+        color: #999;
+        margin-top: 0.5rem;
+    }
+
+    .action-panel {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #0056b3;
+    }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+    }
+
+    .btn-success {
+        background: #28a745;
+        color: white;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .status-indicator {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+
+    .status-online {
+        background: #28a745;
+    }
+
+    .status-offline {
+        background: #dc3545;
+    }
+
+    .status-checking {
+        background: #ffc107;
+        animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    .refresh-btn {
+        background: none;
+        border: 1px solid #ddd;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .refresh-btn:hover {
+        background: #f8f9fa;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 2rem;
+        color: #666;
+    }
+
+    .chart-container {
+        margin-top: 1rem;
+        height: 200px;
+        background: #f8f9fa;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+    }
+
+    .coverage-bar {
+        height: 8px;
+        background: #e9ecef;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 0.5rem;
+    }
+
+    .coverage-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #28a745, #20c997);
+        transition: width 0.3s ease;
+    }
+
+    .last-check {
+        font-size: 0.85rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .feed-config {
+        margin-top: 1rem;
+    }
+
+    .feed-config-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    .feed-config-name {
+        font-weight: 500;
+    }
+
+    .feed-config-status {
+        font-size: 0.85rem;
+    }
+
+    .toggle-switch {
+        position: relative;
+        width: 50px;
+        height: 26px;
+    }
+
+    .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .toggle-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 26px;
+    }
+
+    .toggle-slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .toggle-slider {
+        background-color: #28a745;
+    }
+
+    input:checked + .toggle-slider:before {
+        transform: translateX(24px);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="monitor-dashboard">
+    <div class="monitor-header">
+        <h1>Compliance Monitoring Dashboard</h1>
+        <div>
+            <button class="refresh-btn" onclick="refreshAll()">
+                <span id="refresh-icon">↻</span> Refresh
+            </button>
+            <button class="btn btn-primary" onclick="checkFeeds()">Check All Feeds</button>
+        </div>
+    </div>
+
+    <p class="last-check">Last checked: <span id="last-check-time">{{ last_check or 'Never' }}</span></p>
+
+    <div class="monitor-stats">
+        <div class="monitor-stat-card alert">
+            <div class="stat-value" id="pending-alerts">{{ pending_alerts }}</div>
+            <div class="stat-label">Pending Alerts</div>
+        </div>
+        <div class="monitor-stat-card warning">
+            <div class="stat-value" id="updates-available">{{ updates_available }}</div>
+            <div class="stat-label">Updates Available</div>
+        </div>
+        <div class="monitor-stat-card info">
+            <div class="stat-value" id="active-feeds">{{ active_feeds }}</div>
+            <div class="stat-label">Active Feeds</div>
+        </div>
+        <div class="monitor-stat-card success">
+            <div class="stat-value" id="frameworks-monitored">{{ frameworks_monitored }}</div>
+            <div class="stat-label">Frameworks Monitored</div>
+        </div>
+    </div>
+
+    <div class="monitor-sections">
+        <div class="monitor-section">
+            <h2>Recent Framework Updates</h2>
+            <ul class="feed-list" id="feed-items">
+                {% if recent_items %}
+                    {% for item in recent_items %}
+                    <li class="feed-item">
+                        <div class="feed-header">
+                            <span class="feed-title">
+                                <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                            </span>
+                            <span class="relevance-badge relevance-{{ 'high' if item.relevance > 0.7 else 'medium' if item.relevance > 0.4 else 'low' }}">
+                                {{ (item.relevance * 100)|int }}% relevant
+                            </span>
+                        </div>
+                        <div class="feed-meta">
+                            <span class="feed-source">{{ item.feed_name }}</span>
+                            <span>{{ item.published }}</span>
+                        </div>
+                        <p style="margin: 0.5rem 0; font-size: 0.9rem; color: #555;">{{ item.summary[:200] }}...</p>
+                        {% if item.frameworks %}
+                        <div class="feed-frameworks">
+                            {% for fw in item.frameworks %}
+                            <span class="framework-tag">{{ fw }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                {% else %}
+                <li class="empty-state">
+                    <p>No recent updates found.</p>
+                    <button class="btn btn-primary" onclick="checkFeeds()">Check Feeds Now</button>
+                </li>
+                {% endif %}
+            </ul>
+
+            <div class="action-panel">
+                <a href="/api/monitor/recent?days=30" class="btn btn-secondary btn-sm">View Last 30 Days</a>
+                <a href="/monitor/export" class="btn btn-secondary btn-sm">Export Report</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="monitor-section" style="margin-bottom: 1.5rem;">
+                <h2>Active Alerts</h2>
+                <ul class="alert-list" id="alerts-list">
+                    {% if alerts %}
+                        {% for alert in alerts %}
+                        <li class="alert-item severity-{{ alert.severity }}">
+                            <div class="alert-title">{{ alert.title }}</div>
+                            <div class="alert-message">{{ alert.message }}</div>
+                            <div class="alert-time">{{ alert.created_at }}</div>
+                        </li>
+                        {% endfor %}
+                    {% else %}
+                    <li class="empty-state">
+                        <p>No active alerts</p>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="monitor-section">
+                <h2>Feed Configuration</h2>
+                <div class="feed-config" id="feed-config">
+                    {% for feed in feeds %}
+                    <div class="feed-config-item">
+                        <div>
+                            <div class="feed-config-name">
+                                <span class="status-indicator {{ 'status-online' if feed.enabled else 'status-offline' }}"></span>
+                                {{ feed.name }}
+                            </div>
+                            <div class="feed-config-status">{{ feed.type }} • {{ feed.frameworks|length }} frameworks</div>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" {{ 'checked' if feed.enabled else '' }} onchange="toggleFeed('{{ feed.id }}', this.checked)">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    {% else %}
+                    <div class="empty-state">
+                        <p>No feeds configured</p>
+                        <button class="btn btn-primary btn-sm" onclick="setupFeeds()">Setup Default Feeds</button>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function refreshAll() {
+        const icon = document.getElementById('refresh-icon');
+        icon.style.animation = 'spin 1s linear infinite';
+
+        fetch('/api/monitor/recent?days=7')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('last-check-time').textContent = new Date().toLocaleString();
+                icon.style.animation = '';
+                // Update feed items dynamically if needed
+            })
+            .catch(err => {
+                console.error('Refresh failed:', err);
+                icon.style.animation = '';
+            });
+    }
+
+    function checkFeeds() {
+        fetch('/api/monitor/check', { method: 'POST' })
+            .then(r => r.json())
+            .then(data => {
+                alert('Feed check completed: ' + data.message);
+                location.reload();
+            })
+            .catch(err => {
+                console.error('Check failed:', err);
+                alert('Feed check failed');
+            });
+    }
+
+    function toggleFeed(feedId, enabled) {
+        fetch('/api/monitor/feeds/' + feedId + '/toggle', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ enabled: enabled })
+        })
+            .then(r => r.json())
+            .then(data => {
+                console.log('Feed toggled:', data);
+            })
+            .catch(err => {
+                console.error('Toggle failed:', err);
+            });
+    }
+
+    function setupFeeds() {
+        fetch('/api/monitor/setup', { method: 'POST' })
+            .then(r => r.json())
+            .then(data => {
+                alert('Default feeds configured!');
+                location.reload();
+            })
+            .catch(err => {
+                console.error('Setup failed:', err);
+            });
+    }
+
+    // Auto-refresh every 5 minutes
+    setInterval(refreshAll, 300000);
+</script>
+<style>
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+{% endblock %}

@@ -771,6 +771,235 @@ if CLICK_AVAILABLE:
         click.echo(f"[OK] Alert {alert_id} resolved")
 
 
+    # =========================================================================
+    # BULK OPERATIONS
+    # =========================================================================
+    @cli.group()
+    def bulk():
+        """Bulk operations for multiple clients/policies"""
+        pass
+
+    @bulk.command("generate")
+    @click.option("--clients", "-c", help="Comma-separated client IDs or 'all'")
+    @click.option("--frameworks", "-f", help="Comma-separated framework IDs")
+    @click.option("--format", type=click.Choice(["docx", "pdf", "html", "all"]), default="docx")
+    @click.option("--output", "-o", type=click.Path(), help="Output directory")
+    @click.option("--parallel", "-p", is_flag=True, help="Process clients in parallel")
+    def bulk_generate(clients, frameworks, format, output, parallel):
+        """Generate packages for multiple clients at once
+
+        Examples:
+            policy-grc bulk generate --clients all --frameworks soc2
+            policy-grc bulk generate --clients client1,client2 --format pdf
+        """
+        from generation.package_builder import ClientConfig
+
+        manager = get_client_manager()
+        builder = get_package_builder()
+
+        # Get client list
+        if clients == "all":
+            client_list = manager.list_clients()
+        elif clients:
+            client_ids = [c.strip() for c in clients.split(",")]
+            client_list = [manager.get_client(cid) or manager.get_client_by_name(cid) for cid in client_ids]
+            client_list = [c for c in client_list if c is not None]
+        else:
+            click.echo("Error: Please specify --clients (comma-separated IDs or 'all')")
+            return
+
+        if not client_list:
+            click.echo("Error: No clients found")
+            return
+
+        # Parse frameworks
+        fw_list = [f.strip().lower() for f in frameworks.split(",")] if frameworks else []
+
+        # Set output directory
+        output_dir = Path(output) if output else get_output_dir()
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        click.echo(f"\nBulk Generation")
+        click.echo("=" * 60)
+        click.echo(f"Clients: {len(client_list)}")
+        click.echo(f"Frameworks: {', '.join(fw_list) if fw_list else 'All'}")
+        click.echo(f"Format: {format}")
+        click.echo(f"Output: {output_dir}")
+        click.echo("-" * 60)
+
+        results = []
+        for i, client in enumerate(client_list, 1):
+            click.echo(f"\n[{i}/{len(client_list)}] Processing: {client.name}")
+
+            try:
+                # Build config
+                variables = client.variables.copy()
+                variables.setdefault('ORGANIZATION_NAME', client.name)
+                variables.setdefault('CSO_TITLE', 'Chief Security Officer')
+
+                config = ClientConfig(
+                    name=client.name,
+                    variables=variables,
+                    frameworks=fw_list or client.target_frameworks
+                )
+
+                result = builder.build_package(config)
+                click.echo(f"    Policies: {result.total_policies}, Incomplete: {result.incomplete_count}")
+
+                # Export
+                safe_name = client.name.lower().replace(" ", "_")
+                timestamp = datetime.now().strftime("%Y%m%d")
+
+                exported = []
+                if format in ["docx", "all"]:
+                    try:
+                        from generation.docx_exporter import DocxExporter
+                        exporter = DocxExporter()
+                        path = output_dir / f"{safe_name}_{timestamp}.docx"
+                        exporter.export_package(result, str(path))
+                        exported.append("docx")
+                    except ImportError:
+                        pass
+
+                if format in ["pdf", "all"]:
+                    try:
+                        from generation.pdf_exporter import PdfExporter
+                        exporter = PdfExporter()
+                        path = output_dir / f"{safe_name}_{timestamp}.pdf"
+                        exporter.export_package(result, str(path))
+                        exported.append("pdf")
+                    except ImportError:
+                        pass
+
+                if format in ["html", "all"]:
+                    from generation.html_exporter import HtmlExporter
+                    exporter = HtmlExporter()
+                    path = output_dir / f"{safe_name}_{timestamp}.html"
+                    exporter.export_package(result, str(path))
+                    exported.append("html")
+
+                results.append({"client": client.name, "status": "success", "formats": exported})
+                click.echo(f"    [OK] Exported: {', '.join(exported)}")
+
+            except Exception as e:
+                results.append({"client": client.name, "status": "error", "error": str(e)})
+                click.echo(f"    [ERROR] {e}")
+
+        # Summary
+        success = sum(1 for r in results if r["status"] == "success")
+        click.echo(f"\n{'=' * 60}")
+        click.echo(f"Completed: {success}/{len(results)} clients")
+
+    @bulk.command("export-audit")
+    @click.option("--output", "-o", type=click.Path(), required=True, help="Output JSON file")
+    @click.option("--days", "-d", default=90, help="Export last N days")
+    def bulk_export_audit(output, days):
+        """Export audit logs to JSON file"""
+        from core.audit import get_audit_logger
+        from datetime import timedelta
+
+        audit = get_audit_logger()
+        start_date = datetime.now() - timedelta(days=days)
+
+        count = audit.export_to_json(output, start_date=start_date)
+        click.echo(f"[OK] Exported {count} audit entries to {output}")
+
+    @bulk.command("validate-all")
+    def bulk_validate_all():
+        """Validate all policies, frameworks, and references"""
+        click.echo("\nComprehensive Validation")
+        click.echo("=" * 60)
+
+        errors = []
+        warnings = []
+
+        # 1. Validate policies
+        click.echo("\n1. Validating policies...")
+        builder = get_package_builder()
+        policies = builder.get_all_policies()
+        click.echo(f"   Found {len(policies)} policies")
+
+        for pid, policy in policies.items():
+            if not policy.get("title"):
+                errors.append(f"Policy {pid}: Missing title")
+            if not policy.get("category"):
+                warnings.append(f"Policy {pid}: Missing category")
+
+        # 2. Validate frameworks
+        click.echo("\n2. Validating frameworks...")
+        mapper = get_compliance_mapper()
+        click.echo(f"   Found {len(mapper.frameworks)} frameworks")
+
+        total_controls = sum(fw.total_controls for fw in mapper.frameworks.values())
+        click.echo(f"   Total controls: {total_controls}")
+
+        # 3. Validate coverage
+        click.echo("\n3. Checking coverage...")
+        analyzer = get_gap_analyzer()
+        for fw_id in mapper.frameworks.keys():
+            report = analyzer.analyze_framework(fw_id)
+            if report.missing_policies > 0:
+                warnings.append(f"Framework {fw_id}: {report.missing_policies} missing policies")
+            else:
+                click.echo(f"   {fw_id}: 100% coverage")
+
+        # 4. Summary
+        click.echo(f"\n{'=' * 60}")
+        click.echo(f"Errors: {len(errors)}")
+        click.echo(f"Warnings: {len(warnings)}")
+
+        if errors:
+            click.echo("\nErrors:")
+            for e in errors[:10]:
+                click.echo(f"  [ERROR] {e}")
+
+        if warnings:
+            click.echo("\nWarnings:")
+            for w in warnings[:10]:
+                click.echo(f"  [WARN]  {w}")
+
+        if not errors:
+            click.echo("\n[OK] All validations passed!")
+
+    @bulk.command("backup")
+    @click.option("--output", "-o", type=click.Path(), help="Backup directory")
+    def bulk_backup(output):
+        """Create a full backup of all data"""
+        import shutil
+
+        backup_dir = Path(output) if output else PROJECT_ROOT / "backups" / datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_dir.mkdir(parents=True, exist_ok=True)
+
+        click.echo(f"\nCreating backup to: {backup_dir}")
+        click.echo("=" * 60)
+
+        # Backup databases
+        data_dir = PROJECT_ROOT / "data"
+        if data_dir.exists():
+            click.echo("Backing up databases...")
+            for db_file in data_dir.glob("*.db"):
+                shutil.copy2(db_file, backup_dir / db_file.name)
+                click.echo(f"  [OK] {db_file.name}")
+
+        # Backup policies
+        policies_dir = PROJECT_ROOT / "policies"
+        if policies_dir.exists():
+            click.echo("Backing up policies...")
+            shutil.copytree(policies_dir, backup_dir / "policies", dirs_exist_ok=True)
+            policy_count = len(list(policies_dir.rglob("*.md")))
+            click.echo(f"  [OK] {policy_count} policy files")
+
+        # Backup frameworks
+        frameworks_dir = PROJECT_ROOT / "config" / "frameworks"
+        if frameworks_dir.exists():
+            click.echo("Backing up frameworks...")
+            shutil.copytree(frameworks_dir, backup_dir / "frameworks", dirs_exist_ok=True)
+            fw_count = len(list(frameworks_dir.glob("*.yaml")))
+            click.echo(f"  [OK] {fw_count} framework files")
+
+        click.echo(f"\n[OK] Backup complete: {backup_dir}")
+
+
 def main():
     if not CLICK_AVAILABLE:
         print("Error: click library required. Install with: pip install click")

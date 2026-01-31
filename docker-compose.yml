@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+  # Main PolicyUpdate Web Application
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: policyupdate-web
+    ports:
+      - "5000:5000"
+    environment:
+      - POLICYUPDATE_SECRET_KEY=${POLICYUPDATE_SECRET_KEY:-change-me-in-production}
+      - POLICYUPDATE_LOG_LEVEL=${POLICYUPDATE_LOG_LEVEL:-INFO}
+      - POLICYUPDATE_DEBUG=${POLICYUPDATE_DEBUG:-false}
+      - DATABASE_URL=sqlite:///app/data/policyupdate.db
+    volumes:
+      - policyupdate-data:/app/data
+      - policyupdate-output:/app/output
+      - policyupdate-logs:/app/logs
+      - ./policies:/app/policies:ro
+      - ./config:/app/config:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5000/', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # CLI service for running commands
+  cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: policyupdate-cli
+    environment:
+      - POLICYUPDATE_LOG_LEVEL=${POLICYUPDATE_LOG_LEVEL:-INFO}
+    volumes:
+      - policyupdate-data:/app/data
+      - policyupdate-output:/app/output
+      - ./policies:/app/policies:ro
+      - ./config:/app/config:ro
+    entrypoint: ["python", "-m", "src.cli.main"]
+    profiles:
+      - cli
+
+  # Background worker for feed monitoring
+  monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: policyupdate-monitor
+    environment:
+      - POLICYUPDATE_LOG_LEVEL=${POLICYUPDATE_LOG_LEVEL:-INFO}
+      - POLICYUPDATE_SMTP_HOST=${POLICYUPDATE_SMTP_HOST:-}
+      - POLICYUPDATE_SMTP_USER=${POLICYUPDATE_SMTP_USER:-}
+      - POLICYUPDATE_SMTP_PASSWORD=${POLICYUPDATE_SMTP_PASSWORD:-}
+      - POLICYUPDATE_EMAIL_FROM=${POLICYUPDATE_EMAIL_FROM:-}
+      - POLICYUPDATE_WEBHOOK_URL=${POLICYUPDATE_WEBHOOK_URL:-}
+    volumes:
+      - policyupdate-data:/app/data
+      - policyupdate-logs:/app/logs
+    command: ["python", "-c", "from src.automation.feed_monitor import main; main()"]
+    restart: unless-stopped
+    profiles:
+      - monitor
+
+  # Nginx reverse proxy (optional, for production)
+  nginx:
+    image: nginx:alpine
+    container_name: policyupdate-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - web
+    restart: unless-stopped
+    profiles:
+      - production
+
+volumes:
+  policyupdate-data:
+    driver: local
+  policyupdate-output:
+    driver: local
+  policyupdate-logs:
+    driver: local
+
+networks:
+  default:
+    name: policyupdate-network

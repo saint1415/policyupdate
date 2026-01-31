@@ -1,0 +1,822 @@
+{% extends "base.html" %}
+
+{% block title %}Generate Package{% endblock %}
+
+{% block head %}
+<style>
+    .generate-page {
+        padding: 1rem 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .generate-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .generate-header h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .generate-header p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .wizard-steps {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .wizard-step {
+        display: flex;
+        align-items: center;
+        color: #aaa;
+    }
+
+    .wizard-step.active {
+        color: #007bff;
+    }
+
+    .wizard-step.complete {
+        color: #28a745;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+
+    .wizard-step.active .step-number {
+        background: #007bff;
+        color: white;
+    }
+
+    .wizard-step.complete .step-number {
+        background: #28a745;
+        color: white;
+    }
+
+    .step-connector {
+        width: 50px;
+        height: 2px;
+        background: #e9ecef;
+        margin: 0 1rem;
+    }
+
+    .wizard-step.complete + .step-connector {
+        background: #28a745;
+    }
+
+    .generate-form {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .form-section {
+        padding: 1.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .form-section:last-child {
+        border-bottom: none;
+    }
+
+    .form-section-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .form-section-title .step-badge {
+        background: #007bff;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .checkbox-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .checkbox-item:hover {
+        border-color: #007bff;
+        background: #f8f9fa;
+    }
+
+    .checkbox-item.selected {
+        border-color: #007bff;
+        background: #e7f3ff;
+    }
+
+    .checkbox-item input {
+        width: auto;
+    }
+
+    .checkbox-label {
+        flex: 1;
+    }
+
+    .checkbox-label .fw-name {
+        font-weight: 500;
+    }
+
+    .checkbox-label .fw-controls {
+        font-size: 0.8rem;
+        color: #666;
+    }
+
+    .format-options {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .format-option {
+        flex: 1;
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .format-option:hover {
+        border-color: #007bff;
+    }
+
+    .format-option.selected {
+        border-color: #007bff;
+        background: #e7f3ff;
+    }
+
+    .format-option input {
+        display: none;
+    }
+
+    .format-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .format-name {
+        font-weight: 600;
+    }
+
+    .format-desc {
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .generate-actions {
+        padding: 1.5rem;
+        background: #f8f9fa;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .preview-info {
+        color: #666;
+    }
+
+    .preview-info strong {
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #0056b3;
+    }
+
+    .btn-primary:disabled {
+        background: #aaa;
+        cursor: not-allowed;
+    }
+
+    .btn-lg {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-outline {
+        background: transparent;
+        border: 1px solid #ddd;
+        color: #333;
+    }
+
+    /* Progress Modal */
+    .progress-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .progress-modal.active {
+        display: flex;
+    }
+
+    .progress-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .progress-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #e9ecef;
+        border-top-color: #007bff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .progress-text {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .progress-detail {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    /* Result Modal */
+    .result-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 2rem;
+    }
+
+    .result-modal.active {
+        display: block;
+    }
+
+    .result-content {
+        background: white;
+        max-width: 600px;
+        margin: 2rem auto;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .result-header {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .result-header.success {
+        background: linear-gradient(135deg, #28a745, #20c997);
+        color: white;
+    }
+
+    .result-header.error {
+        background: linear-gradient(135deg, #dc3545, #e83e8c);
+        color: white;
+    }
+
+    .result-header h2 {
+        margin: 0;
+    }
+
+    .result-body {
+        padding: 1.5rem;
+    }
+
+    .result-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .result-stat {
+        text-align: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .result-stat-value {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .result-stat-label {
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .download-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    .download-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .download-name {
+        font-weight: 500;
+    }
+
+    .download-size {
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .close-result {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background: #f8f9fa;
+        border: none;
+        border-top: 1px solid #eee;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .close-result:hover {
+        background: #e9ecef;
+    }
+
+    .help-text {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+    }
+
+    .variables-editor {
+        background: #f8f9fa;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+
+    .variable-row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .variable-row input {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .variable-row:last-child {
+        margin-bottom: 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="generate-page">
+    <div class="generate-header">
+        <h1>Generate Policy Package</h1>
+        <p>Create customized security policy documentation for your client</p>
+    </div>
+
+    <form class="generate-form" id="generate-form" onsubmit="generatePackage(event)">
+        <!-- Step 1: Client Selection -->
+        <div class="form-section">
+            <div class="form-section-title">
+                <span class="step-badge">1</span>
+                Client Information
+            </div>
+
+            <div class="form-group">
+                <label for="client-select">Select Existing Client or Enter New</label>
+                <select id="client-select" onchange="clientSelected()">
+                    <option value="">-- New Client --</option>
+                    {% for client in clients %}
+                    <option value="{{ client.id }}"
+                            data-name="{{ client.name }}"
+                            data-frameworks="{{ client.frameworks|join(',') if client.frameworks else '' }}"
+                            {% if selected_client == client.id %}selected{% endif %}>
+                        {{ client.name }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="client-name">Client/Organization Name *</label>
+                    <input type="text" id="client-name" required placeholder="Acme Corporation">
+                </div>
+
+                <div class="form-group">
+                    <label for="cso-title">Security Officer Title</label>
+                    <input type="text" id="cso-title" value="Chief Information Security Officer" placeholder="CISO">
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Framework Selection -->
+        <div class="form-section">
+            <div class="form-section-title">
+                <span class="step-badge">2</span>
+                Compliance Frameworks
+            </div>
+            <p class="help-text">Select one or more frameworks to include in the policy package.</p>
+
+            <div class="checkbox-grid" id="framework-checkboxes">
+                {% for fw in frameworks %}
+                <label class="checkbox-item" onclick="toggleFramework(this)">
+                    <input type="checkbox" name="frameworks" value="{{ fw.id }}">
+                    <div class="checkbox-label">
+                        <div class="fw-name">{{ fw.name }}</div>
+                        <div class="fw-controls">{{ fw.controls }} controls</div>
+                    </div>
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Step 3: Output Options -->
+        <div class="form-section">
+            <div class="form-section-title">
+                <span class="step-badge">3</span>
+                Output Format
+            </div>
+
+            <div class="format-options">
+                <label class="format-option selected" onclick="selectFormat(this, 'docx')">
+                    <input type="radio" name="format" value="docx" checked>
+                    <div class="format-icon">📄</div>
+                    <div class="format-name">Word Document</div>
+                    <div class="format-desc">.docx format</div>
+                </label>
+
+                <label class="format-option" onclick="selectFormat(this, 'pdf')">
+                    <input type="radio" name="format" value="pdf">
+                    <div class="format-icon">📑</div>
+                    <div class="format-name">PDF</div>
+                    <div class="format-desc">Print-ready</div>
+                </label>
+
+                <label class="format-option" onclick="selectFormat(this, 'html')">
+                    <input type="radio" name="format" value="html">
+                    <div class="format-icon">🌐</div>
+                    <div class="format-name">HTML</div>
+                    <div class="format-desc">Web viewing</div>
+                </label>
+
+                <label class="format-option" onclick="selectFormat(this, 'all')">
+                    <input type="radio" name="format" value="all">
+                    <div class="format-icon">📦</div>
+                    <div class="format-name">All Formats</div>
+                    <div class="format-desc">Complete package</div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="generate-actions">
+            <div class="preview-info">
+                <span id="policy-count">0</span> policies will be generated
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline" onclick="previewPackage()">Preview</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="generate-btn">Generate Package</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Progress Modal -->
+<div class="progress-modal" id="progress-modal">
+    <div class="progress-content">
+        <div class="progress-spinner"></div>
+        <div class="progress-text">Generating Policy Package</div>
+        <div class="progress-detail" id="progress-detail">Preparing policies...</div>
+    </div>
+</div>
+
+<!-- Result Modal -->
+<div class="result-modal" id="result-modal">
+    <div class="result-content">
+        <div class="result-header success" id="result-header">
+            <h2>Package Generated Successfully!</h2>
+        </div>
+        <div class="result-body">
+            <div class="result-stats" id="result-stats">
+                <!-- Populated dynamically -->
+            </div>
+
+            <h4>Download Files</h4>
+            <ul class="download-list" id="download-list">
+                <!-- Populated dynamically -->
+            </ul>
+        </div>
+        <button class="close-result" onclick="closeResult()">Close</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Initialize from URL params
+    document.addEventListener('DOMContentLoaded', function() {
+        const params = new URLSearchParams(window.location.search);
+        const clientId = params.get('client');
+        if (clientId) {
+            document.getElementById('client-select').value = clientId;
+            clientSelected();
+        }
+        updatePolicyCount();
+    });
+
+    function clientSelected() {
+        const select = document.getElementById('client-select');
+        const option = select.options[select.selectedIndex];
+
+        if (option.value) {
+            document.getElementById('client-name').value = option.dataset.name || '';
+
+            // Check frameworks
+            const frameworks = (option.dataset.frameworks || '').split(',').filter(f => f);
+            document.querySelectorAll('input[name="frameworks"]').forEach(cb => {
+                const isChecked = frameworks.includes(cb.value);
+                cb.checked = isChecked;
+                cb.closest('.checkbox-item').classList.toggle('selected', isChecked);
+            });
+        }
+
+        updatePolicyCount();
+    }
+
+    function toggleFramework(label) {
+        const checkbox = label.querySelector('input');
+        checkbox.checked = !checkbox.checked;
+        label.classList.toggle('selected', checkbox.checked);
+        updatePolicyCount();
+    }
+
+    function selectFormat(label, format) {
+        document.querySelectorAll('.format-option').forEach(opt => opt.classList.remove('selected'));
+        label.classList.add('selected');
+        label.querySelector('input').checked = true;
+    }
+
+    function updatePolicyCount() {
+        const selectedFrameworks = Array.from(document.querySelectorAll('input[name="frameworks"]:checked'))
+            .map(cb => cb.value);
+
+        // Rough estimate: average 15 policies per framework, with overlap
+        const count = selectedFrameworks.length > 0
+            ? Math.min(186, 30 + (selectedFrameworks.length - 1) * 12)
+            : 0;
+
+        document.getElementById('policy-count').textContent = count;
+    }
+
+    function previewPackage() {
+        const clientName = document.getElementById('client-name').value;
+        const frameworks = Array.from(document.querySelectorAll('input[name="frameworks"]:checked'))
+            .map(cb => cb.value);
+
+        if (!clientName) {
+            alert('Please enter a client name');
+            return;
+        }
+
+        if (frameworks.length === 0) {
+            alert('Please select at least one framework');
+            return;
+        }
+
+        // Show preview (could be a modal with policy list)
+        alert(`Preview:\nClient: ${clientName}\nFrameworks: ${frameworks.join(', ')}\n\nThis will generate approximately ${document.getElementById('policy-count').textContent} policies.`);
+    }
+
+    function generatePackage(event) {
+        event.preventDefault();
+
+        const clientName = document.getElementById('client-name').value;
+        const csoTitle = document.getElementById('cso-title').value;
+        const frameworks = Array.from(document.querySelectorAll('input[name="frameworks"]:checked'))
+            .map(cb => cb.value);
+        const format = document.querySelector('input[name="format"]:checked').value;
+
+        if (!clientName) {
+            alert('Please enter a client name');
+            return;
+        }
+
+        if (frameworks.length === 0) {
+            alert('Please select at least one framework');
+            return;
+        }
+
+        // Show progress
+        document.getElementById('progress-modal').classList.add('active');
+        document.getElementById('progress-detail').textContent = 'Processing policies...';
+
+        fetch('/api/generate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                client_name: clientName,
+                org_name: clientName,
+                cso_title: csoTitle,
+                frameworks: frameworks,
+                format: format
+            })
+        })
+            .then(r => r.json())
+            .then(result => {
+                document.getElementById('progress-modal').classList.remove('active');
+
+                if (result.error) {
+                    showError(result.error);
+                    return;
+                }
+
+                showResult(result);
+            })
+            .catch(err => {
+                document.getElementById('progress-modal').classList.remove('active');
+                showError('Generation failed: ' + err.message);
+            });
+    }
+
+    function showResult(result) {
+        // Update stats
+        document.getElementById('result-stats').innerHTML = `
+            <div class="result-stat">
+                <div class="result-stat-value">${result.total_policies}</div>
+                <div class="result-stat-label">Policies</div>
+            </div>
+            <div class="result-stat">
+                <div class="result-stat-value">${result.frameworks.length}</div>
+                <div class="result-stat-label">Frameworks</div>
+            </div>
+            <div class="result-stat">
+                <div class="result-stat-value">${result.incomplete_count}</div>
+                <div class="result-stat-label">Action Items</div>
+            </div>
+        `;
+
+        // Update downloads
+        const downloads = (result.files || []).map(file => `
+            <li class="download-item">
+                <div>
+                    <div class="download-name">${file.filename}</div>
+                    <div class="download-size">${file.format.toUpperCase()}</div>
+                </div>
+                <a href="/api/download/${file.filename}" class="btn btn-primary">Download</a>
+            </li>
+        `).join('');
+
+        document.getElementById('download-list').innerHTML = downloads || '<li>No files generated</li>';
+
+        // Show result modal
+        document.getElementById('result-header').className = 'result-header success';
+        document.getElementById('result-header').innerHTML = '<h2>Package Generated Successfully!</h2>';
+        document.getElementById('result-modal').classList.add('active');
+    }
+
+    function showError(message) {
+        document.getElementById('result-header').className = 'result-header error';
+        document.getElementById('result-header').innerHTML = '<h2>Generation Failed</h2>';
+        document.getElementById('result-stats').innerHTML = `<p style="text-align: center; color: #721c24;">${message}</p>`;
+        document.getElementById('download-list').innerHTML = '';
+        document.getElementById('result-modal').classList.add('active');
+    }
+
+    function closeResult() {
+        document.getElementById('result-modal').classList.remove('active');
+    }
+
+    // Close result on escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeResult();
+    });
+</script>
+{% endblock %}

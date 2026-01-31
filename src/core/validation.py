@@ -141,9 +141,35 @@ def validate_policy_id(policy_id: str) -> str:
     return policy_id
 
 
-def validate_email(email: str) -> str:
+def validate_email(email: str) -> bool:
     """
     Validate email address format.
+
+    Args:
+        email: Email address to validate
+
+    Returns:
+        True if valid, False otherwise
+    """
+    if not email:
+        return False
+
+    email = email.strip().lower()
+
+    # Basic email pattern
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    if not re.match(pattern, email):
+        return False
+
+    if len(email) > 254:
+        return False
+
+    return True
+
+
+def validate_email_strict(email: str) -> str:
+    """
+    Validate email address format (strict version that raises).
 
     Args:
         email: Email address to validate
@@ -154,23 +180,12 @@ def validate_email(email: str) -> str:
     Raises:
         ValidationError: If email is invalid
     """
-    if not email:
-        raise ValidationError("Email cannot be empty")
-
-    email = email.strip().lower()
-
-    # Basic email pattern
-    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    if not re.match(pattern, email):
+    if not validate_email(email):
         raise ValidationError("Invalid email format")
-
-    if len(email) > 254:
-        raise ValidationError("Email address too long")
-
-    return email
+    return email.strip().lower()
 
 
-def validate_url(url: str, allowed_schemes: Optional[List[str]] = None) -> str:
+def validate_url(url: str, allowed_schemes: Optional[List[str]] = None) -> bool:
     """
     Validate URL format.
 
@@ -179,13 +194,10 @@ def validate_url(url: str, allowed_schemes: Optional[List[str]] = None) -> str:
         allowed_schemes: List of allowed URL schemes (default: https, http)
 
     Returns:
-        Validated URL
-
-    Raises:
-        ValidationError: If URL is invalid
+        True if valid, False otherwise
     """
     if not url:
-        raise ValidationError("URL cannot be empty")
+        return False
 
     if allowed_schemes is None:
         allowed_schemes = ['https', 'http']
@@ -195,21 +207,40 @@ def validate_url(url: str, allowed_schemes: Optional[List[str]] = None) -> str:
     # Check scheme
     scheme_match = re.match(r'^([a-z]+)://', url.lower())
     if not scheme_match:
-        raise ValidationError("URL must include scheme (http/https)")
+        return False
 
     scheme = scheme_match.group(1)
     if scheme not in allowed_schemes:
-        raise ValidationError(f"URL scheme must be one of: {', '.join(allowed_schemes)}")
+        return False
 
-    # Basic URL pattern
-    pattern = r'^https?://[a-zA-Z0-9][-a-zA-Z0-9]*(\.[a-zA-Z0-9][-a-zA-Z0-9]*)+.*$'
+    # URL with localhost support
+    pattern = r'^https?://([a-zA-Z0-9][-a-zA-Z0-9]*(\.[a-zA-Z0-9][-a-zA-Z0-9]*)*|localhost)(:\d+)?(/.*)?$'
     if not re.match(pattern, url):
-        raise ValidationError("Invalid URL format")
+        return False
 
     if len(url) > 2000:
-        raise ValidationError("URL too long")
+        return False
 
-    return url
+    return True
+
+
+def validate_url_strict(url: str, allowed_schemes: Optional[List[str]] = None) -> str:
+    """
+    Validate URL format (strict version that raises).
+
+    Args:
+        url: URL to validate
+        allowed_schemes: List of allowed URL schemes
+
+    Returns:
+        Validated URL
+
+    Raises:
+        ValidationError: If URL is invalid
+    """
+    if not validate_url(url, allowed_schemes):
+        raise ValidationError("Invalid URL format")
+    return url.strip()
 
 
 def sanitize_search_query(query: str, max_length: int = 200) -> str:
@@ -237,6 +268,44 @@ def sanitize_search_query(query: str, max_length: int = 200) -> str:
         query = query[:max_length]
 
     return query
+
+
+def validate_path(path: str, base_dir: str = None) -> str:
+    """
+    Validate a file path to prevent path traversal.
+
+    Args:
+        path: Path to validate
+        base_dir: Optional base directory that path must be within
+
+    Returns:
+        Validated path
+
+    Raises:
+        ValidationError: If path is invalid or outside base_dir
+    """
+    import os
+    from pathlib import Path
+
+    if not path:
+        raise ValidationError("Path cannot be empty")
+
+    # Normalize the path
+    path = os.path.normpath(path)
+
+    # Check for path traversal patterns
+    if '..' in path:
+        raise ValidationError("Path traversal detected")
+
+    # If base_dir is specified, ensure path is within it
+    if base_dir:
+        base_dir = os.path.normpath(base_dir)
+        full_path = os.path.normpath(os.path.join(base_dir, path))
+        if not full_path.startswith(base_dir):
+            raise ValidationError("Path must be within base directory")
+        return full_path
+
+    return path
 
 
 def validate_integer(value: str, min_val: Optional[int] = None,

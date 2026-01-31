@@ -113,8 +113,18 @@ class ComplianceMapper:
         elif 'articles' in fw_data:
             # NIS2/EU AI Act structure: articles → controls
             self._parse_articles_structure(framework, fw_data['articles'])
+        elif 'chapters' in fw_data:
+            # DORA structure: chapters → articles
+            self._parse_dora_structure(framework, fw_data['chapters'])
+        elif 'consumer_rights' in fw_data or 'controller_obligations' in fw_data:
+            # State privacy acts: consumer_rights, controller_obligations
+            self._parse_privacy_act_structure(framework, fw_data)
         else:
-            raise ValueError(f"Unknown framework structure in {filepath}")
+            # Try to extract from policy_mapping or requirements in framework block
+            if 'policy_mapping' in fw_data or 'requirements' in fw_data:
+                self._parse_generic_structure(framework, fw_data)
+            else:
+                raise ValueError(f"Unknown framework structure in {filepath}")
 
         # Store framework and build reverse mapping
         self.frameworks[framework.id] = framework
@@ -297,6 +307,144 @@ class ComplianceMapper:
                     parent_function=""
                 )
                 framework.controls[ctrl_id_str] = control
+
+    def _parse_dora_structure(self, framework: Framework, chapters: List) -> None:
+        """Parse DORA structure (chapters → articles)"""
+        for chapter in chapters:
+            chapter_id = chapter.get('id', '')
+            chapter_name = chapter.get('name', chapter_id)
+
+            for article in chapter.get('articles', []):
+                article_id = article.get('id', '')
+                article_name = article.get('name', article_id)
+                policies_required = article.get('policies_required', []) or []
+                policies_recommended = article.get('policies_recommended', []) or []
+
+                control = Control(
+                    id=article_id,
+                    name=article_name,
+                    description=article.get('description', ''),
+                    policies_required=policies_required,
+                    policies_recommended=policies_recommended,
+                    evidence_types=article.get('evidence_types', []) or [],
+                    parent_category=chapter_name,
+                    parent_function=""
+                )
+                framework.controls[article_id] = control
+
+    def _parse_privacy_act_structure(self, framework: Framework, fw_data: Dict) -> None:
+        """Parse state privacy act structure (consumer_rights, controller_obligations, etc.)"""
+        # Parse consumer rights
+        for right in fw_data.get('consumer_rights', []):
+            right_id = right.get('id', '')
+            control = Control(
+                id=right_id,
+                name=right.get('name', right_id),
+                description=right.get('description', ''),
+                policies_required=right.get('policies_required', []) or [],
+                policies_recommended=right.get('policies_recommended', []) or [],
+                evidence_types=right.get('evidence_types', []) or [],
+                parent_category="Consumer Rights",
+                parent_function=""
+            )
+            framework.controls[right_id] = control
+
+        # Parse controller obligations
+        for obligation in fw_data.get('controller_obligations', []):
+            obl_id = obligation.get('id', '')
+            control = Control(
+                id=obl_id,
+                name=obligation.get('name', obl_id),
+                description=obligation.get('description', ''),
+                policies_required=obligation.get('policies_required', []) or [],
+                policies_recommended=obligation.get('policies_recommended', []) or [],
+                evidence_types=obligation.get('evidence_types', []) or [],
+                parent_category="Controller Obligations",
+                parent_function=""
+            )
+            framework.controls[obl_id] = control
+
+        # Parse processor obligations
+        for obligation in fw_data.get('processor_obligations', []):
+            if isinstance(obligation, dict):
+                obl_id = obligation.get('id', '')
+                control = Control(
+                    id=obl_id,
+                    name=obligation.get('name', obl_id),
+                    description=obligation.get('description', ''),
+                    policies_required=obligation.get('policies_required', []) or [],
+                    policies_recommended=obligation.get('policies_recommended', []) or [],
+                    parent_category="Processor Obligations",
+                    parent_function=""
+                )
+                framework.controls[obl_id] = control
+
+        # Parse requirements if present (NY SHIELD, APRA)
+        for req in fw_data.get('requirements', []):
+            req_id = req.get('id', '')
+            req_name = req.get('name', req_id)
+
+            # Handle nested controls
+            for ctrl in req.get('controls', []):
+                ctrl_id = ctrl.get('id', '')
+                control = Control(
+                    id=ctrl_id,
+                    name=ctrl.get('name', ctrl_id),
+                    description=ctrl.get('description', ''),
+                    policies_required=ctrl.get('policies_required', []) or [],
+                    policies_recommended=ctrl.get('policies_recommended', []) or [],
+                    parent_category=req_name,
+                    parent_function=""
+                )
+                framework.controls[ctrl_id] = control
+
+            # If no nested controls, create control from requirement itself
+            if not req.get('controls') and req.get('policies_required'):
+                control = Control(
+                    id=req_id,
+                    name=req_name,
+                    description=req.get('description', ''),
+                    policies_required=req.get('policies_required', []) or [],
+                    policies_recommended=req.get('policies_recommended', []) or [],
+                    parent_category="Requirements",
+                    parent_function=""
+                )
+                framework.controls[req_id] = control
+
+    def _parse_generic_structure(self, framework: Framework, fw_data: Dict) -> None:
+        """Parse generic framework structure from policy_mapping"""
+        # Extract policies from policy_mapping if present
+        policy_mapping = fw_data.get('policy_mapping', {})
+
+        ctrl_num = 1
+        for category, policies in policy_mapping.items():
+            if isinstance(policies, list):
+                ctrl_id = f"pm_{ctrl_num}"
+                control = Control(
+                    id=ctrl_id,
+                    name=category.replace('_', ' ').title(),
+                    description=f"Policies for {category}",
+                    policies_required=policies,
+                    policies_recommended=[],
+                    parent_category=category,
+                    parent_function=""
+                )
+                framework.controls[ctrl_id] = control
+                ctrl_num += 1
+            elif isinstance(policies, dict):
+                # Nested structure (required, recommended)
+                ctrl_id = f"pm_{ctrl_num}"
+                control = Control(
+                    id=ctrl_id,
+                    name=category.replace('_', ' ').title(),
+                    description=f"Policies for {category}",
+                    policies_required=policies.get('required', []) or [],
+                    policies_recommended=policies.get('recommended', []) or [],
+                    parent_category=category,
+                    parent_function=""
+                )
+                framework.controls[ctrl_id] = control
+                ctrl_num += 1
 
     def _build_policy_mapping(self, framework: Framework) -> None:
         """Build reverse mapping from policies to framework controls"""
