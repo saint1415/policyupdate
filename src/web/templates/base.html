@@ -19,6 +19,19 @@
             <a href="/clients" class="{% if 'clients' in request.endpoint|default('') %}active{% endif %}">Clients</a>
             <a href="/generate" class="{% if 'generate' in request.endpoint|default('') %}active{% endif %}">Generate</a>
             <a href="/monitor" class="{% if 'monitor' in request.endpoint|default('') %}active{% endif %}">Monitor</a>
+            {% if current_user.is_authenticated and current_user.is_admin() %}
+            <a href="/auth/users" class="{% if 'users' in request.endpoint|default('') %}active{% endif %}">Users</a>
+            <a href="/audit" class="{% if 'audit' in request.endpoint|default('') %}active{% endif %}">Audit</a>
+            {% endif %}
+        </div>
+        <div class="nav-user">
+            {% if current_user.is_authenticated %}
+            <span class="user-info">{{ current_user.username }}</span>
+            <a href="/auth/profile">Profile</a>
+            <a href="/auth/logout">Logout</a>
+            {% else %}
+            <a href="/auth/login">Login</a>
+            {% endif %}
         </div>
     </nav>
 

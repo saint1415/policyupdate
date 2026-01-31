@@ -1,0 +1,557 @@
+{% extends "base.html" %}
+
+{% block title %}Audit Log{% endblock %}
+
+{% block head %}
+<style>
+    .audit-dashboard {
+        padding: 1rem 0;
+    }
+
+    .audit-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .audit-header h1 {
+        margin: 0;
+    }
+
+    .audit-controls {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .filter-group {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .filter-group label {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .filter-group select,
+    .filter-group input {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+
+    .audit-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .audit-stat {
+        background: #fff;
+        padding: 1.25rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .audit-stat-value {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .audit-stat-label {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+    }
+
+    .audit-stat.critical {
+        border-top: 3px solid #dc3545;
+    }
+
+    .audit-stat.warning {
+        border-top: 3px solid #ffc107;
+    }
+
+    .audit-stat.info {
+        border-top: 3px solid #17a2b8;
+    }
+
+    .audit-stat.success {
+        border-top: 3px solid #28a745;
+    }
+
+    .audit-table-container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .audit-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .audit-table th {
+        background: #f8f9fa;
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 2px solid #dee2e6;
+        font-size: 0.9rem;
+    }
+
+    .audit-table td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #eee;
+        font-size: 0.9rem;
+    }
+
+    .audit-table tr:hover {
+        background: #f8f9fa;
+    }
+
+    .severity-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .severity-critical {
+        background: #dc3545;
+        color: white;
+    }
+
+    .severity-error {
+        background: #fd7e14;
+        color: white;
+    }
+
+    .severity-warning {
+        background: #ffc107;
+        color: #333;
+    }
+
+    .severity-info {
+        background: #17a2b8;
+        color: white;
+    }
+
+    .severity-debug {
+        background: #6c757d;
+        color: white;
+    }
+
+    .action-badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        background: #e9ecef;
+    }
+
+    .action-auth {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .action-data {
+        background: #cce5ff;
+        color: #004085;
+    }
+
+    .action-system {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .action-generate {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .user-cell {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .user-avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #007bff;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+
+    .details-cell {
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .details-cell:hover {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .timestamp-cell {
+        font-family: monospace;
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .ip-cell {
+        font-family: monospace;
+        font-size: 0.85rem;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .pagination button {
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .pagination button:hover {
+        background: #f8f9fa;
+    }
+
+    .pagination button.active {
+        background: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    .pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-secondary {
+        background: #6c757d;
+        color: white;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #666;
+    }
+
+    .search-box {
+        position: relative;
+    }
+
+    .search-box input {
+        padding-left: 2rem;
+        min-width: 200px;
+    }
+
+    .search-box::before {
+        content: "🔍";
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.9rem;
+    }
+
+    .export-options {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .log-detail-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .log-detail-modal.active {
+        display: flex;
+    }
+
+    .log-detail-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 90%;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .log-detail-content h3 {
+        margin-top: 0;
+    }
+
+    .log-detail-content pre {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 4px;
+        overflow-x: auto;
+        font-size: 0.85rem;
+    }
+
+    .close-modal {
+        float: right;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #666;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="audit-dashboard">
+    <div class="audit-header">
+        <h1>Audit Log</h1>
+        <div class="audit-controls">
+            <div class="filter-group">
+                <label>Severity:</label>
+                <select id="filter-severity" onchange="applyFilters()">
+                    <option value="">All</option>
+                    <option value="critical">Critical</option>
+                    <option value="error">Error</option>
+                    <option value="warning">Warning</option>
+                    <option value="info">Info</option>
+                    <option value="debug">Debug</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Action:</label>
+                <select id="filter-action" onchange="applyFilters()">
+                    <option value="">All</option>
+                    <option value="login">Authentication</option>
+                    <option value="generate">Generation</option>
+                    <option value="client">Client</option>
+                    <option value="config">Configuration</option>
+                </select>
+            </div>
+            <div class="filter-group search-box">
+                <input type="text" id="filter-search" placeholder="Search..." onkeyup="debounceSearch()">
+            </div>
+            <div class="export-options">
+                <button class="btn btn-secondary btn-sm" onclick="exportLogs('json')">Export JSON</button>
+                <button class="btn btn-secondary btn-sm" onclick="exportLogs('csv')">Export CSV</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="audit-stats">
+        <div class="audit-stat critical">
+            <div class="audit-stat-value">{{ stats.critical }}</div>
+            <div class="audit-stat-label">Critical Events</div>
+        </div>
+        <div class="audit-stat warning">
+            <div class="audit-stat-value">{{ stats.warnings }}</div>
+            <div class="audit-stat-label">Warnings (24h)</div>
+        </div>
+        <div class="audit-stat info">
+            <div class="audit-stat-value">{{ stats.total_today }}</div>
+            <div class="audit-stat-label">Events Today</div>
+        </div>
+        <div class="audit-stat success">
+            <div class="audit-stat-value">{{ stats.unique_users }}</div>
+            <div class="audit-stat-label">Active Users</div>
+        </div>
+    </div>
+
+    <div class="audit-table-container">
+        <table class="audit-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Severity</th>
+                    <th>Action</th>
+                    <th>User</th>
+                    <th>Details</th>
+                    <th>IP Address</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="audit-tbody">
+                {% if logs %}
+                    {% for log in logs %}
+                    <tr>
+                        <td class="timestamp-cell">{{ log.timestamp }}</td>
+                        <td>
+                            <span class="severity-badge severity-{{ log.severity }}">{{ log.severity }}</span>
+                        </td>
+                        <td>
+                            <span class="action-badge action-{{ log.action_category }}">{{ log.action }}</span>
+                        </td>
+                        <td>
+                            <div class="user-cell">
+                                <div class="user-avatar">{{ log.username[:2]|upper if log.username else '?' }}</div>
+                                <span>{{ log.username or 'System' }}</span>
+                            </div>
+                        </td>
+                        <td class="details-cell" title="{{ log.details }}">{{ log.details }}</td>
+                        <td class="ip-cell">{{ log.ip_address or '-' }}</td>
+                        <td>
+                            <button class="btn btn-sm" onclick="showLogDetail('{{ log.id }}')">View</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                <tr>
+                    <td colspan="7" class="empty-state">
+                        <p>No audit logs found.</p>
+                    </td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button onclick="changePage(-1)" id="prev-btn" {% if page <= 1 %}disabled{% endif %}>&laquo; Previous</button>
+            <span style="padding: 0.5rem;">Page {{ page }} of {{ total_pages }}</span>
+            <button onclick="changePage(1)" id="next-btn" {% if page >= total_pages %}disabled{% endif %}>Next &raquo;</button>
+        </div>
+    </div>
+</div>
+
+<!-- Log Detail Modal -->
+<div class="log-detail-modal" id="log-detail-modal">
+    <div class="log-detail-content">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <h3>Audit Log Details</h3>
+        <div id="log-detail-body">
+            <!-- Populated dynamically -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let currentPage = {{ page }};
+    let searchTimeout;
+
+    function applyFilters() {
+        const severity = document.getElementById('filter-severity').value;
+        const action = document.getElementById('filter-action').value;
+        const search = document.getElementById('filter-search').value;
+
+        const params = new URLSearchParams();
+        if (severity) params.set('severity', severity);
+        if (action) params.set('action', action);
+        if (search) params.set('q', search);
+        params.set('page', '1');
+
+        window.location.href = '/audit?' + params.toString();
+    }
+
+    function debounceSearch() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(applyFilters, 500);
+    }
+
+    function changePage(delta) {
+        const params = new URLSearchParams(window.location.search);
+        const newPage = currentPage + delta;
+        params.set('page', newPage);
+        window.location.href = '/audit?' + params.toString();
+    }
+
+    function exportLogs(format) {
+        const params = new URLSearchParams(window.location.search);
+        params.set('format', format);
+        window.location.href = '/api/audit/export?' + params.toString();
+    }
+
+    function showLogDetail(logId) {
+        fetch('/api/audit/' + logId)
+            .then(r => r.json())
+            .then(data => {
+                const body = document.getElementById('log-detail-body');
+                body.innerHTML = `
+                    <p><strong>ID:</strong> ${data.id}</p>
+                    <p><strong>Timestamp:</strong> ${data.timestamp}</p>
+                    <p><strong>Severity:</strong> ${data.severity}</p>
+                    <p><strong>Action:</strong> ${data.action}</p>
+                    <p><strong>User:</strong> ${data.username || 'System'}</p>
+                    <p><strong>IP Address:</strong> ${data.ip_address || 'N/A'}</p>
+                    <p><strong>User Agent:</strong> ${data.user_agent || 'N/A'}</p>
+                    <p><strong>Resource:</strong> ${data.resource_type || 'N/A'} ${data.resource_id || ''}</p>
+                    <p><strong>Details:</strong></p>
+                    <pre>${JSON.stringify(data.details_json || data.details, null, 2)}</pre>
+                `;
+                document.getElementById('log-detail-modal').classList.add('active');
+            })
+            .catch(err => {
+                console.error('Failed to load log details:', err);
+                alert('Failed to load log details');
+            });
+    }
+
+    function closeModal() {
+        document.getElementById('log-detail-modal').classList.remove('active');
+    }
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // Close modal on background click
+    document.getElementById('log-detail-modal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+</script>
+{% endblock %}

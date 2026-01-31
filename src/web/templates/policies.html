@@ -1,0 +1,542 @@
+{% extends "base.html" %}
+
+{% block title %}Policies{% endblock %}
+
+{% block head %}
+<style>
+    .policies-page {
+        padding: 1rem 0;
+    }
+
+    .policies-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .search-filter {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .search-box {
+        position: relative;
+    }
+
+    .search-box input {
+        padding: 0.75rem 1rem 0.75rem 2.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        min-width: 300px;
+        font-size: 1rem;
+    }
+
+    .search-box::before {
+        content: "🔍";
+        position: absolute;
+        left: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .filter-select {
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .policies-stats {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stat-badge {
+        background: #f8f9fa;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    .stat-badge strong {
+        color: #007bff;
+    }
+
+    .policies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .policy-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .policy-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .policy-card-header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 1rem 1.25rem;
+    }
+
+    .policy-card-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .policy-card-category {
+        font-size: 0.85rem;
+        opacity: 0.9;
+        margin-top: 0.25rem;
+    }
+
+    .policy-card-body {
+        padding: 1.25rem;
+    }
+
+    .policy-frameworks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .framework-tag {
+        background: #e9ecef;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        color: #495057;
+    }
+
+    .policy-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .policy-card-actions {
+        padding: 1rem 1.25rem;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: white;
+    }
+
+    .btn-outline {
+        background: transparent;
+        border: 1px solid #ddd;
+        color: #333;
+    }
+
+    .btn-sm {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .category-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .category-btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        background: white;
+        cursor: pointer;
+        font-size: 0.85rem;
+        transition: all 0.2s;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+        background: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .pagination button {
+        padding: 0.5rem 1rem;
+        border: 1px solid #ddd;
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .pagination button:hover:not(:disabled) {
+        background: #f8f9fa;
+    }
+
+    .pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #666;
+    }
+
+    /* Policy Detail Modal */
+    .policy-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 2rem;
+    }
+
+    .policy-modal.active {
+        display: block;
+    }
+
+    .policy-modal-content {
+        background: white;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .policy-modal-header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 1.5rem;
+    }
+
+    .policy-modal-header h2 {
+        margin: 0 0 0.5rem;
+    }
+
+    .policy-modal-body {
+        padding: 1.5rem;
+    }
+
+    .policy-detail-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .policy-detail-section h4 {
+        margin: 0 0 0.75rem;
+        color: #333;
+    }
+
+    .close-modal {
+        float: right;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .close-modal:hover {
+        opacity: 1;
+    }
+
+    .content-preview {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.9rem;
+        white-space: pre-wrap;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .reference-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .reference-list li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .reference-list li:last-child {
+        border-bottom: none;
+    }
+
+    .variable-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .variable-tag {
+        background: #fff3cd;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.85rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="policies-page">
+    <div class="policies-header">
+        <h1>Policy Library</h1>
+        <div class="search-filter">
+            <div class="search-box">
+                <input type="text" id="policy-search" placeholder="Search policies..." onkeyup="searchPolicies()">
+            </div>
+            <select class="filter-select" id="framework-filter" onchange="filterByFramework()">
+                <option value="">All Frameworks</option>
+                {% for fw in frameworks %}
+                <option value="{{ fw.id }}">{{ fw.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    <div class="policies-stats">
+        <span class="stat-badge"><strong>{{ total_policies }}</strong> policies</span>
+        <span class="stat-badge"><strong>{{ categories|length }}</strong> categories</span>
+        <span class="stat-badge"><strong>{{ frameworks|length }}</strong> frameworks mapped</span>
+    </div>
+
+    <div class="category-filter" id="category-filter">
+        <button class="category-btn active" data-category="" onclick="filterByCategory(this, '')">All</button>
+        {% for cat in categories %}
+        <button class="category-btn" data-category="{{ cat }}" onclick="filterByCategory(this, '{{ cat }}')">{{ cat|replace('-', ' ')|title }}</button>
+        {% endfor %}
+    </div>
+
+    <div class="policies-grid" id="policies-grid">
+        {% for policy in policies %}
+        <div class="policy-card" data-category="{{ policy.category }}" data-frameworks="{{ policy.frameworks|join(',') }}">
+            <div class="policy-card-header">
+                <h3 class="policy-card-title">{{ policy.title }}</h3>
+                <div class="policy-card-category">{{ policy.category|replace('-', ' ')|title }}</div>
+            </div>
+            <div class="policy-card-body">
+                <div class="policy-frameworks">
+                    {% for fw in policy.frameworks[:5] %}
+                    <span class="framework-tag">{{ fw }}</span>
+                    {% endfor %}
+                    {% if policy.frameworks|length > 5 %}
+                    <span class="framework-tag">+{{ policy.frameworks|length - 5 }} more</span>
+                    {% endif %}
+                </div>
+                <div class="policy-meta">
+                    <span>ID: {{ policy.id }}</span>
+                </div>
+            </div>
+            <div class="policy-card-actions">
+                <button class="btn btn-primary btn-sm" onclick="showPolicyDetail('{{ policy.id }}')">View Details</button>
+                <button class="btn btn-outline btn-sm" onclick="addToPackage('{{ policy.id }}')">Add to Package</button>
+            </div>
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <p>No policies found.</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="pagination" id="pagination">
+        <!-- Pagination rendered by JS -->
+    </div>
+</div>
+
+<!-- Policy Detail Modal -->
+<div class="policy-modal" id="policy-modal">
+    <div class="policy-modal-content">
+        <div class="policy-modal-header">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <h2 id="modal-title">Policy Title</h2>
+            <div id="modal-category">Category</div>
+        </div>
+        <div class="policy-modal-body">
+            <div class="policy-detail-section">
+                <h4>Framework Mappings</h4>
+                <div id="modal-frameworks" class="policy-frameworks"></div>
+            </div>
+            <div class="policy-detail-section">
+                <h4>Cross-References</h4>
+                <ul id="modal-references" class="reference-list"></ul>
+            </div>
+            <div class="policy-detail-section">
+                <h4>Variables Used</h4>
+                <div id="modal-variables" class="variable-list"></div>
+            </div>
+            <div class="policy-detail-section">
+                <h4>Content Preview</h4>
+                <div id="modal-content" class="content-preview"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let allPolicies = [];
+    let currentCategory = '';
+    let currentFramework = '';
+    let searchQuery = '';
+
+    // Load policies on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/api/policies')
+            .then(r => r.json())
+            .then(data => {
+                allPolicies = data;
+                renderPolicies();
+            });
+    });
+
+    function searchPolicies() {
+        searchQuery = document.getElementById('policy-search').value.toLowerCase();
+        renderPolicies();
+    }
+
+    function filterByCategory(btn, category) {
+        document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = category;
+        renderPolicies();
+    }
+
+    function filterByFramework() {
+        currentFramework = document.getElementById('framework-filter').value;
+        renderPolicies();
+    }
+
+    function renderPolicies() {
+        const grid = document.getElementById('policies-grid');
+        const cards = grid.querySelectorAll('.policy-card');
+
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            const frameworks = card.dataset.frameworks.split(',');
+            const title = card.querySelector('.policy-card-title').textContent.toLowerCase();
+
+            let visible = true;
+
+            if (currentCategory && category !== currentCategory) {
+                visible = false;
+            }
+
+            if (currentFramework && !frameworks.includes(currentFramework)) {
+                visible = false;
+            }
+
+            if (searchQuery && !title.includes(searchQuery)) {
+                visible = false;
+            }
+
+            card.style.display = visible ? '' : 'none';
+        });
+    }
+
+    function showPolicyDetail(policyId) {
+        fetch('/api/policies/' + policyId)
+            .then(r => r.json())
+            .then(policy => {
+                document.getElementById('modal-title').textContent = policy.title;
+                document.getElementById('modal-category').textContent = policy.category;
+
+                // Frameworks
+                const frameworksHtml = Object.entries(policy.frameworks || {}).map(([fw, controls]) => {
+                    const controlsStr = Array.isArray(controls) ? controls.join(', ') : controls;
+                    return `<span class="framework-tag" title="${controlsStr}">${fw}</span>`;
+                }).join('');
+                document.getElementById('modal-frameworks').innerHTML = frameworksHtml || '<em>No framework mappings</em>';
+
+                // References
+                const refsHtml = (policy.references || []).map(ref =>
+                    `<li><a href="#" onclick="showPolicyDetail('${ref}')">${ref}</a></li>`
+                ).join('');
+                document.getElementById('modal-references').innerHTML = refsHtml || '<li><em>No cross-references</em></li>';
+
+                // Variables
+                const varsHtml = (policy.variables || []).map(v =>
+                    `<span class="variable-tag">{{${v}}}</span>`
+                ).join('');
+                document.getElementById('modal-variables').innerHTML = varsHtml || '<em>No variables</em>';
+
+                // Content
+                document.getElementById('modal-content').textContent = policy.content_preview || 'No preview available';
+
+                document.getElementById('policy-modal').classList.add('active');
+            });
+    }
+
+    function closeModal() {
+        document.getElementById('policy-modal').classList.remove('active');
+    }
+
+    function addToPackage(policyId) {
+        // Store in localStorage for the generate page
+        let selected = JSON.parse(localStorage.getItem('selectedPolicies') || '[]');
+        if (!selected.includes(policyId)) {
+            selected.push(policyId);
+            localStorage.setItem('selectedPolicies', JSON.stringify(selected));
+            alert('Policy added to package');
+        } else {
+            alert('Policy already in package');
+        }
+    }
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // Close modal on background click
+    document.getElementById('policy-modal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+</script>
+{% endblock %}
